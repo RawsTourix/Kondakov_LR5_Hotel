@@ -60,6 +60,17 @@ public:
         vector<MenuObject> submenu,
         bool one_off_menu_inclusion);
 
+    // Конструктор пункта меню для конкретной комнаты с подтверждением выполнения операции
+    template <typename RoomPtr, typename Action,
+        typename = enable_if_t<is_base_of_v<Room, typename RoomPtr::element_type> &&
+                               is_same_v<bool, decltype(declval<Action>()())>, void>>
+    MenuObject(int number,
+        string label,
+        RoomPtr room,
+        Action action,
+        string main_message,
+        string success_message);
+
     // Конструктор копирования
     MenuObject(const MenuObject&) = default;
     MenuObject& operator=(const MenuObject&) = default;
