@@ -8,7 +8,7 @@ inline float ChildCare::get_child_care_price() const {
 	return child_care_price;
 }
 
-// Геттер стоимости услуг для детей
+// Геттер наличия услуг для детей
 inline bool ChildCare::get_has_child_care() const {
 	return has_child_care;
 }
@@ -18,24 +18,20 @@ inline void ChildCare::set_child_care_price(float child_care_price) {
 	this->child_care_price = child_care_price;
 }
 
-// Сеттер стоимости услуг для детей
+// Сеттер наличия услуг для детей
 inline void ChildCare::set_has_child_care(bool has_child_care) {
 	this->has_child_care = has_child_care;
 }
 
 // Инпуттер стоимости услуг для детей
 inline bool ChildCare::input_child_care_price() {
-	float child_care_price;
 	if (InputControl::input(child_care_price, "Стоимость услуг для детей: ")) { return true; }
-	set_child_care_price(child_care_price);
 	return false;
 }
 
-// Инпуттер стоимости услуг для детей
+// Инпуттер наличия услуг для детей
 inline bool ChildCare::input_has_child_care() {
-	int has_child_care;
-	if (InputControl::input(has_child_care, "Наличие услуг для детей (1/0): ", 0, 1)) { return true; }
-	set_has_child_care(static_cast<bool>(has_child_care));
+	if (InputControl::input(has_child_care, "Наличие услуг для детей (1/0): ")) { return true; }
 	return false;
 }
 

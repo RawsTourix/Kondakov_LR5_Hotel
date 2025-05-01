@@ -42,17 +42,13 @@ inline void StandardRoom::set_amenities(vector<string> amenities) {
 
 // Инпуттер количества кроватей
 inline bool StandardRoom::input_bed_count() {
-	int bed_count;
 	if (InputControl::input(bed_count, "Количество кроватей: ")) { return true; }
-	set_bed_count(bed_count);
 	return false;
 }
 
 // Инпуттер наличия телевизора
 inline bool StandardRoom::input_has_tv() {
-	int has_tv;
-	if (InputControl::input(has_tv, "Наличие телевизора (1/0): ", 0, 1)) { return true; }
-	set_has_tv(static_cast<bool>(has_tv));
+	if (InputControl::input(has_tv, "Наличие телевизора (1/0): ")) { return true; }
 	return false;
 }
 

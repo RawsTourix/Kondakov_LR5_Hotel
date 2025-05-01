@@ -2,13 +2,13 @@
   kondakov_lr5_family_room.cpp
   kondakov_lr5_input_control.cpp
   kondakov_lr5_main.cpp
-C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\Kondakov_LR5_Hotel\kondakov_lr5_methods.hpp(70,5): warning C4984: "if constexpr" — расширение языка C++17
+C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\Kondakov_LR5_Hotel\kondakov_lr5_methods.hpp(68,5): warning C4984: "if constexpr" — расширение языка C++17
   (компиляция исходного файла "kondakov_lr5_main.cpp")
   
-C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\Kondakov_LR5_Hotel\kondakov_lr5_methods.hpp(95,10): warning C4984: "if constexpr" — расширение языка C++17
+C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\Kondakov_LR5_Hotel\kondakov_lr5_methods.hpp(91,10): warning C4984: "if constexpr" — расширение языка C++17
   (компиляция исходного файла "kondakov_lr5_main.cpp")
   
-C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\Kondakov_LR5_Hotel\kondakov_lr5_methods.hpp(120,10): warning C4984: "if constexpr" — расширение языка C++17
+C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\Kondakov_LR5_Hotel\kondakov_lr5_methods.hpp(114,10): warning C4984: "if constexpr" — расширение языка C++17
   (компиляция исходного файла "kondakov_lr5_main.cpp")
   
   kondakov_lr5_menu_object.cpp
