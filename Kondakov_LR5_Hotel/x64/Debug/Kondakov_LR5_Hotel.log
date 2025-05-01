@@ -1,0 +1,21 @@
+﻿  kondakov_lr5_child_care.cpp
+  kondakov_lr5_family_room.cpp
+  kondakov_lr5_input_control.cpp
+  kondakov_lr5_main.cpp
+C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\Kondakov_LR5_Hotel\kondakov_lr5_methods.hpp(93,2): warning C4984: "if constexpr" — расширение языка C++17
+  (компиляция исходного файла "kondakov_lr5_main.cpp")
+  
+C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\Kondakov_LR5_Hotel\kondakov_lr5_methods.hpp(116,7): warning C4984: "if constexpr" — расширение языка C++17
+  (компиляция исходного файла "kondakov_lr5_main.cpp")
+  
+C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\Kondakov_LR5_Hotel\kondakov_lr5_methods.hpp(139,7): warning C4984: "if constexpr" — расширение языка C++17
+  (компиляция исходного файла "kondakov_lr5_main.cpp")
+  
+  kondakov_lr5_menu_object.cpp
+  kondakov_lr5_room.cpp
+  kondakov_lr5_room.h
+  kondakov_lr5_standard_room.cpp
+  kondakov_lr5_suite.cpp
+  Создание кода...
+x64\Debug\kondakov_lr5_room.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
+  Kondakov_LR5_Hotel.vcxproj -> C:\Users\fedot\source\repos\Kondakov_LR5_Hotel\x64\Debug\Kondakov_LR5_Hotel.exe

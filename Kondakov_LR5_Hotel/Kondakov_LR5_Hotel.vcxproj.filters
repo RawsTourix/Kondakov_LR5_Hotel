@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Implementation">
+      <UniqueIdentifier>{ba6acfbf-89f3-4165-aca8-8ac1023e2082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Main">
+      <UniqueIdentifier>{27b6994b-5d40-4adb-9b65-fbaf0a245f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\BaseClasses">
+      <UniqueIdentifier>{7c5fc999-3f8e-4255-9ab5-7878d60340b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\BaseClasses\ChildCare">
+      <UniqueIdentifier>{aabc5d57-d5f9-4a9c-9dcb-7db01c2fbed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\BaseClasses\Room">
+      <UniqueIdentifier>{6a886f83-0d62-4921-9ba6-d03d2959197c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\DerivedClasses">
+      <UniqueIdentifier>{1892cba4-2691-4cdf-8594-860d64c8c1e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\DerivedClasses\FamilyRoom">
+      <UniqueIdentifier>{7aff671c-494b-47b4-890c-274c412c2952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\DerivedClasses\StandardRoom">
+      <UniqueIdentifier>{ee1ce55c-ad2e-4e18-80ae-69f7e003e4d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\DerivedClasses\Suite">
+      <UniqueIdentifier>{764fb3c7-8aaa-4e5a-b960-1567fdb80ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Tools">
+      <UniqueIdentifier>{74d197a5-dfab-4732-8a30-69328778d85d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Tools\InputControl">
+      <UniqueIdentifier>{105d5d81-e1d0-45fe-8565-65c61554b516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Tools\MenuObject">
+      <UniqueIdentifier>{f62a19dd-0658-4388-a276-6c0e4c032be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Implementation\BaseClasses">
+      <UniqueIdentifier>{9a5500ad-ef44-4fd6-811d-bbedf3a94295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Implementation\DerivedClasses">
+      <UniqueIdentifier>{8dd1790d-4cda-4962-90c2-acc01f6cf035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Implementation\Tools">
+      <UniqueIdentifier>{7619f9f2-5e50-44a0-8620-3b5b9a55fbdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Tools\Methods">
+      <UniqueIdentifier>{2fc4a833-263c-40de-82b8-291bba06f8de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kondakov_lr5_room.h">
+      <Filter>Файлы заголовков\BaseClasses\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="kondakov_lr5_main.cpp">
+      <Filter>Исходные файлы\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="kondakov_lr5_room.cpp">
+      <Filter>Исходные файлы\Implementation\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="kondakov_lr5_child_care.cpp">
+      <Filter>Исходные файлы\Implementation\BaseClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="kondakov_lr5_family_room.cpp">
+      <Filter>Исходные файлы\Implementation\DerivedClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="kondakov_lr5_standard_room.cpp">
+      <Filter>Исходные файлы\Implementation\DerivedClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="kondakov_lr5_suite.cpp">
+      <Filter>Исходные файлы\Implementation\DerivedClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="kondakov_lr5_input_control.cpp">
+      <Filter>Исходные файлы\Implementation\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="kondakov_lr5_menu_object.cpp">
+      <Filter>Исходные файлы\Implementation\Tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kondakov_lr5_child_care.h">
+      <Filter>Файлы заголовков\BaseClasses\ChildCare</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_child_care.hpp">
+      <Filter>Файлы заголовков\BaseClasses\ChildCare</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_family_room.h">
+      <Filter>Файлы заголовков\DerivedClasses\FamilyRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_family_room.hpp">
+      <Filter>Файлы заголовков\DerivedClasses\FamilyRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_input_control.h">
+      <Filter>Файлы заголовков\Tools\InputControl</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_input_control.hpp">
+      <Filter>Файлы заголовков\Tools\InputControl</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_menu_object.h">
+      <Filter>Файлы заголовков\Tools\MenuObject</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_menu_object.hpp">
+      <Filter>Файлы заголовков\Tools\MenuObject</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_room.hpp">
+      <Filter>Файлы заголовков\BaseClasses\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_standard_room.h">
+      <Filter>Файлы заголовков\DerivedClasses\StandardRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_standard_room.hpp">
+      <Filter>Файлы заголовков\DerivedClasses\StandardRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_suite.h">
+      <Filter>Файлы заголовков\DerivedClasses\Suite</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_suite.hpp">
+      <Filter>Файлы заголовков\DerivedClasses\Suite</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_def.h">
+      <Filter>Файлы заголовков\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_methods.h">
+      <Filter>Файлы заголовков\Tools\Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_methods.hpp">
+      <Filter>Файлы заголовков\Tools\Methods</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_container_operations.hpp">
+      <Filter>Файлы заголовков\Tools\InputControl</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
