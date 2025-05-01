@@ -31,15 +31,15 @@ namespace Methods {
 	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 	add_room(Container& rooms);
 
-	// Выбор комнаты из списка
-	template <typename Container>
-	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, shared_ptr<Room>>
-	get_room_from_rooms_map(string main_label, string message, Container& rooms);
-
 	// 3. Изменение комнаты
 	template <typename Container>
 	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 	edit_room(Container& rooms);
+
+	// Вывод нумерованного списка комнат и выбор комнаты по номеру с возвратом её указателя
+	template <typename Container>
+	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, shared_ptr<Room>>
+	get_room_from_rooms_map(string main_label, string message, Container& rooms);
 };
 
 #include "kondakov_lr5_methods.hpp"

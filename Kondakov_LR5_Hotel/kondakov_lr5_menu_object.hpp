@@ -3,6 +3,25 @@
 
 #include "kondakov_lr5_menu_object.h"
 
+// Конструктор пункта меню для конкретной комнаты с подтверждением выполнения операции
+template <typename RoomPtr, typename Action, typename>
+MenuObject::MenuObject(int number,
+    string label,
+    RoomPtr room,
+    Action action,
+    string main_message,
+    string success_message) :
+    MenuObject(number, label, [=] {
+        cout << endl << endl << main_message << endl << endl;
+        if (!action()) {
+            cout << endl;
+            room->print();
+            cout << success_message;
+        }
+        cout << endl;
+    }) {
+}
+
 // Вывод пункта меню
 inline void MenuObject::show(const string& indentation) const {
     cout << indentation << number << ". " << label << endl;
