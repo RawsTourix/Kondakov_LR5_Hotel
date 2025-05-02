@@ -50,6 +50,16 @@ bool InputControl::input(string& varLink, const string& label) {
 	}
 }
 
+// Ввод для bool
+bool InputControl::input(bool& varLink, const string& label) {
+	int bool_param = 0;
+	if (input(bool_param, label, 0, 1)) {  // Делегирование через input<int>
+		return true;  // Отмена операции
+	}
+	varLink = static_cast<bool>(bool_param);
+	return false;
+}
+
 // Возвращает один символ
 char InputControl::get_char() {
 	char ch;

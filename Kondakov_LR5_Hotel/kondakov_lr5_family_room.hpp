@@ -42,17 +42,15 @@ inline void FamilyRoom::set_amenities(vector<string> amenities) {
 
 // Инпуттер количества детских кроватей
 inline bool FamilyRoom::input_child_beds() {
-	int child_beds;
-	if (InputControl::input(child_beds, "Количество детских кроватей: ")) { return true; }
-	set_child_beds(child_beds);
+	// Реализация через [] по заданию
+	if (InputControl::input((*this).operator[]<int>(2), "Количество детских кроватей: ")) { return true; }
 	return false;
 }
 
 // Инпуттер наличия набора игрушек
 inline bool FamilyRoom::input_toy_kit() {
-	int toy_kit;
-	if (InputControl::input(toy_kit, "Наличие набора детских игрушек: (1/0): ", 0, 1)) { return true; }
-	set_toy_kit(static_cast<bool>(toy_kit));
+	// Реализация через [] по заданию
+	if (InputControl::input((*this).operator[]<bool>(3), "Наличие набора детских игрушек: (1/0): ")) { return true; }
 	return false;
 }
 

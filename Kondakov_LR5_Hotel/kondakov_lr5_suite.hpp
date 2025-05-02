@@ -42,17 +42,13 @@ inline void Suite::set_amenities(vector<string> amenities) {
 
 // Инпуттер наличия обслуживания
 inline bool Suite::input_room_service() {
-	int room_service;
-	if (InputControl::input(room_service, "Наличие обслуживания (1/0): ", 0, 1)) { return true; }
-	set_room_service(room_service);
+	if (InputControl::input(room_service, "Наличие обслуживания (1/0): ")) { return true; }
 	return false;
 }
 
 // Инпуттер наличия джакузи
 inline bool Suite::input_jacuzzi() {
-	int jacuzzi;
-	if (InputControl::input(jacuzzi, "Наличие джакузи (1/0): ", 0, 1)) { return true; }
-	set_jacuzzi(jacuzzi);
+	if (InputControl::input(jacuzzi, "Наличие джакузи (1/0): ")) { return true; }
 	return false;
 }
 

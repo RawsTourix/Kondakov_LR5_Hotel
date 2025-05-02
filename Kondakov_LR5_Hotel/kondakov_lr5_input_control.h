@@ -34,14 +34,14 @@ namespace InputControl {
 
 	// Ввод для строк
 	bool input(string& varLink, const string& label);
+	
+	// Ввод для bool
+	bool input(bool& varLink, const string& label);
 
-	// Ввод для чисел (int, float)
+	// Ввод для чисел и bool
 	template <typename T>
 	enable_if_t<is_arithmetic_v<T>, bool>
-	input(T& varLink, const string& label, T min = 0, T max = 2147483647);
-
-	// Ввод для контейнера строк
-
+	input(T& varLink, const string& label, T min = 0, T max = numeric_limits<T>::max());
 
 	// Возвращает один символ
 	char get_char();

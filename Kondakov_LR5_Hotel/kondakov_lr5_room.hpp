@@ -35,25 +35,36 @@ inline void Room::set_is_booked(bool is_booked) {
 
 // Инпуттер номера комнаты
 inline bool Room::input_room_number() {
-	int room_number;
 	if (InputControl::input(room_number, "Номер комнаты: ")) { return true; }
-	set_room_number(room_number);
+	return false;
+}
+
+// Инпуттер номера комнаты с проверкой на уникальность номера комнаты
+template <typename Container>
+inline typename enable_if_t<is_same_v<typename Container::value_type, int>, bool>
+Room::input_room_number(const Container& room_numbers) {
+	int room_number_temp = 0;
+	if (InputControl::input(room_number_temp, "Номер комнаты: ")) { return true; }
+
+	// Проверка на уникальность номера комнаты
+	while (find(room_numbers.begin(), room_numbers.end(), room_number_temp) != room_numbers.end()) {
+		cout << endl << "Комната с номером \"" << room_number_temp << "\" уже существует!" << endl << endl;
+		if (InputControl::input(room_number_temp, "Номер комнаты: ")) { return true; }
+	}
+
+	room_number = room_number_temp;
 	return false;
 }
 
 // Инпуттер цены за ночь
 inline bool Room::input_price_per_night() {
-	float price_per_night;
 	if (InputControl::input(price_per_night, "Цена за ночь: ")) { return true; }
-	set_price_per_night(price_per_night);
 	return false;
 }
 
 // Инпуттер статуса бронирования
 inline bool Room::input_is_booked() {
-	int is_booked;
-	if (InputControl::input(is_booked, "Стасус бронирования (1/0): ", 0, 1)) { return true; }
-	set_is_booked(static_cast<bool>(is_booked));
+	if (InputControl::input(is_booked, "Стасус бронирования (1/0): ")) { return true; }
 	return false;
 }
 
