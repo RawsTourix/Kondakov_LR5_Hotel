@@ -202,7 +202,7 @@ add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room, const Container& roo
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 Methods::edit_room(Container& rooms) {
-	return [&]() {
+	return [&rooms]() {
 		// Получение комнаты из списка
 		shared_ptr<Room> room = get_room_from_rooms_map("Изменение комнаты:", "Пункт меню: ", rooms);
 		if (room == nullptr) { return; }
@@ -227,6 +227,36 @@ Methods::edit_room(Container& rooms) {
 	};
 }
 
+// 4. Удаление комнаты
+template <typename Container>
+typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+Methods::delete_room(Container& rooms) {
+    return [&rooms]() {
+        // Получение комнаты из списка
+        shared_ptr<Room> room = get_room_from_rooms_map("Удаление комнаты:", "Пункт меню: ", rooms);
+        if (room == nullptr) { return; }
+
+        // Подтверждение операции и удаление или рекурсивный возврат к меню
+        ostringstream message;
+        message << "Вы точно хотите удалить [" << room->get_full_name() << "]?";
+        if (InputControl::yes_or_no(message.str())) {
+
+            auto it = remove_if(rooms.begin(), rooms.end(), [&room](shared_ptr<Room> r) { return room->get_room_number() == r->get_room_number(); });
+
+            if (it == rooms.end()) {
+                cout << "Комнаты с таким номером нет в списке.";
+            }
+            else {
+                rooms.erase(it, rooms.end());
+                cout << "Комната успешно удалена.";
+            }
+        }
+        else {
+            delete_room(rooms)();
+        }
+    };
+}
+
 
 /* Вспомогательные методы */
 
@@ -246,7 +276,7 @@ Methods::get_room_from_rooms_map(string main_label, string message, Container& r
     cout << endl << endl;
 
     int room_choice = 0;
-    if (InputControl::input(room_choice, message, 0, static_cast<int>(edit_room_info.size()))) { cout << endl; return nullptr; }
+    if (InputControl::input(room_choice, message, 0, static_cast<int>(edit_room_info.size() - 1))) { cout << endl; return nullptr; }
     if (room_choice == 0) { return nullptr; }
     auto it = find_if(edit_room_info.begin(), edit_room_info.end(), [room_choice](RoomInfo ri) { return ri.number == room_choice; });
     if (it == edit_room_info.end()) {
