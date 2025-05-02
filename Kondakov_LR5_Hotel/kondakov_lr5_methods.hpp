@@ -22,68 +22,116 @@ Methods::show_rooms(const Container& rooms) {
 	};
 }
 
+// Получение методов для изменения комнаты
+template <typename RoomPtr, typename Container>
+typename enable_if_t<is_base_of_v<Room, typename RoomPtr::element_type>&&
+                     is_same_v<typename Container::value_type, shared_ptr<Room>>, vector<function<bool()>>>
+get_room_edit_methods(RoomPtr room, const Container& rooms) {
+    // Получение списка номеров комнат
+    vector<int> room_numbers(Methods::get_room_numbers(rooms));
+
+    // Составление вектора функций для изменения комнаты
+    vector<function<bool()>> room_edit_methods{};
+    room_edit_methods.push_back([room, room_numbers]() -> bool { return room->input_room_number(room_numbers); });
+    room_edit_methods.push_back([room]() -> bool { return room->input_price_per_night(); });
+    room_edit_methods.push_back([room]() -> bool { return room->input_is_booked(); });
+
+    if constexpr (is_same_v<typename RoomPtr::element_type, StandardRoom>) {
+        room_edit_methods.push_back([room]() -> bool { return room->input_bed_count(); });
+        room_edit_methods.push_back([room]() -> bool { return room->input_has_tv(); });
+        room_edit_methods.push_back([room]() -> bool { return room->input_amenities<','>(); });
+    }
+    else if constexpr (is_same_v<typename RoomPtr::element_type, Suite>) {
+        room_edit_methods.push_back([room]() -> bool { return room->input_room_service(); });
+        room_edit_methods.push_back([room]() -> bool { return room->input_jacuzzi(); });
+        room_edit_methods.push_back([room]() -> bool { return room->input_amenities<','>(); });
+    }
+    else if constexpr (is_same_v<typename RoomPtr::element_type, FamilyRoom>) {
+        room_edit_methods.push_back([room]() -> bool { return room->input_child_care_price(); });
+        room_edit_methods.push_back([room]() -> bool { return room->input_has_child_care(); });
+        room_edit_methods.push_back([room]() -> bool { return room->input_child_beds(); });
+        room_edit_methods.push_back([room]() -> bool { return room->input_toy_kit(); });
+        room_edit_methods.push_back([room]() -> bool { return room->input_amenities<','>(); });
+    }
+
+    return room_edit_methods;
+}
+
 // 2. Добавление комнаты
 template <typename RoomType, typename Container>
-typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+typename enable_if_t<is_base_of_v<Room, typename RoomType> &&
+                     is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 Methods::add_room(Container& rooms) {
 	return [&rooms]() {
-		RoomType room;
-		if (room.input()) {
-			cout << endl;
-			room.print();
-			rooms.push_back(make_shared<RoomType>(move(room)));
-			cout << "Комната успешно добавлена.";
-		}
+        // Создание комнаты по умолчанию
+        shared_ptr<RoomType> room = make_shared<RoomType>();
+
+        // Получение методов для изменения комнаты
+        vector<function<bool()>> edit_methods(get_room_edit_methods(room, rooms));
+
+        // Изменение параметров комнаты
+        for (const auto& action : edit_methods) {
+            if (action()) { return; }
+        }
+
+		cout << endl;
+		room->print();
+		rooms.push_back(move(room));
+		cout << "Комната успешно добавлена.";
 	};
 }
 
 // Создание динамического одноразового меню для изменения комнаты
-template <typename RoomPtr>
-typename enable_if_t<is_base_of_v<Room, typename RoomPtr::element_type>, void>
-add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room) {
+template <typename RoomPtr, typename Container>
+typename enable_if_t<is_base_of_v<Room, typename RoomPtr::element_type> &&
+                     is_same_v<typename Container::value_type, shared_ptr<Room>>, void>
+add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room, const Container& rooms) {
+    // Получение методов для изменения комнаты
+    vector<function<bool()>> edit_methods(get_room_edit_methods(room, rooms));
+
     // Общие пункты для всех комнат
     menu.emplace_back(
         1, "Изменить номер комнаты;",
         room,
-        [room]() -> bool { return room->input_room_number(); },
+        // Ввод номера комнаты с проверкой на уникальность
+        edit_methods.at(0),
         "Изменение номера комнаты.",
         "Номер комнаты успешно изменён."
     );
     menu.emplace_back(
         2, "Изменить цену за ночь;",
         room,
-        [room]() -> bool { return room->input_price_per_night(); },
+        edit_methods.at(1),
         "Изменение цены за ночь.",
         "Цена за ночь успешно изменена."
     );
     menu.emplace_back(
         3, "Изменить статус бронирования;",
         room,
-        [room]() -> bool { return room->input_is_booked(); },
+        edit_methods.at(2),
         "Изменение статуса бронирования.",
         "Статус бронирования успешно изменён."
     );
 
-    // Специфичные пункты через if constexpr
     if constexpr (is_same_v<typename RoomPtr::element_type, StandardRoom>) {
         menu.emplace_back(
             4, "Изменить количество кроватей;",
             room,
-            [room]() -> bool { return room->input_bed_count(); },
+            edit_methods.at(3),
             "Изменение количества кроватей.",
             "Количество кроватей успешно изменено."
         );
         menu.emplace_back(
             5, "Изменить наличие телевизора;",
             room,
-            [room]() -> bool { return room->input_has_tv(); },
+            edit_methods.at(4),
             "Изменение наличия телевизора.",
             "Наличие телевизора успешно изменено."
         );
         menu.emplace_back(
             6, "Изменить удобства;",
             room,
-            [room]() -> bool { return room->input_amenities<','>(); },
+            edit_methods.at(5),
             "Изменение удобств.",
             "Удобства успешно изменены."
         );
@@ -92,21 +140,21 @@ add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room) {
         menu.emplace_back(
             4, "Изменить наличие обслуживания;",
             room,
-            [room]() -> bool { return room->input_room_service(); },
+            edit_methods.at(3),
             "Изменение наличия обслуживания.",
             "Наличие обслуживания успешно изменено."
         );
         menu.emplace_back(
             5, "Изменить наличие джакузи;",
             room,
-            [room]() -> bool { return room->input_jacuzzi(); },
+            edit_methods.at(4),
             "Изменение наличия джакузи.",
             "Наличие джакузи успешно изменено."
         );
         menu.emplace_back(
             6, "Изменить удобства;",
             room,
-            [room]() -> bool { return room->input_amenities<','>(); },
+            edit_methods.at(5),
             "Изменение удобств.",
             "Удобства успешно изменены."
         );
@@ -115,35 +163,35 @@ add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room) {
         menu.emplace_back(
             4, "Изменить стоимость услуг для детей;",
             room,
-            [room]() -> bool { return room->input_child_care_price(); },
+            edit_methods.at(3),
             "Изменение стоимости услуг для детей.",
             "Стоимость услуг для детей успешно изменена."
         );
         menu.emplace_back(
             5, "Изменить наличие услуг для детей;",
             room,
-            [room]() -> bool { return room->input_has_child_care(); },
+            edit_methods.at(4),
             "Изменение наличия услуг для детей.",
             "Наличие услуг для детей успешно изменено."
         );
         menu.emplace_back(
             6, "Изменить количество детских кроватей;",
             room,
-            [room]() -> bool { return room->input_child_beds(); },
+            edit_methods.at(5),
             "Изменение количества детских кроватей.",
             "Количество детских кроватей успешно изменено."
         );
         menu.emplace_back(
             7, "Изменить наличие набора детских игрушек;",
             room,
-            [room]() -> bool { return room->input_toy_kit(); },
+            edit_methods.at(6),
             "Изменение наличия набора детских игрушек.",
             "Наличие набора детских игрушек успешно изменено."
         );
         menu.emplace_back(
             8, "Изменить удобства;",
             room,
-            [room]() -> bool { return room->input_amenities<','>(); },
+            edit_methods.at(7),
             "Изменение удобств.",
             "Удобства успешно изменены."
         );
@@ -163,21 +211,24 @@ Methods::edit_room(Container& rooms) {
 		vector<MenuObject> edit_room_menu {};
 		if (room->get_room_type() == "Стандартная комната") {
 			// Для стандартной комнаты
-			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<StandardRoom>(room));
+			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<StandardRoom>(room), rooms);
 		}
 		else if (room->get_room_type() == "Люкс комната") {
 			// Для люкс комнаты
-			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<Suite>(room));
+			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<Suite>(room), rooms);
 		}
 		else if (room->get_room_type() == "Семейная комната") {
 			// Для семейной комнаты
-			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<FamilyRoom>(room));
+			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<FamilyRoom>(room), rooms);
 		}
 
 		// Обработка динамического одноразового меню для изменения конкретной комнаты
 		MenuObject::process(edit_room_menu, room->get_full_name(), "Назад.", 0, true);
 	};
 }
+
+
+/* Вспомогательные методы */
 
 // Вывод нумерованного списка комнат и выбор комнаты по номеру с возвратом её указателя
 template <typename Container>
@@ -205,6 +256,28 @@ Methods::get_room_from_rooms_map(string main_label, string message, Container& r
     cout << endl << endl;
 
     return it->room;
+}
+
+// Получение списка номеров комнат
+template <typename Container>
+typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, vector<int>>
+Methods::get_room_numbers(const Container& rooms) {
+    vector<int> room_numbers {};
+    for (const auto& room : rooms) {
+        room_numbers.push_back(room->get_room_number());
+    }
+    return room_numbers;
+}
+
+// Проверка наличия комнаты с таким же номером в списке комнат
+template <typename RoomType, typename Container>
+typename enable_if_t<is_base_of_v<Room, typename RoomType> &&
+                     is_same_v<typename Container::value_type, shared_ptr<Room>>, bool>
+Methods::room_in_rooms_by_room_number(RoomType room, const Container& rooms) {
+    // Получение списка номеров комнат
+    vector<int> room_numbers(get_room_numbers(rooms));
+
+    return find(room_numbers.begin(), room_numbers.end(), room.get_room_number()) != room_numbers.end();
 }
 
 #endif // KONDAKOV_LR5_METHODS_HPP

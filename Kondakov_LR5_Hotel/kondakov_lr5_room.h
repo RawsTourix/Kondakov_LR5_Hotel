@@ -56,6 +56,8 @@ public:
 	// Геттер полного названия комнаты
 	virtual inline string get_full_name() const = 0;
 
+	// Геттер методов для изменения комнаты
+
 	// Сеттер номера комнаты
 	inline void set_room_number(int room_number);
 
@@ -67,6 +69,11 @@ public:
 
 	// Инпуттер номера комнаты
 	inline bool input_room_number();
+
+	// Инпуттер номера комнаты с проверкой на уникальность номера комнаты
+	template <typename Container>
+	inline typename enable_if_t<is_same_v<typename Container::value_type, int>, bool>
+	input_room_number(const Container& room_numbers);
 
 	// Инпуттер цены за ночь
 	inline bool input_price_per_night();
