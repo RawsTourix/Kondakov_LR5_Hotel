@@ -40,8 +40,9 @@ int main()
 		{ 3, "Изменить комнату;", Methods::edit_room(rooms), true },
 		{ 4, "Удалить комнату;", Methods::delete_room(rooms), true },
 		{ 5, "Отсортировать список комнат;", Methods::sort_rooms(rooms), true },
-		{ 6, "Рассчитать стоимость проживания;", Methods::calculate_total(rooms), true },
-		{ 7, "Проверить валидность комнаты.", Methods::validate_room(rooms), true }
+		{ 6, "Рассчитать стоимость проживания;", Methods::calculate_total(rooms) },
+		{ 7, "Проверить валидность комнаты;", Methods::validate_room(rooms) },
+		{ 8, "Дополнительные методы комнат.", Methods::additional_room_methods(rooms) }
 	};
 
 	// Вывод и работа с функциями меню

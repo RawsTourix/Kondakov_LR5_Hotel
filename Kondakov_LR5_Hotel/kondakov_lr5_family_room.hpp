@@ -81,10 +81,8 @@ inline bool FamilyRoom::validate() const {
 
 // Активация игровой зоны (+1500 руб.)
 inline void FamilyRoom::add_play_area() {
-	if (!toy_kit) {
-		toy_kit = true;
-		price_per_night += 1500.0f;
-	}
+	toy_kit = !toy_kit;
+	price_per_night += 1500.0f * (toy_kit ? 1 : -1);
 }
 
 // Активация игровой зоны (-1500 руб.)

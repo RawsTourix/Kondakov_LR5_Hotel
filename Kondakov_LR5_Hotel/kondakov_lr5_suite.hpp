@@ -80,6 +80,7 @@ inline bool Suite::validate() const {
 // Добавление услуги (+2000 руб. к стоимости)
 inline void Suite::order_champagne(string amenity) {
 	price_per_night += 2000.0f;
+	InputControl::make_first_letter_uppercase(amenity);
 	*this += amenity;
 }
 

@@ -252,8 +252,10 @@ Methods::delete_room(Container& rooms) {
             }
         }
         else {
-            delete_room(rooms)();
+            cout << "[Отмена операции]";
         }
+
+        cout << endl;
     };
 }
 
@@ -378,9 +380,9 @@ Methods::calculate_total(Container& rooms) {
         int night_count;
         if (InputControl::input(night_count, "Количество ночей: ", 0, 365)) { return; }
         cout << endl << endl << 
-            "Стоимость проживания в [" << room->get_full_name() << "]" << endl << endl <<
+            "Стоимость проживания в [" << room->get_full_name() << "]." << endl << endl <<
             "Количество ночей: " << night_count << endl << endl <<
-            "Стоимость: " << room->calculate_total(night_count) << " " << Room::CURRENCY << endl;
+            "Стоимость: " << room->calculate_total(night_count) << " " << Room::CURRENCY;
     };
 }
 
@@ -390,10 +392,83 @@ typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>
 Methods::validate_room(Container& rooms) {
     return [&rooms]() {
         // Получение комнаты из списка
-        shared_ptr<Room> room = get_room_from_rooms_map("Рассчитать стоимость проживания:", "Пункт меню: ", rooms);
+        shared_ptr<Room> room = get_room_from_rooms_map("Проверить комнату на валидность:", "Пункт меню: ", rooms);
         if (room == nullptr) { return; }
 
-        cout << "[" << room->get_full_name() << "] — " << (room->validate() ? "" : "не") << "валидна." << endl;
+        cout << "[" << room->get_full_name() << "] — " << (room->validate() ? "" : "не") << "валидна.";
+    };
+}
+
+// 8. Дополнительные методы комнат
+template <typename Container>
+typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+Methods::additional_room_methods(Container& rooms) {
+    return [&rooms]() {
+        // Получение комнаты из списка
+        shared_ptr<Room> room = get_room_from_rooms_map("Дополнительные методы комнат:", "Пункт меню: ", rooms);
+        if (room == nullptr) { return; }
+
+        // Различные методы комнат
+        vector<MenuObject> edit_room_menu{};
+        if (room->get_room_type() == "Стандартная комната") {
+            shared_ptr<StandardRoom> sr = dynamic_pointer_cast<StandardRoom>(room);
+
+            cout << "Добавление дополнительной кровати (+20% к стоимости)." << endl << endl;
+
+            cout << "Текущее количество кроватей: " << sr->get_bed_count() << endl;
+            cout << "Текущая стоимость за ночь: " << sr->get_price_per_night() << " " << Room::CURRENCY << endl << endl;
+
+            if (InputControl::yes_or_no("Добавить кровать?")) {
+                sr->exstra_bed();
+                cout << "Кровать добавлена." << endl << endl;
+
+                cout << "Изменившееся количество кроватей: " << sr->get_bed_count() << endl;
+                cout << "Изменившаяся стоимость за ночь: " << sr->get_price_per_night() << " " << Room::CURRENCY;
+            }
+            else {
+                cout << "[Отмена операции]";
+            }
+        }
+        else if (room->get_room_type() == "Люкс комната") {
+            shared_ptr<Suite> s = dynamic_pointer_cast<Suite>(room);
+
+            cout << "Добавление услуги (+2000 руб. к стоимости)." << endl << endl;
+
+            cout << "Текущие услуги: " << s->get_amenities() << endl;
+            cout << "Текущая стоимость за ночь: " << s->get_price_per_night() << " " << Room::CURRENCY << endl << endl;
+
+            if (InputControl::yes_or_no("Добавить услугу?")) {
+                string amenity;
+                if (InputControl::input(amenity, "Услуга: ")) { return; }
+                s->order_champagne(amenity);
+                cout << endl << "Услуга добавлена." << endl << endl;
+
+                cout << "Изменившиеся услуги: " << s->get_amenities() << endl;
+                cout << "Изменившаяся стоимость за ночь: " << s->get_price_per_night() << " " << Room::CURRENCY;
+            }
+            else {
+                cout << "[Отмена операции]";
+            }
+        }
+        else if (room->get_room_type() == "Семейная комната") {
+            shared_ptr<FamilyRoom> fr = dynamic_pointer_cast<FamilyRoom>(room);
+
+            cout << "Активация/деактивация игровой зоны (+/- 1500 руб.)." << endl << endl;
+
+            cout << "Текущая стоимость за ночь: " <<fr->get_price_per_night() << " " << Room::CURRENCY << endl << endl;
+
+            if (InputControl::yes_or_no(fr->get_toy_kit() ? "Игровая зона активирована. Деакивировать?" :
+                "Игровая зона не активирована. Акивировать?"))
+            {
+                fr->add_play_area();
+            }
+            else {
+                cout << "[Отмена операции]"; return;
+            }
+
+            cout << "Игровая зона " << (fr->get_toy_kit() ? "" : "де") << "активирована." << endl << endl;
+            cout << "Изменившаяся стоимость за ночь: " << fr->get_price_per_night() << " " << Room::CURRENCY;
+        }
     };
 }
 
