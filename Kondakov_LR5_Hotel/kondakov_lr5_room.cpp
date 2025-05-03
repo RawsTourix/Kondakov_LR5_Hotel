@@ -1,5 +1,8 @@
 #include "kondakov_lr5_room.h"
 
+// Валюта
+const string Room::CURRENCY = "руб.";
+
 // Конструктор по умолчанию
 Room::Room()
 	: Room(0, 0.0f, false) {
@@ -47,7 +50,7 @@ bool operator!=(const Room& r1, int room_number) { return r1.room_number != room
 // Красивый перевод в строку
 Room::operator string() const {
 	ostringstream oss;
-	oss << "Цена за ночь:\t\t\t"	  << price_per_night << endl
+	oss << "Цена за ночь:\t\t\t"	  << price_per_night << " " << CURRENCY << endl
 		<< "Статус бронирования:\t\t" << (is_booked ? "да" : "нет");
 
 	return oss.str();

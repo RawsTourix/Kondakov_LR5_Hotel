@@ -39,7 +39,8 @@ int main()
 		} },
 		{ 3, "Изменить комнату;", Methods::edit_room(rooms), true },
 		{ 4, "Удалить комнату;", Methods::delete_room(rooms), true },
-		{ 5, "Отсортировать список комнат.", Methods::sort_rooms(rooms), true }
+		{ 5, "Отсортировать список комнат;", Methods::sort_rooms(rooms), true },
+		{ 6, "Рассчитать стоимость проживания.", Methods::calculate_total(rooms), true }
 	};
 
 	// Вывод и работа с функциями меню

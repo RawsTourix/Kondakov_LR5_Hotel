@@ -43,7 +43,7 @@ inline void FamilyRoom::set_amenities(vector<string> amenities) {
 // Инпуттер количества детских кроватей
 inline bool FamilyRoom::input_child_beds() {
 	// Реализация через [] по заданию
-	if (InputControl::input((*this).operator[]<int>(2), "Количество детских кроватей: ")) { return true; }
+	if (InputControl::input((*this).operator[]<int>(2), "Количество детских кроватей: ", 0, 5)) { return true; }
 	return false;
 }
 

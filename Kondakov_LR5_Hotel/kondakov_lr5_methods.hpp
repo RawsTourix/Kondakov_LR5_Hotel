@@ -365,6 +365,24 @@ Methods::sort_rooms(Container& rooms) {
     };
 }
 
+// 6. Расчёт стоимости проживания
+template <typename Container>
+typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+Methods::calculate_total(Container& rooms) {
+    return [&rooms]() {
+        // Получение комнаты из списка
+        shared_ptr<Room> room = get_room_from_rooms_map("Рассчитать стоимость проживания:", "Пункт меню: ", rooms);
+        if (room == nullptr) { return; }
+
+        int night_count;
+        if (InputControl::input(night_count, "Количество ночей: ", 0, 365)) { return; }
+        cout << endl << endl << 
+            "Стоимость проживания в [" << room->get_full_name() << "]" << endl << endl <<
+            "Количество ночей: " << night_count << endl << endl <<
+            "Стоимость: " << room->calculate_total(night_count) << " " << Room::CURRENCY << endl;
+    };
+}
+
 
 /* Вспомогательные методы */
 

@@ -35,7 +35,7 @@ inline void Room::set_is_booked(bool is_booked) {
 
 // Инпуттер номера комнаты
 inline bool Room::input_room_number() {
-	if (InputControl::input(room_number, "Номер комнаты: ")) { return true; }
+	if (InputControl::input(room_number, "Номер комнаты: ", 0, 1000)) { return true; }
 	return false;
 }
 
@@ -44,12 +44,12 @@ template <typename Container>
 inline typename enable_if_t<is_same_v<typename Container::value_type, int>, bool>
 Room::input_room_number(const Container& room_numbers) {
 	int room_number_temp = 0;
-	if (InputControl::input(room_number_temp, "Номер комнаты: ")) { return true; }
+	if (InputControl::input(room_number_temp, "Номер комнаты: ", 0, 1000)) { return true; }
 
 	// Проверка на уникальность номера комнаты
 	while (find(room_numbers.begin(), room_numbers.end(), room_number_temp) != room_numbers.end()) {
 		cout << endl << "Комната с номером \"" << room_number_temp << "\" уже существует!" << endl << endl;
-		if (InputControl::input(room_number_temp, "Номер комнаты: ")) { return true; }
+		if (InputControl::input(room_number_temp, "Номер комнаты: ", 0, 1000)) { return true; }
 	}
 
 	room_number = room_number_temp;
@@ -58,7 +58,9 @@ Room::input_room_number(const Container& room_numbers) {
 
 // Инпуттер цены за ночь
 inline bool Room::input_price_per_night() {
-	if (InputControl::input(price_per_night, "Цена за ночь: ")) { return true; }
+	ostringstream message;
+	message << "Цена за ночь (" << CURRENCY << "): ";
+	if (InputControl::input(price_per_night, message.str(), 0.0f, 100000.0f)) { return true; }
 	return false;
 }
 

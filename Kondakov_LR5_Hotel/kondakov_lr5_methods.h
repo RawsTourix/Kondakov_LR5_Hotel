@@ -47,6 +47,11 @@ namespace Methods {
 	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 	sort_rooms(Container& rooms);
 
+	// 6. Расчёт стоимости проживания
+	template <typename Container>
+	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+	calculate_total(Container& rooms);
+
 
 	/* Вспомогательные методы */
 
