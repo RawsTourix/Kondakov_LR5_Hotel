@@ -37,7 +37,9 @@ int main()
 			{ 2, "Добавить люкс комнату;", Methods::add_room<Suite>(rooms) },
 			{ 3, "Добавить семейную комнату;", Methods::add_room<FamilyRoom>(rooms) }
 		} },
-		{ 3, "Изменить комнату.", Methods::edit_room(rooms), true }
+		{ 3, "Изменить комнату;", Methods::edit_room(rooms), true },
+		{ 4, "Удалить комнату;", Methods::delete_room(rooms), true },
+		{ 5, "Отсортировать список комнат.", Methods::sort_rooms(rooms), true }
 	};
 
 	// Вывод и работа с функциями меню

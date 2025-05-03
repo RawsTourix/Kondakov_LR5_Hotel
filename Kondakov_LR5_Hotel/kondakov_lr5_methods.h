@@ -37,6 +37,16 @@ namespace Methods {
 	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 	edit_room(Container& rooms);
 
+	// 4. Удаление комнаты
+	template <typename Container>
+	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+	delete_room(Container& rooms);
+
+	// 5. Сортировка списка комнат
+	template <typename Container>
+	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+	sort_rooms(Container& rooms);
+
 
 	/* Вспомогательные методы */
 
