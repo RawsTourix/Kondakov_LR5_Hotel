@@ -257,6 +257,114 @@ Methods::delete_room(Container& rooms) {
     };
 }
 
+// 5. Сортировка списка комнат
+template <typename Container>
+typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+Methods::sort_rooms(Container& rooms) {
+    return [&rooms]() {
+        // Создание меню для сортировки
+        vector<MenuObject> sort_menu {
+            { 1, "Отсортировать по номеру комнаты.",
+                [&rooms]() {
+                    vector<MenuObject> sort_by_room_number_menu {
+                        { 1, "По возрастанию;", [&rooms]() {
+                                sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
+                                    return r1->get_room_number() < r2->get_room_number(); }
+                                );
+                                cout << endl << endl << "Список комнат успешно отсортирован по возрастанию номеров комнат." << endl;
+                            }
+                        },
+                        { 2, "По убыванию.", [&rooms]() {
+                                sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
+                                    return r1->get_room_number() > r2->get_room_number(); }
+                                );
+                                cout << endl << endl << "Список комнат успешно отсортирован по убыванию номеров комнат." << endl;
+                            }
+                        }
+                    };
+
+                    MenuObject::process(sort_by_room_number_menu, "\n\nОтсортировать по номеру комнаты:", "Назад.", 0, true);
+                }
+            },
+            { 2, "Отсортировать по типу комнаты.",
+                [&rooms]() {
+                    vector<MenuObject> sort_by_room_type_menu {
+                        { 1, "По возрастанию;", [&rooms]() {
+                                sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
+                                    return make_tuple(r1->get_room_type(), r1->get_room_number()) <
+                                        make_tuple(r2->get_room_type(), r2->get_room_number()); }
+                                );
+                                cout << endl << endl << "Список комнат успешно отсортирован по возрастанию типов комнат." << endl;
+                            }
+                        },
+                        { 2, "По убыванию.", [&rooms]() {
+                                sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
+                                    return make_tuple(r1->get_room_type(), r1->get_room_number()) >
+                                        make_tuple(r2->get_room_type(), r2->get_room_number()); }
+                                );
+                                cout << endl << endl << "Список комнат успешно отсортирован по убыванию типов комнат." << endl;
+                            }
+                        },
+                    };
+
+                    MenuObject::process(sort_by_room_type_menu, "\n\nОтсортировать по типу комнаты:", "Назад.", 0, true);
+                }
+            },
+            { 3, "Отсортировать по цене за ночь.",
+                [&rooms]() {
+                    vector<MenuObject> sort_by_price_per_night_menu {
+                        { 1, "По возрастанию;", [&rooms]() {
+                                sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
+                                    return make_tuple(r1->get_price_per_night(), r1->get_room_number()) <
+                                        make_tuple(r2->get_price_per_night(), r2->get_room_number()); }
+                                );
+                                cout << endl << endl << "Список комнат успешно отсортирован по возрастанию цен за ночь." << endl;
+                            }
+                        },
+                        { 2, "По убыванию.", [&rooms]() {
+                                sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
+                                    return make_tuple(r1->get_price_per_night(), r1->get_room_number()) >
+                                        make_tuple(r2->get_price_per_night(), r2->get_room_number()); }
+                                );
+                                cout << endl << endl << "Список комнат успешно отсортирован по убыванию цен за ночь." << endl;
+                            }
+                        },
+                    };
+
+                    MenuObject::process(sort_by_price_per_night_menu, "\n\nОтсортировать по цене за ночь:", "Назад.", 0, true);
+                }
+            },
+            { 4, "Отсортировать по статусу бронирования.",
+                [&rooms]() {
+                    vector<MenuObject> sort_by_is_booked_menu {
+                        { 1, "По возрастанию;", [&rooms]() {
+                                sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
+                                    return make_tuple(r1->get_is_booked(), r1->get_room_number()) <
+                                        make_tuple(r2->get_is_booked(), r2->get_room_number()); }
+                                );
+                                cout << endl << endl << "Список комнат успешно отсортирован по возрастанию статусов бронирования." << endl;
+                            }
+                        },
+                        { 2, "По убыванию.", [&rooms]() {
+                                sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
+                                    return make_tuple(r1->get_is_booked(), r1->get_room_number()) >
+                                        make_tuple(r2->get_is_booked(), r2->get_room_number()); }
+                                );
+                                cout << endl << endl << "Список комнат успешно отсортирован по убыванию статусов бронирования." << endl;
+                            }
+                        },
+                    };
+
+                    MenuObject::process(sort_by_is_booked_menu, "\n\nОтсортировать по статусу бронирования:", "Назад.", 0, true);
+                }
+            }
+        };
+
+        // Обработка одноразового меню для сортировки списка комнат
+        MenuObject::process(sort_menu, "Отсортировать список комнат:", "Назад.", 0, true);
+    };
+}
+
 
 /* Вспомогательные методы */
 
