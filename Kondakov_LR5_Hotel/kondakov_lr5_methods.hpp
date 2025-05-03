@@ -374,12 +374,26 @@ Methods::calculate_total(Container& rooms) {
         shared_ptr<Room> room = get_room_from_rooms_map("Рассчитать стоимость проживания:", "Пункт меню: ", rooms);
         if (room == nullptr) { return; }
 
+        // Ввод количества ночей и вычисление стоимости проживания
         int night_count;
         if (InputControl::input(night_count, "Количество ночей: ", 0, 365)) { return; }
         cout << endl << endl << 
             "Стоимость проживания в [" << room->get_full_name() << "]" << endl << endl <<
             "Количество ночей: " << night_count << endl << endl <<
             "Стоимость: " << room->calculate_total(night_count) << " " << Room::CURRENCY << endl;
+    };
+}
+
+// 7. Проверка валидности комнаты
+template <typename Container>
+typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+Methods::validate_room(Container& rooms) {
+    return [&rooms]() {
+        // Получение комнаты из списка
+        shared_ptr<Room> room = get_room_from_rooms_map("Рассчитать стоимость проживания:", "Пункт меню: ", rooms);
+        if (room == nullptr) { return; }
+
+        cout << "[" << room->get_full_name() << "] — " << (room->validate() ? "" : "не") << "валидна." << endl;
     };
 }
 

@@ -32,7 +32,7 @@ int main()
 	// Меню
 	vector<MenuObject> menu {
 		{ 1, "Вывести список комнат;", Methods::show_rooms(rooms) },
-		{ 2, "Добавление комнаты:", {
+		{ 2, "Добавить комнату:", {
 			{ 1, "Добавить стандартную комнату;", Methods::add_room<StandardRoom>(rooms) },
 			{ 2, "Добавить люкс комнату;", Methods::add_room<Suite>(rooms) },
 			{ 3, "Добавить семейную комнату;", Methods::add_room<FamilyRoom>(rooms) }
@@ -40,7 +40,8 @@ int main()
 		{ 3, "Изменить комнату;", Methods::edit_room(rooms), true },
 		{ 4, "Удалить комнату;", Methods::delete_room(rooms), true },
 		{ 5, "Отсортировать список комнат;", Methods::sort_rooms(rooms), true },
-		{ 6, "Рассчитать стоимость проживания.", Methods::calculate_total(rooms), true }
+		{ 6, "Рассчитать стоимость проживания;", Methods::calculate_total(rooms), true },
+		{ 7, "Проверить валидность комнаты.", Methods::validate_room(rooms), true }
 	};
 
 	// Вывод и работа с функциями меню

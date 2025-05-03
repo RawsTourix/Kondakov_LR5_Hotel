@@ -70,11 +70,6 @@ inline bool Room::input_is_booked() {
 	return false;
 }
 
-// Проверка price_per_night > 0
-inline bool Room::validate() const {
-	return price_per_night > 0;
-}
-
 // Перегрузка вывода контейнера комнат
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, ostream&>

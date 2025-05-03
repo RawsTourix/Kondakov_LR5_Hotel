@@ -52,6 +52,11 @@ namespace Methods {
 	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 	calculate_total(Container& rooms);
 
+	// 7. Проверка валидности комнаты
+	template <typename Container>
+	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+	validate_room(Container& rooms);
+
 
 	/* Вспомогательные методы */
 

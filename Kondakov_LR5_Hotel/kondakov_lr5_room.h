@@ -59,8 +59,6 @@ public:
 	// Геттер полного названия комнаты
 	virtual inline string get_full_name() const = 0;
 
-	// Геттер методов для изменения комнаты
-
 	// Сеттер номера комнаты
 	inline void set_room_number(int room_number);
 
@@ -90,8 +88,8 @@ public:
 	// Расчет стоимости проживания (зависит от типа номера)
 	virtual inline float calculate_total(int night_count) const = 0;
 
-	// Проверка price_per_night > 0
-	virtual inline bool validate() const;
+	// Проверка на валидность
+	virtual inline bool validate() const = 0;
 
 	// Сравнение по room_number
 	friend bool operator==(const Room& r1, const Room& r2);
