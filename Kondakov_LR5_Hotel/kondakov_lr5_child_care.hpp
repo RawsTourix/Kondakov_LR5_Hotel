@@ -25,7 +25,9 @@ inline void ChildCare::set_has_child_care(bool has_child_care) {
 
 // Инпуттер стоимости услуг для детей
 inline bool ChildCare::input_child_care_price() {
-	if (InputControl::input(child_care_price, "Стоимость услуг для детей: ")) { return true; }
+	ostringstream message;
+	message << "Стоимость услуг для детей (" << CURRENCY << "): ";
+	if (InputControl::input(child_care_price, message.str(), 0.0f, 10000.0f)) { return true; }
 	return false;
 }
 

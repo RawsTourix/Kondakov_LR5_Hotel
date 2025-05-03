@@ -5,6 +5,8 @@
 
 // Основные функции меню
 namespace Methods {
+	using ::operator<<;
+
 	// Структура для краткого представления информации о комнатах
 	struct RoomInfo {
 		int number;			   // Номер по списку
@@ -46,6 +48,21 @@ namespace Methods {
 	template <typename Container>
 	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 	sort_rooms(Container& rooms);
+
+	// 6. Расчёт стоимости проживания
+	template <typename Container>
+	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+	calculate_total(Container& rooms);
+
+	// 7. Проверка валидности комнаты
+	template <typename Container>
+	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+	validate_room(Container& rooms);
+
+	// 8. Дополнительные методы комнат
+	template <typename Container>
+	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
+	additional_room_methods(Container& rooms);
 
 
 	/* Вспомогательные методы */

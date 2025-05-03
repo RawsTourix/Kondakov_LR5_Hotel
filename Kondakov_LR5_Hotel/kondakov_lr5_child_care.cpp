@@ -1,5 +1,8 @@
 #include "kondakov_lr5_child_care.h"
 
+// Валюта
+const string ChildCare::CURRENCY;
+
 // Конструктор по умолчанию
 ChildCare::ChildCare()
 	: ChildCare(1000.0f, false) {
@@ -25,7 +28,7 @@ ChildCare::ChildCare(ChildCare&& other) noexcept
 // Красивый перевод в строку
 ChildCare::operator string() const {
 	ostringstream oss;
-	oss << "Стоимость услуг для детей:\t" << child_care_price << endl
+	oss << "Стоимость услуг для детей:\t" << child_care_price << " " << CURRENCY << endl
 		<< "Наличие услуг для детей:\t"   << (has_child_care ? "да" : "нет");
 
 	return oss.str();

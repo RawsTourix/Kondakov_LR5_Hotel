@@ -20,6 +20,9 @@ protected:
 	}
 
 public:
+	// Валюта
+	static const string CURRENCY;
+
 	// Конструктор по умолчанию
 	ChildCare();
 

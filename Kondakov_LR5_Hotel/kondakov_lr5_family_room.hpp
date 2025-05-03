@@ -43,7 +43,7 @@ inline void FamilyRoom::set_amenities(vector<string> amenities) {
 // Инпуттер количества детских кроватей
 inline bool FamilyRoom::input_child_beds() {
 	// Реализация через [] по заданию
-	if (InputControl::input((*this).operator[]<int>(2), "Количество детских кроватей: ")) { return true; }
+	if (InputControl::input((*this).operator[]<int>(2), "Количество детских кроватей: ", 0, 5)) { return true; }
 	return false;
 }
 
@@ -81,10 +81,8 @@ inline bool FamilyRoom::validate() const {
 
 // Активация игровой зоны (+1500 руб.)
 inline void FamilyRoom::add_play_area() {
-	if (!toy_kit) {
-		toy_kit = true;
-		price_per_night += 1500.0f;
-	}
+	toy_kit = !toy_kit;
+	price_per_night += 1500.0f * (toy_kit ? 1 : -1);
 }
 
 // Активация игровой зоны (-1500 руб.)

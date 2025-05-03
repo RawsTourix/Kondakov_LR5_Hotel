@@ -50,7 +50,7 @@ InputControl::input(T& varLink, const string& label, T min, T max) {
 		cout << label;
 		getline(cin, raw_input);
 		trim(raw_input);
-		if (is_input_empty(raw_input)) return true;  // отмена операции
+		if (is_input_empty(raw_input)) return true;  // Отмена операции
 		stringstream ss(raw_input);
 		if (ss >> number && ss.eof()) {
 			if (check_min_max(number, min, max)) break;
@@ -60,7 +60,7 @@ InputControl::input(T& varLink, const string& label, T min, T max) {
 
 	varLink = number;
 
-	return false;  // продолжение операции
+	return false;  // Продолжение операции
 }
 
 #endif // KONDAKOV_LR5_INPUT_CONTROL_HPP

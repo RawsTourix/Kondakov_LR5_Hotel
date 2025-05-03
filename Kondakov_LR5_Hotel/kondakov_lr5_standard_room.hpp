@@ -42,7 +42,7 @@ inline void StandardRoom::set_amenities(vector<string> amenities) {
 
 // Инпуттер количества кроватей
 inline bool StandardRoom::input_bed_count() {
-	if (InputControl::input(bed_count, "Количество кроватей: ")) { return true; }
+	if (InputControl::input(bed_count, "Количество кроватей: ", 0, 5)) { return true; }
 	return false;
 }
 
