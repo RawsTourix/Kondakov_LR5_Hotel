@@ -271,14 +271,14 @@ Methods::sort_rooms(Container& rooms) {
                     vector<MenuObject> sort_by_room_number_menu {
                         { 1, "ѕо возрастанию;", [&rooms]() {
                                 sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
-                                    return r1->get_room_number() < r2->get_room_number(); }
+                                    return *r1 < *r2; }
                                 );
                                 cout << endl << endl << "—писок комнат успешно отсортирован по возрастанию номеров комнат." << endl;
                             }
                         },
                         { 2, "ѕо убыванию.", [&rooms]() {
                                 sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
-                                    return r1->get_room_number() > r2->get_room_number(); }
+                                    return *r1 > *r2; }
                                 );
                                 cout << endl << endl << "—писок комнат успешно отсортирован по убыванию номеров комнат." << endl;
                             }
