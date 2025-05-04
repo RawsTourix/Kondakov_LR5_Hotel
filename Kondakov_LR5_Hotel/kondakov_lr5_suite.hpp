@@ -67,6 +67,11 @@ inline const string& Suite::get_room_type() const {
 	return ROOM_TYPE;
 }
 
+// Виртуальный геттер типа сохранения комнаты в json
+inline const string& Suite::get_json_type() const {
+	return JSON_TYPE;
+}
+
 // Расчет стоимости проживания (цена * ночи + 5000 руб. за услуги)
 inline float Suite::calculate_total(int night_count) const {
 	return price_per_night * static_cast<float>(night_count) + SERVICE_PRICE;

@@ -85,6 +85,9 @@ public:
 	// Виртуальный геттер типа комнаты
 	virtual inline const string& get_room_type() const = 0;
 
+	// Виртуальный геттер типа сохранения комнаты в json
+	virtual inline const string& get_json_type() const = 0;
+
 	// Расчет стоимости проживания (зависит от типа номера)
 	virtual inline float calculate_total(int night_count) const = 0;
 

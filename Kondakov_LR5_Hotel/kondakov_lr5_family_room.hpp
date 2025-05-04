@@ -69,6 +69,10 @@ inline const string& FamilyRoom::get_room_type() const {
 	return ROOM_TYPE;
 }
 
+inline const string& FamilyRoom::get_json_type() const {
+	return JSON_TYPE;
+}
+
 // Цена * ночи + 1000 руб./ребенок
 inline float FamilyRoom::calculate_total(int night_count) const {
 	return price_per_night * night_count + static_cast<float>(child_beds * 1000);
