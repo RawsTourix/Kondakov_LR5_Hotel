@@ -70,6 +70,8 @@ public:
 	// Переопределение операции ввода >>
 	friend istream& operator>>(istream& is, ChildCare& cr);
 
+	// Перевод в строку
+	virtual string to_string() const;
 };
 
 #include "kondakov_lr5_child_care.hpp"

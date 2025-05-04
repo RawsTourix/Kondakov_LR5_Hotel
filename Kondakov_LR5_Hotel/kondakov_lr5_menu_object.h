@@ -1,9 +1,7 @@
 #ifndef KONDAKOV_LR5_MENU_OBJECT_H
 #define KONDAKOV_LR5_MENU_OBJECT_H
 
-#include "kondakov_lr5_standard_room.h"
-#include "kondakov_lr5_suite.h"
-#include "kondakov_lr5_family_room.h"
+#include "kondakov_lr5_serializer.h"
 
 class MenuObject {
 private:

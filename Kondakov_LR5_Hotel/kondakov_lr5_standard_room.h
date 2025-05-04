@@ -83,6 +83,12 @@ public:
 	// Добавление кровати (+20% к цене)
 	inline void exstra_bed();
 
+	// Парсинг в json
+	virtual json to_json() const override;
+
+	// Парсинг из json
+	virtual void from_json(const json& j) override;
+
 	// Сложение удобств
 	friend vector<string>  operator+ (const StandardRoom& sr1, const StandardRoom& sr2);
 	friend vector<string>  operator+ (const vector<string>& amenities, const StandardRoom& sr);
@@ -105,6 +111,9 @@ public:
 
 	// Переопределённый ввод
 	virtual bool input() override;
+
+	// Перевод в строку
+	virtual string to_string() const override;
 };
 
 #include "kondakov_lr5_standard_room.hpp"

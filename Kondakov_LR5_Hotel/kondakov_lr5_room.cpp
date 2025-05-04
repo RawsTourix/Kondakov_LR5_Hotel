@@ -72,3 +72,10 @@ istream& operator>>(istream& is, Room& r) {
 
 	return is;
 }
+
+// Перевод в строку
+string Room::to_string() const {
+	ostringstream oss;
+	oss << *this;
+	return oss.str();
+}

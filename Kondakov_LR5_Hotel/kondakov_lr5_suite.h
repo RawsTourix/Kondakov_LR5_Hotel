@@ -86,6 +86,12 @@ public:
 	// Добавление услуги (+2000 руб. к стоимости)
 	inline void order_champagne(string amenity);
 
+	// Парсинг в json
+	virtual json to_json() const override;
+
+	// Парсинг из json
+	virtual void from_json(const json& j) override;
+
 	// Сложение удобств
 	friend vector<string>  operator+ (const Suite& s1, const Suite& s2);
 	friend vector<string>  operator+ (const vector<string>& amenities, const Suite& s);
@@ -109,6 +115,8 @@ public:
 	// Переопределённый ввод
 	virtual bool input() override;
 
+	// Перевод в строку
+	virtual string to_string() const override;
 };
 
 #include "kondakov_lr5_suite.hpp"

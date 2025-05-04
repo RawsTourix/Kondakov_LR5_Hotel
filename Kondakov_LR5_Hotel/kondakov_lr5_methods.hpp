@@ -32,26 +32,30 @@ get_room_edit_methods(RoomPtr room, const Container& rooms) {
 
     // Составление вектора функций для изменения комнаты
     vector<function<bool()>> room_edit_methods{};
-    room_edit_methods.push_back([room, room_numbers]() -> bool { return room->input_room_number(room_numbers); });
+
+    room_edit_methods.push_back([room, room_numbers]() -> bool {
+        // Ввод номера комнаты с проверкой на уникальность
+        return room->input_room_number(room_numbers);
+    });
     room_edit_methods.push_back([room]() -> bool { return room->input_price_per_night(); });
     room_edit_methods.push_back([room]() -> bool { return room->input_is_booked(); });
 
-    if constexpr (is_same_v<typename RoomPtr::element_type, StandardRoom>) {
-        room_edit_methods.push_back([room]() -> bool { return room->input_bed_count(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_has_tv(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_amenities<','>(); });
+    if (auto sr = dynamic_pointer_cast<StandardRoom>(room)) {
+        room_edit_methods.push_back([sr]() -> bool { return sr->input_bed_count(); });
+        room_edit_methods.push_back([sr]() -> bool { return sr->input_has_tv(); });
+        room_edit_methods.push_back([sr]() -> bool { return sr->input_amenities<','>(); });
     }
-    else if constexpr (is_same_v<typename RoomPtr::element_type, Suite>) {
-        room_edit_methods.push_back([room]() -> bool { return room->input_room_service(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_jacuzzi(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_amenities<','>(); });
+    else if (auto s = dynamic_pointer_cast<Suite>(room)) {
+        room_edit_methods.push_back([s]() -> bool { return s->input_room_service(); });
+        room_edit_methods.push_back([s]() -> bool { return s->input_jacuzzi(); });
+        room_edit_methods.push_back([s]() -> bool { return s->input_amenities<','>(); });
     }
-    else if constexpr (is_same_v<typename RoomPtr::element_type, FamilyRoom>) {
-        room_edit_methods.push_back([room]() -> bool { return room->input_child_care_price(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_has_child_care(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_child_beds(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_toy_kit(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_amenities<','>(); });
+    else if (auto fr = dynamic_pointer_cast<FamilyRoom>(room)) {
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_child_care_price(); });
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_has_child_care(); });
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_child_beds(); });
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_toy_kit(); });
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_amenities<','>(); });
     }
 
     return room_edit_methods;
@@ -93,7 +97,6 @@ add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room, const Container& roo
     menu.emplace_back(
         1, "Изменить номер комнаты;",
         room,
-        // Ввод номера комнаты с проверкой на уникальность
         edit_methods.at(0),
         "Изменение номера комнаты.",
         "Номер комнаты успешно изменён."
@@ -113,84 +116,84 @@ add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room, const Container& roo
         "Статус бронирования успешно изменён."
     );
 
-    if constexpr (is_same_v<typename RoomPtr::element_type, StandardRoom>) {
+    if (auto sr = dynamic_pointer_cast<StandardRoom>(room)) {
         menu.emplace_back(
             4, "Изменить количество кроватей;",
-            room,
+            sr,
             edit_methods.at(3),
             "Изменение количества кроватей.",
             "Количество кроватей успешно изменено."
         );
         menu.emplace_back(
             5, "Изменить наличие телевизора;",
-            room,
+            sr,
             edit_methods.at(4),
             "Изменение наличия телевизора.",
             "Наличие телевизора успешно изменено."
         );
         menu.emplace_back(
             6, "Изменить удобства;",
-            room,
+            sr,
             edit_methods.at(5),
             "Изменение удобств.",
             "Удобства успешно изменены."
         );
     }
-    else if constexpr (is_same_v<typename RoomPtr::element_type, Suite>) {
+    else if (auto s = dynamic_pointer_cast<Suite>(room)) {
         menu.emplace_back(
             4, "Изменить наличие обслуживания;",
-            room,
+            s,
             edit_methods.at(3),
             "Изменение наличия обслуживания.",
             "Наличие обслуживания успешно изменено."
         );
         menu.emplace_back(
             5, "Изменить наличие джакузи;",
-            room,
+            s,
             edit_methods.at(4),
             "Изменение наличия джакузи.",
             "Наличие джакузи успешно изменено."
         );
         menu.emplace_back(
             6, "Изменить удобства;",
-            room,
+            s,
             edit_methods.at(5),
             "Изменение удобств.",
             "Удобства успешно изменены."
         );
     }
-    else if constexpr (is_same_v<typename RoomPtr::element_type, FamilyRoom>) {
+    else if (auto fr = dynamic_pointer_cast<FamilyRoom>(room)) {
         menu.emplace_back(
             4, "Изменить стоимость услуг для детей;",
-            room,
+            fr,
             edit_methods.at(3),
             "Изменение стоимости услуг для детей.",
             "Стоимость услуг для детей успешно изменена."
         );
         menu.emplace_back(
             5, "Изменить наличие услуг для детей;",
-            room,
+            fr,
             edit_methods.at(4),
             "Изменение наличия услуг для детей.",
             "Наличие услуг для детей успешно изменено."
         );
         menu.emplace_back(
             6, "Изменить количество детских кроватей;",
-            room,
+            fr,
             edit_methods.at(5),
             "Изменение количества детских кроватей.",
             "Количество детских кроватей успешно изменено."
         );
         menu.emplace_back(
             7, "Изменить наличие набора детских игрушек;",
-            room,
+            fr,
             edit_methods.at(6),
             "Изменение наличия набора детских игрушек.",
             "Наличие набора детских игрушек успешно изменено."
         );
         menu.emplace_back(
             8, "Изменить удобства;",
-            room,
+            fr,
             edit_methods.at(7),
             "Изменение удобств.",
             "Удобства успешно изменены."
@@ -209,21 +212,19 @@ Methods::edit_room(Container& rooms) {
 
 		// Создание динамического меню для конкретной комнаты
 		vector<MenuObject> edit_room_menu {};
-		if (room->get_room_type() == "Стандартная комната") {
-			// Для стандартной комнаты
-			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<StandardRoom>(room), rooms);
-		}
-		else if (room->get_room_type() == "Люкс комната") {
-			// Для люкс комнаты
-			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<Suite>(room), rooms);
-		}
-		else if (room->get_room_type() == "Семейная комната") {
-			// Для семейной комнаты
-			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<FamilyRoom>(room), rooms);
-		}
 
-		// Обработка динамического одноразового меню для изменения конкретной комнаты
-		MenuObject::process(edit_room_menu, room->get_full_name(), "Назад.", 0, true);
+		if (auto sr = dynamic_pointer_cast<StandardRoom>(room)) {
+			add_edit_menu_items(edit_room_menu, sr, rooms);
+            MenuObject::process(edit_room_menu, sr->to_string(), "Назад.", 0, true);
+		}
+		else if (auto s = dynamic_pointer_cast<Suite>(room)) {
+			add_edit_menu_items(edit_room_menu, s, rooms);
+            MenuObject::process(edit_room_menu, s->to_string(), "Назад.", 0, true);
+		}
+		else if (auto fr = dynamic_pointer_cast<FamilyRoom>(room)) {
+			add_edit_menu_items(edit_room_menu, fr, rooms);
+            MenuObject::process(edit_room_menu, fr->to_string(), "Назад.", 0, true);
+		}
 	};
 }
 

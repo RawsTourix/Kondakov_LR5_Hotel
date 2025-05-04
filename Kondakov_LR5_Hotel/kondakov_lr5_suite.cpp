@@ -47,6 +47,28 @@ Suite::Suite(Suite&& other) noexcept
 	amenities(move(other.amenities)) {
 }
 
+// Парсинг в json
+json Suite::to_json() const {
+	return {
+		{ "room_number", room_number },
+		{ "price_per_night", price_per_night },
+		{ "is_booked", is_booked },
+		{ "room_service", room_service },
+		{ "jacuzzi", jacuzzi },
+		{ "amenities", amenities }
+	};
+}
+
+// Парсинг из json
+void Suite::from_json(const json& j) {
+	room_number = j["room_number"];
+	price_per_night = j["price_per_night"];
+	is_booked = j["is_booked"];
+	room_service = j["room_service"];
+	jacuzzi = j["jacuzzi"];
+	amenities = j["amenities"];
+}
+
 // Сложение удобств
 vector<string> operator+(const Suite& s1, const Suite& s2) {
 	vector<string> a(s1.amenities);
@@ -104,9 +126,7 @@ istream& operator>>(istream& is, Suite& s) {
 
 // Переопределённый вывод
 void Suite::print() const {
-	cout << "[" << get_full_name() << "]" << endl;
-	Room::print();					// Вывод информации родителя Room
-	cout << *this << endl << endl;	// Вывод информации наследника Suite
+	cout << this->to_string() << endl << endl;
 }
 
 // Переопределённый ввод
@@ -118,4 +138,13 @@ bool Suite::input() {
 	}
 	cin.clear();
 	return false;
+}
+
+// Перевод в строку
+string Suite::to_string() const {
+	ostringstream oss;
+	oss << "[" << get_full_name() << "]" << endl;
+	oss << Room::to_string() << endl;
+	oss << *this;
+	return oss.str();
 }

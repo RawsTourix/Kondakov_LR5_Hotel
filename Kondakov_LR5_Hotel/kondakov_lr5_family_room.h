@@ -86,6 +86,12 @@ public:
 	// Активация игровой зоны (-1500 руб.)
 	inline void remove_play_area();
 
+	// Парсинг в json
+	virtual json to_json() const override;
+
+	// Парсинг из json
+	virtual void from_json(const json& j) override;
+
 	// Получение параметров через []
 	string operator[](int index) const;
 
@@ -145,6 +151,9 @@ public:
 
 	// Переопределённый ввод
 	virtual bool input() override;
+
+	// Перевод в строку
+	virtual string to_string() const override;
 };
 
 #include "kondakov_lr5_family_room.hpp"

@@ -45,6 +45,32 @@ FamilyRoom::FamilyRoom(FamilyRoom&& other) noexcept
 	toy_kit(other.toy_kit) {
 }
 
+// Парсинг в json
+json FamilyRoom::to_json() const {
+	return {
+		{ "room_number", room_number },
+		{ "price_per_night", price_per_night },
+		{ "is_booked", is_booked },
+		{ "child_care_price", child_care_price },
+		{ "has_child_care", has_child_care },
+		{ "child_beds", child_beds },
+		{ "toy_kit", toy_kit },
+		{ "amenities", amenities }
+	};
+}
+
+// Парсинг из json
+void FamilyRoom::from_json(const json& j) {
+	room_number = j["room_number"];
+	price_per_night = j["price_per_night"];
+	is_booked = j["is_booked"];
+	child_care_price = j["child_care_price"];
+	has_child_care = j["has_child_care"];
+	child_beds = j["child_beds"];
+	toy_kit = j["toy_kit"];
+	amenities = j["amenities"];
+}
+
 // Получение параметров через []
 string FamilyRoom::operator[](int index) const {
 	ostringstream oss;
@@ -116,10 +142,7 @@ istream& operator>>(istream& is, FamilyRoom& fr) {
 
 // Переопределённый вывод
 void FamilyRoom::print() const {
-	cout << "[" << get_full_name() << "]" << endl;
-	Room::print();					// Вывод информации первого родителя Room
-	ChildCare::print();				// Вывод информации второго родителя ChildCare
-	cout << *this << endl << endl;  // Вывод информации наследника FamilyRoom
+	cout << this->to_string() << endl << endl;
 }
 
 // Переопределённый ввод
@@ -133,4 +156,14 @@ bool FamilyRoom::input() {
 	}
 	cin.clear();
 	return false;
+}
+
+// Перевод в строку
+string FamilyRoom::to_string() const {
+	ostringstream oss;
+	oss << "[" << get_full_name() << "]" << endl;
+	oss << Room::to_string() << endl;
+	oss << ChildCare::to_string() << endl;
+	oss << *this;
+	return oss.str();
 }

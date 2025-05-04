@@ -48,3 +48,10 @@ istream& operator>>(istream& is, ChildCare& cr) {
 
 	return is;
 }
+
+// Перевод в строку
+string ChildCare::to_string() const {
+	ostringstream oss;
+	oss << *this;
+	return oss.str();
+}

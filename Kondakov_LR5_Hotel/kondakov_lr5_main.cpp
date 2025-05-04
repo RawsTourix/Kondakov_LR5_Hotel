@@ -5,8 +5,11 @@ int main()
 	// Русская локализация
 	setlocale(LC_ALL, "Russian");
 
+	// Тип данных для хранения комнат
+	using RoomContainer = vector<shared_ptr<Room>>;
+
 	// Список комнат
-	vector<shared_ptr<Room>> rooms {};
+	RoomContainer rooms {};
 
 	// Стандартные комнаты
 	rooms.push_back(make_shared<StandardRoom>(1, 3000.0f, false, 1, true));
@@ -28,6 +31,9 @@ int main()
 	rooms.push_back(make_shared<FamilyRoom>(13, 5000.0f, false, 1500.0f, true, 2, false));
 	rooms.push_back(make_shared<FamilyRoom>(14, 7000.0f, false, 1500.0f, true, 3, true));
 
+	// Путь к файлу для сохранения комнат
+	const string ROOMS_JSON = "rooms.json";
+
 
 	// Меню
 	vector<MenuObject> menu {
@@ -42,7 +48,8 @@ int main()
 		{ 5, "Отсортировать список комнат;", Methods::sort_rooms(rooms), true },
 		{ 6, "Рассчитать стоимость проживания;", Methods::calculate_total(rooms) },
 		{ 7, "Проверить валидность комнаты;", Methods::validate_room(rooms) },
-		{ 8, "Дополнительные методы комнат.", Methods::additional_room_methods(rooms) }
+		{ 8, "Дополнительные методы комнат;", Methods::additional_room_methods(rooms) },
+		{ 9, "Сохранить данные.", [&ROOMS_JSON, &rooms]() { Serializer::save_rooms_to_file(rooms, ROOMS_JSON); } }
 	};
 
 	// Вывод и работа с функциями меню

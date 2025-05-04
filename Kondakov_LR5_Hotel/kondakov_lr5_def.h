@@ -12,7 +12,10 @@
 #include <algorithm>
 #include <limits>
 #include <tuple>
+#include <fstream>
+#include <nlohmann/json.hpp>
 
 using namespace std;
+using json = nlohmann::json;
 
 #endif // KONDAKOV_LR5_DEF_H

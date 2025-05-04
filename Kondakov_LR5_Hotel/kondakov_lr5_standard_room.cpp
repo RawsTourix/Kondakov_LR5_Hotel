@@ -47,6 +47,28 @@ StandardRoom::StandardRoom(StandardRoom&& other) noexcept
 	amenities(move(other.amenities)) {
 }
 
+// Парсинг в json
+json StandardRoom::to_json() const {
+	return {
+		{ "room_number", room_number },
+		{ "price_per_night", price_per_night },
+		{ "is_booked", is_booked },
+		{ "bed_count", bed_count },
+		{ "has_tv", has_tv },
+		{ "amenities", amenities }
+	};
+}
+
+// Парсинг из json
+void StandardRoom::from_json(const json& j) {
+	room_number = j["room_number"];
+	price_per_night = j["price_per_night"];
+	is_booked = j["is_booked"];
+	bed_count = j["bed_count"];
+	has_tv = j["has_tv"];
+	amenities = j["amenities"];
+}
+
 // Сложение удобств
 vector<string> operator+(const StandardRoom& sr1, const StandardRoom& sr2) {
 	vector<string> a(sr1.amenities);
@@ -104,9 +126,7 @@ istream& operator>>(istream& is, StandardRoom& sr) {
 
 // Переопределённый вывод
 void StandardRoom::print() const {
-	cout << "[" << get_full_name() << "]" << endl;
-	Room::print();					// Вывод информации родителя Room
-	cout << *this << endl << endl;  // Вывод информации наследника StandardRoom
+	cout << this->to_string() << endl << endl;  // Вывод информации наследника StandardRoom
 }
 
 // Переопределённый ввод
@@ -118,4 +138,13 @@ bool StandardRoom::input() {
 	}
 	cin.clear();
 	return false;
+}
+
+// Перевод в строку
+string StandardRoom::to_string() const {
+	ostringstream oss;
+	oss << "[" << get_full_name() << "]" << endl;
+	oss << Room::to_string() << endl;
+	oss << *this;
+	return oss.str();
 }

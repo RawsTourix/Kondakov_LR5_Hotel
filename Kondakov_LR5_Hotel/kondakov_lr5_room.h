@@ -91,6 +91,12 @@ public:
 	// Проверка на валидность
 	virtual inline bool validate() const = 0;
 
+	// Парсинг в json
+	virtual json to_json() const = 0;
+
+	// Парсинг из json
+	virtual void from_json(const json& j) = 0;
+
 	// Сравнение по room_number
 	friend bool operator==(const Room& r1, const Room& r2);
 	friend bool operator==(int room_number, const Room& r2);
@@ -119,6 +125,9 @@ public:
 
 	// Переопределение операции ввода >>
 	friend istream& operator>>(istream& is, Room& r);
+
+	// Перевод в строку
+	virtual string to_string() const;
 
 	// Перегрузка вывода контейнера комнат
 	template <typename Container>

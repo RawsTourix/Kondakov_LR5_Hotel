@@ -61,6 +61,12 @@
     <Filter Include="Файлы заголовков\Tools\Methods">
       <UniqueIdentifier>{2fc4a833-263c-40de-82b8-291bba06f8de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\Serializer">
+      <UniqueIdentifier>{62697270-a166-4f68-9cdb-1a3d5457873e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Implementation\Serializer">
+      <UniqueIdentifier>{35448f76-ca2d-4591-a1b5-780410eb979a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="kondakov_lr5_room.h">
@@ -89,6 +95,9 @@
     </ClCompile>
     <ClCompile Include="kondakov_lr5_menu_object.cpp">
       <Filter>Исходные файлы\Implementation\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="kondakov_lr5_serializer.cpp">
+      <Filter>Исходные файлы\Implementation\Serializer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -143,5 +152,14 @@
     <ClInclude Include="kondakov_lr5_container_operations.hpp">
       <Filter>Файлы заголовков\Tools\InputControl</Filter>
     </ClInclude>
+    <ClInclude Include="kondakov_lr5_serializer.h">
+      <Filter>Файлы заголовков\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="kondakov_lr5_serializer.hpp">
+      <Filter>Файлы заголовков\Serializer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
