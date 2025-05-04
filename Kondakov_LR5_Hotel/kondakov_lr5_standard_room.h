@@ -13,6 +13,9 @@ private:
 	// Тип комнаты
 	const string ROOM_TYPE = "Стандартная комната";
 
+	// Тип сохранения в json
+	const string JSON_TYPE = "Standard";
+
 public:
 	// Конструктор по умолчанию
 	StandardRoom();
@@ -73,6 +76,9 @@ public:
 
 	// Виртуальный геттер типа комнаты
 	virtual inline const string& get_room_type() const override;
+
+	// Виртуальный геттер типа сохранения комнаты в json
+	virtual inline const string& get_json_type() const override;
 
 	// Расчет стоимости проживания (зависит от типа номера)
 	virtual inline float calculate_total(int night_count) const override;

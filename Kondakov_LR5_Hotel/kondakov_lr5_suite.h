@@ -16,6 +16,9 @@ private:
 	// Тип комнаты
 	const string ROOM_TYPE = "Люкс комната";
 
+	// Тип сохранения в json
+	const string JSON_TYPE = "Suite";
+
 public:
 	// Конструктор по умолчанию
 	Suite();
@@ -76,6 +79,9 @@ public:
 
 	// Виртуальный геттер типа комнаты
 	virtual inline const string& get_room_type() const override;
+
+	// Виртуальный геттер типа сохранения комнаты в json
+	virtual inline const string& get_json_type() const override;
 
 	// Расчет стоимости проживания (цена * ночи + 5000 руб. за услуги)
 	virtual inline float calculate_total(int night_count) const override;

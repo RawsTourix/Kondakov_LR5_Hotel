@@ -67,6 +67,9 @@
     <Filter Include="Исходные файлы\Implementation\Serializer">
       <UniqueIdentifier>{35448f76-ca2d-4591-a1b5-780410eb979a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Настройки пакетов расширений">
+      <UniqueIdentifier>{51e089aa-256f-49a7-9ca6-2dce80f5e4ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="kondakov_lr5_room.h">
@@ -160,6 +163,11 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="rooms.json">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>Настройки пакетов расширений</Filter>
+    </None>
   </ItemGroup>
 </Project>

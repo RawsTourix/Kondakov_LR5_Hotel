@@ -14,6 +14,9 @@ private:
 	// Тип комнаты
 	const string ROOM_TYPE = "Семейная комната";
 
+	// Тип сохранения в json
+	const string JSON_TYPE = "Family";
+
 public:
 	// Конструктор по умолчанию
 	FamilyRoom();
@@ -73,6 +76,9 @@ public:
 
 	// Виртуальный геттер типа комнаты
 	virtual inline const string& get_room_type() const override;
+
+	// Виртуальный геттер типа сохранения комнаты в json
+	virtual inline const string& get_json_type() const override;
 
 	// Цена * ночи + 1000 руб./ребенок
 	virtual inline float calculate_total(int night_count) const override;

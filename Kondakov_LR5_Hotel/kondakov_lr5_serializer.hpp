@@ -11,7 +11,7 @@ Serializer::serialize_rooms(const Container& rooms) {
 
     for (const auto& room : rooms) {
         json room_json = room->to_json();
-        room_json["type"] = room->get_room_type();
+        room_json["type"] = room->get_json_type();
         j.push_back(room_json);
     }
 
