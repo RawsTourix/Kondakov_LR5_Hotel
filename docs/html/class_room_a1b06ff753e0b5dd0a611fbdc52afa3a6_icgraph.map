@@ -1,0 +1,5 @@
+<map id="Room::set_room_number" name="Room::set_room_number">
+<area shape="rect" id="Node000001" title="Установить номер комнаты" alt="" coords="161,5,329,32"/>
+<area shape="rect" id="Node000002" href="$class_room.html#a508697104b1bdce37058c029ea5d7b2b" title="Виртуальный деструктор" alt="" coords="5,5,113,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,21,113,21,113,16,145,16"/>
+</map>

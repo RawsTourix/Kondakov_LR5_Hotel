@@ -1,0 +1,7 @@
+<map id="add_edit_menu_items" name="add_edit_menu_items">
+<area shape="rect" id="Node000001" title="Добавление пунктов меню для редактирования комнаты" alt="" coords="287,5,435,32"/>
+<area shape="rect" id="Node000002" href="$namespace_methods.html#a51179a7d6e8fb0608922a0d00f102f11" title="Изменение комнаты" alt="" coords="103,5,239,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,21,239,21,239,16,272,16"/>
+<area shape="rect" id="Node000003" href="$kondakov__lr5__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Точка входа в приложение" alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="FamilyRoom::FamilyRoom" name="FamilyRoom::FamilyRoom">
+<area shape="rect" id="Node000001" title="Конструктор с параметрами" alt="" coords="5,67,183,93"/>
+<area shape="rect" id="Node000002" href="$class_child_care.html#a31cf181fba995fad6f95605d67f98171" title="Конструктор по умолчанию" alt="" coords="231,29,376,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,63,215,56,216,61,173,69"/>
+<area shape="rect" id="Node000003" href="$class_room.html#ac6ef93a7d9c3e1d624e025058d5f16ff" title="Конструктор по умолчанию" alt="" coords="254,104,353,131"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="173,91,239,103,238,108,172,97"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="268,30,261,21,266,11,280,5,303,3,328,5,342,12,339,16,327,10,303,8,281,10,270,15,267,20,272,27"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="268,105,261,95,266,86,280,79,303,77,328,80,342,86,339,91,327,85,303,83,281,85,270,89,267,95,272,102"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="FamilyRoom::print" name="FamilyRoom::print">
+<area shape="rect" id="Node000001" title="Вывод информации о номере" alt="" coords="5,56,134,83"/>
+<area shape="rect" id="Node000002" href="$class_family_room.html#a271f00565274998fdabcf7caf292fff5" title="Преобразование в строку" alt="" coords="182,56,335,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,67,166,67,166,72,134,72"/>
+<area shape="rect" id="Node000003" href="$class_family_room.html#aef7d738df1e02f504acfd559fc5717f7" title="Получить полное название комнаты" alt="" coords="383,5,567,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,53,400,34,401,39,319,58"/>
+<area shape="rect" id="Node000004" href="$class_child_care.html#a5996576d0d4943533c78b3edb5290d14" title="Преобразование в строку" alt="" coords="406,56,544,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="335,67,391,67,391,72,335,72"/>
+<area shape="rect" id="Node000005" href="$class_room.html#a8587d8bc9a7bfbadbe83fbf969c9b370" title="Виртуальный метод преобразования в строку" alt="" coords="418,107,532,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="319,81,403,101,402,106,318,86"/>
+</map>

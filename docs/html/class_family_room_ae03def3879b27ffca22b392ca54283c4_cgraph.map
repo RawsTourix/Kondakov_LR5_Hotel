@@ -1,0 +1,7 @@
+<map id="FamilyRoom::input" name="FamilyRoom::input">
+<area shape="rect" id="Node000001" title="Ввод информации о номере" alt="" coords="5,31,137,57"/>
+<area shape="rect" id="Node000002" href="$class_child_care.html#a157a0313cef3440dbf065d975c0cb443" title="Ввод информации об услугах" alt="" coords="185,5,300,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,32,169,27,170,32,137,37"/>
+<area shape="rect" id="Node000003" href="$class_room.html#a3771355e58c0cac65cb836f72b7da113" title="Виртуальный метод ввода информации о комнате" alt="" coords="196,56,288,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,51,181,58,180,63,137,56"/>
+</map>

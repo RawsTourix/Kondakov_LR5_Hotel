@@ -1,0 +1,5 @@
+<map id="Suite::calculate_total" name="Suite::calculate_total">
+<area shape="rect" id="Node000001" title="Расчет общей стоимости проживания" alt="" coords="158,5,301,32"/>
+<area shape="rect" id="Node000002" href="$class_suite.html#a5dfc680a5053801d7564eac1e6884320" title="Проверка валидности номера" alt="" coords="5,5,110,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,21,110,21,110,16,142,16"/>
+</map>

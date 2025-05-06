@@ -1,0 +1,20 @@
+<map id="Room::to_string" name="Room::to_string">
+<area shape="rect" id="Node000001" title="Виртуальный метод преобразования в строку" alt="" coords="668,119,783,145"/>
+<area shape="rect" id="Node000002" href="$class_family_room.html#a271f00565274998fdabcf7caf292fff5" title="Преобразование в строку" alt="" coords="460,17,614,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="684,113,562,47,565,42,687,109"/>
+<area shape="rect" id="Node000004" href="$class_standard_room.html#a06b989063fdda125448921ce223029b9" title="Преобразование в строку" alt="" coords="454,93,620,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="653,125,621,121,621,115,653,120"/>
+<area shape="rect" id="Node000007" href="$class_suite.html#a4e720c17c1195264c65fa507a52d1edc" title="Преобразование в строку" alt="" coords="482,144,592,171"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="653,144,592,153,592,147,652,139"/>
+<area shape="rect" id="Node000009" href="$class_room.html#a508697104b1bdce37058c029ea5d7b2b" title="Виртуальный деструктор" alt="" coords="484,195,591,221"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="687,155,621,185,589,197,587,192,619,180,684,150"/>
+<area shape="rect" id="Node000003" href="$class_family_room.html#a9c0a4570d5b466db2be534ac3b0b0f3c" title="Вывод информации о номере" alt="" coords="271,5,400,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="445,28,400,25,400,20,445,23"/>
+<area shape="rect" id="Node000005" href="$class_standard_room.html#acf55a87a76c686170ce9c8e1d4cdf62a" title="Вывод информации о номере" alt="" coords="265,56,406,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="447,93,406,85,407,80,448,87"/>
+<area shape="rect" id="Node000006" href="$class_standard_room.html#a2e46e90889222820009f40e6e231f32d" title="Деструктор" alt="" coords="5,81,217,108"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="439,107,217,100,217,95,439,101"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="250,82,217,85,217,80,249,76"/>
+<area shape="rect" id="Node000008" href="$class_suite.html#a31debd927684dc287f287030def6438d" title="Вывод информации о номере" alt="" coords="293,157,378,184"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="467,165,378,171,378,165,467,159"/>
+</map>

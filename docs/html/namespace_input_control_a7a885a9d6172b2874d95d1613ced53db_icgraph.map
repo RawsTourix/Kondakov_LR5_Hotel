@@ -1,0 +1,11 @@
+<map id="InputControl::make_first_letter_uppercase" name="InputControl::make_first_letter_uppercase">
+<area shape="rect" id="Node000001" title="Делает первую букву строки заглавной" alt="" coords="348,23,501,65"/>
+<area shape="rect" id="Node000002" href="$class_suite.html#a83d2b91e040f3e4f24b37f14fa1e63ef" title="Заказать шампанское (добавляет услугу)" alt="" coords="138,5,300,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="332,35,300,31,301,26,333,30"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a5df9ff92a406d7ffc174e3b3ddef8cd4" title="Разделяет строку на подстроки по разделителю" alt="" coords="157,56,281,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="333,58,282,64,281,59,332,53"/>
+<area shape="rect" id="Node000004" href="$kondakov__lr5__container__operations_8hpp.html#a95226ada92c9fc69c4d5d6771165dcb3" title="Перегрузка оператора &gt;&gt; для разделения строки в контейнер" alt="" coords="5,31,90,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="141,61,89,53,90,48,142,55"/>
+<area shape="rect" id="Node000005" href="$kondakov__lr5__container__operations_8hpp.html#af2721b39e850a7e2bf789e2b32cca184" title="Перегрузка оператора ввода для DelimitedContainer." alt="" coords="5,81,90,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="142,83,90,91,89,86,141,78"/>
+</map>

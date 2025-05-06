@@ -1,0 +1,1373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_suite" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>Suite</compoundname>
+    <basecompoundref refid="class_room" prot="public" virt="virtual">Room</basecompoundref>
+    <includes refid="kondakov__lr5__suite_8h" local="no">kondakov_lr5_suite.h</includes>
+    <sectiondef kind="user-defined">
+      <header>Конструкторы</header>
+      <memberdef kind="function" id="class_suite_1ac6d5e58a508fcf431ea7448da070f802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Suite::Suite</definition>
+        <argsstring>()</argsstring>
+        <name>Suite</name>
+        <qualifiedname>Suite::Suite</qualifiedname>
+        <briefdescription>
+<para>Конструктор по умолчанию </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="33" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="15" bodyend="20"/>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+        <referencedby refid="class_suite_1a8f934acbbedc7d7381a0bd963cf4567c" compoundref="kondakov__lr5__suite_8cpp" startline="167" endline="170">operator&lt;&lt;</referencedby>
+        <referencedby refid="class_suite_1aaf656a5dd660cdeaf6bcd773955fd249" compoundref="kondakov__lr5__suite_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_suite_1a80d4f9db1d8cb72a3ca0286e7ea3a0c5" compoundref="kondakov__lr5__suite_8cpp" startline="42" endline="44">Suite</referencedby>
+        <referencedby refid="class_suite_1aea409d24c05e53ba1d4c83a63da708c5" compoundref="kondakov__lr5__suite_8cpp" startline="84" endline="89">Suite</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a710a30c09147e4838ee42de34ae4fd96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Suite::Suite</definition>
+        <argsstring>(int room_number, bool room_service)</argsstring>
+        <name>Suite</name>
+        <qualifiedname>Suite::Suite</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>room_service</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор преобразования </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие обслуживания </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="34" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="27" bodyend="32"/>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a80d4f9db1d8cb72a3ca0286e7ea3a0c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Suite::Suite</definition>
+        <argsstring>(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi)</argsstring>
+        <name>Suite</name>
+        <qualifiedname>Suite::Suite</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>price_per_night</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_booked</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>room_service</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>jacuzzi</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с удобствами по умолчанию </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие обслуживания </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jacuzzi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие джакузи </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="35" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="42" bodyend="44"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+        <references refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" compoundref="kondakov__lr5__suite_8cpp" startline="15" endline="20">Suite</references>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a9dda4162a1c67074b11e3d83da22d196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Suite::Suite</definition>
+        <argsstring>(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi, string amenities)</argsstring>
+        <name>Suite</name>
+        <qualifiedname>Suite::Suite</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>price_per_night</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_booked</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>room_service</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>jacuzzi</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с параметрами (удобства строка) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие обслуживания </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jacuzzi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие джакузи </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Удобства (строка с разделителями) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="36" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="55" bodyend="62"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a395e66a54d3dbd412e64c60ddedb06b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Suite::Suite</definition>
+        <argsstring>(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi, vector&lt; string &gt; amenities)</argsstring>
+        <name>Suite</name>
+        <qualifiedname>Suite::Suite</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>price_per_night</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_booked</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>room_service</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>jacuzzi</declname>
+        </param>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с параметрами (удобства вектор) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие обслуживания </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jacuzzi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие джакузи </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Удобства (вектор строк) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="37" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="73" bodyend="78"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a84eeaf79508119b645c1932cc5d22369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Suite::Suite</definition>
+        <argsstring>(const Suite &amp;)=default</argsstring>
+        <name>Suite</name>
+        <qualifiedname>Suite::Suite</qualifiedname>
+        <param>
+          <type>const <ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="38" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1aa363bed00f99871e569ee8950fd8bb73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+        <definition>Suite &amp; Suite::operator=</definition>
+        <argsstring>(const Suite &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Suite::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="39" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1aea409d24c05e53ba1d4c83a63da708c5" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Suite::Suite</definition>
+        <argsstring>(Suite &amp;&amp;other) noexcept</argsstring>
+        <name>Suite</name>
+        <qualifiedname>Suite::Suite</qualifiedname>
+        <param>
+          <type><ref refid="class_suite" kindref="compound">Suite</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор перемещения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Другой объект <ref refid="class_suite" kindref="compound">Suite</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="40" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="84" bodyend="89"/>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+        <references refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" compoundref="kondakov__lr5__suite_8cpp" startline="15" endline="20">Suite</references>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1afee1e27929a9cc4354768862d47f11e0" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+        <definition>Suite &amp; Suite::operator=</definition>
+        <argsstring>(Suite &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Suite::operator=</qualifiedname>
+        <param>
+          <type><ref refid="class_suite" kindref="compound">Suite</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="41" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1ad768458b39f93edf4554a8fb45c960d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Suite::~Suite</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Suite</name>
+        <qualifiedname>Suite::~Suite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="42" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Геттеры</header>
+      <memberdef kind="function" id="class_suite_1ac8c879afd32bdc582b945f7f541bd2ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Suite::get_room_service</definition>
+        <argsstring>() const</argsstring>
+        <name>get_room_service</name>
+        <qualifiedname>Suite::get_room_service</qualifiedname>
+        <briefdescription>
+<para>Получить наличие обслуживания </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если есть обслуживание, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="47" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a5d9fd1e7fbc3b7cd38b165cb075f2b7c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Suite::get_jacuzzi</definition>
+        <argsstring>() const</argsstring>
+        <name>get_jacuzzi</name>
+        <qualifiedname>Suite::get_jacuzzi</qualifiedname>
+        <briefdescription>
+<para>Получить наличие джакузи </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если есть джакузи, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="48" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1aedf54f1bdfbadeb7d5e0e88d17e56e50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const vector&lt; string &gt; &amp;</type>
+        <definition>const vector&lt; string &gt; &amp; Suite::get_amenities</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_amenities</name>
+        <qualifiedname>Suite::get_amenities</qualifiedname>
+        <reimplements refid="class_room_1ae6f809c97ae2d5a6ab101cd8771d9cb3">get_amenities</reimplements>
+        <briefdescription>
+<para>Получить список удобств </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на вектор удобств </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="49" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a7bd3a5de67c22d5f4c52de55222ef145" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>string Suite::get_full_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_full_name</name>
+        <qualifiedname>Suite::get_full_name</qualifiedname>
+        <reimplements refid="class_room_1a5e3f378b9991a36faa3172fce417715b">get_full_name</reimplements>
+        <briefdescription>
+<para>Получить полное название комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Строка с названием формата &quot;Люкс комната №X&quot; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="50" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="43" bodyend="47"/>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+        <referencedby refid="class_suite_1a4e720c17c1195264c65fa507a52d1edc" compoundref="kondakov__lr5__suite_8cpp" startline="210" endline="216">to_string</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Сеттеры</header>
+      <memberdef kind="function" id="class_suite_1a8256093cf9d2969b43f4d6414c36724b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Suite::set_room_service</definition>
+        <argsstring>(bool room_service)</argsstring>
+        <name>set_room_service</name>
+        <qualifiedname>Suite::set_room_service</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>room_service</declname>
+        </param>
+        <briefdescription>
+<para>Установить наличие обслуживания </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое значение </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="55" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a0ede9e1d764ed3a2f7239824c04b2a6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Suite::set_jacuzzi</definition>
+        <argsstring>(bool jacuzzi)</argsstring>
+        <name>set_jacuzzi</name>
+        <qualifiedname>Suite::set_jacuzzi</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>jacuzzi</declname>
+        </param>
+        <briefdescription>
+<para>Установить наличие джакузи </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jacuzzi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое значение </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="56" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a9f039af321d86c81d439b199ad1478c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Suite::set_amenities</definition>
+        <argsstring>(vector&lt; string &gt; amenities)</argsstring>
+        <name>set_amenities</name>
+        <qualifiedname>Suite::set_amenities</qualifiedname>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+<para>Установить список удобств </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый список удобств </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="57" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="69" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Методы ввода</header>
+      <memberdef kind="function" id="class_suite_1a5872adbd701d687de599826b3fc84356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Suite::input_room_service</definition>
+        <argsstring>()</argsstring>
+        <name>input_room_service</name>
+        <qualifiedname>Suite::input_room_service</qualifiedname>
+        <briefdescription>
+<para>Ввод наличия обслуживания </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="62" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="77" bodyend="80"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <referencedby refid="class_suite_1aaf656a5dd660cdeaf6bcd773955fd249" compoundref="kondakov__lr5__suite_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a9d2c61fb1dd8d1585f60fcb8b8abae63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Suite::input_jacuzzi</definition>
+        <argsstring>()</argsstring>
+        <name>input_jacuzzi</name>
+        <qualifiedname>Suite::input_jacuzzi</qualifiedname>
+        <briefdescription>
+<para>Ввод наличия джакузи </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="63" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="86" bodyend="89"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <referencedby refid="class_suite_1aaf656a5dd660cdeaf6bcd773955fd249" compoundref="kondakov__lr5__suite_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1ab9afe7569b0064693b1bc771ebec514b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>char</type>
+            <declname>Delim</declname>
+            <defname>Delim</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Suite::input_amenities</definition>
+        <argsstring>()</argsstring>
+        <name>input_amenities</name>
+        <qualifiedname>Suite::input_amenities</qualifiedname>
+        <briefdescription>
+<para>Ввод удобств с разделителем </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Delim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разделитель для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="65" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="97" bodyend="103"/>
+        <referencedby refid="class_suite_1aaf656a5dd660cdeaf6bcd773955fd249" compoundref="kondakov__lr5__suite_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Переопределенные методы</header>
+      <memberdef kind="function" id="class_suite_1a5c36774e4bd5f9c9fb1bcb2f33ca60f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; Suite::get_room_type</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_room_type</name>
+        <qualifiedname>Suite::get_room_type</qualifiedname>
+        <reimplements refid="class_room_1a0551c035cf42bed1ae6865561dd5e5de">get_room_type</reimplements>
+        <briefdescription>
+<para>Получить тип комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на строку с типом </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="70" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1ae4543962753535fe6949179a061c7482" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; Suite::get_json_type</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_json_type</name>
+        <qualifiedname>Suite::get_json_type</qualifiedname>
+        <reimplements refid="class_room_1a3bc75b359d4b5d4f5f655f75478019d3">get_json_type</reimplements>
+        <briefdescription>
+<para>Получить тип для JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на строку с типом </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="71" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a52e5526c81daabf55593d814d0da28b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>float Suite::calculate_total</definition>
+        <argsstring>(int night_count) const override</argsstring>
+        <name>calculate_total</name>
+        <qualifiedname>Suite::calculate_total</qualifiedname>
+        <reimplements refid="class_room_1a85c09226671b7572f5e3e4206fac09cb">calculate_total</reimplements>
+        <param>
+          <type>int</type>
+          <declname>night_count</declname>
+        </param>
+        <briefdescription>
+<para>Расчет общей стоимости проживания </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>night_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество ночей </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Общая стоимость (цена * ночи + фиксированная плата за услуги) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="72" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="126" bodyend="128"/>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+        <referencedby refid="class_suite_1a5dfc680a5053801d7564eac1e6884320" compoundref="kondakov__lr5__suite_8hpp" startline="134" endline="136">validate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a5dfc680a5053801d7564eac1e6884320" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Suite::validate</definition>
+        <argsstring>() const override</argsstring>
+        <name>validate</name>
+        <qualifiedname>Suite::validate</qualifiedname>
+        <reimplements refid="class_room_1a481e9eaeeb4964748e0fe8f6cff33c57">validate</reimplements>
+        <briefdescription>
+<para>Проверка валидности номера </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если общая стоимость за 1 ночь &gt;= 10000, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="73" column="25" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="134" bodyend="136"/>
+        <references refid="class_suite_1a52e5526c81daabf55593d814d0da28b3" compoundref="kondakov__lr5__suite_8hpp" startline="126" endline="128">calculate_total</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>JSON методы</header>
+      <memberdef kind="function" id="class_suite_1afd16f2512f214af813bd2123b2a6f309" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+        <definition>json Suite::to_json</definition>
+        <argsstring>() const override</argsstring>
+        <name>to_json</name>
+        <qualifiedname>Suite::to_json</qualifiedname>
+        <reimplements refid="class_room_1a5188f0fe1d99561de97ab2b5fccde4b0">to_json</reimplements>
+        <briefdescription>
+<para>Преобразование в JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>JSON объект с данными номера </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="85" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="95" bodyend="104"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1ad1c3c76f53340da885309ef251d2898e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Suite::from_json</definition>
+        <argsstring>(const json &amp;j) override</argsstring>
+        <name>from_json</name>
+        <qualifiedname>Suite::from_json</qualifiedname>
+        <reimplements refid="class_room_1a683b154738ffe3f6b20e9c3807735f9c">from_json</reimplements>
+        <param>
+          <type>const <ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref> &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Загрузка из JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON объект с данными номера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="86" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="110" bodyend="117"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Переопределенные методы вывода/ввода</header>
+      <memberdef kind="function" id="class_suite_1a31debd927684dc287f287030def6438d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Suite::print</definition>
+        <argsstring>() const override</argsstring>
+        <name>print</name>
+        <qualifiedname>Suite::print</qualifiedname>
+        <reimplements refid="class_room_1af185fec4d7038c4640e2618817d41d95">print</reimplements>
+        <briefdescription>
+<para>Вывод информации о номере </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="110" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="188" bodyend="190"/>
+        <references refid="class_suite_1a4e720c17c1195264c65fa507a52d1edc" compoundref="kondakov__lr5__suite_8cpp" startline="210" endline="216">to_string</references>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1ae6868783d1d9227a61d7d0afd7f9a79e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Suite::input</definition>
+        <argsstring>() override</argsstring>
+        <name>input</name>
+        <qualifiedname>Suite::input</qualifiedname>
+        <reimplements refid="class_room_1a3771355e58c0cac65cb836f72b7da113">input</reimplements>
+        <briefdescription>
+<para>Ввод информации о номере </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="111" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="196" bodyend="204"/>
+        <references refid="class_room_1a3771355e58c0cac65cb836f72b7da113" compoundref="kondakov__lr5__room_8h" startline="36" endline="38">Room::input</references>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1a4e720c17c1195264c65fa507a52d1edc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Suite::to_string</definition>
+        <argsstring>() const override</argsstring>
+        <name>to_string</name>
+        <qualifiedname>Suite::to_string</qualifiedname>
+        <reimplements refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370">to_string</reimplements>
+        <briefdescription>
+<para>Преобразование в строку </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Строковое представление номера </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="112" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="210" bodyend="216"/>
+        <references refid="class_suite_1a7bd3a5de67c22d5f4c52de55222ef145" compoundref="kondakov__lr5__suite_8hpp" startline="43" endline="47">get_full_name</references>
+        <references refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" compoundref="kondakov__lr5__room_8cpp" startline="114" endline="118">Room::to_string</references>
+        <referencedby refid="class_suite_1a31debd927684dc287f287030def6438d" compoundref="kondakov__lr5__suite_8cpp" startline="188" endline="190">print</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Операторы сложения удобств</header>
+      <memberdef kind="friend" id="class_suite_1adc5c089619b33563080d5ceaabe54a3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const Suite &amp;s1, const Suite &amp;s2)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Suite::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="91" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_suite_1a9fdefa1bd2544b5ca49f43dc5ae63ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const vector&lt; string &gt; &amp;amenities, const Suite &amp;s)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Suite::operator+</qualifiedname>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="92" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_suite_1a0dc07be86f09bfbe25de2c952d1a4947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const Suite &amp;s, const vector&lt; string &gt; &amp;amenities)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Suite::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="93" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_suite_1a97d282b33f7b403d82c71b7f086bb6cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt; &amp;</type>
+        <definition>vector&lt; string &gt; &amp; operator+=</definition>
+        <argsstring>(vector&lt; string &gt; &amp;amenities, const Suite &amp;s)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>Suite::operator+=</qualifiedname>
+        <param>
+          <type>vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="94" column="19" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_suite_1a0c170d552b09668a9c962de79fd6a37e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+        <definition>Suite &amp; operator+=</definition>
+        <argsstring>(Suite &amp;s, const vector&lt; string &gt; &amp;amenities)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>Suite::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="95" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_suite_1abf85c5c759098cfb8f9858606520c47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+        <definition>Suite &amp; operator+=</definition>
+        <argsstring>(Suite &amp;s, const string &amp;amenities)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>Suite::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="96" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Операторы ввода/вывода</header>
+      <memberdef kind="friend" id="class_suite_1a8f934acbbedc7d7381a0bd963cf4567c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Suite &amp;r)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Suite::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Оператор вывода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток вывода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для вывода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток вывода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="104" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="167" bodyend="170"/>
+        <references refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" compoundref="kondakov__lr5__suite_8cpp" startline="15" endline="20">Suite</references>
+      </memberdef>
+      <memberdef kind="friend" id="class_suite_1aaf656a5dd660cdeaf6bcd773955fd249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>istream &amp;</type>
+        <definition>istream &amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, Suite &amp;r)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <qualifiedname>Suite::operator&gt;&gt;</qualifiedname>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_suite" kindref="compound">Suite</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Оператор ввода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток ввода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток ввода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="105" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="178" bodyend="183"/>
+        <references refid="class_suite_1ab9afe7569b0064693b1bc771ebec514b" compoundref="kondakov__lr5__suite_8hpp" startline="97" endline="103">input_amenities</references>
+        <references refid="class_suite_1a9d2c61fb1dd8d1585f60fcb8b8abae63" compoundref="kondakov__lr5__suite_8hpp" startline="86" endline="89">input_jacuzzi</references>
+        <references refid="class_suite_1a5872adbd701d687de599826b3fc84356" compoundref="kondakov__lr5__suite_8hpp" startline="77" endline="80">input_room_service</references>
+        <references refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" compoundref="kondakov__lr5__suite_8cpp" startline="15" endline="20">Suite</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_suite_1a7e0c4b18040ddd0f5a1692095cd45610" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Suite::room_service</definition>
+        <argsstring></argsstring>
+        <name>room_service</name>
+        <qualifiedname>Suite::room_service</qualifiedname>
+        <briefdescription>
+<para>Наличие обслуживания в номере </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="22" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_suite_1ab1fbcfed24b8efe1e7f43bb03db2559e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Suite::jacuzzi</definition>
+        <argsstring></argsstring>
+        <name>jacuzzi</name>
+        <qualifiedname>Suite::jacuzzi</qualifiedname>
+        <briefdescription>
+<para>Наличие джакузи </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="23" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_suite_1a4969bddb82e3193292a2b53475eabb13" prot="private" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; Suite::amenities</definition>
+        <argsstring></argsstring>
+        <name>amenities</name>
+        <qualifiedname>Suite::amenities</qualifiedname>
+        <briefdescription>
+<para>Список дополнительных удобств </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="24" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_suite_1ad7684f0c399f61ca5ca1d3010cca0799" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float Suite::SERVICE_PRICE</definition>
+        <argsstring></argsstring>
+        <name>SERVICE_PRICE</name>
+        <qualifiedname>Suite::SERVICE_PRICE</qualifiedname>
+        <initializer>= 5000.0f</initializer>
+        <briefdescription>
+<para>Базовая стоимость услуг </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="26" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_suite_1a8b18977089a6888c3dbb5ce822fd3c38" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string Suite::ROOM_TYPE</definition>
+        <argsstring></argsstring>
+        <name>ROOM_TYPE</name>
+        <qualifiedname>Suite::ROOM_TYPE</qualifiedname>
+        <initializer>= &quot;Люкс комната&quot;</initializer>
+        <briefdescription>
+<para>Тип комнаты для отображения </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="27" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_suite_1a7d8254b4fcd73eff50465b103453af04" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string Suite::JSON_TYPE</definition>
+        <argsstring></argsstring>
+        <name>JSON_TYPE</name>
+        <qualifiedname>Suite::JSON_TYPE</qualifiedname>
+        <initializer>= &quot;Suite&quot;</initializer>
+        <briefdescription>
+<para>Тип для сериализации в JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="28" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Suite::order_champagne</definition>
+        <argsstring>(string amenity)</argsstring>
+        <name>order_champagne</name>
+        <qualifiedname>Suite::order_champagne</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>amenity</declname>
+        </param>
+        <briefdescription>
+<para>Заказать шампанское (добавляет услугу) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Заказать шампанское (добавить услугу)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amenity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название услуги</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Увеличивает цену на 2000 руб. и добавляет услугу в список </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="81" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp" bodystart="143" bodyend="147"/>
+        <references refid="namespace_input_control_1a7a885a9d6172b2874d95d1613ced53db" compoundref="kondakov__lr5__input__control_8cpp" startline="42" endline="46">InputControl::make_first_letter_uppercase</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+      </memberdef>
+      <memberdef kind="function" id="class_suite_1afff31f8ff7b21a0174f304572c1b073f" prot="public" static="no" const="yes" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Suite::operator string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator string</name>
+        <qualifiedname>Suite::operator string</qualifiedname>
+        <briefdescription>
+<para>Преобразование в строку </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="100" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp" bodystart="153" bodyend="159"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс номера люкс, наследующий от <ref refid="class_room" kindref="compound">Room</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Представляет номер повышенной комфортности с дополнительными услугами </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Room</label>
+        <link refid="class_room"/>
+      </node>
+      <node id="1">
+        <label>Suite</label>
+        <link refid="class_suite"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Room</label>
+        <link refid="class_room"/>
+      </node>
+      <node id="1">
+        <label>Suite</label>
+        <link refid="class_suite"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" line="20" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_suite.h" bodystart="20" bodyend="114"/>
+    <listofallmembers>
+      <member refid="class_suite_1a4969bddb82e3193292a2b53475eabb13" prot="private" virt="non-virtual"><scope>Suite</scope><name>amenities</name></member>
+      <member refid="class_suite_1a52e5526c81daabf55593d814d0da28b3" prot="public" virt="virtual"><scope>Suite</scope><name>calculate_total</name></member>
+      <member refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" prot="public" virt="non-virtual"><scope>Suite</scope><name>CURRENCY</name></member>
+      <member refid="class_suite_1ad1c3c76f53340da885309ef251d2898e" prot="public" virt="virtual"><scope>Suite</scope><name>from_json</name></member>
+      <member refid="class_suite_1aedf54f1bdfbadeb7d5e0e88d17e56e50" prot="public" virt="virtual"><scope>Suite</scope><name>get_amenities</name></member>
+      <member refid="class_suite_1a7bd3a5de67c22d5f4c52de55222ef145" prot="public" virt="virtual"><scope>Suite</scope><name>get_full_name</name></member>
+      <member refid="class_room_1a263ae7170c7b5b3df8065a3605d39f28" prot="public" virt="non-virtual"><scope>Suite</scope><name>get_is_booked</name></member>
+      <member refid="class_suite_1a5d9fd1e7fbc3b7cd38b165cb075f2b7c" prot="public" virt="non-virtual"><scope>Suite</scope><name>get_jacuzzi</name></member>
+      <member refid="class_suite_1ae4543962753535fe6949179a061c7482" prot="public" virt="virtual"><scope>Suite</scope><name>get_json_type</name></member>
+      <member refid="class_room_1a828dede24bf20f003892f71c9b08d2e9" prot="public" virt="non-virtual"><scope>Suite</scope><name>get_price_per_night</name></member>
+      <member refid="class_room_1a8da5257d15eb131e471b59ba753dcedb" prot="public" virt="non-virtual"><scope>Suite</scope><name>get_room_number</name></member>
+      <member refid="class_suite_1ac8c879afd32bdc582b945f7f541bd2ca" prot="public" virt="non-virtual"><scope>Suite</scope><name>get_room_service</name></member>
+      <member refid="class_suite_1a5c36774e4bd5f9c9fb1bcb2f33ca60f0" prot="public" virt="virtual"><scope>Suite</scope><name>get_room_type</name></member>
+      <member refid="class_suite_1ae6868783d1d9227a61d7d0afd7f9a79e" prot="public" virt="virtual"><scope>Suite</scope><name>input</name></member>
+      <member refid="class_suite_1ab9afe7569b0064693b1bc771ebec514b" prot="public" virt="non-virtual"><scope>Suite</scope><name>input_amenities</name></member>
+      <member refid="class_room_1a693f8c26331cfee829f263c830f3e5ad" prot="public" virt="non-virtual"><scope>Suite</scope><name>input_is_booked</name></member>
+      <member refid="class_suite_1a9d2c61fb1dd8d1585f60fcb8b8abae63" prot="public" virt="non-virtual"><scope>Suite</scope><name>input_jacuzzi</name></member>
+      <member refid="class_room_1aed37576ec13b3d3d24559e709d0adc32" prot="public" virt="non-virtual"><scope>Suite</scope><name>input_price_per_night</name></member>
+      <member refid="class_room_1a2e34a3971a1607066debe10b3577fde2" prot="public" virt="non-virtual"><scope>Suite</scope><name>input_room_number</name></member>
+      <member refid="class_room_1a6cf26e8f3f928e18afae33e46bca7927" prot="public" virt="non-virtual"><scope>Suite</scope><name>input_room_number</name></member>
+      <member refid="class_suite_1a5872adbd701d687de599826b3fc84356" prot="public" virt="non-virtual"><scope>Suite</scope><name>input_room_service</name></member>
+      <member refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" prot="protected" virt="non-virtual"><scope>Suite</scope><name>is_booked</name></member>
+      <member refid="class_suite_1ab1fbcfed24b8efe1e7f43bb03db2559e" prot="private" virt="non-virtual"><scope>Suite</scope><name>jacuzzi</name></member>
+      <member refid="class_suite_1a7d8254b4fcd73eff50465b103453af04" prot="private" virt="non-virtual"><scope>Suite</scope><name>JSON_TYPE</name></member>
+      <member refid="class_suite_1afff31f8ff7b21a0174f304572c1b073f" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator string</name></member>
+      <member refid="class_suite_1adc5c089619b33563080d5ceaabe54a3b" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator+</name></member>
+      <member refid="class_suite_1a9fdefa1bd2544b5ca49f43dc5ae63ce3" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator+</name></member>
+      <member refid="class_suite_1a0dc07be86f09bfbe25de2c952d1a4947" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator+</name></member>
+      <member refid="class_suite_1a97d282b33f7b403d82c71b7f086bb6cd" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator+=</name></member>
+      <member refid="class_suite_1a0c170d552b09668a9c962de79fd6a37e" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator+=</name></member>
+      <member refid="class_suite_1abf85c5c759098cfb8f9858606520c47b" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator+=</name></member>
+      <member refid="class_suite_1a8f934acbbedc7d7381a0bd963cf4567c" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_room_1a90389beafff4333dd690e5e3c185a8d0" prot="public" virt="non-virtual" ambiguityscope="Room::"><scope>Suite</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_suite_1aa363bed00f99871e569ee8950fd8bb73" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator=</name></member>
+      <member refid="class_suite_1afee1e27929a9cc4354768862d47f11e0" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator=</name></member>
+      <member refid="class_room_1a1cda0e12564c8fedcba0a4fa18ede003" prot="public" virt="non-virtual" ambiguityscope="Room::"><scope>Suite</scope><name>operator=</name></member>
+      <member refid="class_room_1a4fd1667324eb508ecd1981481a37fdd0" prot="public" virt="non-virtual" ambiguityscope="Room::"><scope>Suite</scope><name>operator=</name></member>
+      <member refid="class_suite_1aaf656a5dd660cdeaf6bcd773955fd249" prot="public" virt="non-virtual"><scope>Suite</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" prot="public" virt="non-virtual"><scope>Suite</scope><name>order_champagne</name></member>
+      <member refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" prot="protected" virt="non-virtual"><scope>Suite</scope><name>price_per_night</name></member>
+      <member refid="class_suite_1a31debd927684dc287f287030def6438d" prot="public" virt="virtual"><scope>Suite</scope><name>print</name></member>
+      <member refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" prot="public" virt="non-virtual"><scope>Suite</scope><name>Room</name></member>
+      <member refid="class_room_1a85a05efbf9e7aa79f9ea8bd009f03855" prot="public" virt="non-virtual"><scope>Suite</scope><name>Room</name></member>
+      <member refid="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" prot="public" virt="non-virtual"><scope>Suite</scope><name>Room</name></member>
+      <member refid="class_room_1a5b964942d5eb880206cc5bc93ccd9045" prot="public" virt="non-virtual"><scope>Suite</scope><name>Room</name></member>
+      <member refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" prot="public" virt="non-virtual"><scope>Suite</scope><name>Room</name></member>
+      <member refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" prot="protected" virt="non-virtual"><scope>Suite</scope><name>room_number</name></member>
+      <member refid="class_suite_1a7e0c4b18040ddd0f5a1692095cd45610" prot="private" virt="non-virtual"><scope>Suite</scope><name>room_service</name></member>
+      <member refid="class_suite_1a8b18977089a6888c3dbb5ce822fd3c38" prot="private" virt="non-virtual"><scope>Suite</scope><name>ROOM_TYPE</name></member>
+      <member refid="class_suite_1ad7684f0c399f61ca5ca1d3010cca0799" prot="private" virt="non-virtual"><scope>Suite</scope><name>SERVICE_PRICE</name></member>
+      <member refid="class_suite_1a9f039af321d86c81d439b199ad1478c0" prot="public" virt="non-virtual"><scope>Suite</scope><name>set_amenities</name></member>
+      <member refid="class_room_1a488165c7e78bb66e8338835e0fdae5ae" prot="public" virt="non-virtual"><scope>Suite</scope><name>set_is_booked</name></member>
+      <member refid="class_suite_1a0ede9e1d764ed3a2f7239824c04b2a6f" prot="public" virt="non-virtual"><scope>Suite</scope><name>set_jacuzzi</name></member>
+      <member refid="class_room_1a75c9b72c1c0a64e6b38b3b12ec94e226" prot="public" virt="non-virtual"><scope>Suite</scope><name>set_price_per_night</name></member>
+      <member refid="class_room_1a1b06ff753e0b5dd0a611fbdc52afa3a6" prot="public" virt="non-virtual"><scope>Suite</scope><name>set_room_number</name></member>
+      <member refid="class_suite_1a8256093cf9d2969b43f4d6414c36724b" prot="public" virt="non-virtual"><scope>Suite</scope><name>set_room_service</name></member>
+      <member refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" prot="public" virt="non-virtual"><scope>Suite</scope><name>Suite</name></member>
+      <member refid="class_suite_1a710a30c09147e4838ee42de34ae4fd96" prot="public" virt="non-virtual"><scope>Suite</scope><name>Suite</name></member>
+      <member refid="class_suite_1a80d4f9db1d8cb72a3ca0286e7ea3a0c5" prot="public" virt="non-virtual"><scope>Suite</scope><name>Suite</name></member>
+      <member refid="class_suite_1a9dda4162a1c67074b11e3d83da22d196" prot="public" virt="non-virtual"><scope>Suite</scope><name>Suite</name></member>
+      <member refid="class_suite_1a395e66a54d3dbd412e64c60ddedb06b5" prot="public" virt="non-virtual"><scope>Suite</scope><name>Suite</name></member>
+      <member refid="class_suite_1a84eeaf79508119b645c1932cc5d22369" prot="public" virt="non-virtual"><scope>Suite</scope><name>Suite</name></member>
+      <member refid="class_suite_1aea409d24c05e53ba1d4c83a63da708c5" prot="public" virt="non-virtual"><scope>Suite</scope><name>Suite</name></member>
+      <member refid="class_suite_1afd16f2512f214af813bd2123b2a6f309" prot="public" virt="virtual"><scope>Suite</scope><name>to_json</name></member>
+      <member refid="class_suite_1a4e720c17c1195264c65fa507a52d1edc" prot="public" virt="virtual"><scope>Suite</scope><name>to_string</name></member>
+      <member refid="class_suite_1a5dfc680a5053801d7564eac1e6884320" prot="public" virt="virtual"><scope>Suite</scope><name>validate</name></member>
+      <member refid="class_room_1a508697104b1bdce37058c029ea5d7b2b" prot="public" virt="virtual"><scope>Suite</scope><name>~Room</name></member>
+      <member refid="class_suite_1ad768458b39f93edf4554a8fb45c960d6" prot="public" virt="virtual"><scope>Suite</scope><name>~Suite</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+# Название проекта
+PROJECT_NAME           = "Kondakov_LR5_Hotel"
+PROJECT_BRIEF          = "Лабораторная работа №5. Вариант №16: Система управления гостиничными номерами и бронированием"
+
+# Пути к исходникам (укажите вашу папку с кодом)
+INPUT                  = .\Kondakov_LR5_Hotel
+RECURSIVE              = YES
+
+# Язык (C++)
+OPTIMIZE_OUTPUT_FOR_C  = NO
+
+# Генерация графиков (Graphviz)
+HAVE_DOT               = YES
+CLASS_DIAGRAMS         = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+# Формат вывода (HTML)
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+# Поиск по коду
+SOURCE_BROWSER         = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Путь для сохранения документации
+OUTPUT_DIRECTORY       = .\docs
+
+# Кодирвка
+INPUT_ENCODING         = Windows-1251
+DOXYFILE_ENCODING      = UTF-8
+HTML_OUTPUT_ENCODING   = UTF-8
+
+# Для генерации README.md с помощью doxybook2
+GENERATE_XML           = YES

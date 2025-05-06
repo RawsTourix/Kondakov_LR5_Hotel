@@ -1,0 +1,5 @@
+<map id="Suite::input" name="Suite::input">
+<area shape="rect" id="Node000001" title="Ввод информации о номере" alt="" coords="5,5,93,32"/>
+<area shape="rect" id="Node000002" href="$class_room.html#a3771355e58c0cac65cb836f72b7da113" title="Виртуальный метод ввода информации о комнате" alt="" coords="141,5,233,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,16,125,16,125,21,93,21"/>
+</map>

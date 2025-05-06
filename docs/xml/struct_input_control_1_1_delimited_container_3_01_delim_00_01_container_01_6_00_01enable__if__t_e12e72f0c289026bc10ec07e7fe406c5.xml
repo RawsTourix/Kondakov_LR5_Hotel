@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5" kind="struct" language="C++" prot="public">
+    <compoundname>InputControl::DelimitedContainer&lt; Delim, Container &amp;, enable_if_t&lt; is_same_v&lt; typename Container::value_type, string &gt;, void &gt; &gt;</compoundname>
+    <includes refid="kondakov__lr5__container__operations_8hpp" local="no">kondakov_lr5_container_operations.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>char</type>
+        <declname>Delim</declname>
+        <defname>Delim</defname>
+      </param>
+      <param>
+        <type>typename Container</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5_1a20d503e1d262d9b668bc6da532f2bf3d" prot="public" static="no" mutable="no">
+        <type>Container &amp;</type>
+        <definition>Container&amp; InputControl::DelimitedContainer&lt; Delim, Container &amp;, enable_if_t&lt; is_same_v&lt; typename Container::value_type, string &gt;, void &gt; &gt;::ref</definition>
+        <argsstring></argsstring>
+        <name>ref</name>
+        <qualifiedname>InputControl::DelimitedContainer&lt; Delim, Container &amp;, enable_if_t&lt; is_same_v&lt; typename Container::value_type, string &gt;, void &gt; &gt;::ref</qualifiedname>
+        <briefdescription>
+<para>Ссылка на целевой контейнер </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_container_operations.hpp" line="23" column="15" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_container_operations.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5_1a5d34f5e14f4a658a9e24f572d244058b" compoundref="kondakov__lr5__container__operations_8hpp" startline="24">DelimitedContainer</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5_1a5d34f5e14f4a658a9e24f572d244058b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InputControl::DelimitedContainer&lt; Delim, Container &amp;, enable_if_t&lt; is_same_v&lt; typename Container::value_type, string &gt;, void &gt; &gt;::DelimitedContainer</definition>
+        <argsstring>(Container &amp;r)</argsstring>
+        <name>DelimitedContainer</name>
+        <qualifiedname>InputControl::DelimitedContainer&lt; Delim, Container &amp;, enable_if_t&lt; is_same_v&lt; typename Container::value_type, string &gt;, void &gt; &gt;::DelimitedContainer</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_container_operations.hpp" line="24" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_container_operations.hpp" bodystart="24" bodyend="-1"/>
+        <references refid="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5_1a20d503e1d262d9b668bc6da532f2bf3d" compoundref="kondakov__lr5__container__operations_8hpp" startline="23">ref</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Специализация <ref refid="struct_input_control_1_1_delimited_container" kindref="compound">DelimitedContainer</ref> для работы со строками </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Delim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разделитель </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера (должен содержать строки)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Хранит ссылку на контейнер строк для последующей обработки </para>
+    </detaileddescription>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_container_operations.hpp" line="22" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_container_operations.hpp" bodystart="22" bodyend="25"/>
+    <listofallmembers>
+      <member refid="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5_1a5d34f5e14f4a658a9e24f572d244058b" prot="public" virt="non-virtual"><scope>InputControl::DelimitedContainer&lt; Delim, Container &amp;, enable_if_t&lt; is_same_v&lt; typename Container::value_type, string &gt;, void &gt; &gt;</scope><name>DelimitedContainer</name></member>
+      <member refid="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5_1a20d503e1d262d9b668bc6da532f2bf3d" prot="public" virt="non-virtual"><scope>InputControl::DelimitedContainer&lt; Delim, Container &amp;, enable_if_t&lt; is_same_v&lt; typename Container::value_type, string &gt;, void &gt; &gt;</scope><name>ref</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

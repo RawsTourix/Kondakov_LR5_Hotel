@@ -1,0 +1,7 @@
+<map id="InputControl::split" name="InputControl::split">
+<area shape="rect" id="Node000001" title="Разделяет строку на подстроки по разделителю" alt="" coords="5,43,130,69"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a7a885a9d6172b2874d95d1613ced53db" title="Делает первую букву строки заглавной" alt="" coords="178,5,331,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,44,162,38,163,44,131,49"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="193,72,316,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,63,178,71,177,76,130,68"/>
+</map>

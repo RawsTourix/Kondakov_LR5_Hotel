@@ -1,0 +1,691 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespace_input_control" kind="namespace" language="C++">
+    <compoundname>InputControl</compoundname>
+    <innerclass refid="struct_input_control_1_1_delimited_container" prot="public">InputControl::DelimitedContainer</innerclass>
+    <innerclass refid="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5" prot="public">InputControl::DelimitedContainer&lt; Delim, Container &amp;, enable_if_t&lt; is_same_v&lt; typename Container::value_type, string &gt;, void &gt; &gt;</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_input_control_1a58f52a08f73fe9b352d19e80d84c64ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputControl::trim</definition>
+        <argsstring>(string &amp;str)</argsstring>
+        <name>trim</name>
+        <qualifiedname>InputControl::trim</qualifiedname>
+        <param>
+          <type>string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет пробелы в начале и конце строки </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка для обработки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="41" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="16" bodyend="24" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="41" declcolumn="10"/>
+        <referencedby refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">input</referencedby>
+        <referencedby refid="namespace_input_control_1ab685d4d2f2828ba6eecd1438c26f7bef" compoundref="kondakov__lr5__input__control_8hpp" startline="86" endline="104">input</referencedby>
+        <referencedby refid="kondakov__lr5__container__operations_8hpp_1af2721b39e850a7e2bf789e2b32cca184" compoundref="kondakov__lr5__container__operations_8hpp" startline="116" endline="132">operator&gt;&gt;</referencedby>
+        <referencedby refid="namespace_input_control_1a5df9ff92a406d7ffc174e3b3ddef8cd4" compoundref="kondakov__lr5__input__control_8hpp" startline="26" endline="50">split</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1a5df9ff92a406d7ffc174e3b3ddef8cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>char</type>
+            <declname>Delim</declname>
+            <defname>Delim</defname>
+          </param>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void InputControl::split</definition>
+        <argsstring>(const string &amp;input_line, DelimitedContainer&lt; Delim, Container &amp; &gt; &amp;dc)</argsstring>
+        <name>split</name>
+        <qualifiedname>InputControl::split</qualifiedname>
+        <param>
+          <type>const string &amp;</type>
+          <declname>input_line</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_input_control_1_1_delimited_container" kindref="compound">DelimitedContainer</ref>&lt; Delim, Container &amp; &gt; &amp;</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+<para>Разделяет строку на подстроки по разделителю </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Delim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разделитель </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера для результатов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Входная строка </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с разделителем</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Delim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разделитель </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера для результатов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Входная строка </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с разделителем</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Очищает целевой контейнер, разделяет строку по разделителю, удаляет пустые элементы, проверяет на дубликаты (без учёта регистра), делает первую букву каждого элемента заглавной </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="51" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.hpp" bodystart="26" bodyend="50" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="51" declcolumn="10"/>
+        <references refid="namespace_input_control_1a7a885a9d6172b2874d95d1613ced53db" compoundref="kondakov__lr5__input__control_8cpp" startline="42" endline="46">make_first_letter_uppercase</references>
+        <references refid="namespace_input_control_1a58f52a08f73fe9b352d19e80d84c64ea" compoundref="kondakov__lr5__input__control_8cpp" startline="16" endline="24">trim</references>
+        <referencedby refid="kondakov__lr5__container__operations_8hpp_1a95226ada92c9fc69c4d5d6771165dcb3" compoundref="kondakov__lr5__container__operations_8hpp" startline="144" endline="147">operator&gt;&gt;</referencedby>
+        <referencedby refid="kondakov__lr5__container__operations_8hpp_1af2721b39e850a7e2bf789e2b32cca184" compoundref="kondakov__lr5__container__operations_8hpp" startline="116" endline="132">operator&gt;&gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1a73b65170f1a042d18f40df91cfd62bdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string InputControl::get_lowercase</definition>
+        <argsstring>(const string str)</argsstring>
+        <name>get_lowercase</name>
+        <qualifiedname>InputControl::get_lowercase</qualifiedname>
+        <param>
+          <type>const string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Преобразует строку в нижний регистр </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Входная строка </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Строка в нижнем регистре </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="58" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="31" bodyend="36" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="58" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1a7a885a9d6172b2874d95d1613ced53db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputControl::make_first_letter_uppercase</definition>
+        <argsstring>(string &amp;str)</argsstring>
+        <name>make_first_letter_uppercase</name>
+        <qualifiedname>InputControl::make_first_letter_uppercase</qualifiedname>
+        <param>
+          <type>string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Делает первую букву строки заглавной </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Строка для обработки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="64" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="42" bodyend="46" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="64" declcolumn="10"/>
+        <referencedby refid="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" compoundref="kondakov__lr5__suite_8hpp" startline="143" endline="147">Suite::order_champagne</referencedby>
+        <referencedby refid="namespace_input_control_1a5df9ff92a406d7ffc174e3b3ddef8cd4" compoundref="kondakov__lr5__input__control_8hpp" startline="26" endline="50">split</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1a65e26d060b726037262418808215e1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool InputControl::is_input_empty</definition>
+        <argsstring>(const string &amp;input)</argsstring>
+        <name>is_input_empty</name>
+        <qualifiedname>InputControl::is_input_empty</qualifiedname>
+        <param>
+          <type>const string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет, является ли ввод пустым (для отмены операции) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Входная строка </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если ввод пустой, иначе false</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Входная строка </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если ввод пустой, иначе false</para>
+</simplesect>
+Выводит сообщение &quot;[Отмена операции]&quot; если ввод пустой </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="71" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="54" bodyend="60" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="71" declcolumn="10"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">input</references>
+        <referencedby refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">input</referencedby>
+        <referencedby refid="namespace_input_control_1ab685d4d2f2828ba6eecd1438c26f7bef" compoundref="kondakov__lr5__input__control_8hpp" startline="86" endline="104">input</referencedby>
+        <referencedby refid="kondakov__lr5__container__operations_8hpp_1af2721b39e850a7e2bf789e2b32cca184" compoundref="kondakov__lr5__container__operations_8hpp" startline="116" endline="132">operator&gt;&gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1ae598625feed83f92d1d22aa3d6839d22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool InputControl::check_min_max</definition>
+        <argsstring>(const T &amp;number, T min, T max)</argsstring>
+        <name>check_min_max</name>
+        <qualifiedname>InputControl::check_min_max</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет число на вхождение в диапазон </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип числа </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Проверяемое число </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Минимальное значение </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Максимальное значение </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если число в диапазоне, иначе false</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип числа </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Проверяемое число </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Минимальное значение </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Максимальное значение </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если число в диапазоне, иначе false</para>
+</simplesect>
+Выводит сообщение об ошибке если число вне диапазона </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="82" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.hpp" bodystart="62" bodyend="72" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="82" declcolumn="10"/>
+        <referencedby refid="namespace_input_control_1ab685d4d2f2828ba6eecd1438c26f7bef" compoundref="kondakov__lr5__input__control_8hpp" startline="86" endline="104">input</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1a3c4c474950e493e6530183f688733929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool InputControl::input</definition>
+        <argsstring>(string &amp;varLink, const string &amp;label)</argsstring>
+        <name>input</name>
+        <qualifiedname>InputControl::input</qualifiedname>
+        <param>
+          <type>string &amp;</type>
+          <declname>varLink</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Функция ввода для строк </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>varLink</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на переменную для сохранения результата </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Подпись для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="90" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="68" bodyend="80" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="90" declcolumn="10"/>
+        <references refid="namespace_input_control_1a65e26d060b726037262418808215e1b5" compoundref="kondakov__lr5__input__control_8cpp" startline="54" endline="60">is_input_empty</references>
+        <references refid="namespace_input_control_1a58f52a08f73fe9b352d19e80d84c64ea" compoundref="kondakov__lr5__input__control_8cpp" startline="16" endline="24">trim</references>
+        <referencedby refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" compoundref="kondakov__lr5__methods_8hpp" startline="512" endline="580">Methods::additional_room_methods</referencedby>
+        <referencedby refid="namespace_methods_1a7b9a83b3197577b58819541579717b4c" compoundref="kondakov__lr5__methods_8hpp" startline="460" endline="474">Methods::calculate_total</referencedby>
+        <referencedby refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">Methods::get_room_from_rooms_map</referencedby>
+        <referencedby refid="namespace_input_control_1a34d4aa3144b48ab4fa3d5a719bcee8d7" compoundref="kondakov__lr5__input__control_8cpp" startline="89" endline="96">input</referencedby>
+        <referencedby refid="class_standard_room_1a006df2025213235b54bb5e58c277d224" compoundref="kondakov__lr5__standard__room_8hpp" startline="77" endline="80">StandardRoom::input_bed_count</referencedby>
+        <referencedby refid="class_family_room_1a1ebb4c81d3a9702ccc5728c493ef69a3" compoundref="kondakov__lr5__family__room_8hpp" startline="78" endline="83">FamilyRoom::input_child_beds</referencedby>
+        <referencedby refid="class_child_care_1a1571c2d8aab1536723b87e76a1c13bf7" compoundref="kondakov__lr5__child__care_8hpp" startline="51" endline="58">ChildCare::input_child_care_price</referencedby>
+        <referencedby refid="class_child_care_1ae92c24af5b5bdaa4f192702a56f38c59" compoundref="kondakov__lr5__child__care_8hpp" startline="64" endline="69">ChildCare::input_has_child_care</referencedby>
+        <referencedby refid="class_standard_room_1ad4ed425e8f2ed08253b5141cc96a6b71" compoundref="kondakov__lr5__standard__room_8hpp" startline="86" endline="89">StandardRoom::input_has_tv</referencedby>
+        <referencedby refid="class_room_1a693f8c26331cfee829f263c830f3e5ad" compoundref="kondakov__lr5__room_8hpp" startline="108" endline="111">Room::input_is_booked</referencedby>
+        <referencedby refid="class_suite_1a9d2c61fb1dd8d1585f60fcb8b8abae63" compoundref="kondakov__lr5__suite_8hpp" startline="86" endline="89">Suite::input_jacuzzi</referencedby>
+        <referencedby refid="class_room_1aed37576ec13b3d3d24559e709d0adc32" compoundref="kondakov__lr5__room_8hpp" startline="97" endline="102">Room::input_price_per_night</referencedby>
+        <referencedby refid="class_room_1a2e34a3971a1607066debe10b3577fde2" compoundref="kondakov__lr5__room_8hpp" startline="67" endline="70">Room::input_room_number</referencedby>
+        <referencedby refid="class_room_1a6cf26e8f3f928e18afae33e46bca7927" compoundref="kondakov__lr5__room_8hpp" startline="80" endline="91">Room::input_room_number</referencedby>
+        <referencedby refid="class_suite_1a5872adbd701d687de599826b3fc84356" compoundref="kondakov__lr5__suite_8hpp" startline="77" endline="80">Suite::input_room_service</referencedby>
+        <referencedby refid="class_family_room_1adf81aedd42e98a749f90960fc11f6cbc" compoundref="kondakov__lr5__family__room_8hpp" startline="90" endline="95">FamilyRoom::input_toy_kit</referencedby>
+        <referencedby refid="namespace_input_control_1a65e26d060b726037262418808215e1b5" compoundref="kondakov__lr5__input__control_8cpp" startline="54" endline="60">is_input_empty</referencedby>
+        <referencedby refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">MenuObject::process</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1a34d4aa3144b48ab4fa3d5a719bcee8d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool InputControl::input</definition>
+        <argsstring>(bool &amp;varLink, const string &amp;label)</argsstring>
+        <name>input</name>
+        <qualifiedname>InputControl::input</qualifiedname>
+        <param>
+          <type>bool &amp;</type>
+          <declname>varLink</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Функция ввода для bool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>varLink</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на переменную для сохранения результата </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Подпись для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если операция отменена, иначе false</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>varLink</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на переменную для сохранения результата </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Подпись для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если операция отменена, иначе false</para>
+</simplesect>
+Использует ввод числа (0 или 1) с последующим преобразованием в bool </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="98" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="89" bodyend="96" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="98" declcolumn="10"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">input</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1ab685d4d2f2828ba6eecd1438c26f7bef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_arithmetic_v&lt; T &gt;, bool &gt;</type>
+        <definition>enable_if_t&lt; is_arithmetic_v&lt; T &gt;, bool &gt; InputControl::input</definition>
+        <argsstring>(T &amp;varLink, const string &amp;label, T min=0, T max=numeric_limits&lt; T &gt;::max())</argsstring>
+        <name>input</name>
+        <qualifiedname>InputControl::input</qualifiedname>
+        <param>
+          <type>T &amp;</type>
+          <declname>varLink</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>min</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>max</declname>
+          <defval>numeric_limits&lt; T &gt;::max()</defval>
+        </param>
+        <briefdescription>
+<para>Функция ввода для чисел </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Арифметический тип данных </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>varLink</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на переменную для сохранения результата </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Подпись для ввода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Минимальное значение </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Максимальное значение </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если операция отменена, иначе false</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Арифметический тип данных </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>varLink</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на переменную для сохранения результата </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Подпись для ввода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Минимальное значение </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Максимальное значение </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если операция отменена, иначе false</para>
+</simplesect>
+Запрашивает ввод пока не будет получено корректное число в заданном диапазоне </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="111" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.hpp" bodystart="86" bodyend="104" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="111" declcolumn="5"/>
+        <references refid="namespace_input_control_1ae598625feed83f92d1d22aa3d6839d22" compoundref="kondakov__lr5__input__control_8hpp" startline="62" endline="72">check_min_max</references>
+        <references refid="namespace_input_control_1a65e26d060b726037262418808215e1b5" compoundref="kondakov__lr5__input__control_8cpp" startline="54" endline="60">is_input_empty</references>
+        <references refid="namespace_input_control_1a58f52a08f73fe9b352d19e80d84c64ea" compoundref="kondakov__lr5__input__control_8cpp" startline="16" endline="24">trim</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1a1dde7a0934fa6bda46d58eb1c0bb63d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char InputControl::get_char</definition>
+        <argsstring>()</argsstring>
+        <name>get_char</name>
+        <qualifiedname>InputControl::get_char</qualifiedname>
+        <briefdescription>
+<para>Получает один символ из ввода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Введённый символ</para>
+</simplesect>
+<simplesect kind="return"><para>Введённый символ</para>
+</simplesect>
+Очищает буфер ввода после считывания символа </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="117" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="103" bodyend="108" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="117" declcolumn="10"/>
+        <referencedby refid="namespace_input_control_1a5da443e5ec677b12d7b885fc46bed8bb" compoundref="kondakov__lr5__input__control_8cpp" startline="116" endline="129">yes_or_no</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_input_control_1a5da443e5ec677b12d7b885fc46bed8bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool InputControl::yes_or_no</definition>
+        <argsstring>(const string &amp;label)</argsstring>
+        <name>yes_or_no</name>
+        <qualifiedname>InputControl::yes_or_no</qualifiedname>
+        <param>
+          <type>const string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Запрашивает подтверждение (y/n) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Подпись для запроса </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если введено &apos;y&apos; или &apos;Y&apos;, false если &apos;n&apos; или &apos;N&apos;</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Подпись для запроса </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если введено &apos;y&apos; или &apos;Y&apos;, false если &apos;n&apos; или &apos;N&apos;</para>
+</simplesect>
+Циклически запрашивает ввод пока не будет получен корректный ответ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="124" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="116" bodyend="129" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="124" declcolumn="10"/>
+        <references refid="namespace_input_control_1a1dde7a0934fa6bda46d58eb1c0bb63d2" compoundref="kondakov__lr5__input__control_8cpp" startline="103" endline="108">get_char</references>
+        <referencedby refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" compoundref="kondakov__lr5__methods_8hpp" startline="512" endline="580">Methods::additional_room_methods</referencedby>
+        <referencedby refid="namespace_methods_1a2e2cf54114db383e2d9b68bbfa3801d4" compoundref="kondakov__lr5__methods_8hpp" startline="301" endline="328">Methods::delete_room</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Пространство имён для функций управления вводом данных </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="16" column="1"/>
+  </compounddef>
+</doxygen>

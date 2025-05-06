@@ -1,0 +1,105 @@
+<map id="InputControl::is_input_empty" name="InputControl::is_input_empty">
+<area shape="rect" id="Node000001" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="907,616,1052,659"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="730,599,859,625"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="891,637,840,629,840,623,892,632"/>
+<area shape="rect" id="Node000040" href="$namespace_input_control.html#ab685d4d2f2828ba6eecd1438c26f7bef" title="Функция ввода для чисел" alt="" coords="730,649,859,676"/>
+<area shape="poly" id="edge61_Node000001_Node000040" title=" " alt="" coords="891,652,859,657,859,651,891,647"/>
+<area shape="rect" id="Node000041" href="$kondakov__lr5__container__operations_8hpp.html#af2721b39e850a7e2bf789e2b32cca184" title="Перегрузка оператора ввода для DelimitedContainer." alt="" coords="752,700,837,727"/>
+<area shape="poly" id="edge62_Node000001_Node000041" title=" " alt="" coords="914,668,860,690,831,702,829,697,858,686,912,663"/>
+<area shape="poly" id="edge44_Node000002_Node000001" title=" " alt="" coords="875,611,906,616,906,621,874,617"/>
+<area shape="rect" id="Node000003" href="$namespace_methods.html#ab0fcd3db72d0a91b170489bf0f18f6c6" title="Дополнительные методы комнат" alt="" coords="261,5,396,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="788,583,778,475,758,328,743,253,726,186,705,132,680,95,650,71,616,52,578,38,540,29,463,21,396,22,396,17,464,16,541,24,580,33,618,47,653,66,684,92,709,129,731,184,749,252,763,327,784,474,794,583"/>
+<area shape="rect" id="Node000005" href="$namespace_methods.html#a7b9a83b3197577b58819541579717b4c" title="Расчёт стоимости проживания" alt="" coords="263,72,394,115"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="788,584,776,485,755,352,741,286,723,226,703,178,680,146,649,123,614,106,577,94,538,86,462,81,395,85,394,80,462,76,539,81,578,88,616,101,652,118,684,142,708,175,728,224,746,285,760,351,782,484,793,583"/>
+<area shape="rect" id="Node000006" href="$namespace_methods.html#ab322c1df8c8e7b7a424478005a309c87" title="Выбор комнаты из списка" alt="" coords="499,156,665,199"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="786,584,773,525,752,447,721,361,680,279,646,236,610,201,613,197,650,232,685,276,726,359,757,445,778,524,791,583"/>
+<area shape="rect" id="Node000010" href="$namespace_input_control.html#a34d4aa3144b48ab4fa3d5a719bcee8d7" title="Функция ввода для bool." alt="" coords="518,364,646,391"/>
+<area shape="poly" id="edge15_Node000002_Node000010" title=" " alt="" coords="784,584,770,544,750,495,720,446,702,424,681,405,664,395,646,388,648,383,667,390,684,401,705,420,724,443,754,493,775,542,789,583"/>
+<area shape="rect" id="Node000011" href="$class_standard_room.html#a006df2025213235b54bb5e58c277d224" title="Ввод количества кроватей" alt="" coords="510,481,654,524"/>
+<area shape="poly" id="edge16_Node000002_Node000011" title=" " alt="" coords="763,591,725,564,681,538,654,526,656,522,684,534,728,560,766,587"/>
+<area shape="rect" id="Node000014" href="$class_family_room.html#a1ebb4c81d3a9702ccc5728c493ef69a3" title="Ввод количества детских кроватей" alt="" coords="482,599,682,625"/>
+<area shape="poly" id="edge19_Node000002_Node000014" title=" " alt="" coords="714,615,683,615,683,609,714,609"/>
+<area shape="rect" id="Node000016" href="$class_child_care.html#a1571c2d8aab1536723b87e76a1c13bf7" title="Ввод стоимости услуг для детей" alt="" coords="508,716,657,759"/>
+<area shape="poly" id="edge21_Node000002_Node000016" title=" " alt="" coords="738,635,732,639,717,656,709,672,700,689,684,706,659,721,656,716,681,702,696,686,704,670,713,653,729,635,735,631"/>
+<area shape="rect" id="Node000018" href="$class_child_care.html#ae92c24af5b5bdaa4f192702a56f38c59" title="Ввод наличия услуг для детей" alt="" coords="510,649,654,692"/>
+<area shape="poly" id="edge23_Node000002_Node000018" title=" " alt="" coords="730,633,655,653,654,648,728,627"/>
+<area shape="rect" id="Node000019" href="$class_standard_room.html#ad4ed425e8f2ed08253b5141cc96a6b71" title="Ввод наличия телевизора" alt="" coords="510,415,654,457"/>
+<area shape="poly" id="edge25_Node000002_Node000019" title=" " alt="" coords="777,586,738,528,711,498,681,472,653,457,656,452,684,467,715,494,742,525,781,583"/>
+<area shape="rect" id="Node000020" href="$class_room.html#a693f8c26331cfee829f263c830f3e5ad" title="Ввод статуса бронирования" alt="" coords="503,783,661,809"/>
+<area shape="poly" id="edge28_Node000002_Node000020" title=" " alt="" coords="735,636,732,639,720,656,714,672,710,705,706,739,698,756,684,773,663,786,660,782,681,769,694,753,701,738,705,705,708,671,715,653,728,636,732,633"/>
+<area shape="rect" id="Node000023" href="$class_suite.html#a9d2c61fb1dd8d1585f60fcb8b8abae63" title="Ввод наличия джакузи" alt="" coords="514,1001,650,1028"/>
+<area shape="poly" id="edge31_Node000002_Node000023" title=" " alt="" coords="734,637,732,639,717,662,707,684,699,728,703,772,712,815,721,859,723,902,713,946,701,969,684,991,669,1004,651,1011,649,1007,666,999,680,987,697,966,708,945,718,902,715,859,707,816,698,773,694,728,702,683,713,659,728,636,730,634"/>
+<area shape="rect" id="Node000025" href="$class_room.html#aed37576ec13b3d3d24559e709d0adc32" title="Ввод цены за ночь" alt="" coords="506,833,658,876"/>
+<area shape="poly" id="edge33_Node000002_Node000025" title=" " alt="" coords="735,637,732,639,717,662,710,685,710,730,709,776,701,799,684,823,660,841,657,836,680,819,696,797,704,775,704,730,705,684,712,660,728,636,731,633"/>
+<area shape="rect" id="Node000026" href="$class_room.html#a2e34a3971a1607066debe10b3577fde2" title="Ввод номера комнаты" alt="" coords="493,900,671,927"/>
+<area shape="poly" id="edge36_Node000002_Node000026" title=" " alt="" coords="734,637,732,639,713,671,706,702,707,733,711,764,715,795,715,827,706,858,684,890,669,901,666,897,680,886,701,856,710,826,710,796,706,765,701,734,701,702,708,669,728,636,730,634"/>
+<area shape="rect" id="Node000027" href="$class_room.html#a6cf26e8f3f928e18afae33e46bca7927" title="Ввод номера комнаты с проверкой уникальности" alt="" coords="493,1052,671,1079"/>
+<area shape="poly" id="edge39_Node000002_Node000027" title=" " alt="" coords="734,637,732,639,715,665,704,691,698,716,696,742,701,791,712,841,723,890,727,940,724,965,716,991,704,1016,684,1042,670,1053,667,1049,680,1038,699,1013,712,989,719,964,722,940,718,891,707,842,696,792,691,742,693,716,699,689,711,663,728,636,730,634"/>
+<area shape="rect" id="Node000028" href="$class_suite.html#a5872adbd701d687de599826b3fc84356" title="Ввод наличия обслуживания" alt="" coords="496,951,668,977"/>
+<area shape="poly" id="edge40_Node000002_Node000028" title=" " alt="" coords="734,637,733,639,710,678,703,715,705,753,712,790,718,827,719,864,710,902,684,940,670,952,666,948,680,937,705,900,714,864,713,828,706,791,699,753,697,715,705,676,728,636,730,634"/>
+<area shape="rect" id="Node000029" href="$class_family_room.html#adf81aedd42e98a749f90960fc11f6cbc" title="Ввод наличия набора игрушек" alt="" coords="494,548,671,575"/>
+<area shape="poly" id="edge42_Node000002_Node000029" title=" " alt="" coords="720,597,641,578,642,573,721,592"/>
+<area shape="rect" id="Node000030" href="$class_menu_object.html#a73408405a4bd7e569997cd5dfd49d08e" title="Обработка взаимодействия с меню" alt="" coords="510,313,655,340"/>
+<area shape="poly" id="edge45_Node000002_Node000030" title=" " alt="" coords="787,584,776,534,757,471,726,408,705,379,681,354,654,339,657,334,684,350,709,376,730,405,762,469,781,532,792,583"/>
+<area shape="rect" id="Node000004" href="$kondakov__lr5__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Точка входа в приложение" alt="" coords="65,189,115,216"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="248,50,224,62,185,93,150,129,103,190,98,187,146,125,181,89,221,58,245,45"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="249,119,224,129,163,161,113,191,111,187,160,156,222,124,247,114"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="546,147,495,103,433,62,395,46,397,41,435,58,498,99,549,143"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="503,153,433,129,393,116,395,111,435,124,505,148"/>
+<area shape="rect" id="Node000007" href="$namespace_methods.html#a2e2cf54114db383e2d9b68bbfa3801d4" title="Удаление комнаты" alt="" coords="253,189,404,216"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="484,190,404,198,404,193,483,184"/>
+<area shape="rect" id="Node000008" href="$namespace_methods.html#a51179a7d6e8fb0608922a0d00f102f11" title="Изменение комнаты" alt="" coords="260,240,396,267"/>
+<area shape="poly" id="edge11_Node000006_Node000008" title=" " alt="" coords="508,207,435,231,392,242,390,237,433,225,506,202"/>
+<area shape="rect" id="Node000009" href="$namespace_methods.html#a05bd78f9a1464f73347e56dda5f53c37" title="Проверка валидности комнаты" alt="" coords="248,139,408,165"/>
+<area shape="poly" id="edge13_Node000006_Node000009" title=" " alt="" coords="483,170,409,163,409,157,484,165"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="238,205,115,205,115,200,238,200"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="247,239,115,210,116,205,248,234"/>
+<area shape="poly" id="edge14_Node000009_Node000004" title=" " alt="" coords="248,172,116,200,115,195,247,167"/>
+<area shape="rect" id="Node000012" href="$class_standard_room.html#aac82f7ed99fa1070a03d364518201169" title="Оператор ввода" alt="" coords="239,517,418,544"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="495,515,419,523,418,518,494,510"/>
+<area shape="rect" id="Node000013" href="$class_standard_room.html#a2e46e90889222820009f40e6e231f32d" title="Деструктор" alt="" coords="223,467,434,493"/>
+<area shape="poly" id="edge18_Node000011_Node000013" title=" " alt="" coords="494,498,434,492,435,487,495,492"/>
+<area shape="rect" id="Node000015" href="$class_family_room.html#aa110140405778c5d9123cfcee37ad641" title="Оператор ввода" alt="" coords="245,572,412,599"/>
+<area shape="poly" id="edge20_Node000014_Node000015" title=" " alt="" coords="466,602,412,597,412,591,467,597"/>
+<area shape="rect" id="Node000017" href="$class_child_care.html#a01ad1c87538a964bd9f5aa0a64123777" title="Оператор ввода" alt="" coords="253,691,404,717"/>
+<area shape="poly" id="edge22_Node000016_Node000017" title=" " alt="" coords="491,728,404,717,404,711,492,723"/>
+<area shape="poly" id="edge24_Node000018_Node000017" title=" " alt="" coords="495,685,404,697,404,691,494,679"/>
+<area shape="poly" id="edge26_Node000019_Node000012" title=" " alt="" coords="497,465,483,472,460,490,435,508,404,519,402,514,433,503,457,486,481,467,494,460"/>
+<area shape="poly" id="edge27_Node000019_Node000013" title=" " alt="" coords="495,454,410,469,409,463,494,448"/>
+<area shape="rect" id="Node000021" href="$class_room.html#a8b0c15f242679145b4922d1bb7b6ee6e" title="Оператор ввода" alt="" coords="265,867,392,893"/>
+<area shape="poly" id="edge29_Node000020_Node000021" title=" " alt="" coords="500,817,483,824,460,840,435,857,393,871,391,866,433,852,457,836,481,819,498,812"/>
+<area shape="rect" id="Node000022" href="$class_room.html#a508697104b1bdce37058c029ea5d7b2b" title="Виртуальный деструктор" alt="" coords="275,816,382,843"/>
+<area shape="poly" id="edge30_Node000020_Node000022" title=" " alt="" coords="488,811,383,825,382,820,487,806"/>
+<area shape="rect" id="Node000024" href="$class_suite.html#aaf656a5dd660cdeaf6bcd773955fd249" title="Оператор ввода" alt="" coords="267,976,390,1003"/>
+<area shape="poly" id="edge32_Node000023_Node000024" title=" " alt="" coords="499,1009,389,998,390,993,500,1004"/>
+<area shape="poly" id="edge34_Node000025_Node000021" title=" " alt="" coords="491,866,393,876,392,871,490,861"/>
+<area shape="poly" id="edge35_Node000025_Node000022" title=" " alt="" coords="490,848,382,837,383,832,491,843"/>
+<area shape="poly" id="edge37_Node000026_Node000021" title=" " alt="" coords="477,902,392,891,393,886,478,897"/>
+<area shape="poly" id="edge38_Node000026_Node000022" title=" " alt="" coords="498,897,481,890,457,873,433,857,382,841,383,836,435,852,460,869,483,886,500,892"/>
+<area shape="poly" id="edge41_Node000028_Node000024" title=" " alt="" coords="481,977,390,986,390,981,480,971"/>
+<area shape="poly" id="edge43_Node000029_Node000015" title=" " alt="" coords="478,574,412,580,412,575,478,569"/>
+<area shape="poly" id="edge47_Node000030_Node000004" title=" " alt="" coords="495,340,420,346,341,349,271,345,243,340,221,332,202,314,194,295,187,274,173,254,144,232,114,215,117,211,147,227,177,250,192,272,199,293,206,311,224,327,244,335,272,340,341,343,420,340,494,334"/>
+<area shape="poly" id="edge46_Node000030_Node000008" title=" " alt="" coords="526,311,433,281,390,270,391,265,435,276,528,305"/>
+<area shape="poly" id="edge58_Node000030_Node000030" title=" " alt="" coords="619,300,606,294,582,292,560,294,548,299,545,304,551,311,546,314,540,305,544,295,559,289,582,287,607,289,621,296"/>
+<area shape="rect" id="Node000031" href="$class_menu_object.html#a964f07536c901358392d30188a5fb322" title="Удаленный конструктор по умолчанию" alt="" coords="244,416,413,443"/>
+<area shape="poly" id="edge48_Node000030_Node000031" title=" " alt="" coords="544,348,483,366,374,418,372,413,481,362,542,343"/>
+<area shape="rect" id="Node000039" href="$namespace_methods.html#a5836b360a5e2d3b056046d4ce04cbca2" title="Сортировка комнат" alt="" coords="256,291,400,317"/>
+<area shape="poly" id="edge59_Node000030_Node000039" title=" " alt="" coords="494,321,401,313,401,308,494,316"/>
+<area shape="poly" id="edge57_Node000031_Node000030" title=" " alt="" coords="355,405,422,366,481,338,508,329,510,334,483,342,425,370,358,409"/>
+<area shape="poly" id="edge49_Node000031_Node000031" title=" " alt="" coords="370,404,356,397,328,395,303,397,290,401,286,407,293,414,288,417,281,407,286,397,302,391,328,389,357,392,372,399"/>
+<area shape="rect" id="Node000032" href="$class_menu_object.html#ae0d6d87d7380e0c21ad8f91c9f264fa3" title="Конструктор пункта меню без подменю" alt="" coords="5,416,175,443"/>
+<area shape="poly" id="edge50_Node000031_Node000032" title=" " alt="" coords="228,432,175,432,175,427,228,427"/>
+<area shape="rect" id="Node000033" href="$class_menu_object.html#a0a3ce6da86682e5443328294b9a7cd8e" title="Конструктор с флагом одноразового меню" alt="" coords="5,467,175,493"/>
+<area shape="poly" id="edge51_Node000031_Node000033" title=" " alt="" coords="248,449,157,469,156,463,247,444"/>
+<area shape="rect" id="Node000034" href="$class_menu_object.html#a56564b4de97cb0c00464dd8ce10099a3" title="Конструктор с действием и подменю" alt="" coords="5,517,175,544"/>
+<area shape="poly" id="edge52_Node000031_Node000034" title=" " alt="" coords="235,451,224,457,210,469,201,481,192,495,176,508,152,519,150,514,173,503,188,491,196,478,206,465,221,452,233,446"/>
+<area shape="rect" id="Node000035" href="$class_menu_object.html#a4ca27840c4977a73db86dc19bbd43edd" title="Конструктор для комнаты с подтверждением" alt="" coords="5,568,175,595"/>
+<area shape="poly" id="edge53_Node000031_Node000035" title=" " alt="" coords="232,452,224,457,213,468,207,480,201,506,195,532,188,545,176,558,158,570,155,565,173,554,184,542,190,530,196,504,202,478,209,465,221,453,228,447"/>
+<area shape="rect" id="Node000036" href="$class_menu_object.html#a2ee26e3e2aa17b97248add106ab168a6" title="Конструктор с подменю" alt="" coords="5,264,175,291"/>
+<area shape="poly" id="edge54_Node000031_Node000036" title=" " alt="" coords="276,411,248,395,221,375,205,356,197,338,189,321,173,305,153,294,155,289,176,301,193,318,202,336,210,353,225,371,251,391,279,407"/>
+<area shape="rect" id="Node000037" href="$class_menu_object.html#a378e7c58f8704a8cf42896a9ba72d23a" title="Конструктор с подменю и флагом" alt="" coords="5,315,175,341"/>
+<area shape="poly" id="edge55_Node000031_Node000037" title=" " alt="" coords="288,410,234,383,174,356,141,344,143,339,176,351,237,378,290,406"/>
+<area shape="rect" id="Node000038" href="$class_menu_object.html#a111fe1da7199d2ac2231ec3fdbf03e3b" title="Конструктор перемещения" alt="" coords="5,365,175,392"/>
+<area shape="poly" id="edge56_Node000031_Node000038" title=" " alt="" coords="247,415,156,395,157,390,248,410"/>
+<area shape="poly" id="edge60_Node000039_Node000004" title=" " alt="" coords="242,288,222,281,113,219,116,214,224,276,244,283"/>
+</map>

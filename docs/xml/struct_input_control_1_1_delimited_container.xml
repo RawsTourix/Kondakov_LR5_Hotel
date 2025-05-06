@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_input_control_1_1_delimited_container" kind="struct" language="C++" prot="public">
+    <compoundname>InputControl::DelimitedContainer</compoundname>
+    <templateparamlist>
+      <param>
+        <type>char</type>
+        <declname>Delim</declname>
+        <defname>Delim</defname>
+      </param>
+      <param>
+        <type>typename Container</type>
+      </param>
+      <param>
+        <type>typename</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>Шаблонный класс для работы с разделителями (базовый шаблон) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Delim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разделитель </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SFINAE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вспомогательный параметр для SFINAE </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="27" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" bodystart="27" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

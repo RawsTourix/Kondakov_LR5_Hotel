@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_e09cad5e6c61f9e11f54ff01fcc27b07" kind="dir">
+    <compoundname>Kondakov_LR5_Hotel</compoundname>
+    <innerfile refid="kondakov__lr5__child__care_8cpp">kondakov_lr5_child_care.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__child__care_8h">kondakov_lr5_child_care.h</innerfile>
+    <innerfile refid="kondakov__lr5__child__care_8hpp">kondakov_lr5_child_care.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__container__operations_8hpp">kondakov_lr5_container_operations.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__def_8h">kondakov_lr5_def.h</innerfile>
+    <innerfile refid="kondakov__lr5__family__room_8cpp">kondakov_lr5_family_room.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__family__room_8h">kondakov_lr5_family_room.h</innerfile>
+    <innerfile refid="kondakov__lr5__family__room_8hpp">kondakov_lr5_family_room.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__input__control_8cpp">kondakov_lr5_input_control.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__input__control_8h">kondakov_lr5_input_control.h</innerfile>
+    <innerfile refid="kondakov__lr5__input__control_8hpp">kondakov_lr5_input_control.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__main_8cpp">kondakov_lr5_main.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__menu__object_8cpp">kondakov_lr5_menu_object.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__menu__object_8h">kondakov_lr5_menu_object.h</innerfile>
+    <innerfile refid="kondakov__lr5__menu__object_8hpp">kondakov_lr5_menu_object.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__methods_8h">kondakov_lr5_methods.h</innerfile>
+    <innerfile refid="kondakov__lr5__methods_8hpp">kondakov_lr5_methods.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__room_8cpp">kondakov_lr5_room.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__room_8h">kondakov_lr5_room.h</innerfile>
+    <innerfile refid="kondakov__lr5__room_8hpp">kondakov_lr5_room.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__serializer_8cpp">kondakov_lr5_serializer.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__serializer_8h">kondakov_lr5_serializer.h</innerfile>
+    <innerfile refid="kondakov__lr5__serializer_8hpp">kondakov_lr5_serializer.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__standard__room_8cpp">kondakov_lr5_standard_room.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__standard__room_8h">kondakov_lr5_standard_room.h</innerfile>
+    <innerfile refid="kondakov__lr5__standard__room_8hpp">kondakov_lr5_standard_room.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__suite_8cpp">kondakov_lr5_suite.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__suite_8h">kondakov_lr5_suite.h</innerfile>
+    <innerfile refid="kondakov__lr5__suite_8hpp">kondakov_lr5_suite.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Kondakov_LR5_Hotel/"/>
+  </compounddef>
+</doxygen>

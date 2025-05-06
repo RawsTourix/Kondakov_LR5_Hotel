@@ -1,0 +1,82 @@
+<map id="Kondakov_LR5_Hotel/kondakov_lr5_main.cpp" name="Kondakov_LR5_Hotel/kondakov_lr5_main.cpp">
+<area shape="rect" id="Node000001" title="Главный файл приложения для управления гостиничными номерами" alt="" coords="973,5,1136,48"/>
+<area shape="rect" id="Node000002" href="$kondakov__lr5__methods_8h.html" title="Заголовочный файл с методами работы с комнатами" alt="" coords="971,96,1138,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1057,49,1057,80,1052,80,1052,49"/>
+<area shape="rect" id="Node000003" href="$kondakov__lr5__menu__object_8h.html" title="Заголовочный файл класса MenuObject." alt="" coords="750,171,940,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1019,126,897,168,895,163,1017,121"/>
+<area shape="rect" id="Node000034" href="$kondakov__lr5__methods_8hpp.html" title="Реализация методов работы с комнатами" alt="" coords="964,171,1144,197"/>
+<area shape="poly" id="edge45_Node000002_Node000034" title=" " alt="" coords="1050,123,1048,155,1043,155,1045,123"/>
+<area shape="rect" id="Node000004" href="$kondakov__lr5__serializer_8h.html" title="Заголовочный файл для сериализации/десериализации комнат" alt="" coords="550,245,718,272"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="809,200,687,242,685,237,807,195"/>
+<area shape="rect" id="Node000033" href="$kondakov__lr5__menu__object_8hpp.html" title="Реализация методов класса MenuObject." alt="" coords="743,245,947,272"/>
+<area shape="poly" id="edge43_Node000003_Node000033" title=" " alt="" coords="841,198,839,230,834,230,835,198"/>
+<area shape="rect" id="Node000005" href="$kondakov__lr5__standard__room_8h.html" title="Заголовочный файл класса StandardRoom." alt="" coords="205,320,360,363"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="580,275,376,322,374,316,578,270"/>
+<area shape="rect" id="Node000026" href="$kondakov__lr5__suite_8h.html" title="Заголовочный файл класса Suite (номер люкс)" alt="" coords="392,328,536,355"/>
+<area shape="poly" id="edge29_Node000004_Node000026" title=" " alt="" coords="609,275,505,324,503,319,607,270"/>
+<area shape="rect" id="Node000028" href="$kondakov__lr5__family__room_8h.html" title="Заголовочный файл класса FamilyRoom (семейный номер)" alt="" coords="564,320,704,363"/>
+<area shape="poly" id="edge33_Node000004_Node000028" title=" " alt="" coords="637,272,637,305,632,305,632,272"/>
+<area shape="rect" id="Node000032" href="$kondakov__lr5__serializer_8hpp.html" title="Реализация методов сериализации" alt="" coords="728,328,911,355"/>
+<area shape="poly" id="edge41_Node000004_Node000032" title=" " alt="" coords="658,270,771,319,769,324,655,275"/>
+<area shape="rect" id="Node000006" href="$kondakov__lr5__room_8h.html" title="Заголовочный файл абстрактного класса Room." alt="" coords="479,419,624,445"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="346,361,500,411,498,416,345,366"/>
+<area shape="rect" id="Node000025" href="$kondakov__lr5__standard__room_8hpp.html" title="Реализация методов класса StandardRoom." alt="" coords="117,411,272,453"/>
+<area shape="poly" id="edge27_Node000005_Node000025" title=" " alt="" coords="256,365,219,401,215,397,252,361"/>
+<area shape="rect" id="Node000007" href="$kondakov__lr5__input__control_8h.html" title="Заголовочный файл для управления вводом данных" alt="" coords="654,501,788,544"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="577,444,670,492,667,496,575,448"/>
+<area shape="rect" id="Node000024" href="$kondakov__lr5__room_8hpp.html" title="Реализация методов класса Room." alt="" coords="471,509,630,536"/>
+<area shape="poly" id="edge25_Node000006_Node000024" title=" " alt="" coords="548,446,545,494,540,494,542,446"/>
+<area shape="rect" id="Node000008" href="$kondakov__lr5__def_8h.html" title="Основной заголовочный файл проекта, содержащий подключения библиотек, объявления типов и вспомогатель..." alt="" coords="496,600,631,627"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="685,547,601,594,598,590,683,542"/>
+<area shape="rect" id="Node000022" href="$kondakov__lr5__input__control_8hpp.html" title="Реализация шаблонных функций управления вводом" alt="" coords="654,592,788,635"/>
+<area shape="poly" id="edge21_Node000007_Node000022" title=" " alt="" coords="716,545,715,577,709,576,711,544"/>
+<area shape="rect" id="Node000023" href="$kondakov__lr5__container__operations_8hpp.html" title="Операции с контейнерами строк" alt="" coords="811,592,970,635"/>
+<area shape="poly" id="edge23_Node000007_Node000023" title=" " alt="" coords="754,542,831,582,828,587,752,547"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,683,77,709"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="496,625,317,647,93,685,92,679,317,642,496,619"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="100,683,152,709"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="497,626,349,648,168,685,167,679,348,643,496,621"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="176,683,234,709"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="499,630,249,685,248,680,498,625"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="258,683,304,709"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="515,630,320,684,318,679,513,625"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="328,683,396,709"/>
+<area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="533,630,409,679,407,674,531,625"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="421,683,498,709"/>
+<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="549,629,489,675,486,671,546,625"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="522,683,605,709"/>
+<area shape="poly" id="edge14_Node000008_Node000015" title=" " alt="" coords="566,627,566,667,561,667,561,627"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="630,683,698,709"/>
+<area shape="poly" id="edge15_Node000008_Node000016" title=" " alt="" coords="581,625,638,671,635,675,578,629"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="722,683,797,709"/>
+<area shape="poly" id="edge16_Node000008_Node000017" title=" " alt="" coords="595,625,716,674,714,679,593,630"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="822,683,874,709"/>
+<area shape="poly" id="edge17_Node000008_Node000018" title=" " alt="" coords="612,625,807,679,806,685,610,630"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="898,683,947,709"/>
+<area shape="poly" id="edge18_Node000008_Node000019" title=" " alt="" coords="612,625,643,632,762,654,883,679,882,685,761,659,642,637,611,630"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="971,683,1036,709"/>
+<area shape="poly" id="edge19_Node000008_Node000020" title=" " alt="" coords="611,625,643,632,729,647,798,655,868,664,956,680,956,685,867,669,798,661,728,652,642,637,609,630"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1060,683,1190,709"/>
+<area shape="poly" id="edge20_Node000008_Node000021" title=" " alt="" coords="610,625,643,632,754,650,842,659,931,667,1045,680,1044,685,931,672,842,664,753,655,642,637,609,630"/>
+<area shape="poly" id="edge22_Node000022_Node000007" title=" " alt="" coords="726,592,727,559,733,560,731,592"/>
+<area shape="poly" id="edge24_Node000023_Node000007" title=" " alt="" coords="857,594,781,554,783,549,860,589"/>
+<area shape="poly" id="edge26_Node000024_Node000006" title=" " alt="" coords="554,509,557,461,562,461,560,509"/>
+<area shape="poly" id="edge28_Node000025_Node000005" title=" " alt="" coords="221,408,257,372,261,376,225,412"/>
+<area shape="poly" id="edge30_Node000026_Node000006" title=" " alt="" coords="478,353,530,406,527,409,474,357"/>
+<area shape="rect" id="Node000027" href="$kondakov__lr5__suite_8hpp.html" title="Реализация методов класса Suite." alt="" coords="296,419,455,445"/>
+<area shape="poly" id="edge31_Node000026_Node000027" title=" " alt="" coords="446,357,394,408,390,405,443,353"/>
+<area shape="poly" id="edge32_Node000027_Node000026" title=" " alt="" coords="393,416,446,365,450,369,397,420"/>
+<area shape="poly" id="edge34_Node000028_Node000006" title=" " alt="" coords="617,365,576,409,572,405,613,361"/>
+<area shape="rect" id="Node000029" href="$kondakov__lr5__child__care_8h.html" title="Заголовочный файл класса ChildCare (услуги для детей)" alt="" coords="812,411,944,453"/>
+<area shape="poly" id="edge35_Node000028_Node000029" title=" " alt="" coords="692,361,808,402,806,407,691,366"/>
+<area shape="rect" id="Node000031" href="$kondakov__lr5__family__room_8hpp.html" title="Реализация методов класса FamilyRoom." alt="" coords="648,411,788,453"/>
+<area shape="poly" id="edge39_Node000028_Node000031" title=" " alt="" coords="648,361,682,398,678,402,644,365"/>
+<area shape="poly" id="edge36_Node000029_Node000007" title=" " alt="" coords="843,456,772,496,769,491,840,452"/>
+<area shape="rect" id="Node000030" href="$kondakov__lr5__child__care_8hpp.html" title="Реализация методов класса ChildCare." alt="" coords="812,501,944,544"/>
+<area shape="poly" id="edge37_Node000029_Node000030" title=" " alt="" coords="873,454,872,486,867,486,868,454"/>
+<area shape="poly" id="edge38_Node000030_Node000029" title=" " alt="" coords="883,501,885,469,890,469,889,501"/>
+<area shape="poly" id="edge40_Node000031_Node000028" title=" " alt="" coords="705,412,670,375,674,372,709,409"/>
+<area shape="poly" id="edge42_Node000032_Node000004" title=" " alt="" coords="797,330,683,281,685,276,799,325"/>
+<area shape="poly" id="edge44_Node000033_Node000003" title=" " alt="" coords="849,245,851,213,856,213,855,245"/>
+<area shape="poly" id="edge46_Node000034_Node000002" title=" " alt="" coords="1059,170,1060,138,1066,138,1064,170"/>
+</map>

@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="kondakov__lr5__main_8cpp" kind="file" language="C++">
+    <compoundname>kondakov_lr5_main.cpp</compoundname>
+    <includes refid="kondakov__lr5__methods_8h" local="yes">kondakov_lr5_methods.h</includes>
+    <incdepgraph>
+      <node id="29">
+        <label>kondakov_lr5_child_care.h</label>
+        <link refid="kondakov__lr5__child__care_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>kondakov_lr5_child_care.hpp</label>
+        <link refid="kondakov__lr5__child__care_8hpp"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>kondakov_lr5_container_operations.hpp</label>
+        <link refid="kondakov__lr5__container__operations_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>kondakov_lr5_def.h</label>
+        <link refid="kondakov__lr5__def_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>kondakov_lr5_family_room.h</label>
+        <link refid="kondakov__lr5__family__room_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>kondakov_lr5_family_room.hpp</label>
+        <link refid="kondakov__lr5__family__room_8hpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>kondakov_lr5_input_control.h</label>
+        <link refid="kondakov__lr5__input__control_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>kondakov_lr5_input_control.hpp</label>
+        <link refid="kondakov__lr5__input__control_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_main.cpp</label>
+        <link refid="kondakov__lr5__main_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>kondakov_lr5_menu_object.h</label>
+        <link refid="kondakov__lr5__menu__object_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>kondakov_lr5_menu_object.hpp</label>
+        <link refid="kondakov__lr5__menu__object_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>kondakov_lr5_methods.h</label>
+        <link refid="kondakov__lr5__methods_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>kondakov_lr5_methods.hpp</label>
+        <link refid="kondakov__lr5__methods_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>kondakov_lr5_room.h</label>
+        <link refid="kondakov__lr5__room_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>kondakov_lr5_room.hpp</label>
+        <link refid="kondakov__lr5__room_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>kondakov_lr5_serializer.h</label>
+        <link refid="kondakov__lr5__serializer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>kondakov_lr5_serializer.hpp</label>
+        <link refid="kondakov__lr5__serializer_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>kondakov_lr5_standard_room.h</label>
+        <link refid="kondakov__lr5__standard__room_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>kondakov_lr5_standard_room.hpp</label>
+        <link refid="kondakov__lr5__standard__room_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>kondakov_lr5_suite.h</label>
+        <link refid="kondakov__lr5__suite_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>kondakov_lr5_suite.hpp</label>
+        <link refid="kondakov__lr5__suite_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>algorithm</label>
+      </node>
+      <node id="20">
+        <label>fstream</label>
+      </node>
+      <node id="14">
+        <label>functional</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="18">
+        <label>limits</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="16">
+        <label>memory</label>
+      </node>
+      <node id="21">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="13">
+        <label>sstream</label>
+      </node>
+      <node id="19">
+        <label>tuple</label>
+      </node>
+      <node id="15">
+        <label>type_traits</label>
+      </node>
+      <node id="10">
+        <label>utility</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+<para>Точка входа в приложение </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Код завершения программы (0 - успешно)</para>
+</simplesect>
+Основные функции программы:<itemizedlist>
+<listitem><para>Инициализация системы (установка локали)</para>
+</listitem><listitem><para>Создание и загрузка данных о комнатах</para>
+</listitem><listitem><para>Формирование главного меню</para>
+</listitem><listitem><para>Обработка пользовательского ввода</para>
+</listitem><listitem><para>Сохранение данных при завершении </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Главное меню приложения</para>
+<para>Содержит следующие пункты:<orderedlist>
+<listitem><para>Просмотр списка комнат</para>
+</listitem><listitem><para>Добавление новых комнат (подменю)</para>
+</listitem><listitem><para>Редактирование существующих комнат</para>
+</listitem><listitem><para>Удаление комнат</para>
+</listitem><listitem><para>Сортировка комнат</para>
+</listitem><listitem><para>Расчет стоимости проживания</para>
+</listitem><listitem><para>Проверка валидности комнат</para>
+</listitem><listitem><para>Дополнительные операции</para>
+</listitem><listitem><para>Сохранение данных</para>
+</listitem><listitem><para>Загрузка данных</para>
+</listitem></orderedlist>
+</para>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_main.cpp" line="22" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_main.cpp" bodystart="22" bodyend="90"/>
+        <references refid="namespace_methods_1a618de377d484a8d7a88b9f5e642518f3" compoundref="kondakov__lr5__methods_8hpp" startline="110" endline="131">Methods::add_room</references>
+        <references refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" compoundref="kondakov__lr5__methods_8hpp" startline="512" endline="580">Methods::additional_room_methods</references>
+        <references refid="namespace_methods_1a7b9a83b3197577b58819541579717b4c" compoundref="kondakov__lr5__methods_8hpp" startline="460" endline="474">Methods::calculate_total</references>
+        <references refid="namespace_methods_1a2e2cf54114db383e2d9b68bbfa3801d4" compoundref="kondakov__lr5__methods_8hpp" startline="301" endline="328">Methods::delete_room</references>
+        <references refid="namespace_methods_1a51179a7d6e8fb0608922a0d00f102f11" compoundref="kondakov__lr5__methods_8hpp" startline="267" endline="289">Methods::edit_room</references>
+        <references refid="namespace_serializer_1a634c26f6c5a03bed3540431ba9846a1e" compoundref="kondakov__lr5__serializer_8hpp" startline="78" endline="87">Serializer::load_rooms_from_file</references>
+        <references refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">MenuObject::process</references>
+        <references refid="namespace_serializer_1a68f703f287bd0348bdd559f9664121f6" compoundref="kondakov__lr5__serializer_8hpp" startline="63" endline="70">Serializer::save_rooms_to_file</references>
+        <references refid="namespace_methods_1a4e95cf6a1ac5c99eeaa974f85bc7a4b5" compoundref="kondakov__lr5__methods_8hpp" startline="45" endline="49">Methods::show_rooms</references>
+        <references refid="namespace_methods_1a5836b360a5e2d3b056046d4ce04cbca2" compoundref="kondakov__lr5__methods_8hpp" startline="344" endline="447">Methods::sort_rooms</references>
+        <references refid="namespace_methods_1a05bd78f9a1464f73347e56dda5f53c37" compoundref="kondakov__lr5__methods_8hpp" startline="489" endline="497">Methods::validate_room</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Главный файл приложения для управления гостиничными номерами </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kondakov Fedor </para>
+</simplesect>
+<simplesect kind="date"><para>2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kondakov__lr5__methods_8h" kindref="compound">kondakov_lr5_methods.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Установка<sp/>русской<sp/>локали<sp/>для<sp/>корректного<sp/>вывода</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>setlocale(LC_ALL,<sp/></highlight><highlight class="stringliteral">&quot;Russian&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Определение<sp/>типа<sp/>контейнера<sp/>для<sp/>хранения<sp/>комнат</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">RoomContainer<sp/>=<sp/>vector&lt;shared_ptr&lt;Room&gt;&gt;;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Основной<sp/>контейнер<sp/>для<sp/>хранения<sp/>комнат</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>RoomContainer<sp/>rooms<sp/>{};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Путь<sp/>к<sp/>файлу<sp/>для<sp/>сохранения/загрузки<sp/>данных</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ROOMS_JSON<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;rooms.json&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;MenuObject&gt;<sp/>menu<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>1,<sp/></highlight><highlight class="stringliteral">&quot;Вывести<sp/>список<sp/>комнат;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1a4e95cf6a1ac5c99eeaa974f85bc7a4b5" kindref="member">Methods::show_rooms</ref>(rooms)<sp/>},</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;Добавить<sp/>комнату:&quot;</highlight><highlight class="normal">,<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>1,<sp/></highlight><highlight class="stringliteral">&quot;Добавить<sp/>стандартную<sp/>комнату;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1a618de377d484a8d7a88b9f5e642518f3" kindref="member">Methods::add_room&lt;StandardRoom&gt;</ref>(rooms)<sp/>},</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;Добавить<sp/>люкс<sp/>комнату;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1a618de377d484a8d7a88b9f5e642518f3" kindref="member">Methods::add_room&lt;Suite&gt;</ref>(rooms)<sp/>},</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>3,<sp/></highlight><highlight class="stringliteral">&quot;Добавить<sp/>семейную<sp/>комнату;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1a618de377d484a8d7a88b9f5e642518f3" kindref="member">Methods::add_room&lt;FamilyRoom&gt;</ref>(rooms)<sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}},</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>3,<sp/></highlight><highlight class="stringliteral">&quot;Изменить<sp/>комнату;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1a51179a7d6e8fb0608922a0d00f102f11" kindref="member">Methods::edit_room</ref>(rooms),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>4,<sp/></highlight><highlight class="stringliteral">&quot;Удалить<sp/>комнату;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1a2e2cf54114db383e2d9b68bbfa3801d4" kindref="member">Methods::delete_room</ref>(rooms),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;Отсортировать<sp/>список<sp/>комнат;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1a5836b360a5e2d3b056046d4ce04cbca2" kindref="member">Methods::sort_rooms</ref>(rooms),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>6,<sp/></highlight><highlight class="stringliteral">&quot;Рассчитать<sp/>стоимость<sp/>проживания;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1a7b9a83b3197577b58819541579717b4c" kindref="member">Methods::calculate_total</ref>(rooms)<sp/>},</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>7,<sp/></highlight><highlight class="stringliteral">&quot;Проверить<sp/>валидность<sp/>комнаты;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1a05bd78f9a1464f73347e56dda5f53c37" kindref="member">Methods::validate_room</ref>(rooms)<sp/>},</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>8,<sp/></highlight><highlight class="stringliteral">&quot;Дополнительные<sp/>методы<sp/>комнат;&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" kindref="member">Methods::additional_room_methods</ref>(rooms)<sp/>},</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>9,<sp/></highlight><highlight class="stringliteral">&quot;Сохранить<sp/>данные;&quot;</highlight><highlight class="normal">,<sp/>[&amp;ROOMS_JSON,<sp/>&amp;rooms]()<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Сохранение<sp/>данных...&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_serializer_1a68f703f287bd0348bdd559f9664121f6" kindref="member">Serializer::save_rooms_to_file</ref>(rooms,<sp/>ROOMS_JSON);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Данные<sp/>успешно<sp/>сохранены.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}},</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>10,<sp/></highlight><highlight class="stringliteral">&quot;Загрузить<sp/>данные;&quot;</highlight><highlight class="normal">,<sp/>[&amp;ROOMS_JSON,<sp/>&amp;rooms]()<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Загрузка<sp/>данных...&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rooms<sp/>=<sp/>move(<ref refid="namespace_serializer_1a634c26f6c5a03bed3540431ba9846a1e" kindref="member">Serializer::load_rooms_from_file&lt;RoomContainer&gt;</ref>(ROOMS_JSON));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Данные<sp/>успешно<sp/>загружены.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>exception&amp;<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Ошибка:<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.what()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Загрузка<sp/>данных<sp/>при<sp/>старте</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>menu.at(9).act();<sp/></highlight><highlight class="comment">//<sp/>Вызов<sp/>пункта<sp/>меню<sp/>&quot;Сохранить<sp/>данные&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Запуск<sp/>основного<sp/>цикла<sp/>обработки<sp/>меню</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" kindref="member">MenuObject::process</ref>(menu,<sp/></highlight><highlight class="stringliteral">&quot;Главное<sp/>меню:&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Выход.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Вывод<sp/>информации<sp/>об<sp/>авторе</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;©<sp/>2025<sp/>Fedor<sp/>Kondakov&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_main.cpp"/>
+  </compounddef>
+</doxygen>

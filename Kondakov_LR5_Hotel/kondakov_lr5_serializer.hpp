@@ -1,9 +1,21 @@
+/**
+ * @file kondakov_lr5_serializer.hpp
+ * @brief Реализация методов сериализации
+ * @author Kondakov Fedor
+ * @date 2025
+ * @version 1.0
+ * @ingroup serialization
+ */
+
 #ifndef KONDAKOV_LR5_SERIALIZER_HPP
 #define KONDAKOV_LR5_SERIALIZER_HPP
 
 #include "kondakov_lr5_serializer.h"
 
-// Парсинг комнат в json
+/**
+ * @brief Сериализация контейнера комнат в JSON
+ * @details Преобразует каждую комнату в JSON объект с добавлением типа
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, json>
 Serializer::serialize_rooms(const Container& rooms) {
@@ -18,7 +30,10 @@ Serializer::serialize_rooms(const Container& rooms) {
     return j;
 }
 
-// Парсинг комнат из json
+/**
+ * @brief Десериализация комнат из JSON
+ * @details Создает объекты комнат через фабрику на основе типа в JSON
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, Container>
 Serializer::deserialize_rooms(const json& j) {
@@ -39,7 +54,10 @@ Serializer::deserialize_rooms(const json& j) {
     return rooms;
 }
 
-// Сохранение в файл
+/**
+ * @brief Сохранение комнат в файл
+ * @details Сохраняет JSON-представление в файл с отступами (pretty print)
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, void>
 Serializer::save_rooms_to_file(const Container& rooms, const string& filename) {
@@ -51,7 +69,10 @@ Serializer::save_rooms_to_file(const Container& rooms, const string& filename) {
     f << serialize_rooms(rooms).dump(2);
 }
 
-// Загрузка из файла
+/**
+ * @brief Загрузка комнат из файла
+ * @details Читает JSON из файла и десериализует в объекты комнат
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, Container>
 Serializer::load_rooms_from_file(const string& filename) {

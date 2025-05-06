@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_serializer_1_1_room_type_registry" kind="struct" language="C++" prot="public">
+    <compoundname>Serializer::RoomTypeRegistry</compoundname>
+    <includes refid="kondakov__lr5__serializer_8h" local="no">kondakov_lr5_serializer.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_serializer_1_1_room_type_registry_1a7dcbb2dc21617b8304fcc615fd496db1" prot="public" static="no" mutable="no">
+        <type>map&lt; string, function&lt; shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt;()&gt; &gt;</type>
+        <definition>map&lt;string, function&lt;shared_ptr&lt;Room&gt;()&gt; &gt; Serializer::RoomTypeRegistry::creators</definition>
+        <argsstring></argsstring>
+        <name>creators</name>
+        <qualifiedname>Serializer::RoomTypeRegistry::creators</qualifiedname>
+        <briefdescription>
+<para>Карта создателей объектов </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="28" column="15" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="struct_serializer_1_1_room_type_registry_1a942bb68c3c530fed0109960fe257352a" compoundref="kondakov__lr5__serializer_8cpp" startline="16" endline="20">RoomTypeRegistry</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_serializer_1_1_room_type_registry_1a942bb68c3c530fed0109960fe257352a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Serializer::RoomTypeRegistry::RoomTypeRegistry</definition>
+        <argsstring>()</argsstring>
+        <name>RoomTypeRegistry</name>
+        <qualifiedname>Serializer::RoomTypeRegistry::RoomTypeRegistry</qualifiedname>
+        <briefdescription>
+<para>Конструктор регистратора типов </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор регистратора типов комнат</para>
+<para>Инициализирует карту creators для всех типов комнат</para>
+<para>Инициализирует фабрику для создания <ref refid="class_standard_room" kindref="compound">StandardRoom</ref>, <ref refid="class_suite" kindref="compound">Suite</ref> и <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="34" column="9" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.cpp" bodystart="16" bodyend="20"/>
+        <references refid="struct_serializer_1_1_room_type_registry_1a7dcbb2dc21617b8304fcc615fd496db1" compoundref="kondakov__lr5__serializer_8h" startline="28">creators</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Регистратор типов комнат для фабричного создания </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="27" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" bodystart="27" bodyend="35"/>
+    <listofallmembers>
+      <member refid="struct_serializer_1_1_room_type_registry_1a7dcbb2dc21617b8304fcc615fd496db1" prot="public" virt="non-virtual"><scope>Serializer::RoomTypeRegistry</scope><name>creators</name></member>
+      <member refid="struct_serializer_1_1_room_type_registry_1a942bb68c3c530fed0109960fe257352a" prot="public" virt="non-virtual"><scope>Serializer::RoomTypeRegistry</scope><name>RoomTypeRegistry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

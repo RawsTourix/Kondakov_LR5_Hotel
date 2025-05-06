@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="kondakov__lr5__standard__room_8cpp" kind="file" language="C++">
+    <compoundname>kondakov_lr5_standard_room.cpp</compoundname>
+    <includes refid="kondakov__lr5__standard__room_8h" local="yes">kondakov_lr5_standard_room.h</includes>
+    <incdepgraph>
+      <node id="20">
+        <label>kondakov_lr5_container_operations.hpp</label>
+        <link refid="kondakov__lr5__container__operations_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>kondakov_lr5_def.h</label>
+        <link refid="kondakov__lr5__def_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>kondakov_lr5_input_control.h</label>
+        <link refid="kondakov__lr5__input__control_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>kondakov_lr5_input_control.hpp</label>
+        <link refid="kondakov__lr5__input__control_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>kondakov_lr5_room.h</label>
+        <link refid="kondakov__lr5__room_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>kondakov_lr5_room.hpp</label>
+        <link refid="kondakov__lr5__room_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp</label>
+        <link refid="kondakov__lr5__standard__room_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>kondakov_lr5_standard_room.h</label>
+        <link refid="kondakov__lr5__standard__room_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>kondakov_lr5_standard_room.hpp</label>
+        <link refid="kondakov__lr5__standard__room_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
+      </node>
+      <node id="17">
+        <label>fstream</label>
+      </node>
+      <node id="11">
+        <label>functional</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="15">
+        <label>limits</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+      <node id="18">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="10">
+        <label>sstream</label>
+      </node>
+      <node id="16">
+        <label>tuple</label>
+      </node>
+      <node id="12">
+        <label>type_traits</label>
+      </node>
+      <node id="7">
+        <label>utility</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="user-defined">
+      <header>Операторы сложения удобств</header>
+      <memberdef kind="function" id="kondakov__lr5__standard__room_8cpp_1a19f01e2381200a362ccbac4cb687b4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const StandardRoom &amp;sr1, const StandardRoom &amp;sr2)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" line="121" column="8" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="kondakov__lr5__standard__room_8cpp_1a506aa585631eb7014c7e907c4a7ebf84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const vector&lt; string &gt; &amp;amenities, const StandardRoom &amp;sr)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" line="126" column="8" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="kondakov__lr5__standard__room_8cpp_1ab7ec956a8efcab085c3243418a362adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const StandardRoom &amp;sr, const vector&lt; string &gt; &amp;amenities)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" line="131" column="8" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="kondakov__lr5__standard__room_8cpp_1af7ca5fa230c4bc00b5349a86bf91acbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt; &amp;</type>
+        <definition>vector&lt; string &gt; &amp; operator+=</definition>
+        <argsstring>(vector&lt; string &gt; &amp;amenities, const StandardRoom &amp;sr)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" line="136" column="8" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="kondakov__lr5__standard__room_8cpp_1a9f53f70c9c33c0c9b1de7d1b1205a2d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+        <definition>StandardRoom &amp; operator+=</definition>
+        <argsstring>(StandardRoom &amp;sr, const vector&lt; string &gt; &amp;amenities)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" line="140" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="kondakov__lr5__standard__room_8cpp_1ae5334f1e7dd2489a2360d8275897f363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+        <definition>StandardRoom &amp; operator+=</definition>
+        <argsstring>(StandardRoom &amp;sr, const string &amp;amenities)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" line="144" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="kondakov__lr5__standard__room_8cpp_1ac493993c2bb1287c6178ff0dc82af08c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const StandardRoom &amp;sr)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <briefdescription>
+<para>Оператор вывода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток вывода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для вывода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток вывода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" line="167" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="kondakov__lr5__standard__room_8cpp_1a5ebc17373611768a35a4d6a879dd9a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>istream &amp;</type>
+        <definition>istream &amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, StandardRoom &amp;sr)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <briefdescription>
+<para>Оператор ввода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток ввода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток ввода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" line="178" column="9" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="178" bodyend="183"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Реализация методов класса <ref refid="class_standard_room" kindref="compound">StandardRoom</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kondakov Fedor </para>
+</simplesect>
+<simplesect kind="date"><para>2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kondakov__lr5__standard__room_8h" kindref="compound">kondakov_lr5_standard_room.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_standard_room_1a32dadc773859aac18048b08855c26377" refkind="member"><highlight class="normal"><ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom::StandardRoom</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kindref="member">Room</ref>(),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>bed_count(1),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>has_tv(false),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>amenities({<sp/></highlight><highlight class="stringliteral">&quot;Wi-Fi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Air<sp/>conditioner&quot;</highlight><highlight class="normal"><sp/>})<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_standard_room_1ac4e5998244608a81fb3c43d0e726f516" refkind="member"><highlight class="normal"><ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom::StandardRoom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bed_count)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kindref="member">Room</ref>(<ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>bed_count(bed_count),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>has_tv(false),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>amenities({<sp/></highlight><highlight class="stringliteral">&quot;Wi-Fi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Air<sp/>conditioner&quot;</highlight><highlight class="normal"><sp/>})<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_standard_room_1a854c437feec24655a64310a7adce06b0" refkind="member"><highlight class="normal"><ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom::StandardRoom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bed_count,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has_tv)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom</ref>(<ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,<sp/>bed_count,<sp/>has_tv,<sp/></highlight><highlight class="stringliteral">&quot;Wi-Fi,<sp/>air<sp/>conditioner&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_standard_room_1af70fc0ba78a874aaf1cb87d04c6242ac" refkind="member"><highlight class="normal"><ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom::StandardRoom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bed_count,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has_tv,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>amenities)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kindref="member">Room</ref>(<ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>),</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>bed_count(bed_count),</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>has_tv(has_tv)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_input_control_1_1_delimited_container" kindref="compound">InputControl::DelimitedContainer</ref>&lt;</highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">,<sp/>vector&lt;string&gt;&amp;&gt;<sp/>dc(this-&gt;amenities);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>dc<sp/>&gt;&gt;<sp/>amenities;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_standard_room_1a0320959fc237ea0da3d057fb1d9de63d" refkind="member"><highlight class="normal"><ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom::StandardRoom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bed_count,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>has_tv,<sp/>vector&lt;string&gt;<sp/>amenities)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kindref="member">Room</ref>(<ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>),</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>bed_count(bed_count),</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>has_tv(has_tv),</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>amenities(amenities)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="class_standard_room_1a544e0f476c31c4e204704e79a3089a4e" refkind="member"><highlight class="normal"><ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom::StandardRoom</ref>(<ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom</ref>&amp;&amp;<sp/>other)<sp/>noexcept</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kindref="member">Room</ref>(move(other)),</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>bed_count(exchange(other.bed_count,<sp/>0)),</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>has_tv(other.has_tv),</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>amenities(move(other.amenities))<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_standard_room_1ac69d562b2b499115e781e42a0fe5d7ac" refkind="member"><highlight class="normal"><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/><ref refid="class_standard_room_1ac69d562b2b499115e781e42a0fe5d7ac" kindref="member">StandardRoom::to_json</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;room_number&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref><sp/>},</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;price_per_night&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref><sp/>},</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;is_booked&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref><sp/>},</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;bed_count&quot;</highlight><highlight class="normal">,<sp/>bed_count<sp/>},</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;has_tv&quot;</highlight><highlight class="normal">,<sp/>has_tv<sp/>},</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;amenities&quot;</highlight><highlight class="normal">,<sp/>amenities<sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_standard_room_1a2844b52435f2d070357dea921a3541ad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_standard_room_1a2844b52435f2d070357dea921a3541ad" kindref="member">StandardRoom::from_json</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref>&amp;<sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref><sp/>=<sp/>j[</highlight><highlight class="stringliteral">&quot;room_number&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref><sp/>=<sp/>j[</highlight><highlight class="stringliteral">&quot;price_per_night&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref><sp/>=<sp/>j[</highlight><highlight class="stringliteral">&quot;is_booked&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>bed_count<sp/>=<sp/>j[</highlight><highlight class="stringliteral">&quot;bed_count&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>has_tv<sp/>=<sp/>j[</highlight><highlight class="stringliteral">&quot;has_tv&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>amenities<sp/>=<sp/>j[</highlight><highlight class="stringliteral">&quot;amenities&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">vector&lt;string&gt;<sp/><ref refid="kondakov__lr5__container__operations_8hpp_1a273372d7d09179966f6d26861fd41dcd" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_standard_room" kindref="compound">StandardRoom</ref>&amp;<sp/>sr1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_standard_room" kindref="compound">StandardRoom</ref>&amp;<sp/>sr2)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>a(sr1.amenities);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>+=<sp/>sr2;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">vector&lt;string&gt;<sp/><ref refid="kondakov__lr5__container__operations_8hpp_1a273372d7d09179966f6d26861fd41dcd" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;string&gt;&amp;<sp/>amenities,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_standard_room" kindref="compound">StandardRoom</ref>&amp;<sp/>sr)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>a(amenities);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>+=<sp/>sr;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">vector&lt;string&gt;<sp/><ref refid="kondakov__lr5__container__operations_8hpp_1a273372d7d09179966f6d26861fd41dcd" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_standard_room" kindref="compound">StandardRoom</ref>&amp;<sp/>sr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;string&gt;&amp;<sp/>amenities)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>a(sr.amenities);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>+=<sp/>amenities;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">vector&lt;string&gt;&amp;<sp/><ref refid="kondakov__lr5__container__operations_8hpp_1a447cf4bccd292f53844905a5c88c7d27" kindref="member">operator+=</ref>(vector&lt;string&gt;&amp;<sp/>amenities,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_standard_room" kindref="compound">StandardRoom</ref>&amp;<sp/>sr)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>amenities<sp/>+=<sp/>sr.amenities;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>amenities;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><ref refid="class_standard_room" kindref="compound">StandardRoom</ref>&amp;<sp/><ref refid="kondakov__lr5__container__operations_8hpp_1a447cf4bccd292f53844905a5c88c7d27" kindref="member">operator+=</ref>(<ref refid="class_standard_room" kindref="compound">StandardRoom</ref>&amp;<sp/>sr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;string&gt;&amp;<sp/>amenities)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>sr.amenities<sp/>+=<sp/>amenities;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sr;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><ref refid="class_standard_room" kindref="compound">StandardRoom</ref>&amp;<sp/><ref refid="kondakov__lr5__container__operations_8hpp_1a447cf4bccd292f53844905a5c88c7d27" kindref="member">operator+=</ref>(<ref refid="class_standard_room" kindref="compound">StandardRoom</ref>&amp;<sp/>sr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>amenities)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>sr.amenities<sp/>+=<sp/>amenities;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sr;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="class_standard_room_1a23c37c9cd1299d7d83a11ba37ed64fd0" refkind="member"><highlight class="normal">StandardRoom::operator<sp/>string()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>ostringstream<sp/>oss;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Количество<sp/>кроватей:\t\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>bed_count<sp/>&lt;&lt;<sp/>endl</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Наличие<sp/>телевизора:\t\t&quot;</highlight><highlight class="normal"><sp/><sp/>&lt;&lt;<sp/>(has_tv<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;да&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;нет&quot;</highlight><highlight class="normal">)<sp/>&lt;&lt;<sp/>endl</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Удобства:\t\t\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>amenities;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>oss.str();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="class_standard_room_1ae8832056f49dce6fba3249c49462ab84" refkind="member"><highlight class="normal">ostream&amp;<sp/><ref refid="kondakov__lr5__standard__room_8cpp_1ac493993c2bb1287c6178ff0dc82af08c" kindref="member">operator&lt;&lt;</ref>(ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom</ref>&amp;<sp/>sr)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>static_cast&lt;string&gt;(sr);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="class_standard_room_1aac82f7ed99fa1070a03d364518201169" refkind="member"><highlight class="normal">istream&amp;<sp/><ref refid="kondakov__lr5__standard__room_8cpp_1a5ebc17373611768a35a4d6a879dd9a9a" kindref="member">operator&gt;&gt;</ref>(istream&amp;<sp/>is,<sp/><ref refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kindref="member">StandardRoom</ref>&amp;<sp/>sr)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sr.<ref refid="class_standard_room_1a006df2025213235b54bb5e58c277d224" kindref="member">input_bed_count</ref>())<sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>is.setstate(ios::failbit);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is;<sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sr.<ref refid="class_standard_room_1ad4ed425e8f2ed08253b5141cc96a6b71" kindref="member">input_has_tv</ref>())<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>is.setstate(ios::failbit);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is;<sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sr.<ref refid="class_standard_room_1ab0d225d5a8b3c830ba892efc075c9547" kindref="member">input_amenities</ref>&lt;</highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">&gt;())<sp/>{<sp/>is.setstate(ios::failbit);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is;<sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="class_standard_room_1acf55a87a76c686170ce9c8e1d4cdf62a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_standard_room_1acf55a87a76c686170ce9c8e1d4cdf62a" kindref="member">StandardRoom::print</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_standard_room_1a06b989063fdda125448921ce223029b9" kindref="member">to_string</ref>()<sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="class_standard_room_1a5c3965885d7f9455ac2106275ac658bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_standard_room_1a5c3965885d7f9455ac2106275ac658bf" kindref="member">StandardRoom::input</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_room_1a3771355e58c0cac65cb836f72b7da113" kindref="member">Room::input</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cin<sp/>&gt;&gt;<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>cin.clear();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="class_standard_room_1a06b989063fdda125448921ce223029b9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_standard_room_1a06b989063fdda125448921ce223029b9" kindref="member">StandardRoom::to_string</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>ostringstream<sp/>oss;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_standard_room_1af62d306fc8c3735b2a2097768ec74f21" kindref="member">get_full_name</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/><ref refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" kindref="member">Room::to_string</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>oss.str();</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp"/>
+  </compounddef>
+</doxygen>

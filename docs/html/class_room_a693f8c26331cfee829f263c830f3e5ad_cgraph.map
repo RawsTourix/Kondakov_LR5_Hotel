@@ -1,0 +1,10 @@
+<map id="Room::input_is_booked" name="Room::input_is_booked">
+<area shape="rect" id="Node000001" title="Ввод статуса бронирования" alt="" coords="5,13,164,40"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="212,13,340,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,24,196,24,196,29,164,29"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="388,5,533,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,33,372,33,372,38,340,38"/>
+<area shape="rect" id="Node000004" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="400,72,522,99"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="321,38,403,64,401,69,320,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="387,21,356,20,356,15,388,15"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ChildCare::input_has_child_care" name="ChildCare::input_has_child_care">
+<area shape="rect" id="Node000001" title="Ввод наличия услуг для детей" alt="" coords="204,5,347,48"/>
+<area shape="rect" id="Node000002" href="$class_child_care.html#a01ad1c87538a964bd9f5aa0a64123777" title="Оператор ввода" alt="" coords="5,13,156,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,29,156,29,156,24,188,24"/>
+</map>

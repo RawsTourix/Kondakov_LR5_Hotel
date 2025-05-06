@@ -1,0 +1,7 @@
+<map id="Methods::add_room" name="Methods::add_room">
+<area shape="rect" id="Node000001" title="Добавление комнаты" alt="" coords="5,5,142,32"/>
+<area shape="rect" id="Node000002" href="$kondakov__lr5__methods_8hpp.html#a7dae85ea71697ef36e7ccf787788527d" title="Получение методов редактирования комнаты" alt="" coords="190,5,350,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,16,174,16,174,21,142,21"/>
+<area shape="rect" id="Node000003" href="$namespace_methods.html#a54e67b3d003bb3031c74b7d803e12f54" title="Получение списка номеров комнат" alt="" coords="398,5,588,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="350,16,382,16,382,21,350,21"/>
+</map>

@@ -1,0 +1,29 @@
+<map id="Kondakov_LR5_Hotel/kondakov_lr5_def.h" name="Kondakov_LR5_Hotel/kondakov_lr5_def.h">
+<area shape="rect" id="Node000001" title="Основной заголовочный файл проекта, содержащий подключения библиотек, объявления типов и вспомогатель..." alt="" coords="490,5,638,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,77,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="489,39,312,61,92,98,91,93,311,56,489,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,96,152,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="489,40,344,62,168,98,167,93,343,57,489,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="176,96,234,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="490,45,249,98,248,93,488,40"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="258,96,304,123"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="490,50,320,98,319,92,488,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="328,96,396,123"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="513,51,409,92,407,87,511,46"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="421,96,498,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="539,51,489,88,486,84,535,46"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="522,96,605,123"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="566,49,566,80,561,80,561,49"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="630,96,698,123"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="591,47,638,84,634,88,588,51"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="722,96,797,123"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="615,46,716,87,714,92,613,51"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="822,96,874,123"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="639,46,807,93,806,98,638,51"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="898,96,947,123"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="638,39,750,61,883,93,882,98,749,66,637,44"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="971,96,1036,123"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="639,36,782,59,956,93,955,98,781,64,638,41"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1060,96,1190,123"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="639,35,1045,93,1044,98,638,41"/>
+</map>
