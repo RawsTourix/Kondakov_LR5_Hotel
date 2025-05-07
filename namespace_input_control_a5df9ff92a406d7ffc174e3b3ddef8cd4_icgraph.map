@@ -1,0 +1,7 @@
+<map id="InputControl::split" name="InputControl::split">
+<area shape="rect" id="Node000001" title="Разделяет строку на подстроки по разделителю" alt="" coords="138,31,262,57"/>
+<area shape="rect" id="Node000002" href="$kondakov__lr5__container__operations_8hpp.html#a95226ada92c9fc69c4d5d6771165dcb3" title="Перегрузка оператора &gt;&gt; для разделения строки в контейнер" alt="" coords="5,5,90,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,34,90,28,91,23,123,28"/>
+<area shape="rect" id="Node000003" href="$kondakov__lr5__container__operations_8hpp.html#af2721b39e850a7e2bf789e2b32cca184" title="Перегрузка оператора ввода для DelimitedContainer." alt="" coords="5,56,90,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,60,91,65,90,60,122,54"/>
+</map>

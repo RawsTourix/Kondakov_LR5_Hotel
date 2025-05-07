@@ -1,0 +1,6 @@
+<map id="Suite::Suite" name="Suite::Suite">
+<area shape="rect" id="Node000001" title="Конструктор по умолчанию" alt="" coords="5,29,95,56"/>
+<area shape="rect" id="Node000002" href="$class_room.html#ac6ef93a7d9c3e1d624e025058d5f16ff" title="Конструктор по умолчанию" alt="" coords="143,29,242,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,40,127,40,127,45,95,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="167,30,163,21,166,11,176,5,192,3,210,5,219,12,216,16,208,10,192,8,178,10,170,14,168,20,172,28"/>
+</map>

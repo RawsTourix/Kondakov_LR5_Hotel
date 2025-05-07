@@ -1,0 +1,8 @@
+<map id="StandardRoom::StandardRoom" name="StandardRoom::StandardRoom">
+<area shape="rect" id="Node000001" title="Конструктор с удобствами по умолчанию" alt="" coords="5,29,209,56"/>
+<area shape="rect" id="Node000002" href="$class_standard_room.html#a32dadc773859aac18048b08855c26377" title="Конструктор по умолчанию" alt="" coords="257,29,460,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,40,241,40,241,45,209,45"/>
+<area shape="rect" id="Node000003" href="$class_room.html#ac6ef93a7d9c3e1d624e025058d5f16ff" title="Конструктор по умолчанию" alt="" coords="508,29,607,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,40,492,40,492,45,460,45"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="524,30,518,21,522,11,536,5,558,3,581,5,594,12,592,16,580,10,558,8,537,10,526,15,523,20,528,27"/>
+</map>

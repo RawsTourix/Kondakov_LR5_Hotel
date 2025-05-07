@@ -1,0 +1,5 @@
+<map id="InputControl::check_min_max" name="InputControl::check_min_max">
+<area shape="rect" id="Node000001" title="Проверяет число на вхождение в диапазон" alt="" coords="182,5,317,48"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#ab685d4d2f2828ba6eecd1438c26f7bef" title="Функция ввода для чисел" alt="" coords="5,13,134,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,29,134,29,134,24,166,24"/>
+</map>

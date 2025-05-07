@@ -1,0 +1,15 @@
+<map id="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" name="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл класса MenuObject." alt="" coords="244,5,439,48"/>
+<area shape="rect" id="Node000002" href="$kondakov__lr5__menu__object_8cpp.html" title="Реализация конструкторов класса MenuObject." alt="" coords="5,96,214,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,56,165,98,163,93,272,51"/>
+<area shape="rect" id="Node000003" href="$kondakov__lr5__menu__object_8hpp.html" title="Реализация методов класса MenuObject." alt="" coords="237,96,446,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="335,63,336,96,331,96,330,64"/>
+<area shape="rect" id="Node000004" href="$kondakov__lr5__methods_8h.html" title="Заголовочный файл с методами работы с комнатами" alt="" coords="470,96,640,139"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="407,52,506,93,504,98,405,57"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="348,81,347,49,352,48,353,80"/>
+<area shape="rect" id="Node000005" href="$kondakov__lr5__main_8cpp.html" title="Главный файл приложения для управления гостиничными номерами" alt="" coords="276,187,439,229"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="496,148,405,188,403,184,494,143"/>
+<area shape="rect" id="Node000006" href="$kondakov__lr5__methods_8hpp.html" title="Реализация методов работы с комнатами" alt="" coords="463,187,647,229"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="549,154,550,186,544,186,543,154"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="561,171,560,139,565,139,566,171"/>
+</map>

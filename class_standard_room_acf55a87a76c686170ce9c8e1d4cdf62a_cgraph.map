@@ -1,0 +1,9 @@
+<map id="StandardRoom::print" name="StandardRoom::print">
+<area shape="rect" id="Node000001" title="Вывод информации о номере" alt="" coords="5,31,147,57"/>
+<area shape="rect" id="Node000002" href="$class_standard_room.html#a06b989063fdda125448921ce223029b9" title="Преобразование в строку" alt="" coords="195,31,361,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,41,179,41,179,47,147,47"/>
+<area shape="rect" id="Node000003" href="$class_standard_room.html#af62d306fc8c3735b2a2097768ec74f21" title="Получить полное название комнаты" alt="" coords="409,5,606,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,32,393,29,394,34,361,38"/>
+<area shape="rect" id="Node000004" href="$class_room.html#a8587d8bc9a7bfbadbe83fbf969c9b370" title="Виртуальный метод преобразования в строку" alt="" coords="450,56,565,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="361,50,435,59,435,64,361,56"/>
+</map>

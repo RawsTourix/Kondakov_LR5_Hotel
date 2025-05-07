@@ -1,0 +1,5 @@
+<map id="Suite::order_champagne" name="Suite::order_champagne">
+<area shape="rect" id="Node000001" title="Заказать шампанское (добавляет услугу)" alt="" coords="5,13,168,40"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a7a885a9d6172b2874d95d1613ced53db" title="Делает первую букву строки заглавной" alt="" coords="216,5,369,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,24,200,24,200,29,168,29"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Suite::input_room_service" name="Suite::input_room_service">
+<area shape="rect" id="Node000001" title="Ввод наличия обслуживания" alt="" coords="5,13,178,40"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="226,13,354,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,24,210,24,210,29,178,29"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="402,5,547,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,33,386,33,386,38,354,38"/>
+<area shape="rect" id="Node000004" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="414,72,536,99"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="335,38,417,64,415,69,334,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="401,21,370,20,370,15,402,15"/>
+</map>

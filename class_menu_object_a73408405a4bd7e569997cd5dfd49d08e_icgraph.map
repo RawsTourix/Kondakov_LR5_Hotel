@@ -1,0 +1,30 @@
+<map id="MenuObject::process" name="MenuObject::process">
+<area shape="rect" id="Node000001" title="Обработка взаимодействия с меню" alt="" coords="440,107,585,133"/>
+<area shape="poly" id="edge14_Node000001_Node000001" title=" " alt="" coords="548,94,536,88,513,85,491,87,480,92,477,97,482,105,478,108,472,98,476,88,490,82,513,80,537,83,550,89"/>
+<area shape="rect" id="Node000002" href="$namespace_methods.html#a51179a7d6e8fb0608922a0d00f102f11" title="Изменение комнаты" alt="" coords="239,5,376,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="476,101,391,53,348,35,350,30,393,48,478,96"/>
+<area shape="rect" id="Node000003" href="$kondakov__lr5__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Точка входа в приложение" alt="" coords="65,17,115,44"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="431,106,115,38,116,33,432,100"/>
+<area shape="rect" id="Node000004" href="$class_menu_object.html#a964f07536c901358392d30188a5fb322" title="Удаленный конструктор по умолчанию" alt="" coords="223,181,392,208"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="477,143,370,183,368,178,475,138"/>
+<area shape="rect" id="Node000012" href="$namespace_methods.html#a5836b360a5e2d3b056046d4ce04cbca2" title="Сортировка комнат" alt="" coords="235,107,380,133"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="425,123,380,123,380,117,425,117"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="224,26,115,32,115,27,223,21"/>
+<area shape="poly" id="edge13_Node000004_Node000001" title=" " alt="" coords="343,172,450,131,452,136,345,177"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="342,168,330,162,307,160,286,162,274,167,272,172,277,179,273,182,266,173,271,163,285,157,307,155,332,157,345,164"/>
+<area shape="rect" id="Node000005" href="$class_menu_object.html#ae0d6d87d7380e0c21ad8f91c9f264fa3" title="Конструктор пункта меню без подменю" alt="" coords="5,68,175,95"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="266,176,221,147,198,127,173,109,147,98,149,93,176,104,201,123,224,143,269,171"/>
+<area shape="rect" id="Node000006" href="$class_menu_object.html#a0a3ce6da86682e5443328294b9a7cd8e" title="Конструктор с флагом одноразового меню" alt="" coords="5,119,175,145"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="243,179,138,149,140,143,245,174"/>
+<area shape="rect" id="Node000007" href="$class_menu_object.html#a56564b4de97cb0c00464dd8ce10099a3" title="Конструктор с действием и подменю" alt="" coords="5,169,175,196"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="207,192,175,190,175,185,207,186"/>
+<area shape="rect" id="Node000008" href="$class_menu_object.html#a4ca27840c4977a73db86dc19bbd43edd" title="Конструктор для комнаты с подтверждением" alt="" coords="5,220,175,247"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="214,214,169,222,168,217,213,209"/>
+<area shape="rect" id="Node000009" href="$class_menu_object.html#a2ee26e3e2aa17b97248add106ab168a6" title="Конструктор с подменю" alt="" coords="5,271,175,297"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="268,218,176,261,142,273,141,268,174,256,266,213"/>
+<area shape="rect" id="Node000010" href="$class_menu_object.html#a378e7c58f8704a8cf42896a9ba72d23a" title="Конструктор с подменю и флагом" alt="" coords="5,321,175,348"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="286,221,238,267,208,291,176,312,150,323,148,318,173,307,205,287,234,263,282,218"/>
+<area shape="rect" id="Node000011" href="$class_menu_object.html#a111fe1da7199d2ac2231ec3fdbf03e3b" title="Конструктор перемещения" alt="" coords="5,372,175,399"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="294,223,248,292,215,330,176,362,154,374,151,369,173,358,211,326,243,289,289,220"/>
+<area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="250,103,221,90,197,74,174,58,114,38,116,33,176,54,200,69,224,86,252,98"/>
+</map>

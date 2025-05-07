@@ -1,0 +1,13 @@
+<map id="InputControl::input" name="InputControl::input">
+<area shape="rect" id="Node000001" title="Функция ввода для чисел" alt="" coords="5,80,134,107"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#ae598625feed83f92d1d22aa3d6839d22" title="Проверяет число на вхождение в диапазон" alt="" coords="187,5,322,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,77,178,51,180,56,110,82"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="182,72,327,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,91,166,91,166,96,134,96"/>
+<area shape="rect" id="Node000005" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="551,109,674,136"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="108,105,144,116,182,124,277,133,373,135,536,128,536,133,373,141,277,139,181,129,142,121,106,110"/>
+<area shape="rect" id="Node000004" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="375,80,503,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="328,99,359,100,359,105,328,105"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="375,87,343,87,343,82,375,82"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="504,102,537,107,536,112,503,107"/>
+</map>

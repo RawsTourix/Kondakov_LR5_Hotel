@@ -1,0 +1,5 @@
+<map id="get_room_edit_methods" name="get_room_edit_methods">
+<area shape="rect" id="Node000001" title="Получение методов редактирования комнаты" alt="" coords="5,5,166,32"/>
+<area shape="rect" id="Node000002" href="$namespace_methods.html#a54e67b3d003bb3031c74b7d803e12f54" title="Получение списка номеров комнат" alt="" coords="214,5,404,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,16,198,16,198,21,166,21"/>
+</map>

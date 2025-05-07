@@ -1,0 +1,5 @@
+<map id="FamilyRoom::to_string" name="FamilyRoom::to_string">
+<area shape="rect" id="Node000001" title="Преобразование в строку" alt="" coords="182,5,335,32"/>
+<area shape="rect" id="Node000002" href="$class_family_room.html#a9c0a4570d5b466db2be534ac3b0b0f3c" title="Вывод информации о номере" alt="" coords="5,5,134,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,21,134,21,134,16,166,16"/>
+</map>

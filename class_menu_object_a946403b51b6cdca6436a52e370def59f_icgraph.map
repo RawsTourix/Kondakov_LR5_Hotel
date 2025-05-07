@@ -1,0 +1,32 @@
+<map id="MenuObject::act" name="MenuObject::act">
+<area shape="rect" id="Node000001" title="Выполнение действия пункта меню" alt="" coords="730,208,847,235"/>
+<area shape="rect" id="Node000002" href="$class_menu_object.html#a964f07536c901358392d30188a5fb322" title="Удаленный конструктор по умолчанию" alt="" coords="512,208,682,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="714,224,682,224,682,219,714,219"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="630,195,618,189,597,187,577,189,566,193,564,199,569,206,564,209,559,199,563,190,576,183,597,181,620,184,632,190"/>
+<area shape="rect" id="Node000003" href="$class_menu_object.html#ae0d6d87d7380e0c21ad8f91c9f264fa3" title="Конструктор пункта меню без подменю" alt="" coords="295,5,464,32"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="580,195,561,161,535,121,502,80,463,46,442,35,444,30,466,42,506,77,539,117,566,158,585,192"/>
+<area shape="rect" id="Node000004" href="$class_menu_object.html#a0a3ce6da86682e5443328294b9a7cd8e" title="Конструктор с флагом одноразового меню" alt="" coords="295,56,464,83"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="574,198,526,147,496,120,463,97,438,86,441,81,466,92,499,116,530,143,578,194"/>
+<area shape="rect" id="Node000005" href="$class_menu_object.html#a56564b4de97cb0c00464dd8ce10099a3" title="Конструктор с действием и подменю" alt="" coords="295,107,464,133"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="561,201,515,174,463,148,432,136,434,131,465,143,518,169,564,197"/>
+<area shape="rect" id="Node000006" href="$class_menu_object.html#a4ca27840c4977a73db86dc19bbd43edd" title="Конструктор для комнаты с подтверждением" alt="" coords="295,157,464,184"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="521,206,439,187,441,182,522,201"/>
+<area shape="rect" id="Node000007" href="$class_menu_object.html#a2ee26e3e2aa17b97248add106ab168a6" title="Конструктор с подменю" alt="" coords="295,208,464,235"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="497,224,465,224,465,219,497,219"/>
+<area shape="rect" id="Node000008" href="$class_menu_object.html#a378e7c58f8704a8cf42896a9ba72d23a" title="Конструктор с подменю и флагом" alt="" coords="295,259,464,285"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="522,241,441,261,439,255,521,236"/>
+<area shape="rect" id="Node000009" href="$class_menu_object.html#a111fe1da7199d2ac2231ec3fdbf03e3b" title="Конструктор перемещения" alt="" coords="295,309,464,336"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="564,246,518,273,465,300,434,311,432,306,463,295,515,269,561,241"/>
+<area shape="rect" id="Node000010" href="$class_menu_object.html#a73408405a4bd7e569997cd5dfd49d08e" title="Обработка взаимодействия с меню" alt="" coords="307,384,452,411"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="582,249,532,304,466,362,430,386,427,381,463,358,528,300,578,245"/>
+<area shape="poly" id="edge14_Node000010_Node000002" title=" " alt="" coords="404,373,463,334,525,280,574,233,578,237,529,284,466,338,407,377"/>
+<area shape="poly" id="edge15_Node000010_Node000010" title=" " alt="" coords="415,371,403,365,380,363,358,365,347,369,344,375,349,382,345,385,339,375,343,366,357,359,380,357,404,360,417,366"/>
+<area shape="rect" id="Node000011" href="$namespace_methods.html#a51179a7d6e8fb0608922a0d00f102f11" title="Изменение комнаты" alt="" coords="107,333,243,360"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="307,382,231,363,232,358,309,377"/>
+<area shape="rect" id="Node000012" href="$kondakov__lr5__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Точка входа в приложение" alt="" coords="5,384,55,411"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="291,400,55,400,55,395,291,395"/>
+<area shape="rect" id="Node000013" href="$namespace_methods.html#a5836b360a5e2d3b056046d4ce04cbca2" title="Сортировка комнат" alt="" coords="103,435,247,461"/>
+<area shape="poly" id="edge16_Node000010_Node000013" title=" " alt="" coords="309,418,232,437,231,431,307,412"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="121,368,56,391,54,386,119,363"/>
+<area shape="poly" id="edge17_Node000013_Node000012" title=" " alt="" coords="119,431,54,408,56,403,121,426"/>
+</map>

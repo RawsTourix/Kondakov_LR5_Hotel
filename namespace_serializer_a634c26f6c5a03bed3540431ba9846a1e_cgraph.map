@@ -1,0 +1,5 @@
+<map id="Serializer::load_rooms_from_file" name="Serializer::load_rooms_from_file">
+<area shape="rect" id="Node000001" title="Загрузка комнат из файла" alt="" coords="5,5,156,48"/>
+<area shape="rect" id="Node000002" href="$namespace_serializer.html#a4703ee1c8aebc4ee00f07f6ece701e3c" title="Десериализация комнат из JSON." alt="" coords="204,5,349,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,24,188,24,188,29,156,29"/>
+</map>
