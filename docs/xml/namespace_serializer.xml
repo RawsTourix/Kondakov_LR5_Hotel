@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespace_serializer" kind="namespace" language="C++">
+    <compoundname>Serializer</compoundname>
+    <innerclass refid="struct_serializer_1_1_room_type_registry" prot="public">Serializer::RoomTypeRegistry</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_serializer_1a9f1a804962d97d89825821386f43ab52" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_serializer_1_1_room_type_registry" kindref="compound">RoomTypeRegistry</ref></type>
+        <definition>RoomTypeRegistry Serializer::registry</definition>
+        <argsstring></argsstring>
+        <name>registry</name>
+        <qualifiedname>Serializer::registry</qualifiedname>
+        <briefdescription>
+<para>Статический экземпляр регистратора типов </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="44" column="29" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_serializer_1ad9ba9956a2b2bf0be83245d3621cb9dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, <ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref> &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, json &gt; Serializer::serialize_rooms</definition>
+        <argsstring>(const Container &amp;rooms)</argsstring>
+        <name>serialize_rooms</name>
+        <qualifiedname>Serializer::serialize_rooms</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Сериализация контейнера комнат в JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера (должен содержать shared_ptr&lt;Room&gt;) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>JSON объект с данными комнат</para>
+</simplesect>
+Преобразует каждую комнату в JSON объект с добавлением типа </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="54" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.hpp" bodystart="21" bodyend="31" declfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" declline="54" declcolumn="5"/>
+        <referencedby refid="namespace_serializer_1a68f703f287bd0348bdd559f9664121f6" compoundref="kondakov__lr5__serializer_8hpp" startline="63" endline="70">save_rooms_to_file</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_serializer_1a4703ee1c8aebc4ee00f07f6ece701e3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, Container &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, Container &gt; Serializer::deserialize_rooms</definition>
+        <argsstring>(const json &amp;j)</argsstring>
+        <name>deserialize_rooms</name>
+        <qualifiedname>Serializer::deserialize_rooms</qualifiedname>
+        <param>
+          <type>const <ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref> &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Десериализация комнат из JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера для результатов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON объект с данными </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Контейнер с десериализованными комнатами </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>При неизвестном типе комнаты</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Создает объекты комнат через фабрику на основе типа в JSON </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="65" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.hpp" bodystart="39" bodyend="55" declfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" declline="65" declcolumn="5"/>
+        <referencedby refid="namespace_serializer_1a634c26f6c5a03bed3540431ba9846a1e" compoundref="kondakov__lr5__serializer_8hpp" startline="78" endline="87">load_rooms_from_file</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_serializer_1a68f703f287bd0348bdd559f9664121f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, void &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, void &gt; Serializer::save_rooms_to_file</definition>
+        <argsstring>(const Container &amp;rooms, const string &amp;filename)</argsstring>
+        <name>save_rooms_to_file</name>
+        <qualifiedname>Serializer::save_rooms_to_file</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Сохранение комнат в файл </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер для сохранения </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя файла для сохранения </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>При ошибке открытия файла</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Сохраняет JSON-представление в файл с отступами (pretty print) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="76" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.hpp" bodystart="63" bodyend="70" declfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" declline="76" declcolumn="5"/>
+        <references refid="namespace_serializer_1ad9ba9956a2b2bf0be83245d3621cb9dc" compoundref="kondakov__lr5__serializer_8hpp" startline="21" endline="31">serialize_rooms</references>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_serializer_1a634c26f6c5a03bed3540431ba9846a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, Container &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, Container &gt; Serializer::load_rooms_from_file</definition>
+        <argsstring>(const string &amp;filename)</argsstring>
+        <name>load_rooms_from_file</name>
+        <qualifiedname>Serializer::load_rooms_from_file</qualifiedname>
+        <param>
+          <type>const string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Загрузка комнат из файла </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера для результатов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя файла для загрузки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Контейнер с загруженными комнатами </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>При ошибке открытия файла</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Читает JSON из файла и десериализует в объекты комнат </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="87" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.hpp" bodystart="78" bodyend="87" declfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" declline="87" declcolumn="5"/>
+        <references refid="namespace_serializer_1a4703ee1c8aebc4ee00f07f6ece701e3c" compoundref="kondakov__lr5__serializer_8hpp" startline="39" endline="55">deserialize_rooms</references>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Пространство имён для операций сериализации </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="24" column="1"/>
+  </compounddef>
+</doxygen>

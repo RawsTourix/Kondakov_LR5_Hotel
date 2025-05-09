@@ -1,0 +1,5 @@
+<map id="Serializer::save_rooms_to_file" name="Serializer::save_rooms_to_file">
+<area shape="rect" id="Node000001" title="Сохранение комнат в файл" alt="" coords="5,5,160,48"/>
+<area shape="rect" id="Node000002" href="$namespace_serializer.html#ad9ba9956a2b2bf0be83245d3621cb9dc" title="Сериализация контейнера комнат в JSON." alt="" coords="208,5,339,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,24,192,24,192,29,160,29"/>
+</map>

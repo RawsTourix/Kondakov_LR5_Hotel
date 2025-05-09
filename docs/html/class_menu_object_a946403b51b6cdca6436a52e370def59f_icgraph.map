@@ -1,0 +1,5 @@
+<map id="MenuObject::act" name="MenuObject::act">
+<area shape="rect" id="Node000001" title="Выполнение действия пункта меню" alt="" coords="231,5,348,32"/>
+<area shape="rect" id="Node000002" href="$class_menu_object.html#a735690ac6e9a08bdc2bda4689d54a4b1" title="Деструктор" alt="" coords="5,5,183,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,21,183,21,183,16,215,16"/>
+</map>

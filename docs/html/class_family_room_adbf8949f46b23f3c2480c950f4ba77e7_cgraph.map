@@ -1,0 +1,13 @@
+<map id="FamilyRoom::FamilyRoom" name="FamilyRoom::FamilyRoom">
+<area shape="rect" id="Node000001" title="Конструктор перемещения" alt="" coords="5,73,183,100"/>
+<area shape="rect" id="Node000002" href="$class_child_care.html#a31cf181fba995fad6f95605d67f98171" title="Конструктор по умолчанию" alt="" coords="456,29,601,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,70,230,59,340,48,441,43,441,48,340,54,231,64,162,75"/>
+<area shape="rect" id="Node000003" href="$class_family_room.html#ad9cdeeaead73fab70d4d0220448da2e5" title="Конструктор по умолчанию" alt="" coords="231,73,408,100"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="183,84,215,84,215,89,183,89"/>
+<area shape="rect" id="Node000004" href="$class_room.html#ac6ef93a7d9c3e1d624e025058d5f16ff" title="Конструктор по умолчанию" alt="" coords="479,111,578,137"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="160,98,231,109,354,119,463,121,463,127,354,124,230,115,159,103"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="493,30,487,21,491,11,505,5,529,3,554,5,567,12,564,16,552,10,529,8,507,10,495,15,492,20,498,27"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="386,70,447,57,448,62,387,75"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="398,98,464,110,463,115,397,103"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="493,112,487,102,491,92,505,86,529,84,554,87,567,93,564,98,552,92,529,89,507,91,495,96,492,101,498,109"/>
+</map>

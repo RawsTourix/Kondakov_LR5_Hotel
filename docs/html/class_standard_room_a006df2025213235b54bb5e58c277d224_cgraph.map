@@ -1,0 +1,10 @@
+<map id="StandardRoom::input_bed_count" name="StandardRoom::input_bed_count">
+<area shape="rect" id="Node000001" title="Ввод количества кроватей" alt="" coords="5,5,150,48"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="198,13,326,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,24,182,24,182,29,150,29"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="374,5,519,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,33,358,33,358,38,326,38"/>
+<area shape="rect" id="Node000004" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="386,72,508,99"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="307,38,389,64,387,69,306,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="373,21,342,20,342,15,374,15"/>
+</map>

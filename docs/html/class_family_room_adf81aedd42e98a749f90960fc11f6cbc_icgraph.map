@@ -1,0 +1,7 @@
+<map id="FamilyRoom::input_toy_kit" name="FamilyRoom::input_toy_kit">
+<area shape="rect" id="Node000001" title="Ввод наличия набора игрушек" alt="" coords="239,31,416,57"/>
+<area shape="rect" id="Node000002" href="$class_family_room.html#aa110140405778c5d9123cfcee37ad641" title="Оператор ввода" alt="" coords="15,5,181,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,35,181,31,182,25,224,30"/>
+<area shape="rect" id="Node000003" href="$class_family_room.html#a21a282df8f7b25ede341c5b3ff75f3ac" title="Деструктор" alt="" coords="5,56,191,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,58,192,62,191,56,223,53"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="Methods::sort_rooms" name="Methods::sort_rooms">
+<area shape="rect" id="Node000001" title="Сортировка комнат" alt="" coords="5,64,150,91"/>
+<area shape="rect" id="Node000002" href="$class_menu_object.html#a73408405a4bd7e569997cd5dfd49d08e" title="Обработка взаимодействия с меню" alt="" coords="198,64,343,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,75,182,75,182,80,150,80"/>
+<area shape="poly" id="edge7_Node000002_Node000002" title=" " alt="" coords="237,65,232,55,236,46,249,39,270,37,293,40,306,46,303,51,292,45,270,43,250,45,239,49,237,55,242,62"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="412,13,540,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="327,61,403,42,405,47,328,66"/>
+<area shape="rect" id="Node000006" href="$class_menu_object.html#a964f07536c901358392d30188a5fb322" title="Удаленный конструктор по умолчанию" alt="" coords="391,64,560,91"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="343,75,375,75,375,80,343,80"/>
+<area shape="rect" id="Node000007" href="$class_menu_object.html#aca1cbebf08e1fb5c3f063e94d0e8f95b" title="Вывод меню" alt="" coords="391,139,560,165"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="310,89,424,130,422,135,308,94"/>
+<area shape="rect" id="Node000004" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="608,5,754,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="540,32,593,33,593,38,540,38"/>
+<area shape="rect" id="Node000005" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="620,72,742,99"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="526,38,618,65,616,70,524,43"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="608,21,555,21,555,15,608,15"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="441,140,435,130,439,120,453,114,476,112,500,115,513,121,511,126,499,120,476,117,454,119,443,124,440,129,445,137"/>
+</map>

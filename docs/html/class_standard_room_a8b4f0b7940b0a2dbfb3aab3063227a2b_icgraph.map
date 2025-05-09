@@ -1,0 +1,5 @@
+<map id="StandardRoom::calculate_total" name="StandardRoom::calculate_total">
+<area shape="rect" id="Node000001" title="Расчет общей стоимости проживания" alt="" coords="265,5,433,48"/>
+<area shape="rect" id="Node000002" href="$class_standard_room.html#a2e46e90889222820009f40e6e231f32d" title="Деструктор" alt="" coords="5,13,217,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,29,217,29,217,24,249,24"/>
+</map>

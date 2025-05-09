@@ -1,0 +1,5 @@
+<map id="InputControl::yes_or_no" name="InputControl::yes_or_no">
+<area shape="rect" id="Node000001" title="Запрашивает подтверждение (y/n)" alt="" coords="5,5,166,32"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a1dde7a0934fa6bda46d58eb1c0bb63d2" title="Получает один символ из ввода" alt="" coords="214,5,364,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,16,198,16,198,21,166,21"/>
+</map>

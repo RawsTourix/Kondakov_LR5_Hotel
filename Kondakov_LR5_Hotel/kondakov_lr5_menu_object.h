@@ -1,119 +1,152 @@
+/**
+ * @file kondakov_lr5_menu_object.h
+ * @brief Заголовочный файл класса MenuObject
+ * @author Kondakov Fedor
+ * @date 2025
+ * @version 1.0
+ * @ingroup menu_system
+ */
+
 #ifndef KONDAKOV_LR5_MENU_OBJECT_H
 #define KONDAKOV_LR5_MENU_OBJECT_H
 
-#include "kondakov_lr5_standard_room.h"
-#include "kondakov_lr5_suite.h"
-#include "kondakov_lr5_family_room.h"
+/**
+ * @defgroup menu_system Система меню
+ * @brief Создание и взаимодействие с меню
+ * @{
+ */
 
+#include "kondakov_lr5_serializer.h"
+
+/**
+ * @class MenuObject
+ * @brief Класс для представления пункта меню
+ * @details Реализует древовидную структуру меню с поддержкой подменю и действий
+ */
 class MenuObject {
 private:
-    // Структура меню
-    int number;                     // Номер пункта
-    string label;                   // Название пункта
-    function<void()> action;        // Событие при выборе пункта
-    vector<MenuObject> submenu {};  // Подменю
-    bool one_off_menu_inclusion;    // Включение динамического одноразового меню (опционально: влияет только на отступ после меню)
-    /* Динамическое одноразовое меню запускается отдельно, а не в основном меню, поэтому при выходе из него (выброре пункта "0. Назад")
-       выполняется отступ в самом динамическом меню, а после выхода из него и в основном меню. Для избежания этого в MenuObject::process
-       была введена переменная one_off — одноразовае выполнение — которая убирает лишние отступы в самом динамическом меню. Но так как
-       динамическое меню вызывается из основного — в основном меню тоже нужно убрать лишние отступы. Из динамического меню нет доступа к
-       основному, так как динамическое запущено в основном. Тут и была введена переменная one_off_menu_inclusion, которая даёт понять
-       функции MenuObject::process, что из этого пункта меню будет вызываться одноразовое динамическое меню, и MenuObject::process
-       уменьшает отступ после работы с этим пунктом меню. */
+    int number;                     ///< Номер пункта меню
+    string label;                   ///< Название пункта меню
+    function<void()> action;        ///< Действие при выборе пункта
+    vector<MenuObject> submenu {};  ///< Вектор подменю
+    bool one_off_menu_inclusion;    ///< Флаг одноразового меню (управляет отступами)
 
 public:
-    // Конструктор по умолчанию
+    /**
+     * @brief Удаленный конструктор по умолчанию
+     */
     MenuObject() = delete;
 
-    // Конструктор с параметрами без подменю без one_off_menu_inclusion
-    MenuObject(int number,
-        string label,
-        function<void()> action);
+    /// @name Конструкторы
+    /// @{
+    /**
+     * @brief Конструктор пункта меню без подменю
+     * @param number Номер пункта
+     * @param label Название пункта
+     * @param action Действие при выборе
+     */
+    MenuObject(int number, string label, function<void()> action);
 
-    // Конструктор с параметрами без подменю с one_off_menu_inclusion
-    MenuObject(int number,
-        string label,
-        function<void()> action,
-        bool one_off_menu_inclusion);
+    /**
+     * @brief Конструктор с флагом одноразового меню
+     * @param number Номер пункта
+     * @param label Название пункта
+     * @param action Действие при выборе
+     * @param one_off_menu_inclusion Флаг одноразового меню
+     */
+    MenuObject(int number, string label, function<void()> action, bool one_off_menu_inclusion);
 
-    // Конструктор с параметрами с подменю без one_off_menu_inclusion
-    MenuObject(int number,
-        string label,
-        vector<MenuObject> submenu);
+    /**
+     * @brief Конструктор с подменю
+     * @param number Номер пункта
+     * @param label Название пункта
+     * @param submenu Вектор подменю
+     */
+    MenuObject(int number, string label, vector<MenuObject> submenu);
 
-    // Конструктор с параметрами с подменю с one_off_menu_inclusion
-    MenuObject(int number,
-        string label,
-        vector<MenuObject> submenu,
-        bool one_off_menu_inclusion);
+    /**
+     * @brief Конструктор с подменю и флагом
+     * @param number Номер пункта
+     * @param label Название пункта
+     * @param submenu Вектор подменю
+     * @param one_off_menu_inclusion Флаг одноразового меню
+     */
+    MenuObject(int number, string label, vector<MenuObject> submenu, bool one_off_menu_inclusion);
 
-    // Конструктор с параметрами без one_off_menu_inclusion
-    MenuObject(int number,
-        string label,
-        function<void()> action,
-        vector<MenuObject> submenu);
+    /**
+     * @brief Конструктор с действием и подменю
+     * @param number Номер пункта
+     * @param label Название пункта
+     * @param action Действие при выборе
+     * @param submenu Вектор подменю
+     */
+    MenuObject(int number, string label, function<void()> action, vector<MenuObject> submenu);
 
-    // Конструктор с параметрами полный
-    MenuObject(int number,
-        string label,
-        function<void()> action,
-        vector<MenuObject> submenu,
-        bool one_off_menu_inclusion);
+    /**
+     * @brief Полный конструктор
+     * @param number Номер пункта
+     * @param label Название пункта
+     * @param action Действие при выборе
+     * @param submenu Вектор подменю
+     * @param one_off_menu_inclusion Флаг одноразового меню
+     */
+    MenuObject(int number, string label, function<void()> action, 
+               vector<MenuObject> submenu, bool one_off_menu_inclusion);
 
-    // Конструктор пункта меню для конкретной комнаты с подтверждением выполнения операции
+    /**
+     * @brief Конструктор для комнаты с подтверждением
+     * @tparam RoomPtr Тип умного указателя на Room
+     * @tparam Action Тип действия (должен возвращать bool)
+     * @param number Номер пункта
+     * @param label Название пункта
+     * @param room Указатель на комнату
+     * @param action Действие с подтверждением
+     * @param main_message Сообщение перед действием
+     * @param success_message Сообщение после успеха
+     */
     template <typename RoomPtr, typename Action,
         typename = enable_if_t<is_base_of_v<Room, typename RoomPtr::element_type> &&
                                is_same_v<bool, decltype(declval<Action>()())>, void>>
-    MenuObject(int number,
-        string label,
-        RoomPtr room,
-        Action action,
-        string main_message,
-        string success_message);
+    MenuObject(int number, string label, RoomPtr room, Action action,
+               string main_message, string success_message);
 
-    // Конструктор копирования
+    /// Конструктор копирования
     MenuObject(const MenuObject&) = default;
     MenuObject& operator=(const MenuObject&) = default;
 
-    // Конструктор пепремещения
-    MenuObject(MenuObject&& menu_object) noexcept;
+    /// Конструктор перемещения
+    MenuObject(MenuObject&&) noexcept;
     MenuObject& operator=(MenuObject&&) = default;
+    /// @}
 
-    // Деструктор
-    ~MenuObject() = default;
+    ~MenuObject() = default;  ///< Деструктор
 
-    // Вывод пункта меню
+    /// @name Методы работы с меню
+    /// @{
     inline void show(const string& indentation = "") const;
-
-    // Выполнить функцию
     inline void act() const;
-
-    // Геттер названия пункта
     inline string get_label() const;
-
-    // Геттер номера пункта
     inline int get_number() const;
-
-    // Геттер полного названия пункта
     inline string get_full_name() const;
-
-    // Геттер подменю
     inline const vector<MenuObject>& get_submenu() const;
-
-    // Геттер отступа после меню
     inline bool get_one_off_menu_inclusion() const;
+    /// @}
 
-    // Вывод меню
+    /// @name Статические методы
+    /// @{
     template <typename Container>
     static enable_if_t<is_same_v<typename Container::value_type, MenuObject>, void>
     show_menu(const Container& menu, int indent);
 
-    // Обработка взаимодействия с меню
     template <typename Container>
     static enable_if_t<is_same_v<typename Container::value_type, MenuObject>, void>
-    process(const Container& menu, const string main_label = "", const string exit_label = "", int indent = 0, bool one_off = false);
+    process(const Container& menu, const string main_label = "", 
+            const string exit_label = "", int indent = 0, bool one_off = false);
+    /// @}
 };
 
 #include "kondakov_lr5_menu_object.hpp"
+
+/** @} */ // Конец группы input_control
 
 #endif // KONDAKOV_LR5_MENU_OBJECT_H

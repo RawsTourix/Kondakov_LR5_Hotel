@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_methods_1_1_room_info" kind="struct" language="C++" prot="public">
+    <compoundname>Methods::RoomInfo</compoundname>
+    <includes refid="kondakov__lr5__methods_8h" local="no">kondakov_lr5_methods.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_methods_1_1_room_info_1aa0da86b590c86e8fdedffc94c067ce2f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Methods::RoomInfo::number</definition>
+        <argsstring></argsstring>
+        <name>number</name>
+        <qualifiedname>Methods::RoomInfo::number</qualifiedname>
+        <briefdescription>
+<para>Порядковый номер в списке </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="33" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" compoundref="kondakov__lr5__methods_8hpp" startline="21" endline="23">RoomInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_methods_1_1_room_info_1aa285b755db3bbd7d7824d9bf7f3ef4ed" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Methods::RoomInfo::full_name</definition>
+        <argsstring></argsstring>
+        <name>full_name</name>
+        <qualifiedname>Methods::RoomInfo::full_name</qualifiedname>
+        <briefdescription>
+<para>Полное название комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="34" column="16" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" compoundref="kondakov__lr5__methods_8hpp" startline="21" endline="23">RoomInfo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_methods_1_1_room_info_1a934968516c83d41fff7a39706b415297" prot="public" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt;</type>
+        <definition>shared_ptr&lt;Room&gt; Methods::RoomInfo::room</definition>
+        <argsstring></argsstring>
+        <name>room</name>
+        <qualifiedname>Methods::RoomInfo::room</qualifiedname>
+        <briefdescription>
+<para>Указатель на объект комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="35" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" compoundref="kondakov__lr5__methods_8hpp" startline="21" endline="23">RoomInfo</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_methods_1_1_room_info_1a768786b9551b24da36057f257bb1dde0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Methods::RoomInfo::RoomInfo</definition>
+        <argsstring>()=delete</argsstring>
+        <name>RoomInfo</name>
+        <qualifiedname>Methods::RoomInfo::RoomInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="37" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Methods::RoomInfo::RoomInfo</definition>
+        <argsstring>(int number, string full_name, shared_ptr&lt; Room &gt; room)</argsstring>
+        <name>RoomInfo</name>
+        <qualifiedname>Methods::RoomInfo::RoomInfo</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>full_name</declname>
+        </param>
+        <param>
+          <type>shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt;</type>
+          <declname>room</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с параметрами </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор структуры <ref refid="struct_methods_1_1_room_info" kindref="compound">RoomInfo</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Порядковый номер </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на комнату</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Порядковый номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Полное название комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на объект комнаты </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="45" column="9" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="21" bodyend="23"/>
+        <references refid="struct_methods_1_1_room_info_1aa285b755db3bbd7d7824d9bf7f3ef4ed" compoundref="kondakov__lr5__methods_8h" startline="34">full_name</references>
+        <references refid="struct_methods_1_1_room_info_1aa0da86b590c86e8fdedffc94c067ce2f" compoundref="kondakov__lr5__methods_8h" startline="33">number</references>
+        <references refid="struct_methods_1_1_room_info_1a934968516c83d41fff7a39706b415297" compoundref="kondakov__lr5__methods_8h" startline="35">room</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_methods_1_1_room_info_1a092fbd35d2149cdd3d72e5ad3330cbc8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Methods::RoomInfo::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <qualifiedname>Methods::RoomInfo::print</qualifiedname>
+        <briefdescription>
+<para>Вывод информации о комнате </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="50" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_methods_1_1_room_info_1a9c323c15d655febac79f968f8dc38719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const RoomInfo &amp;ri)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Methods::RoomInfo::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_methods_1_1_room_info" kindref="compound">RoomInfo</ref> &amp;</type>
+          <declname>ri</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="54" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Краткая информация о комнате для отображения </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="32" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="32" bodyend="55"/>
+    <listofallmembers>
+      <member refid="struct_methods_1_1_room_info_1aa285b755db3bbd7d7824d9bf7f3ef4ed" prot="public" virt="non-virtual"><scope>Methods::RoomInfo</scope><name>full_name</name></member>
+      <member refid="struct_methods_1_1_room_info_1aa0da86b590c86e8fdedffc94c067ce2f" prot="public" virt="non-virtual"><scope>Methods::RoomInfo</scope><name>number</name></member>
+      <member refid="struct_methods_1_1_room_info_1a9c323c15d655febac79f968f8dc38719" prot="public" virt="non-virtual"><scope>Methods::RoomInfo</scope><name>operator&lt;&lt;</name></member>
+      <member refid="struct_methods_1_1_room_info_1a092fbd35d2149cdd3d72e5ad3330cbc8" prot="public" virt="non-virtual"><scope>Methods::RoomInfo</scope><name>print</name></member>
+      <member refid="struct_methods_1_1_room_info_1a934968516c83d41fff7a39706b415297" prot="public" virt="non-virtual"><scope>Methods::RoomInfo</scope><name>room</name></member>
+      <member refid="struct_methods_1_1_room_info_1a768786b9551b24da36057f257bb1dde0" prot="public" virt="non-virtual"><scope>Methods::RoomInfo</scope><name>RoomInfo</name></member>
+      <member refid="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" prot="public" virt="non-virtual"><scope>Methods::RoomInfo</scope><name>RoomInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

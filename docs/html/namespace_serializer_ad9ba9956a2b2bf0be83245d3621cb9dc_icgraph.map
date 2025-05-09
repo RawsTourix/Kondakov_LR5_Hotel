@@ -1,0 +1,7 @@
+<map id="Serializer::serialize_rooms" name="Serializer::serialize_rooms">
+<area shape="rect" id="Node000001" title="Сериализация контейнера комнат в JSON." alt="" coords="305,5,436,48"/>
+<area shape="rect" id="Node000002" href="$namespace_serializer.html#a68f703f287bd0348bdd559f9664121f6" title="Сохранение комнат в файл" alt="" coords="103,5,257,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,29,257,29,257,24,290,24"/>
+<area shape="rect" id="Node000003" href="$kondakov__lr5__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Точка входа в приложение" alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>

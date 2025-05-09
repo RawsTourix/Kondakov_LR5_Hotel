@@ -1,0 +1,7 @@
+<map id="Suite::to_string" name="Suite::to_string">
+<area shape="rect" id="Node000001" title="Преобразование в строку" alt="" coords="5,31,115,57"/>
+<area shape="rect" id="Node000002" href="$class_suite.html#a7bd3a5de67c22d5f4c52de55222ef145" title="Получить полное название комнаты" alt="" coords="163,5,303,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,33,147,29,148,34,116,39"/>
+<area shape="rect" id="Node000003" href="$class_room.html#a8587d8bc9a7bfbadbe83fbf969c9b370" title="Виртуальный метод преобразования в строку" alt="" coords="176,56,290,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,49,161,56,160,61,115,55"/>
+</map>

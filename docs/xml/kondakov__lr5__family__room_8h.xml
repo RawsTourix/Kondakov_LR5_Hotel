@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="kondakov__lr5__family__room_8h" kind="file" language="C++">
+    <compoundname>kondakov_lr5_family_room.h</compoundname>
+    <includes refid="kondakov__lr5__room_8h" local="yes">kondakov_lr5_room.h</includes>
+    <includes refid="kondakov__lr5__child__care_8h" local="yes">kondakov_lr5_child_care.h</includes>
+    <includes refid="kondakov__lr5__family__room_8hpp" local="yes">kondakov_lr5_family_room.hpp</includes>
+    <includedby refid="kondakov__lr5__family__room_8cpp" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp</includedby>
+    <includedby refid="kondakov__lr5__family__room_8hpp" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp</includedby>
+    <includedby refid="kondakov__lr5__serializer_8h" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_serializer.h</includedby>
+    <incdepgraph>
+      <node id="21">
+        <label>kondakov_lr5_child_care.h</label>
+        <link refid="kondakov__lr5__child__care_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>kondakov_lr5_child_care.hpp</label>
+        <link refid="kondakov__lr5__child__care_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>kondakov_lr5_container_operations.hpp</label>
+        <link refid="kondakov__lr5__container__operations_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>kondakov_lr5_def.h</label>
+        <link refid="kondakov__lr5__def_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_family_room.h</label>
+        <link refid="kondakov__lr5__family__room_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>kondakov_lr5_family_room.hpp</label>
+        <link refid="kondakov__lr5__family__room_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>kondakov_lr5_input_control.h</label>
+        <link refid="kondakov__lr5__input__control_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>kondakov_lr5_input_control.hpp</label>
+        <link refid="kondakov__lr5__input__control_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>kondakov_lr5_room.h</label>
+        <link refid="kondakov__lr5__room_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>kondakov_lr5_room.hpp</label>
+        <link refid="kondakov__lr5__room_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="16">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>limits</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+      <node id="17">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="15">
+        <label>tuple</label>
+      </node>
+      <node id="11">
+        <label>type_traits</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp</label>
+        <link refid="kondakov__lr5__family__room_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_family_room.h</label>
+        <link refid="kondakov__lr5__family__room_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp</label>
+        <link refid="kondakov__lr5__family__room_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_main.cpp</label>
+        <link refid="kondakov__lr5__main_8cpp"/>
+      </node>
+      <node id="6">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp</label>
+        <link refid="kondakov__lr5__menu__object_8cpp"/>
+      </node>
+      <node id="5">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h</label>
+        <link refid="kondakov__lr5__menu__object_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp</label>
+        <link refid="kondakov__lr5__menu__object_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_methods.h</label>
+        <link refid="kondakov__lr5__methods_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp</label>
+        <link refid="kondakov__lr5__methods_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_serializer.cpp</label>
+        <link refid="kondakov__lr5__serializer_8cpp"/>
+      </node>
+      <node id="4">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_serializer.h</label>
+        <link refid="kondakov__lr5__serializer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_serializer.hpp</label>
+        <link refid="kondakov__lr5__serializer_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_family_room" prot="public">FamilyRoom</innerclass>
+    <briefdescription>
+<para>Заголовочный файл класса <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> (семейный номер) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kondakov Fedor </para>
+</simplesect>
+<simplesect kind="date"><para>2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>KONDAKOV_LR5_FAMILY_ROOM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KONDAKOV_LR5_FAMILY_ROOM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kondakov__lr5__room_8h" kindref="compound">kondakov_lr5_room.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kondakov__lr5__child__care_8h" kindref="compound">kondakov_lr5_child_care.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_family_room" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kindref="member">Room</ref>,<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" kindref="member">ChildCare</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child_beds;<sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>toy_kit;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><sp/>amenities;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ROOM_TYPE<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Семейная<sp/>комната&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>JSON_TYPE<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Family&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>child_beds);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" kindref="member">child_care_price</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" kindref="member">has_child_care</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>child_beds,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>toy_kit);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" kindref="member">child_care_price</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" kindref="member">has_child_care</ref>,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>child_beds,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>toy_kit,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>amenities);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" kindref="member">child_care_price</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" kindref="member">has_child_care</ref>,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>child_beds,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>toy_kit,<sp/>vector&lt;string&gt;<sp/>amenities);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="class_family_room_1ac559badac05d424145fdfed78e4b68a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_family_room_1ac559badac05d424145fdfed78e4b68a5" kindref="member">FamilyRoom</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>(<ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;&amp;<sp/>other)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>operator=(<ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;&amp;)<sp/>noexcept<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>~<ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>()<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1aa856fd908a82a2bae60b32d70bf46a6c" kindref="member">get_child_beds</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1a284d071e4021ae51ee81959ee34daa24" kindref="member">get_toy_kit</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/>const<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/><ref refid="class_family_room_1aeb63ccdccaa93d69b6086bc264e877b6" kindref="member">get_amenities</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1aef7d738df1e02f504acfd559fc5717f7" kindref="member">get_full_name</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1aa578557a9e04d8ae9d1514927b5ca3fc" kindref="member">set_child_beds</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>child_beds);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1ad02271d4a11244e0f0d019a09d534d20" kindref="member">set_toy_kit</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>toy_kit);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1a3f442240266841fd1abce7f2e5cc01ff" kindref="member">set_amenities</ref>(vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/>amenities);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1a1ebb4c81d3a9702ccc5728c493ef69a3" kindref="member">input_child_beds</ref>();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1adf81aedd42e98a749f90960fc11f6cbc" kindref="member">input_toy_kit</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Delim<sp/>=<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1abb1954b03a8e3aa797e37de43bff05ec" kindref="member">input_amenities</ref>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/>const<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="class_family_room_1a9d7b9dde0586fd167ea83b823d19d31c" kindref="member">get_room_type</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/>const<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="class_family_room_1a59483bf1fc2c54e70d75e3d8586ebc8b" kindref="member">get_json_type</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1a3028a8b0bbf43ce29f60359fa1b11dab" kindref="member">calculate_total</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>night_count)<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1a1dcd7bbdd05f880434599c22d548c999" kindref="member">validate</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1a90b94b412e2139d7cbe3fe9460419b6c" kindref="member">add_play_area</ref>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1aa7c9d20d36a0f7fadad338e5370c3677" kindref="member">remove_play_area</ref>();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/><ref refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" kindref="member">to_json</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" kindref="member">from_json</ref>(const<sp/><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref>&amp;<sp/>j)<sp/>override;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>const;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>T&gt;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>enable_if_t&lt;is_same_v&lt;T,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;,<sp/>T&gt;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>const;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>T&gt;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>enable_if_t&lt;is_same_v&lt;T,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;,<sp/>T&gt;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>const;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>T&gt;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>enable_if_t&lt;is_same_v&lt;T,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;,<sp/>T&gt;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>const;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>T&gt;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>enable_if_t&lt;is_same_v&lt;T,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;,<sp/>T&gt;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>const;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>T&gt;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>enable_if_t&lt;is_same_v&lt;T,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;,<sp/>T&amp;&gt;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>T&gt;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>enable_if_t&lt;is_same_v&lt;T,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;,<sp/>T&amp;&gt;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>T&gt;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>enable_if_t&lt;is_same_v&lt;T,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&gt;,<sp/>T&amp;&gt;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>T&gt;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>typename<sp/>enable_if_t&lt;is_same_v&lt;T,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;,<sp/>T&amp;&gt;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/><sp/>operator+(const<sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>fr1,<sp/>const<sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>fr2);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/><sp/>operator+(const<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>amenities,<sp/>const<sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>fr);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/><sp/>operator+(const<sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>fr,<sp/>const<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>amenities);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>operator+=(vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>amenities,<sp/>const<sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>fr);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/><sp/><sp/><sp/><sp/>operator+=(<ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>fr,<sp/>const<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>amenities);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/><sp/><sp/><sp/><sp/>operator+=(<ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>fr,<sp/>const<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>amenities);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>explicit<sp/>operator<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">()<sp/>const;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>ostream&amp;<sp/>operator&lt;&lt;(ostream&amp;<sp/>os,<sp/>const<sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>istream&amp;<sp/>operator&gt;&gt;(istream&amp;<sp/>is,<sp/><ref refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kindref="member">FamilyRoom</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1a9c0a4570d5b466db2be534ac3b0b0f3c" kindref="member">print</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1ae03def3879b27ffca22b392ca54283c4" kindref="member">input</ref>()<sp/>override;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_family_room_1a271f00565274998fdabcf7caf292fff5" kindref="member">to_string</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kondakov_lr5_family_room.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>KONDAKOV_LR5_FAMILY_ROOM_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h"/>
+  </compounddef>
+</doxygen>

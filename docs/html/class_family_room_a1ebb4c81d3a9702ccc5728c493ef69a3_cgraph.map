@@ -1,0 +1,10 @@
+<map id="FamilyRoom::input_child_beds" name="FamilyRoom::input_child_beds">
+<area shape="rect" id="Node000001" title="Ввод количества детских кроватей" alt="" coords="5,13,206,40"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="254,13,382,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,24,238,24,238,29,206,29"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="430,5,575,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,33,414,33,414,38,382,38"/>
+<area shape="rect" id="Node000004" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="442,72,564,99"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="363,38,445,64,443,69,362,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="429,21,398,20,398,15,430,15"/>
+</map>

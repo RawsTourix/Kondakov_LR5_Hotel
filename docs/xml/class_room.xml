@@ -1,0 +1,1555 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_room" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Room</compoundname>
+    <derivedcompoundref refid="class_family_room" prot="public" virt="virtual">FamilyRoom</derivedcompoundref>
+    <derivedcompoundref refid="class_standard_room" prot="public" virt="virtual">StandardRoom</derivedcompoundref>
+    <derivedcompoundref refid="class_suite" prot="public" virt="virtual">Suite</derivedcompoundref>
+    <includes refid="kondakov__lr5__room_8h" local="no">kondakov_lr5_room.h</includes>
+    <sectiondef kind="user-defined">
+      <header>Конструкторы</header>
+      <memberdef kind="function" id="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Room::Room</definition>
+        <argsstring>()</argsstring>
+        <name>Room</name>
+        <qualifiedname>Room::Room</qualifiedname>
+        <briefdescription>
+<para>Конструктор по умолчанию </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает комнату с параметрами:<itemizedlist>
+<listitem><para>Номер комнаты: 0</para>
+</listitem><listitem><para>Цена за ночь: 0.0</para>
+</listitem><listitem><para>Статус бронирования: нет </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="59" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="18" bodyend="20"/>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room</references>
+        <referencedby refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" compoundref="kondakov__lr5__family__room_8cpp" startline="15" endline="21">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1adbf8949f46b23f3c2480c950f4ba77e7" compoundref="kondakov__lr5__family__room_8cpp" startline="100" endline="105">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" compoundref="kondakov__lr5__family__room_8cpp" startline="64" endline="73">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" compoundref="kondakov__lr5__family__room_8cpp" startline="86" endline="94">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a3f59431db365d7048ecced77d637aee6" compoundref="kondakov__lr5__family__room_8cpp" startline="28" endline="34">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_room_1a36eff138ff44b4dc96c10d5f439cc821" compoundref="kondakov__lr5__room_8cpp" startline="91" endline="94">operator&lt;&lt;</referencedby>
+        <referencedby refid="class_room_1a8b0c15f242679145b4922d1bb7b6ee6e" compoundref="kondakov__lr5__room_8cpp" startline="102" endline="108">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room</referencedby>
+        <referencedby refid="class_room_1a5b964942d5eb880206cc5bc93ccd9045">Room</referencedby>
+        <referencedby refid="class_room_1a85a05efbf9e7aa79f9ea8bd009f03855" compoundref="kondakov__lr5__room_8cpp" startline="26" endline="28">Room</referencedby>
+        <referencedby refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" compoundref="kondakov__lr5__room_8cpp" startline="46" endline="50">Room</referencedby>
+        <referencedby refid="class_standard_room_1a32dadc773859aac18048b08855c26377" compoundref="kondakov__lr5__standard__room_8cpp" startline="15" endline="20">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1af70fc0ba78a874aaf1cb87d04c6242ac" compoundref="kondakov__lr5__standard__room_8cpp" startline="55" endline="62">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1a0320959fc237ea0da3d057fb1d9de63d" compoundref="kondakov__lr5__standard__room_8cpp" startline="73" endline="78">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1ac4e5998244608a81fb3c43d0e726f516" compoundref="kondakov__lr5__standard__room_8cpp" startline="27" endline="32">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1a544e0f476c31c4e204704e79a3089a4e" compoundref="kondakov__lr5__standard__room_8cpp" startline="84" endline="89">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" compoundref="kondakov__lr5__suite_8cpp" startline="15" endline="20">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a710a30c09147e4838ee42de34ae4fd96" compoundref="kondakov__lr5__suite_8cpp" startline="27" endline="32">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a9dda4162a1c67074b11e3d83da22d196" compoundref="kondakov__lr5__suite_8cpp" startline="55" endline="62">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a395e66a54d3dbd412e64c60ddedb06b5" compoundref="kondakov__lr5__suite_8cpp" startline="73" endline="78">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1aea409d24c05e53ba1d4c83a63da708c5" compoundref="kondakov__lr5__suite_8cpp" startline="84" endline="89">Suite::Suite</referencedby>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a85a05efbf9e7aa79f9ea8bd009f03855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Room::Room</definition>
+        <argsstring>(int room_number)</argsstring>
+        <name>Room</name>
+        <qualifiedname>Room::Room</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор преобразования </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Создает комнату с указанным номером и значениями по умолчанию:<itemizedlist>
+<listitem><para>Цена за ночь: 0.0</para>
+</listitem><listitem><para>Статус бронирования: нет</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="68" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="26" bodyend="28"/>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Room::Room</definition>
+        <argsstring>(int room_number, float price_per_night, bool is_booked)</argsstring>
+        <name>Room</name>
+        <qualifiedname>Room::Room</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>price_per_night</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_booked</declname>
+        </param>
+        <briefdescription>
+<para>Основной конструктор с параметрами </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с параметрами</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="76" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="36" bodyend="40"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a5b964942d5eb880206cc5bc93ccd9045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Room::Room</definition>
+        <argsstring>(const Room &amp;)=default</argsstring>
+        <name>Room</name>
+        <qualifiedname>Room::Room</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Конструктор копирования </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="79" column="5"/>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room</references>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a1cda0e12564c8fedcba0a4fa18ede003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+        <definition>Room &amp; Room::operator=</definition>
+        <argsstring>(const Room &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Room::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1aef15fbcb799551fd9e3008fe51266b01" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Room::Room</definition>
+        <argsstring>(Room &amp;&amp;other) noexcept</argsstring>
+        <name>Room</name>
+        <qualifiedname>Room::Room</qualifiedname>
+        <param>
+          <type><ref refid="class_room" kindref="compound">Room</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор перемещения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Другой объект <ref refid="class_room" kindref="compound">Room</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="83" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="46" bodyend="50"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">price_per_night</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a4fd1667324eb508ecd1981481a37fdd0" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+        <definition>Room &amp; Room::operator=</definition>
+        <argsstring>(Room &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Room::operator=</qualifiedname>
+        <param>
+          <type><ref refid="class_room" kindref="compound">Room</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="84" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Геттеры</header>
+      <memberdef kind="function" id="class_room_1a8da5257d15eb131e471b59ba753dcedb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Room::get_room_number</definition>
+        <argsstring>() const</argsstring>
+        <name>get_room_number</name>
+        <qualifiedname>Room::get_room_number</qualifiedname>
+        <briefdescription>
+<para>Получить номер комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Номер комнаты </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="92" column="16" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="19" bodyend="21"/>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">room_number</references>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a828dede24bf20f003892f71c9b08d2e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Room::get_price_per_night</definition>
+        <argsstring>() const</argsstring>
+        <name>get_price_per_night</name>
+        <qualifiedname>Room::get_price_per_night</qualifiedname>
+        <briefdescription>
+<para>Получить цену за ночь </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Цена за ночь </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="93" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="27" bodyend="29"/>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">price_per_night</references>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a263ae7170c7b5b3df8065a3605d39f28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Room::get_is_booked</definition>
+        <argsstring>() const</argsstring>
+        <name>get_is_booked</name>
+        <qualifiedname>Room::get_is_booked</qualifiedname>
+        <briefdescription>
+<para>Получить статус бронирования </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если номер забронирован, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="94" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="35" bodyend="37"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">is_booked</references>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1ae6f809c97ae2d5a6ab101cd8771d9cb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="pure-virtual">
+        <type>const vector&lt; string &gt; &amp;</type>
+        <definition>virtual const vector&lt; string &gt; &amp; Room::get_amenities</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_amenities</name>
+        <qualifiedname>Room::get_amenities</qualifiedname>
+        <reimplementedby refid="class_family_room_1aeb63ccdccaa93d69b6086bc264e877b6">get_amenities</reimplementedby>
+        <reimplementedby refid="class_standard_room_1a9138d117561e302bf0d1dadde1f7401c">get_amenities</reimplementedby>
+        <reimplementedby refid="class_suite_1aedf54f1bdfbadeb7d5e0e88d17e56e50">get_amenities</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="95" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a5e3f378b9991a36faa3172fce417715b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string Room::get_full_name</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_full_name</name>
+        <qualifiedname>Room::get_full_name</qualifiedname>
+        <reimplementedby refid="class_family_room_1aef7d738df1e02f504acfd559fc5717f7">get_full_name</reimplementedby>
+        <reimplementedby refid="class_standard_room_1af62d306fc8c3735b2a2097768ec74f21">get_full_name</reimplementedby>
+        <reimplementedby refid="class_suite_1a7bd3a5de67c22d5f4c52de55222ef145">get_full_name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="96" column="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Сеттеры</header>
+      <memberdef kind="function" id="class_room_1a1b06ff753e0b5dd0a611fbdc52afa3a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Room::set_room_number</definition>
+        <argsstring>(int room_number)</argsstring>
+        <name>set_room_number</name>
+        <qualifiedname>Room::set_room_number</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <briefdescription>
+<para>Установить номер комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="101" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="43" bodyend="45"/>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">room_number</references>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a75c9b72c1c0a64e6b38b3b12ec94e226" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Room::set_price_per_night</definition>
+        <argsstring>(float price_per_night)</argsstring>
+        <name>set_price_per_night</name>
+        <qualifiedname>Room::set_price_per_night</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>price_per_night</declname>
+        </param>
+        <briefdescription>
+<para>Установить цену за ночь </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новая цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="102" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="51" bodyend="53"/>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">price_per_night</references>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a488165c7e78bb66e8338835e0fdae5ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Room::set_is_booked</definition>
+        <argsstring>(bool is_booked)</argsstring>
+        <name>set_is_booked</name>
+        <qualifiedname>Room::set_is_booked</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_booked</declname>
+        </param>
+        <briefdescription>
+<para>Установить статус бронирования </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="103" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="59" bodyend="61"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">is_booked</references>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Методы ввода</header>
+      <memberdef kind="function" id="class_room_1a2e34a3971a1607066debe10b3577fde2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Room::input_room_number</definition>
+        <argsstring>()</argsstring>
+        <name>input_room_number</name>
+        <qualifiedname>Room::input_room_number</qualifiedname>
+        <briefdescription>
+<para>Ввод номера комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="108" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="67" bodyend="70"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">room_number</references>
+        <referencedby refid="class_room_1a8b0c15f242679145b4922d1bb7b6ee6e" compoundref="kondakov__lr5__room_8cpp" startline="102" endline="108">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a6cf26e8f3f928e18afae33e46bca7927" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, int &gt;, bool &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, int &gt;, bool &gt; Room::input_room_number</definition>
+        <argsstring>(const Container &amp;room_numbers)</argsstring>
+        <name>input_room_number</name>
+        <qualifiedname>Room::input_room_number</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>room_numbers</declname>
+        </param>
+        <briefdescription>
+<para>Ввод номера комнаты с проверкой уникальности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с номерами комнат </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_numbers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с существующими номерами комнат </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="111" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="80" bodyend="91"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1aed37576ec13b3d3d24559e709d0adc32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Room::input_price_per_night</definition>
+        <argsstring>()</argsstring>
+        <name>input_price_per_night</name>
+        <qualifiedname>Room::input_price_per_night</qualifiedname>
+        <briefdescription>
+<para>Ввод цены за ночь </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="112" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="97" bodyend="102"/>
+        <references refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" compoundref="kondakov__lr5__room_8h" startline="48">CURRENCY</references>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">price_per_night</references>
+        <referencedby refid="class_room_1a8b0c15f242679145b4922d1bb7b6ee6e" compoundref="kondakov__lr5__room_8cpp" startline="102" endline="108">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a693f8c26331cfee829f263c830f3e5ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Room::input_is_booked</definition>
+        <argsstring>()</argsstring>
+        <name>input_is_booked</name>
+        <qualifiedname>Room::input_is_booked</qualifiedname>
+        <briefdescription>
+<para>Ввод статуса бронирования </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="113" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.hpp" bodystart="108" bodyend="111"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">is_booked</references>
+        <referencedby refid="class_room_1a8b0c15f242679145b4922d1bb7b6ee6e" compoundref="kondakov__lr5__room_8cpp" startline="102" endline="108">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Абстрактные методы</header>
+      <memberdef kind="function" id="class_room_1a0551c035cf42bed1ae6865561dd5e5de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="pure-virtual">
+        <type>const string &amp;</type>
+        <definition>virtual const string &amp; Room::get_room_type</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_room_type</name>
+        <qualifiedname>Room::get_room_type</qualifiedname>
+        <reimplementedby refid="class_family_room_1a9d7b9dde0586fd167ea83b823d19d31c">get_room_type</reimplementedby>
+        <reimplementedby refid="class_standard_room_1afe04ed7e9c817111a6c1fb7aee10ba44">get_room_type</reimplementedby>
+        <reimplementedby refid="class_suite_1a5c36774e4bd5f9c9fb1bcb2f33ca60f0">get_room_type</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="118" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a3bc75b359d4b5d4f5f655f75478019d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="pure-virtual">
+        <type>const string &amp;</type>
+        <definition>virtual const string &amp; Room::get_json_type</definition>
+        <argsstring>() const =0</argsstring>
+        <name>get_json_type</name>
+        <qualifiedname>Room::get_json_type</qualifiedname>
+        <reimplementedby refid="class_family_room_1a59483bf1fc2c54e70d75e3d8586ebc8b">get_json_type</reimplementedby>
+        <reimplementedby refid="class_standard_room_1a602ea7d9edcc6f1a2f772f41f1e86d91">get_json_type</reimplementedby>
+        <reimplementedby refid="class_suite_1ae4543962753535fe6949179a061c7482">get_json_type</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="119" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a85c09226671b7572f5e3e4206fac09cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float Room::calculate_total</definition>
+        <argsstring>(int night_count) const =0</argsstring>
+        <name>calculate_total</name>
+        <qualifiedname>Room::calculate_total</qualifiedname>
+        <reimplementedby refid="class_family_room_1a3028a8b0bbf43ce29f60359fa1b11dab">calculate_total</reimplementedby>
+        <reimplementedby refid="class_standard_room_1a8b4f0b7940b0a2dbfb3aab3063227a2b">calculate_total</reimplementedby>
+        <reimplementedby refid="class_suite_1a52e5526c81daabf55593d814d0da28b3">calculate_total</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>night_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="120" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a481e9eaeeb4964748e0fe8f6cff33c57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Room::validate</definition>
+        <argsstring>() const =0</argsstring>
+        <name>validate</name>
+        <qualifiedname>Room::validate</qualifiedname>
+        <reimplementedby refid="class_family_room_1a1dcd7bbdd05f880434599c22d548c999">validate</reimplementedby>
+        <reimplementedby refid="class_standard_room_1abf5ec953669ccaae53f893db5a683ea8">validate</reimplementedby>
+        <reimplementedby refid="class_suite_1a5dfc680a5053801d7564eac1e6884320">validate</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="121" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a5188f0fe1d99561de97ab2b5fccde4b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+        <definition>virtual json Room::to_json</definition>
+        <argsstring>() const =0</argsstring>
+        <name>to_json</name>
+        <qualifiedname>Room::to_json</qualifiedname>
+        <reimplementedby refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac">to_json</reimplementedby>
+        <reimplementedby refid="class_standard_room_1ac69d562b2b499115e781e42a0fe5d7ac">to_json</reimplementedby>
+        <reimplementedby refid="class_suite_1afd16f2512f214af813bd2123b2a6f309">to_json</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="122" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a683b154738ffe3f6b20e9c3807735f9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Room::from_json</definition>
+        <argsstring>(const json &amp;j)=0</argsstring>
+        <name>from_json</name>
+        <qualifiedname>Room::from_json</qualifiedname>
+        <reimplementedby refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c">from_json</reimplementedby>
+        <reimplementedby refid="class_standard_room_1a2844b52435f2d070357dea921a3541ad">from_json</reimplementedby>
+        <reimplementedby refid="class_suite_1ad1c3c76f53340da885309ef251d2898e">from_json</reimplementedby>
+        <param>
+          <type>const <ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref> &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="123" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Операторы сравнения</header>
+      <memberdef kind="friend" id="class_room_1a5bdf7a1de75c11ddd88a885a55aec2b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const Room &amp;r1, const Room &amp;r2)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Room::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="128" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1aa0d7134aced47f8d978ff39f0a864db5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(int room_number, const Room &amp;r2)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Room::operator==</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="129" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a7cf209698d3f77299918b41ac1edb880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const Room &amp;r1, int room_number)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Room::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="130" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a2bcc48d7125c732d1f968edefda56344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&gt;=</definition>
+        <argsstring>(const Room &amp;r1, const Room &amp;r2)</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>Room::operator&gt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="131" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1af90895751b7344c60584e5d83c5df4c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&gt;=</definition>
+        <argsstring>(int room_number, const Room &amp;r2)</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>Room::operator&gt;=</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="132" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a0f3c42df0072674a25f8423086932abc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&gt;=</definition>
+        <argsstring>(const Room &amp;r1, int room_number)</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>Room::operator&gt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="133" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a8f4f32a23a7f70c30b1719298080a3f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;=</definition>
+        <argsstring>(const Room &amp;r1, const Room &amp;r2)</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>Room::operator&lt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="134" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1affec85e4ee9e5372f03ecef2690cd917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;=</definition>
+        <argsstring>(int room_number, const Room &amp;r2)</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>Room::operator&lt;=</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="135" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a081c4e1598df929932d016deb4edd71e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;=</definition>
+        <argsstring>(const Room &amp;r1, int room_number)</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>Room::operator&lt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="136" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a7eebef86e38c00ff4187d9d07a677fa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&gt;</definition>
+        <argsstring>(const Room &amp;r1, const Room &amp;r2)</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>Room::operator&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="137" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a00731c176c310af0b71eeacd44346308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&gt;</definition>
+        <argsstring>(int room_number, const Room &amp;r2)</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>Room::operator&gt;</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="138" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1af321c6828f557795f589d9f227e26937" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&gt;</definition>
+        <argsstring>(const Room &amp;r1, int room_number)</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>Room::operator&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="139" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a5e07051c5358a0c18092711c622e666d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(const Room &amp;r1, const Room &amp;r2)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>Room::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="140" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a1ca203c6f90c34ceaa451a75b1b330d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(int room_number, const Room &amp;r2)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>Room::operator&lt;</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="141" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1ae406d1a4e1a9f132f1f3a6e59efb5b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(const Room &amp;r1, int room_number)</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>Room::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="142" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1ac5c1ca74e258e0e7b085c01387fcf1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const Room &amp;r1, const Room &amp;r2)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>Room::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="143" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a48fc1502df2a9d36b8a6a8989f5a6074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(int room_number, const Room &amp;r2)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>Room::operator!=</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="144" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1aae7cfb3e2dbebb2113cefb251ff202cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const Room &amp;r1, int room_number)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>Room::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="145" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Операторы ввода/вывода</header>
+      <memberdef kind="friend" id="class_room_1a36eff138ff44b4dc96c10d5f439cc821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Room &amp;r)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Room::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Оператор вывода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток вывода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для вывода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток вывода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="153" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="91" bodyend="94"/>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room</references>
+      </memberdef>
+      <memberdef kind="friend" id="class_room_1a8b0c15f242679145b4922d1bb7b6ee6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>istream &amp;</type>
+        <definition>istream &amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, Room &amp;r)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <qualifiedname>Room::operator&gt;&gt;</qualifiedname>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_room" kindref="compound">Room</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Оператор ввода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток ввода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток ввода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="154" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="102" bodyend="108"/>
+        <references refid="class_room_1a693f8c26331cfee829f263c830f3e5ad" compoundref="kondakov__lr5__room_8hpp" startline="108" endline="111">input_is_booked</references>
+        <references refid="class_room_1aed37576ec13b3d3d24559e709d0adc32" compoundref="kondakov__lr5__room_8hpp" startline="97" endline="102">input_price_per_night</references>
+        <references refid="class_room_1a2e34a3971a1607066debe10b3577fde2" compoundref="kondakov__lr5__room_8hpp" startline="67" endline="70">input_room_number</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_room_1a120b984b4105e8f795ca6039302aa0f6" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Room::room_number</definition>
+        <argsstring></argsstring>
+        <name>room_number</name>
+        <qualifiedname>Room::room_number</qualifiedname>
+        <briefdescription>
+<para>Номер комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="27" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" compoundref="kondakov__lr5__family__room_8cpp" startline="46" endline="51">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" compoundref="kondakov__lr5__family__room_8cpp" startline="64" endline="73">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" compoundref="kondakov__lr5__family__room_8cpp" startline="86" endline="94">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a3f59431db365d7048ecced77d637aee6" compoundref="kondakov__lr5__family__room_8cpp" startline="28" endline="34">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" compoundref="kondakov__lr5__family__room_8cpp" startline="128" endline="137">FamilyRoom::from_json</referencedby>
+        <referencedby refid="class_standard_room_1a2844b52435f2d070357dea921a3541ad" compoundref="kondakov__lr5__standard__room_8cpp" startline="110" endline="117">StandardRoom::from_json</referencedby>
+        <referencedby refid="class_suite_1ad1c3c76f53340da885309ef251d2898e" compoundref="kondakov__lr5__suite_8cpp" startline="110" endline="117">Suite::from_json</referencedby>
+        <referencedby refid="class_family_room_1aef7d738df1e02f504acfd559fc5717f7" compoundref="kondakov__lr5__family__room_8hpp" startline="43" endline="47">FamilyRoom::get_full_name</referencedby>
+        <referencedby refid="class_standard_room_1af62d306fc8c3735b2a2097768ec74f21" compoundref="kondakov__lr5__standard__room_8hpp" startline="43" endline="47">StandardRoom::get_full_name</referencedby>
+        <referencedby refid="class_suite_1a7bd3a5de67c22d5f4c52de55222ef145" compoundref="kondakov__lr5__suite_8hpp" startline="43" endline="47">Suite::get_full_name</referencedby>
+        <referencedby refid="class_room_1a8da5257d15eb131e471b59ba753dcedb" compoundref="kondakov__lr5__room_8hpp" startline="19" endline="21">get_room_number</referencedby>
+        <referencedby refid="class_room_1a2e34a3971a1607066debe10b3577fde2" compoundref="kondakov__lr5__room_8hpp" startline="67" endline="70">input_room_number</referencedby>
+        <referencedby refid="class_room_1a6cf26e8f3f928e18afae33e46bca7927" compoundref="kondakov__lr5__room_8hpp" startline="80" endline="91">input_room_number</referencedby>
+        <referencedby refid="class_room_1a85a05efbf9e7aa79f9ea8bd009f03855" compoundref="kondakov__lr5__room_8cpp" startline="26" endline="28">Room</referencedby>
+        <referencedby refid="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" compoundref="kondakov__lr5__room_8cpp" startline="36" endline="40">Room</referencedby>
+        <referencedby refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" compoundref="kondakov__lr5__room_8cpp" startline="46" endline="50">Room</referencedby>
+        <referencedby refid="class_room_1a1b06ff753e0b5dd0a611fbdc52afa3a6" compoundref="kondakov__lr5__room_8hpp" startline="43" endline="45">set_room_number</referencedby>
+        <referencedby refid="class_standard_room_1a854c437feec24655a64310a7adce06b0" compoundref="kondakov__lr5__standard__room_8cpp" startline="42" endline="44">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1af70fc0ba78a874aaf1cb87d04c6242ac" compoundref="kondakov__lr5__standard__room_8cpp" startline="55" endline="62">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1a0320959fc237ea0da3d057fb1d9de63d" compoundref="kondakov__lr5__standard__room_8cpp" startline="73" endline="78">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1ac4e5998244608a81fb3c43d0e726f516" compoundref="kondakov__lr5__standard__room_8cpp" startline="27" endline="32">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_suite_1a710a30c09147e4838ee42de34ae4fd96" compoundref="kondakov__lr5__suite_8cpp" startline="27" endline="32">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a80d4f9db1d8cb72a3ca0286e7ea3a0c5" compoundref="kondakov__lr5__suite_8cpp" startline="42" endline="44">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a9dda4162a1c67074b11e3d83da22d196" compoundref="kondakov__lr5__suite_8cpp" startline="55" endline="62">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a395e66a54d3dbd412e64c60ddedb06b5" compoundref="kondakov__lr5__suite_8cpp" startline="73" endline="78">Suite::Suite</referencedby>
+        <referencedby refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" compoundref="kondakov__lr5__family__room_8cpp" startline="111" endline="122">FamilyRoom::to_json</referencedby>
+        <referencedby refid="class_standard_room_1ac69d562b2b499115e781e42a0fe5d7ac" compoundref="kondakov__lr5__standard__room_8cpp" startline="95" endline="104">StandardRoom::to_json</referencedby>
+        <referencedby refid="class_suite_1afd16f2512f214af813bd2123b2a6f309" compoundref="kondakov__lr5__suite_8cpp" startline="95" endline="104">Suite::to_json</referencedby>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_room_1a76266e1148de995bdfa05d07a94ee93e" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Room::price_per_night</definition>
+        <argsstring></argsstring>
+        <name>price_per_night</name>
+        <qualifiedname>Room::price_per_night</qualifiedname>
+        <briefdescription>
+<para>Цена за ночь </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="28" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_family_room_1a90b94b412e2139d7cbe3fe9460419b6c" compoundref="kondakov__lr5__family__room_8hpp" startline="148" endline="151">FamilyRoom::add_play_area</referencedby>
+        <referencedby refid="class_family_room_1a3028a8b0bbf43ce29f60359fa1b11dab" compoundref="kondakov__lr5__family__room_8hpp" startline="132" endline="134">FamilyRoom::calculate_total</referencedby>
+        <referencedby refid="class_standard_room_1a8b4f0b7940b0a2dbfb3aab3063227a2b" compoundref="kondakov__lr5__standard__room_8hpp" startline="126" endline="128">StandardRoom::calculate_total</referencedby>
+        <referencedby refid="class_suite_1a52e5526c81daabf55593d814d0da28b3" compoundref="kondakov__lr5__suite_8hpp" startline="126" endline="128">Suite::calculate_total</referencedby>
+        <referencedby refid="class_standard_room_1ab7c3a25d3d39eed18ac42c65c5cd9ed1" compoundref="kondakov__lr5__standard__room_8hpp" startline="142" endline="145">StandardRoom::exstra_bed</referencedby>
+        <referencedby refid="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" compoundref="kondakov__lr5__family__room_8cpp" startline="46" endline="51">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" compoundref="kondakov__lr5__family__room_8cpp" startline="64" endline="73">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" compoundref="kondakov__lr5__family__room_8cpp" startline="86" endline="94">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" compoundref="kondakov__lr5__family__room_8cpp" startline="128" endline="137">FamilyRoom::from_json</referencedby>
+        <referencedby refid="class_standard_room_1a2844b52435f2d070357dea921a3541ad" compoundref="kondakov__lr5__standard__room_8cpp" startline="110" endline="117">StandardRoom::from_json</referencedby>
+        <referencedby refid="class_suite_1ad1c3c76f53340da885309ef251d2898e" compoundref="kondakov__lr5__suite_8cpp" startline="110" endline="117">Suite::from_json</referencedby>
+        <referencedby refid="class_room_1a828dede24bf20f003892f71c9b08d2e9" compoundref="kondakov__lr5__room_8hpp" startline="27" endline="29">get_price_per_night</referencedby>
+        <referencedby refid="class_room_1aed37576ec13b3d3d24559e709d0adc32" compoundref="kondakov__lr5__room_8hpp" startline="97" endline="102">input_price_per_night</referencedby>
+        <referencedby refid="class_room_1aff42dadd005f91b3feed3dc2dfb41229" compoundref="kondakov__lr5__room_8cpp" startline="77" endline="83">operator string</referencedby>
+        <referencedby refid="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" compoundref="kondakov__lr5__suite_8hpp" startline="143" endline="147">Suite::order_champagne</referencedby>
+        <referencedby refid="class_family_room_1aa7c9d20d36a0f7fadad338e5370c3677" compoundref="kondakov__lr5__family__room_8hpp" startline="157" endline="162">FamilyRoom::remove_play_area</referencedby>
+        <referencedby refid="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" compoundref="kondakov__lr5__room_8cpp" startline="36" endline="40">Room</referencedby>
+        <referencedby refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" compoundref="kondakov__lr5__room_8cpp" startline="46" endline="50">Room</referencedby>
+        <referencedby refid="class_room_1a75c9b72c1c0a64e6b38b3b12ec94e226" compoundref="kondakov__lr5__room_8hpp" startline="51" endline="53">set_price_per_night</referencedby>
+        <referencedby refid="class_standard_room_1a854c437feec24655a64310a7adce06b0" compoundref="kondakov__lr5__standard__room_8cpp" startline="42" endline="44">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1af70fc0ba78a874aaf1cb87d04c6242ac" compoundref="kondakov__lr5__standard__room_8cpp" startline="55" endline="62">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1a0320959fc237ea0da3d057fb1d9de63d" compoundref="kondakov__lr5__standard__room_8cpp" startline="73" endline="78">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_suite_1a80d4f9db1d8cb72a3ca0286e7ea3a0c5" compoundref="kondakov__lr5__suite_8cpp" startline="42" endline="44">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a9dda4162a1c67074b11e3d83da22d196" compoundref="kondakov__lr5__suite_8cpp" startline="55" endline="62">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a395e66a54d3dbd412e64c60ddedb06b5" compoundref="kondakov__lr5__suite_8cpp" startline="73" endline="78">Suite::Suite</referencedby>
+        <referencedby refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" compoundref="kondakov__lr5__family__room_8cpp" startline="111" endline="122">FamilyRoom::to_json</referencedby>
+        <referencedby refid="class_standard_room_1ac69d562b2b499115e781e42a0fe5d7ac" compoundref="kondakov__lr5__standard__room_8cpp" startline="95" endline="104">StandardRoom::to_json</referencedby>
+        <referencedby refid="class_suite_1afd16f2512f214af813bd2123b2a6f309" compoundref="kondakov__lr5__suite_8cpp" startline="95" endline="104">Suite::to_json</referencedby>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_room_1adeba14cded5e6e9ddc73ca144fc78470" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Room::is_booked</definition>
+        <argsstring></argsstring>
+        <name>is_booked</name>
+        <qualifiedname>Room::is_booked</qualifiedname>
+        <briefdescription>
+<para>Статус бронирования </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="29" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" compoundref="kondakov__lr5__family__room_8cpp" startline="46" endline="51">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" compoundref="kondakov__lr5__family__room_8cpp" startline="64" endline="73">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" compoundref="kondakov__lr5__family__room_8cpp" startline="86" endline="94">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" compoundref="kondakov__lr5__family__room_8cpp" startline="128" endline="137">FamilyRoom::from_json</referencedby>
+        <referencedby refid="class_standard_room_1a2844b52435f2d070357dea921a3541ad" compoundref="kondakov__lr5__standard__room_8cpp" startline="110" endline="117">StandardRoom::from_json</referencedby>
+        <referencedby refid="class_suite_1ad1c3c76f53340da885309ef251d2898e" compoundref="kondakov__lr5__suite_8cpp" startline="110" endline="117">Suite::from_json</referencedby>
+        <referencedby refid="class_room_1a263ae7170c7b5b3df8065a3605d39f28" compoundref="kondakov__lr5__room_8hpp" startline="35" endline="37">get_is_booked</referencedby>
+        <referencedby refid="class_room_1a693f8c26331cfee829f263c830f3e5ad" compoundref="kondakov__lr5__room_8hpp" startline="108" endline="111">input_is_booked</referencedby>
+        <referencedby refid="class_room_1aff42dadd005f91b3feed3dc2dfb41229" compoundref="kondakov__lr5__room_8cpp" startline="77" endline="83">operator string</referencedby>
+        <referencedby refid="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" compoundref="kondakov__lr5__room_8cpp" startline="36" endline="40">Room</referencedby>
+        <referencedby refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" compoundref="kondakov__lr5__room_8cpp" startline="46" endline="50">Room</referencedby>
+        <referencedby refid="class_room_1a488165c7e78bb66e8338835e0fdae5ae" compoundref="kondakov__lr5__room_8hpp" startline="59" endline="61">set_is_booked</referencedby>
+        <referencedby refid="class_standard_room_1a854c437feec24655a64310a7adce06b0" compoundref="kondakov__lr5__standard__room_8cpp" startline="42" endline="44">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1af70fc0ba78a874aaf1cb87d04c6242ac" compoundref="kondakov__lr5__standard__room_8cpp" startline="55" endline="62">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_standard_room_1a0320959fc237ea0da3d057fb1d9de63d" compoundref="kondakov__lr5__standard__room_8cpp" startline="73" endline="78">StandardRoom::StandardRoom</referencedby>
+        <referencedby refid="class_suite_1a80d4f9db1d8cb72a3ca0286e7ea3a0c5" compoundref="kondakov__lr5__suite_8cpp" startline="42" endline="44">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a9dda4162a1c67074b11e3d83da22d196" compoundref="kondakov__lr5__suite_8cpp" startline="55" endline="62">Suite::Suite</referencedby>
+        <referencedby refid="class_suite_1a395e66a54d3dbd412e64c60ddedb06b5" compoundref="kondakov__lr5__suite_8cpp" startline="73" endline="78">Suite::Suite</referencedby>
+        <referencedby refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" compoundref="kondakov__lr5__family__room_8cpp" startline="111" endline="122">FamilyRoom::to_json</referencedby>
+        <referencedby refid="class_standard_room_1ac69d562b2b499115e781e42a0fe5d7ac" compoundref="kondakov__lr5__standard__room_8cpp" startline="95" endline="104">StandardRoom::to_json</referencedby>
+        <referencedby refid="class_suite_1afd16f2512f214af813bd2123b2a6f309" compoundref="kondakov__lr5__suite_8cpp" startline="95" endline="104">Suite::to_json</referencedby>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Room::CURRENCY</definition>
+        <argsstring></argsstring>
+        <name>CURRENCY</name>
+        <qualifiedname>Room::CURRENCY</qualifiedname>
+        <initializer>= &quot;руб.&quot;</initializer>
+        <briefdescription>
+<para>Валюта для отображения цен </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Валюта по умолчанию </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="48" column="25" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" compoundref="kondakov__lr5__methods_8hpp" startline="512" endline="580">Methods::additional_room_methods</referencedby>
+        <referencedby refid="namespace_methods_1a7b9a83b3197577b58819541579717b4c" compoundref="kondakov__lr5__methods_8hpp" startline="460" endline="474">Methods::calculate_total</referencedby>
+        <referencedby refid="class_room_1aed37576ec13b3d3d24559e709d0adc32" compoundref="kondakov__lr5__room_8hpp" startline="97" endline="102">input_price_per_night</referencedby>
+        <referencedby refid="class_room_1aff42dadd005f91b3feed3dc2dfb41229" compoundref="kondakov__lr5__room_8cpp" startline="77" endline="83">operator string</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_room_1af185fec4d7038c4640e2618817d41d95" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Room::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <qualifiedname>Room::print</qualifiedname>
+        <reimplementedby refid="class_family_room_1a9c0a4570d5b466db2be534ac3b0b0f3c">print</reimplementedby>
+        <reimplementedby refid="class_standard_room_1acf55a87a76c686170ce9c8e1d4cdf62a">print</reimplementedby>
+        <reimplementedby refid="class_suite_1a31debd927684dc287f287030def6438d">print</reimplementedby>
+        <briefdescription>
+<para>Виртуальный метод вывода информации о комнате </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="34" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a3771355e58c0cac65cb836f72b7da113" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Room::input</definition>
+        <argsstring>()</argsstring>
+        <name>input</name>
+        <qualifiedname>Room::input</qualifiedname>
+        <reimplementedby refid="class_family_room_1ae03def3879b27ffca22b392ca54283c4">input</reimplementedby>
+        <reimplementedby refid="class_standard_room_1a5c3965885d7f9455ac2106275ac658bf">input</reimplementedby>
+        <reimplementedby refid="class_suite_1ae6868783d1d9227a61d7d0afd7f9a79e">input</reimplementedby>
+        <briefdescription>
+<para>Виртуальный метод ввода информации о комнате </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, false если успешно </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="42" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.h" bodystart="42" bodyend="44"/>
+        <referencedby refid="class_family_room_1ae03def3879b27ffca22b392ca54283c4" compoundref="kondakov__lr5__family__room_8cpp" startline="243" endline="253">FamilyRoom::input</referencedby>
+        <referencedby refid="class_standard_room_1a5c3965885d7f9455ac2106275ac658bf" compoundref="kondakov__lr5__standard__room_8cpp" startline="196" endline="204">StandardRoom::input</referencedby>
+        <referencedby refid="class_suite_1ae6868783d1d9227a61d7d0afd7f9a79e" compoundref="kondakov__lr5__suite_8cpp" startline="196" endline="204">Suite::input</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_room_1a508697104b1bdce37058c029ea5d7b2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Room::~Room</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Room</name>
+        <qualifiedname>Room::~Room</qualifiedname>
+        <briefdescription>
+<para>Виртуальный деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="88" column="13"/>
+        <references refid="class_room_1a263ae7170c7b5b3df8065a3605d39f28" compoundref="kondakov__lr5__room_8hpp" startline="35" endline="37">get_is_booked</references>
+        <references refid="class_room_1a828dede24bf20f003892f71c9b08d2e9" compoundref="kondakov__lr5__room_8hpp" startline="27" endline="29">get_price_per_night</references>
+        <references refid="class_room_1a8da5257d15eb131e471b59ba753dcedb" compoundref="kondakov__lr5__room_8hpp" startline="19" endline="21">get_room_number</references>
+        <references refid="class_room_1a693f8c26331cfee829f263c830f3e5ad" compoundref="kondakov__lr5__room_8hpp" startline="108" endline="111">input_is_booked</references>
+        <references refid="class_room_1aed37576ec13b3d3d24559e709d0adc32" compoundref="kondakov__lr5__room_8hpp" startline="97" endline="102">input_price_per_night</references>
+        <references refid="class_room_1a2e34a3971a1607066debe10b3577fde2" compoundref="kondakov__lr5__room_8hpp" startline="67" endline="70">input_room_number</references>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">price_per_night</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">room_number</references>
+        <references refid="class_room_1a488165c7e78bb66e8338835e0fdae5ae" compoundref="kondakov__lr5__room_8hpp" startline="59" endline="61">set_is_booked</references>
+        <references refid="class_room_1a75c9b72c1c0a64e6b38b3b12ec94e226" compoundref="kondakov__lr5__room_8hpp" startline="51" endline="53">set_price_per_night</references>
+        <references refid="class_room_1a1b06ff753e0b5dd0a611fbdc52afa3a6" compoundref="kondakov__lr5__room_8hpp" startline="43" endline="45">set_room_number</references>
+        <references refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" compoundref="kondakov__lr5__room_8cpp" startline="114" endline="118">to_string</references>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1aff42dadd005f91b3feed3dc2dfb41229" prot="public" static="no" const="yes" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Room::operator string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator string</name>
+        <qualifiedname>Room::operator string</qualifiedname>
+        <briefdescription>
+<para>Преобразование в строку </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="149" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="77" bodyend="83"/>
+        <references refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" compoundref="kondakov__lr5__room_8h" startline="48">CURRENCY</references>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">price_per_night</references>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Room::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <qualifiedname>Room::to_string</qualifiedname>
+        <reimplementedby refid="class_family_room_1a271f00565274998fdabcf7caf292fff5">to_string</reimplementedby>
+        <reimplementedby refid="class_standard_room_1a06b989063fdda125448921ce223029b9">to_string</reimplementedby>
+        <reimplementedby refid="class_suite_1a4e720c17c1195264c65fa507a52d1edc">to_string</reimplementedby>
+        <briefdescription>
+<para>Виртуальный метод преобразования в строку </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Преобразование в строку</para>
+<para><simplesect kind="return"><para>Строковое представление комнаты </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="158" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.cpp" bodystart="114" bodyend="118"/>
+        <referencedby refid="class_family_room_1a271f00565274998fdabcf7caf292fff5" compoundref="kondakov__lr5__family__room_8cpp" startline="259" endline="266">FamilyRoom::to_string</referencedby>
+        <referencedby refid="class_standard_room_1a06b989063fdda125448921ce223029b9" compoundref="kondakov__lr5__standard__room_8cpp" startline="210" endline="216">StandardRoom::to_string</referencedby>
+        <referencedby refid="class_suite_1a4e720c17c1195264c65fa507a52d1edc" compoundref="kondakov__lr5__suite_8cpp" startline="210" endline="216">Suite::to_string</referencedby>
+        <referencedby refid="class_room_1a508697104b1bdce37058c029ea5d7b2b">~Room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_room_1a90389beafff4333dd690e5e3c185a8d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, ostream &amp; &gt; friend</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, ostream &amp; &gt; friend Room::operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Container &amp;rooms)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Room::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Перегрузка вывода для контейнера комнат </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера (должен содержать shared_ptr&lt;Room&gt;) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="166" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Абстрактный базовый класс для представления гостиничного номера </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FamilyRoom</label>
+        <link refid="class_family_room"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Room</label>
+        <link refid="class_room"/>
+      </node>
+      <node id="3">
+        <label>StandardRoom</label>
+        <link refid="class_standard_room"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Suite</label>
+        <link refid="class_suite"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_room.h" line="25" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_room.h" bodystart="25" bodyend="167"/>
+    <listofallmembers>
+      <member refid="class_room_1a85c09226671b7572f5e3e4206fac09cb" prot="public" virt="pure-virtual"><scope>Room</scope><name>calculate_total</name></member>
+      <member refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" prot="public" virt="non-virtual"><scope>Room</scope><name>CURRENCY</name></member>
+      <member refid="class_room_1a683b154738ffe3f6b20e9c3807735f9c" prot="public" virt="pure-virtual"><scope>Room</scope><name>from_json</name></member>
+      <member refid="class_room_1ae6f809c97ae2d5a6ab101cd8771d9cb3" prot="public" virt="pure-virtual"><scope>Room</scope><name>get_amenities</name></member>
+      <member refid="class_room_1a5e3f378b9991a36faa3172fce417715b" prot="public" virt="pure-virtual"><scope>Room</scope><name>get_full_name</name></member>
+      <member refid="class_room_1a263ae7170c7b5b3df8065a3605d39f28" prot="public" virt="non-virtual"><scope>Room</scope><name>get_is_booked</name></member>
+      <member refid="class_room_1a3bc75b359d4b5d4f5f655f75478019d3" prot="public" virt="pure-virtual"><scope>Room</scope><name>get_json_type</name></member>
+      <member refid="class_room_1a828dede24bf20f003892f71c9b08d2e9" prot="public" virt="non-virtual"><scope>Room</scope><name>get_price_per_night</name></member>
+      <member refid="class_room_1a8da5257d15eb131e471b59ba753dcedb" prot="public" virt="non-virtual"><scope>Room</scope><name>get_room_number</name></member>
+      <member refid="class_room_1a0551c035cf42bed1ae6865561dd5e5de" prot="public" virt="pure-virtual"><scope>Room</scope><name>get_room_type</name></member>
+      <member refid="class_room_1a3771355e58c0cac65cb836f72b7da113" prot="protected" virt="virtual"><scope>Room</scope><name>input</name></member>
+      <member refid="class_room_1a693f8c26331cfee829f263c830f3e5ad" prot="public" virt="non-virtual"><scope>Room</scope><name>input_is_booked</name></member>
+      <member refid="class_room_1aed37576ec13b3d3d24559e709d0adc32" prot="public" virt="non-virtual"><scope>Room</scope><name>input_price_per_night</name></member>
+      <member refid="class_room_1a2e34a3971a1607066debe10b3577fde2" prot="public" virt="non-virtual"><scope>Room</scope><name>input_room_number</name></member>
+      <member refid="class_room_1a6cf26e8f3f928e18afae33e46bca7927" prot="public" virt="non-virtual"><scope>Room</scope><name>input_room_number</name></member>
+      <member refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" prot="protected" virt="non-virtual"><scope>Room</scope><name>is_booked</name></member>
+      <member refid="class_room_1aff42dadd005f91b3feed3dc2dfb41229" prot="public" virt="non-virtual"><scope>Room</scope><name>operator string</name></member>
+      <member refid="class_room_1ac5c1ca74e258e0e7b085c01387fcf1c5" prot="public" virt="non-virtual"><scope>Room</scope><name>operator!=</name></member>
+      <member refid="class_room_1a48fc1502df2a9d36b8a6a8989f5a6074" prot="public" virt="non-virtual"><scope>Room</scope><name>operator!=</name></member>
+      <member refid="class_room_1aae7cfb3e2dbebb2113cefb251ff202cd" prot="public" virt="non-virtual"><scope>Room</scope><name>operator!=</name></member>
+      <member refid="class_room_1a5e07051c5358a0c18092711c622e666d" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&lt;</name></member>
+      <member refid="class_room_1a1ca203c6f90c34ceaa451a75b1b330d0" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&lt;</name></member>
+      <member refid="class_room_1ae406d1a4e1a9f132f1f3a6e59efb5b72" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&lt;</name></member>
+      <member refid="class_room_1a36eff138ff44b4dc96c10d5f439cc821" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_room_1a90389beafff4333dd690e5e3c185a8d0" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_room_1a8f4f32a23a7f70c30b1719298080a3f6" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&lt;=</name></member>
+      <member refid="class_room_1affec85e4ee9e5372f03ecef2690cd917" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&lt;=</name></member>
+      <member refid="class_room_1a081c4e1598df929932d016deb4edd71e" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&lt;=</name></member>
+      <member refid="class_room_1a1cda0e12564c8fedcba0a4fa18ede003" prot="public" virt="non-virtual"><scope>Room</scope><name>operator=</name></member>
+      <member refid="class_room_1a4fd1667324eb508ecd1981481a37fdd0" prot="public" virt="non-virtual"><scope>Room</scope><name>operator=</name></member>
+      <member refid="class_room_1a5bdf7a1de75c11ddd88a885a55aec2b2" prot="public" virt="non-virtual"><scope>Room</scope><name>operator==</name></member>
+      <member refid="class_room_1aa0d7134aced47f8d978ff39f0a864db5" prot="public" virt="non-virtual"><scope>Room</scope><name>operator==</name></member>
+      <member refid="class_room_1a7cf209698d3f77299918b41ac1edb880" prot="public" virt="non-virtual"><scope>Room</scope><name>operator==</name></member>
+      <member refid="class_room_1a7eebef86e38c00ff4187d9d07a677fa6" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&gt;</name></member>
+      <member refid="class_room_1a00731c176c310af0b71eeacd44346308" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&gt;</name></member>
+      <member refid="class_room_1af321c6828f557795f589d9f227e26937" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&gt;</name></member>
+      <member refid="class_room_1a2bcc48d7125c732d1f968edefda56344" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&gt;=</name></member>
+      <member refid="class_room_1af90895751b7344c60584e5d83c5df4c7" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&gt;=</name></member>
+      <member refid="class_room_1a0f3c42df0072674a25f8423086932abc" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&gt;=</name></member>
+      <member refid="class_room_1a8b0c15f242679145b4922d1bb7b6ee6e" prot="public" virt="non-virtual"><scope>Room</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" prot="protected" virt="non-virtual"><scope>Room</scope><name>price_per_night</name></member>
+      <member refid="class_room_1af185fec4d7038c4640e2618817d41d95" prot="protected" virt="virtual"><scope>Room</scope><name>print</name></member>
+      <member refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" prot="public" virt="non-virtual"><scope>Room</scope><name>Room</name></member>
+      <member refid="class_room_1a85a05efbf9e7aa79f9ea8bd009f03855" prot="public" virt="non-virtual"><scope>Room</scope><name>Room</name></member>
+      <member refid="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" prot="public" virt="non-virtual"><scope>Room</scope><name>Room</name></member>
+      <member refid="class_room_1a5b964942d5eb880206cc5bc93ccd9045" prot="public" virt="non-virtual"><scope>Room</scope><name>Room</name></member>
+      <member refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" prot="public" virt="non-virtual"><scope>Room</scope><name>Room</name></member>
+      <member refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" prot="protected" virt="non-virtual"><scope>Room</scope><name>room_number</name></member>
+      <member refid="class_room_1a488165c7e78bb66e8338835e0fdae5ae" prot="public" virt="non-virtual"><scope>Room</scope><name>set_is_booked</name></member>
+      <member refid="class_room_1a75c9b72c1c0a64e6b38b3b12ec94e226" prot="public" virt="non-virtual"><scope>Room</scope><name>set_price_per_night</name></member>
+      <member refid="class_room_1a1b06ff753e0b5dd0a611fbdc52afa3a6" prot="public" virt="non-virtual"><scope>Room</scope><name>set_room_number</name></member>
+      <member refid="class_room_1a5188f0fe1d99561de97ab2b5fccde4b0" prot="public" virt="pure-virtual"><scope>Room</scope><name>to_json</name></member>
+      <member refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" prot="public" virt="virtual"><scope>Room</scope><name>to_string</name></member>
+      <member refid="class_room_1a481e9eaeeb4964748e0fe8f6cff33c57" prot="public" virt="pure-virtual"><scope>Room</scope><name>validate</name></member>
+      <member refid="class_room_1a508697104b1bdce37058c029ea5d7b2b" prot="public" virt="virtual"><scope>Room</scope><name>~Room</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,8 @@
+<map id="StandardRoom::to_string" name="StandardRoom::to_string">
+<area shape="rect" id="Node000001" title="Преобразование в строку" alt="" coords="454,31,620,57"/>
+<area shape="rect" id="Node000002" href="$class_standard_room.html#acf55a87a76c686170ce9c8e1d4cdf62a" title="Вывод информации о номере" alt="" coords="265,5,406,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="438,34,406,30,407,25,439,29"/>
+<area shape="rect" id="Node000003" href="$class_standard_room.html#a2e46e90889222820009f40e6e231f32d" title="Деструктор" alt="" coords="5,31,217,57"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="439,47,217,47,217,41,439,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,31,217,35,217,29,249,26"/>
+</map>

@@ -1,0 +1,1063 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_menu_object" kind="class" language="C++" prot="public">
+    <compoundname>MenuObject</compoundname>
+    <includes refid="kondakov__lr5__menu__object_8h" local="no">kondakov_lr5_menu_object.h</includes>
+    <sectiondef kind="user-defined">
+      <header>Конструкторы</header>
+      <memberdef kind="function" id="class_menu_object_1ae0d6d87d7380e0c21ad8f91c9f264fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>(int number, string label, function&lt; void()&gt; action)</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>function&lt; void()&gt;</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор пункта меню без подменю </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Действие при выборе </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="48" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp" bodystart="13" bodyend="14"/>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a0a3ce6da86682e5443328294b9a7cd8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>(int number, string label, function&lt; void()&gt; action, bool one_off_menu_inclusion)</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>function&lt; void()&gt;</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>one_off_menu_inclusion</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с флагом одноразового меню </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Действие при выборе </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>one_off_menu_inclusion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг одноразового меню </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="57" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp" bodystart="16" bodyend="17"/>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a2ee26e3e2aa17b97248add106ab168a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>(int number, string label, vector&lt; MenuObject &gt; submenu)</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &gt;</type>
+          <declname>submenu</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с подменю </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>submenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вектор подменю </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="65" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp" bodystart="19" bodyend="20"/>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a378e7c58f8704a8cf42896a9ba72d23a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>(int number, string label, vector&lt; MenuObject &gt; submenu, bool one_off_menu_inclusion)</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &gt;</type>
+          <declname>submenu</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>one_off_menu_inclusion</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с подменю и флагом </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>submenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вектор подменю </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>one_off_menu_inclusion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг одноразового меню </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="74" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp" bodystart="22" bodyend="23"/>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a56564b4de97cb0c00464dd8ce10099a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>(int number, string label, function&lt; void()&gt; action, vector&lt; MenuObject &gt; submenu)</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>function&lt; void()&gt;</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &gt;</type>
+          <declname>submenu</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с действием и подменю </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Действие при выборе </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>submenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вектор подменю </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="83" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp" bodystart="25" bodyend="26"/>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a8d8ed81bd4d1dcf826493574f6765e9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>(int number, string label, function&lt; void()&gt; action, vector&lt; MenuObject &gt; submenu, bool one_off_menu_inclusion)</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>function&lt; void()&gt;</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &gt;</type>
+          <declname>submenu</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>one_off_menu_inclusion</declname>
+        </param>
+        <briefdescription>
+<para>Полный конструктор </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Действие при выборе </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>submenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вектор подменю </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>one_off_menu_inclusion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг одноразового меню</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Инициализирует все поля класса </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="93" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a4ca27840c4977a73db86dc19bbd43edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RoomPtr</type>
+          </param>
+          <param>
+            <type>typename Action</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>enable_if_t&lt;is_base_of_v&lt;<ref refid="class_room" kindref="compound">Room</ref>, typename RoomPtr::element_type&gt; &amp;&amp;                               is_same_v&lt;bool, decltype(declval&lt;Action&gt;()())&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>(int number, string label, RoomPtr room, Action action, string main_message, string success_message)</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>RoomPtr</type>
+          <declname>room</declname>
+        </param>
+        <param>
+          <type>Action</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>main_message</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>success_message</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор для комнаты с подтверждением </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>RoomPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип умного указателя на <ref refid="class_room" kindref="compound">Room</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип действия (должен возвращать bool) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название пункта </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на комнату </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Действие с подтверждением </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>main_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Сообщение перед действием </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>success_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Сообщение после успеха</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Создает пункт меню с обработкой подтверждения операции </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="110" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="20" bodyend="31"/>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a72ed4cc45cae2455d3dddcbc5e7359dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>(const MenuObject &amp;)=default</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <param>
+          <type>const <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Конструктор копирования </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="114" column="5"/>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a5b44b22cc8ccf70e5f67b2705c9c5629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_menu_object" kindref="compound">MenuObject</ref> &amp;</type>
+        <definition>MenuObject &amp; MenuObject::operator=</definition>
+        <argsstring>(const MenuObject &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>MenuObject::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="115" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a111fe1da7199d2ac2231ec3fdbf03e3b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>(MenuObject &amp;&amp;) noexcept</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <param>
+          <type><ref refid="class_menu_object" kindref="compound">MenuObject</ref> &amp;&amp;</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+<para>Конструктор перемещения </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эффективно переносит ресурсы из другого объекта </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="118" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp" bodystart="41" bodyend="46"/>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a3f9eec2bf5d769342dfe484f42650435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_menu_object" kindref="compound">MenuObject</ref> &amp;</type>
+        <definition>MenuObject &amp; MenuObject::operator=</definition>
+        <argsstring>(MenuObject &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>MenuObject::operator=</qualifiedname>
+        <param>
+          <type><ref refid="class_menu_object" kindref="compound">MenuObject</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="119" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Методы работы с меню</header>
+      <memberdef kind="function" id="class_menu_object_1a24f8afbc68fb4cf9c07c096d610ff9ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuObject::show</definition>
+        <argsstring>(const string &amp;indentation=&quot;&quot;) const</argsstring>
+        <name>show</name>
+        <qualifiedname>MenuObject::show</qualifiedname>
+        <param>
+          <type>const string &amp;</type>
+          <declname>indentation</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Вывод пункта меню </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indentation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Отступ для вложенных пунктов </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="126" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="37" bodyend="39"/>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a946403b51b6cdca6436a52e370def59f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuObject::act</definition>
+        <argsstring>() const</argsstring>
+        <name>act</name>
+        <qualifiedname>MenuObject::act</qualifiedname>
+        <briefdescription>
+<para>Выполнение действия пункта меню </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="127" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="44" bodyend="49"/>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a0debe328757d5357858d882b400c0c36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string MenuObject::get_label</definition>
+        <argsstring>() const</argsstring>
+        <name>get_label</name>
+        <qualifiedname>MenuObject::get_label</qualifiedname>
+        <briefdescription>
+<para>Получение названия пункта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Название пункта меню </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="128" column="19" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="55" bodyend="57"/>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1aaa57ab0f94af99662e2fe85119c9a7ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int MenuObject::get_number</definition>
+        <argsstring>() const</argsstring>
+        <name>get_number</name>
+        <qualifiedname>MenuObject::get_number</qualifiedname>
+        <briefdescription>
+<para>Получение номера пункта </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Номер пункта меню </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="129" column="16" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="63" bodyend="65"/>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a2a117f60378680504a1c89e823140553" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string MenuObject::get_full_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_full_name</name>
+        <qualifiedname>MenuObject::get_full_name</qualifiedname>
+        <briefdescription>
+<para>Получение полного названия </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Строка вида &quot;номер. название&quot; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="130" column="19" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="71" bodyend="75"/>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a02b93b7881760dfd7de04a5bf783c7f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const vector&lt; <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &gt; &amp;</type>
+        <definition>const vector&lt; MenuObject &gt; &amp; MenuObject::get_submenu</definition>
+        <argsstring>() const</argsstring>
+        <name>get_submenu</name>
+        <qualifiedname>MenuObject::get_submenu</qualifiedname>
+        <briefdescription>
+<para>Получение подменю </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на вектор подменю </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="131" column="25" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="81" bodyend="83"/>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1afcff500d4d66f422bde91e86b49d26ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MenuObject::get_one_off_menu_inclusion</definition>
+        <argsstring>() const</argsstring>
+        <name>get_one_off_menu_inclusion</name>
+        <qualifiedname>MenuObject::get_one_off_menu_inclusion</qualifiedname>
+        <briefdescription>
+<para>Проверка флага одноразового меню </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если меню одноразовое </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="132" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="89" bodyend="91"/>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Статические методы</header>
+      <memberdef kind="function" id="class_menu_object_1aca1cbebf08e1fb5c3f063e94d0e8f95b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &gt;, void &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, MenuObject &gt;, void &gt; MenuObject::show_menu</definition>
+        <argsstring>(const Container &amp;menu, int indent)</argsstring>
+        <name>show_menu</name>
+        <qualifiedname>MenuObject::show_menu</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>menu</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indent</declname>
+        </param>
+        <briefdescription>
+<para>Вывод меню </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с пунктами меню </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с меню </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уровень вложенности </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="139" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="101" bodyend="108"/>
+        <references refid="class_menu_object_1aca1cbebf08e1fb5c3f063e94d0e8f95b" compoundref="kondakov__lr5__menu__object_8hpp" startline="101" endline="108">show_menu</references>
+        <referencedby refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">process</referencedby>
+        <referencedby refid="class_menu_object_1aca1cbebf08e1fb5c3f063e94d0e8f95b" compoundref="kondakov__lr5__menu__object_8hpp" startline="101" endline="108">show_menu</referencedby>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &gt;, void &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, MenuObject &gt;, void &gt; MenuObject::process</definition>
+        <argsstring>(const Container &amp;menu, const string main_label=&quot;&quot;, const string exit_label=&quot;&quot;, int indent=0, bool one_off=false)</argsstring>
+        <name>process</name>
+        <qualifiedname>MenuObject::process</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>menu</declname>
+        </param>
+        <param>
+          <type>const string</type>
+          <declname>main_label</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const string</type>
+          <declname>exit_label</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indent</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>one_off</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Обработка взаимодействия с меню </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с пунктами меню </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с меню </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>main_label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок меню </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exit_label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название пункта выхода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уровень вложенности </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>one_off</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Флаг одноразового выполнения </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="143" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp" bodystart="121" bodyend="164"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+        <references refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">process</references>
+        <references refid="class_menu_object_1aca1cbebf08e1fb5c3f063e94d0e8f95b" compoundref="kondakov__lr5__menu__object_8hpp" startline="101" endline="108">show_menu</references>
+        <referencedby refid="namespace_methods_1a51179a7d6e8fb0608922a0d00f102f11" compoundref="kondakov__lr5__methods_8hpp" startline="267" endline="289">Methods::edit_room</referencedby>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+        <referencedby refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">process</referencedby>
+        <referencedby refid="namespace_methods_1a5836b360a5e2d3b056046d4ce04cbca2" compoundref="kondakov__lr5__methods_8hpp" startline="344" endline="447">Methods::sort_rooms</referencedby>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_menu_object_1a6c5ecb8adb0a1e6a816d0214b234eeec" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MenuObject::number</definition>
+        <argsstring></argsstring>
+        <name>number</name>
+        <qualifiedname>MenuObject::number</qualifiedname>
+        <briefdescription>
+<para>Номер пункта меню </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="28" column="9" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_object_1a039cbc48b017d496533503a1b7148408" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string MenuObject::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>MenuObject::label</qualifiedname>
+        <briefdescription>
+<para>Название пункта меню </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="29" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_object_1a0be5d5e374d620da2a8815d29a7aea98" prot="private" static="no" mutable="no">
+        <type>function&lt; void()&gt;</type>
+        <definition>function&lt;void()&gt; MenuObject::action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <qualifiedname>MenuObject::action</qualifiedname>
+        <briefdescription>
+<para>Действие при выборе пункта </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="30" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_object_1a64bb0e708f01a31c2c47b1b32506504a" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="class_menu_object" kindref="compound">MenuObject</ref> &gt;</type>
+        <definition>vector&lt;MenuObject&gt; MenuObject::submenu</definition>
+        <argsstring></argsstring>
+        <name>submenu</name>
+        <qualifiedname>MenuObject::submenu</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Вектор подменю </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="31" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_menu_object_1a05ce72566d06c5f321f7cf4c8d975c6f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MenuObject::one_off_menu_inclusion</definition>
+        <argsstring></argsstring>
+        <name>one_off_menu_inclusion</name>
+        <qualifiedname>MenuObject::one_off_menu_inclusion</qualifiedname>
+        <briefdescription>
+<para>Флаг одноразового меню (управляет отступами) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="32" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_menu_object_1a964f07536c901358392d30188a5fb322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::MenuObject</definition>
+        <argsstring>()=delete</argsstring>
+        <name>MenuObject</name>
+        <qualifiedname>MenuObject::MenuObject</qualifiedname>
+        <briefdescription>
+<para>Удаленный конструктор по умолчанию </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="38" column="5"/>
+        <referencedby refid="class_menu_object_1a72ed4cc45cae2455d3dddcbc5e7359dd">MenuObject</referencedby>
+        <referencedby refid="class_menu_object_1ae0d6d87d7380e0c21ad8f91c9f264fa3" compoundref="kondakov__lr5__menu__object_8cpp" startline="13" endline="14">MenuObject</referencedby>
+        <referencedby refid="class_menu_object_1a0a3ce6da86682e5443328294b9a7cd8e" compoundref="kondakov__lr5__menu__object_8cpp" startline="16" endline="17">MenuObject</referencedby>
+        <referencedby refid="class_menu_object_1a56564b4de97cb0c00464dd8ce10099a3" compoundref="kondakov__lr5__menu__object_8cpp" startline="25" endline="26">MenuObject</referencedby>
+        <referencedby refid="class_menu_object_1a4ca27840c4977a73db86dc19bbd43edd" compoundref="kondakov__lr5__menu__object_8hpp" startline="20" endline="31">MenuObject</referencedby>
+        <referencedby refid="class_menu_object_1a2ee26e3e2aa17b97248add106ab168a6" compoundref="kondakov__lr5__menu__object_8cpp" startline="19" endline="20">MenuObject</referencedby>
+        <referencedby refid="class_menu_object_1a378e7c58f8704a8cf42896a9ba72d23a" compoundref="kondakov__lr5__menu__object_8cpp" startline="22" endline="23">MenuObject</referencedby>
+        <referencedby refid="class_menu_object_1a111fe1da7199d2ac2231ec3fdbf03e3b" compoundref="kondakov__lr5__menu__object_8cpp" startline="41" endline="46">MenuObject</referencedby>
+        <referencedby refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">process</referencedby>
+        <referencedby refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1">~MenuObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuObject::~MenuObject</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MenuObject</name>
+        <qualifiedname>MenuObject::~MenuObject</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="122" column="5"/>
+        <references refid="class_menu_object_1a946403b51b6cdca6436a52e370def59f" compoundref="kondakov__lr5__menu__object_8hpp" startline="44" endline="49">act</references>
+        <references refid="class_menu_object_1a2a117f60378680504a1c89e823140553" compoundref="kondakov__lr5__menu__object_8hpp" startline="71" endline="75">get_full_name</references>
+        <references refid="class_menu_object_1a0debe328757d5357858d882b400c0c36" compoundref="kondakov__lr5__menu__object_8hpp" startline="55" endline="57">get_label</references>
+        <references refid="class_menu_object_1aaa57ab0f94af99662e2fe85119c9a7ea" compoundref="kondakov__lr5__menu__object_8hpp" startline="63" endline="65">get_number</references>
+        <references refid="class_menu_object_1afcff500d4d66f422bde91e86b49d26ce" compoundref="kondakov__lr5__menu__object_8hpp" startline="89" endline="91">get_one_off_menu_inclusion</references>
+        <references refid="class_menu_object_1a02b93b7881760dfd7de04a5bf783c7f2" compoundref="kondakov__lr5__menu__object_8hpp" startline="81" endline="83">get_submenu</references>
+        <references refid="class_menu_object_1a964f07536c901358392d30188a5fb322">MenuObject</references>
+        <references refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">process</references>
+        <references refid="class_menu_object_1a24f8afbc68fb4cf9c07c096d610ff9ea" compoundref="kondakov__lr5__menu__object_8hpp" startline="37" endline="39">show</references>
+        <references refid="class_menu_object_1aca1cbebf08e1fb5c3f063e94d0e8f95b" compoundref="kondakov__lr5__menu__object_8hpp" startline="101" endline="108">show_menu</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс для представления пункта меню </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Реализует древовидную структуру меню с поддержкой подменю и действий </para>
+    </detaileddescription>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" line="26" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h" bodystart="26" bodyend="146"/>
+    <listofallmembers>
+      <member refid="class_menu_object_1a946403b51b6cdca6436a52e370def59f" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>act</name></member>
+      <member refid="class_menu_object_1a0be5d5e374d620da2a8815d29a7aea98" prot="private" virt="non-virtual"><scope>MenuObject</scope><name>action</name></member>
+      <member refid="class_menu_object_1a2a117f60378680504a1c89e823140553" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>get_full_name</name></member>
+      <member refid="class_menu_object_1a0debe328757d5357858d882b400c0c36" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>get_label</name></member>
+      <member refid="class_menu_object_1aaa57ab0f94af99662e2fe85119c9a7ea" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>get_number</name></member>
+      <member refid="class_menu_object_1afcff500d4d66f422bde91e86b49d26ce" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>get_one_off_menu_inclusion</name></member>
+      <member refid="class_menu_object_1a02b93b7881760dfd7de04a5bf783c7f2" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>get_submenu</name></member>
+      <member refid="class_menu_object_1a039cbc48b017d496533503a1b7148408" prot="private" virt="non-virtual"><scope>MenuObject</scope><name>label</name></member>
+      <member refid="class_menu_object_1a964f07536c901358392d30188a5fb322" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1ae0d6d87d7380e0c21ad8f91c9f264fa3" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1a0a3ce6da86682e5443328294b9a7cd8e" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1a2ee26e3e2aa17b97248add106ab168a6" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1a378e7c58f8704a8cf42896a9ba72d23a" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1a56564b4de97cb0c00464dd8ce10099a3" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1a8d8ed81bd4d1dcf826493574f6765e9a" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1a4ca27840c4977a73db86dc19bbd43edd" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1a72ed4cc45cae2455d3dddcbc5e7359dd" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1a111fe1da7199d2ac2231ec3fdbf03e3b" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>MenuObject</name></member>
+      <member refid="class_menu_object_1a6c5ecb8adb0a1e6a816d0214b234eeec" prot="private" virt="non-virtual"><scope>MenuObject</scope><name>number</name></member>
+      <member refid="class_menu_object_1a05ce72566d06c5f321f7cf4c8d975c6f" prot="private" virt="non-virtual"><scope>MenuObject</scope><name>one_off_menu_inclusion</name></member>
+      <member refid="class_menu_object_1a5b44b22cc8ccf70e5f67b2705c9c5629" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>operator=</name></member>
+      <member refid="class_menu_object_1a3f9eec2bf5d769342dfe484f42650435" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>operator=</name></member>
+      <member refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>process</name></member>
+      <member refid="class_menu_object_1a24f8afbc68fb4cf9c07c096d610ff9ea" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>show</name></member>
+      <member refid="class_menu_object_1aca1cbebf08e1fb5c3f063e94d0e8f95b" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>show_menu</name></member>
+      <member refid="class_menu_object_1a64bb0e708f01a31c2c47b1b32506504a" prot="private" virt="non-virtual"><scope>MenuObject</scope><name>submenu</name></member>
+      <member refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1" prot="public" virt="non-virtual"><scope>MenuObject</scope><name>~MenuObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

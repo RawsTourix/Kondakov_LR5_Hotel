@@ -1,0 +1,178 @@
+[
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air conditioner"
+    ],
+    "bed_count": 1,
+    "has_tv": true,
+    "is_booked": false,
+    "price_per_night": 3000.0,
+    "room_number": 1,
+    "type": "Standard"
+  },
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air conditioner"
+    ],
+    "bed_count": 1,
+    "has_tv": true,
+    "is_booked": false,
+    "price_per_night": 3000.0,
+    "room_number": 2,
+    "type": "Standard"
+  },
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air conditioner"
+    ],
+    "bed_count": 2,
+    "has_tv": true,
+    "is_booked": true,
+    "price_per_night": 4500.0,
+    "room_number": 3,
+    "type": "Standard"
+  },
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air conditioner"
+    ],
+    "bed_count": 2,
+    "has_tv": true,
+    "is_booked": true,
+    "price_per_night": 4500.0,
+    "room_number": 4,
+    "type": "Standard"
+  },
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air conditioner"
+    ],
+    "bed_count": 2,
+    "has_tv": true,
+    "is_booked": true,
+    "price_per_night": 4500.0,
+    "room_number": 5,
+    "type": "Standard"
+  },
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air conditioner"
+    ],
+    "bed_count": 3,
+    "has_tv": true,
+    "is_booked": false,
+    "price_per_night": 6000.0,
+    "room_number": 6,
+    "type": "Standard"
+  },
+  {
+    "amenities": [
+      "Lux",
+      "Room service"
+    ],
+    "is_booked": false,
+    "jacuzzi": false,
+    "price_per_night": 5000.0,
+    "room_number": 7,
+    "room_service": true,
+    "type": "Suite"
+  },
+  {
+    "amenities": [
+      "Lux",
+      "Room service"
+    ],
+    "is_booked": false,
+    "jacuzzi": false,
+    "price_per_night": 5000.0,
+    "room_number": 8,
+    "room_service": true,
+    "type": "Suite"
+  },
+  {
+    "amenities": [
+      "Lux",
+      "Room service"
+    ],
+    "is_booked": true,
+    "jacuzzi": false,
+    "price_per_night": 5000.0,
+    "room_number": 9,
+    "room_service": true,
+    "type": "Suite"
+  },
+  {
+    "amenities": [
+      "Lux",
+      "Room service"
+    ],
+    "is_booked": false,
+    "jacuzzi": true,
+    "price_per_night": 8000.0,
+    "room_number": 10,
+    "room_service": true,
+    "type": "Suite"
+  },
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air condition"
+    ],
+    "child_beds": 1,
+    "child_care_price": 1500.0,
+    "has_child_care": true,
+    "is_booked": false,
+    "price_per_night": 4500.0,
+    "room_number": 11,
+    "toy_kit": false,
+    "type": "Family"
+  },
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air condition"
+    ],
+    "child_beds": 1,
+    "child_care_price": 1500.0,
+    "has_child_care": true,
+    "is_booked": false,
+    "price_per_night": 4500.0,
+    "room_number": 12,
+    "toy_kit": false,
+    "type": "Family"
+  },
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air condition"
+    ],
+    "child_beds": 2,
+    "child_care_price": 1500.0,
+    "has_child_care": true,
+    "is_booked": false,
+    "price_per_night": 5000.0,
+    "room_number": 13,
+    "toy_kit": false,
+    "type": "Family"
+  },
+  {
+    "amenities": [
+      "Wi-Fi",
+      "Air condition"
+    ],
+    "child_beds": 3,
+    "child_care_price": 1500.0,
+    "has_child_care": true,
+    "is_booked": false,
+    "price_per_night": 7000.0,
+    "room_number": 14,
+    "toy_kit": true,
+    "type": "Family"
+  }
+]

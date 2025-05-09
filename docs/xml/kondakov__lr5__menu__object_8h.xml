@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="kondakov__lr5__menu__object_8h" kind="file" language="C++">
+    <compoundname>kondakov_lr5_menu_object.h</compoundname>
+    <includes refid="kondakov__lr5__serializer_8h" local="yes">kondakov_lr5_serializer.h</includes>
+    <includes refid="kondakov__lr5__menu__object_8hpp" local="yes">kondakov_lr5_menu_object.hpp</includes>
+    <includedby refid="kondakov__lr5__menu__object_8cpp" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp</includedby>
+    <includedby refid="kondakov__lr5__menu__object_8hpp" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp</includedby>
+    <includedby refid="kondakov__lr5__methods_8h" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_methods.h</includedby>
+    <incdepgraph>
+      <node id="27">
+        <label>kondakov_lr5_child_care.h</label>
+        <link refid="kondakov__lr5__child__care_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>kondakov_lr5_child_care.hpp</label>
+        <link refid="kondakov__lr5__child__care_8hpp"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>kondakov_lr5_container_operations.hpp</label>
+        <link refid="kondakov__lr5__container__operations_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>kondakov_lr5_def.h</label>
+        <link refid="kondakov__lr5__def_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>kondakov_lr5_family_room.h</label>
+        <link refid="kondakov__lr5__family__room_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>kondakov_lr5_family_room.hpp</label>
+        <link refid="kondakov__lr5__family__room_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>kondakov_lr5_input_control.h</label>
+        <link refid="kondakov__lr5__input__control_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>kondakov_lr5_input_control.hpp</label>
+        <link refid="kondakov__lr5__input__control_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h</label>
+        <link refid="kondakov__lr5__menu__object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>kondakov_lr5_menu_object.hpp</label>
+        <link refid="kondakov__lr5__menu__object_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>kondakov_lr5_room.h</label>
+        <link refid="kondakov__lr5__room_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>kondakov_lr5_room.hpp</label>
+        <link refid="kondakov__lr5__room_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>kondakov_lr5_serializer.h</label>
+        <link refid="kondakov__lr5__serializer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>kondakov_lr5_serializer.hpp</label>
+        <link refid="kondakov__lr5__serializer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>kondakov_lr5_standard_room.h</label>
+        <link refid="kondakov__lr5__standard__room_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>kondakov_lr5_standard_room.hpp</label>
+        <link refid="kondakov__lr5__standard__room_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>kondakov_lr5_suite.h</label>
+        <link refid="kondakov__lr5__suite_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>kondakov_lr5_suite.hpp</label>
+        <link refid="kondakov__lr5__suite_8hpp"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="18">
+        <label>fstream</label>
+      </node>
+      <node id="12">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>limits</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="19">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="11">
+        <label>sstream</label>
+      </node>
+      <node id="17">
+        <label>tuple</label>
+      </node>
+      <node id="13">
+        <label>type_traits</label>
+      </node>
+      <node id="8">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_main.cpp</label>
+        <link refid="kondakov__lr5__main_8cpp"/>
+      </node>
+      <node id="2">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp</label>
+        <link refid="kondakov__lr5__menu__object_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h</label>
+        <link refid="kondakov__lr5__menu__object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp</label>
+        <link refid="kondakov__lr5__menu__object_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_methods.h</label>
+        <link refid="kondakov__lr5__methods_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp</label>
+        <link refid="kondakov__lr5__methods_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_menu_object" prot="public">MenuObject</innerclass>
+    <briefdescription>
+<para>Заголовочный файл класса <ref refid="class_menu_object" kindref="compound">MenuObject</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kondakov Fedor </para>
+</simplesect>
+<simplesect kind="date"><para>2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>KONDAKOV_LR5_MENU_OBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KONDAKOV_LR5_MENU_OBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kondakov__lr5__serializer_8h" kindref="compound">kondakov_lr5_serializer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_menu_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>function&lt;void()&gt;<sp/>action;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;MenuObject&gt;<sp/>submenu<sp/>{};<sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>one_off_menu_inclusion;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38" refid="class_menu_object_1a964f07536c901358392d30188a5fb322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/>function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;<sp/>action);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/>function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;<sp/>action,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>one_off_menu_inclusion);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/>vector&lt;MenuObject&gt;<sp/>submenu);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/>vector&lt;MenuObject&gt;<sp/>submenu,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>one_off_menu_inclusion);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/>function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;<sp/>action,<sp/>vector&lt;MenuObject&gt;<sp/>submenu);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/>function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;<sp/>action,<sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;MenuObject&gt;<sp/>submenu,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>one_off_menu_inclusion);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>RoomPtr,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Action,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>=<sp/>enable_if_t&lt;is_base_of_v&lt;Room,<sp/>typename<sp/>RoomPtr::element_type&gt;<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is_same_v&lt;bool,<sp/>decltype(declval&lt;Action&gt;()())&gt;,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;&gt;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>label,<sp/>RoomPtr<sp/>room,<sp/>Action<sp/>action,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>main_message,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>success_message);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="class_menu_object_1a72ed4cc45cae2455d3dddcbc5e7359dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a72ed4cc45cae2455d3dddcbc5e7359dd" kindref="member">MenuObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>(<ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>&amp;&amp;)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>&amp;<sp/>operator=(<ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>&amp;&amp;)<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>()<sp/>=<sp/>default;<sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_object_1a24f8afbc68fb4cf9c07c096d610ff9ea" kindref="member">show</ref>(const<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>indentation<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>const;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_menu_object_1a946403b51b6cdca6436a52e370def59f" kindref="member">act</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_menu_object_1a0debe328757d5357858d882b400c0c36" kindref="member">get_label</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_menu_object_1aaa57ab0f94af99662e2fe85119c9a7ea" kindref="member">get_number</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_menu_object_1a2a117f60378680504a1c89e823140553" kindref="member">get_full_name</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/>const<sp/>vector&lt;<ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>&gt;&amp;<sp/><ref refid="class_menu_object_1a02b93b7881760dfd7de04a5bf783c7f2" kindref="member">get_submenu</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_menu_object_1afcff500d4d66f422bde91e86b49d26ce" kindref="member">get_one_off_menu_inclusion</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>Container&gt;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/>enable_if_t&lt;is_same_v&lt;typename<sp/>Container::value_type,<sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>&gt;,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1aca1cbebf08e1fb5c3f063e94d0e8f95b" kindref="member">show_menu</ref>(const<sp/>Container&amp;<sp/>menu,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indent);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;typename<sp/>Container&gt;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/>enable_if_t&lt;is_same_v&lt;typename<sp/>Container::value_type,<sp/><ref refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kindref="member">MenuObject</ref>&gt;,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" kindref="member">process</ref>(const<sp/>Container&amp;<sp/>menu,<sp/>const<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>main_label<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>exit_label<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indent<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>one_off<sp/>=<sp/>false);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kondakov_lr5_menu_object.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Конец<sp/>группы<sp/>input_control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>KONDAKOV_LR5_MENU_OBJECT_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h"/>
+  </compounddef>
+</doxygen>

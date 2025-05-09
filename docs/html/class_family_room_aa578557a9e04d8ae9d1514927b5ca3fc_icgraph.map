@@ -1,0 +1,5 @@
+<map id="FamilyRoom::set_child_beds" name="FamilyRoom::set_child_beds">
+<area shape="rect" id="Node000001" title="Установить количество детских кроватей" alt="" coords="239,5,429,32"/>
+<area shape="rect" id="Node000002" href="$class_family_room.html#a21a282df8f7b25ede341c5b3ff75f3ac" title="Деструктор" alt="" coords="5,5,191,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,21,191,21,191,16,223,16"/>
+</map>

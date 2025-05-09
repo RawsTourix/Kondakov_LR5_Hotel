@@ -1,0 +1,19 @@
+<map id="Methods::get_room_from_rooms_map" name="Methods::get_room_from_rooms_map">
+<area shape="rect" id="Node000001" title="Выбор комнаты из списка" alt="" coords="311,131,477,173"/>
+<area shape="rect" id="Node000002" href="$namespace_methods.html#ab0fcd3db72d0a91b170489bf0f18f6c6" title="Дополнительные методы комнат" alt="" coords="116,5,250,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="352,123,309,92,262,62,239,51,241,46,264,58,312,88,355,119"/>
+<area shape="rect" id="Node000004" href="$namespace_methods.html#a7b9a83b3197577b58819541579717b4c" title="Расчёт стоимости проживания" alt="" coords="117,72,248,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="300,129,248,114,250,109,301,124"/>
+<area shape="rect" id="Node000005" href="$namespace_methods.html#a2e2cf54114db383e2d9b68bbfa3801d4" title="Удаление комнаты" alt="" coords="108,139,258,165"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="295,155,259,155,259,149,295,149"/>
+<area shape="rect" id="Node000006" href="$namespace_methods.html#a51179a7d6e8fb0608922a0d00f102f11" title="Изменение комнаты" alt="" coords="115,189,251,216"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="296,178,242,191,241,186,295,173"/>
+<area shape="rect" id="Node000007" href="$namespace_methods.html#a05bd78f9a1464f73347e56dda5f53c37" title="Проверка валидности комнаты" alt="" coords="103,240,263,267"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="349,184,264,230,234,242,232,237,262,226,346,180"/>
+<area shape="rect" id="Node000003" href="$kondakov__lr5__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Точка входа в приложение" alt="" coords="5,139,55,165"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,58,104,62,84,81,66,102,41,140,37,137,62,99,80,77,101,58,106,54"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="113,123,56,145,54,140,111,118"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="92,155,55,155,55,149,92,149"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="122,186,102,180,54,163,56,158,104,175,123,181"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="111,236,101,230,65,199,39,167,43,164,68,195,104,226,113,231"/>
+</map>

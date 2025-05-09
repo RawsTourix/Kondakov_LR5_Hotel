@@ -1,0 +1,9 @@
+<map id="Room" name="Room">
+<area shape="rect" id="Node000001" title="Абстрактный базовый класс для представления гостиничного номера" alt="" coords="150,5,206,32"/>
+<area shape="rect" id="Node000002" href="$class_family_room.html" title="Класс семейного номера, наследует Room и ChildCare." alt="" coords="5,80,101,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,42,76,82,74,77,142,38"/>
+<area shape="rect" id="Node000003" href="$class_standard_room.html" title="Класс стандартного номера (наследник Room)" alt="" coords="124,80,232,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,48,181,80,176,80,176,48"/>
+<area shape="rect" id="Node000004" href="$class_suite.html" title="Класс номера люкс, наследующий от Room." alt="" coords="257,80,308,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,39,266,77,263,82,207,43"/>
+</map>

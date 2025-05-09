@@ -1,131 +1,173 @@
+/**
+ * @file kondakov_lr5_room.h
+ * @brief Заголовочный файл абстрактного класса Room
+ * @author Kondakov Fedor
+ * @date 2025
+ * @version 1.0
+ * @ingroup room_hierarchy
+ */
+
 #ifndef KONDAKOV_LR5_ROOM_H
 #define KONDAKOV_LR5_ROOM_H
 
+/**
+ * @defgroup room_hierarchy Иерархия комнат
+ * @brief Группа классов, описывающих систему гостиничных номеров
+ * @{
+ */
+
 #include "kondakov_lr5_input_control.h"
 
-// Абстрактный базовый класс Room
+/**
+ * @class Room
+ * @brief Абстрактный базовый класс для представления гостиничного номера
+ */
 class Room {
 protected:
-	int		room_number;	  // Номер комнаты
-	float	price_per_night;  // Цена за ночь
-	bool	is_booked;		  // Статус бронирования
+    int     room_number;      ///< Номер комнаты
+    float   price_per_night;  ///< Цена за ночь
+    bool    is_booked;        ///< Статус бронирования
 
-	// Переопределённый вывод
-	virtual void print() const {
-		cout << *this << endl;
-	}
+    /**
+     * @brief Виртуальный метод вывода информации о комнате
+     */
+    virtual void print() const {
+        cout << *this << endl;
+    }
 
-	// Переопределённый ввод
-	virtual bool input() {
-		return static_cast<bool>(cin >> *this);
-	}
+    /**
+     * @brief Виртуальный метод ввода информации о комнате
+     * @return true если операция отменена, false если успешно
+     */
+    virtual bool input() {
+        return static_cast<bool>(cin >> *this);
+    }
 
 public:
-	// Валюта
-	static const string CURRENCY;
+    /// Валюта для отображения цен
+    static const string CURRENCY;
 
-	// Конструктор по умолчанию
-	Room();
+    /// @name Конструкторы
+    /// @{
+    /**
+     * @brief Конструктор по умолчанию
+     * @details Создает комнату с параметрами:
+     * - Номер комнаты: 0
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     */
+    Room();
 
-	// Конструктор преобразования
-	Room(int room_number);
+    /**
+     * @brief Конструктор преобразования
+     * @param room_number Номер комнаты
+     * @details Создает комнату с указанным номером и значениями по умолчанию:
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     */
+    Room(int room_number);
 
-	// Конструктор с параметрами
-	Room(int room_number, float price_per_night, bool is_booked);
+    /**
+     * @brief Основной конструктор с параметрами
+     * @param room_number Номер комнаты
+     * @param price_per_night Цена за ночь
+     * @param is_booked Статус бронирования
+     */
+    Room(int room_number, float price_per_night, bool is_booked);
 
-	// Конструктор копирования
-	Room(const Room&) = default;
-	Room& operator=(const Room&) = default;
+    /// Конструктор копирования
+    Room(const Room&) = default;
+    Room& operator=(const Room&) = default;
 
-	// Конструктор перемещения
-	Room(Room&& other) noexcept;
-	Room& operator=(Room&&) noexcept = default;
+    /// Конструктор перемещения
+    Room(Room&& other) noexcept;
+    Room& operator=(Room&&) noexcept = default;
+    /// @}
 
-	// Виртуальный деструктор
-	virtual ~Room() = default;
+    /// Виртуальный деструктор
+    virtual ~Room() = default;
 
-	// Геттер номера комнаты
-	inline int get_room_number() const;
+    /// @name Геттеры
+    /// @{
+    inline int get_room_number() const;
+    inline float get_price_per_night() const;
+    inline bool get_is_booked() const;
+    virtual inline const vector<string>& get_amenities() const = 0;
+    virtual inline string get_full_name() const = 0;
+    /// @}
 
-	// Геттер цены за ночь
-	inline float get_price_per_night() const;
+    /// @name Сеттеры
+    /// @{
+    inline void set_room_number(int room_number);
+    inline void set_price_per_night(float price_per_night);
+    inline void set_is_booked(bool is_booked);
+    /// @}
 
-	// Геттер статуса бронирования
-	inline bool get_is_booked() const;
+    /// @name Методы ввода
+    /// @{
+    inline bool input_room_number();
+    template <typename Container>
+    inline typename enable_if_t<is_same_v<typename Container::value_type, int>, bool>
+    input_room_number(const Container& room_numbers);
+    inline bool input_price_per_night();
+    inline bool input_is_booked();
+    /// @}
 
-	// Чисто виртуальный геттер удобств
-	virtual inline const vector<string>& get_amenities() const = 0;
+    /// @name Абстрактные методы
+    /// @{
+    virtual inline const string& get_room_type() const = 0;
+    virtual inline const string& get_json_type() const = 0;
+    virtual inline float calculate_total(int night_count) const = 0;
+    virtual inline bool validate() const = 0;
+    virtual json to_json() const = 0;
+    virtual void from_json(const json& j) = 0;
+    /// @}
 
-	// Геттер полного названия комнаты
-	virtual inline string get_full_name() const = 0;
+    /// @name Операторы сравнения
+    /// @{
+    friend bool operator==(const Room& r1, const Room& r2);
+    friend bool operator==(int room_number, const Room& r2);
+    friend bool operator==(const Room& r1, int room_number);
+    friend bool operator>=(const Room& r1, const Room& r2);
+    friend bool operator>=(int room_number, const Room& r2);
+    friend bool operator>=(const Room& r1, int room_number);
+    friend bool operator<=(const Room& r1, const Room& r2);
+    friend bool operator<=(int room_number, const Room& r2);
+    friend bool operator<=(const Room& r1, int room_number);
+    friend bool operator> (const Room& r1, const Room& r2);
+    friend bool operator> (int room_number, const Room& r2);
+    friend bool operator> (const Room& r1, int room_number);
+    friend bool operator< (const Room& r1, const Room& r2);
+    friend bool operator< (int room_number, const Room& r2);
+    friend bool operator< (const Room& r1, int room_number);
+    friend bool operator!=(const Room& r1, const Room& r2);
+    friend bool operator!=(int room_number, const Room& r2);
+    friend bool operator!=(const Room& r1, int room_number);
+    /// @}
 
-	// Сеттер номера комнаты
-	inline void set_room_number(int room_number);
+    /// Преобразование в строку
+    explicit operator string() const;
 
-	// Сеттер цены за ночь
-	inline void set_price_per_night(float price_per_night);
+    /// @name Операторы ввода/вывода
+    /// @{
+    friend ostream& operator<<(ostream& os, const Room& r);
+    friend istream& operator>>(istream& is, Room& r);
+    /// @}
 
-	// Сеттер статуса бронирования
-	inline void set_is_booked(bool is_booked);
+    /// Виртуальный метод преобразования в строку
+    virtual string to_string() const;
 
-	// Инпуттер номера комнаты
-	inline bool input_room_number();
-
-	// Инпуттер номера комнаты с проверкой на уникальность номера комнаты
-	template <typename Container>
-	inline typename enable_if_t<is_same_v<typename Container::value_type, int>, bool>
-	input_room_number(const Container& room_numbers);
-
-	// Инпуттер цены за ночь
-	inline bool input_price_per_night();
-
-	// Инпуттер статуса бронирования
-	inline bool input_is_booked();
-
-	// Виртуальный геттер типа комнаты
-	virtual inline const string& get_room_type() const = 0;
-
-	// Расчет стоимости проживания (зависит от типа номера)
-	virtual inline float calculate_total(int night_count) const = 0;
-
-	// Проверка на валидность
-	virtual inline bool validate() const = 0;
-
-	// Сравнение по room_number
-	friend bool operator==(const Room& r1, const Room& r2);
-	friend bool operator==(int room_number, const Room& r2);
-	friend bool operator==(const Room& r1, int room_number);
-	friend bool operator>=(const Room& r1, const Room& r2);
-	friend bool operator>=(int room_number, const Room& r2);
-	friend bool operator>=(const Room& r1, int room_number);
-	friend bool operator<=(const Room& r1, const Room& r2);
-	friend bool operator<=(int room_number, const Room& r2);
-	friend bool operator<=(const Room& r1, int room_number);
-	friend bool operator> (const Room& r1, const Room& r2);
-	friend bool operator> (int room_number, const Room& r2);
-	friend bool operator> (const Room& r1, int room_number);
-	friend bool operator< (const Room& r1, const Room& r2);
-	friend bool operator< (int room_number, const Room& r2);
-	friend bool operator< (const Room& r1, int room_number);
-	friend bool operator!=(const Room& r1, const Room& r2);
-	friend bool operator!=(int room_number, const Room& r2);
-	friend bool operator!=(const Room& r1, int room_number);
-	
-	// Красивый перевод в строку
-	explicit operator string() const;
-
-	// Переопределение операции вывода <<
-	friend ostream& operator<<(ostream& os, const Room& r);
-
-	// Переопределение операции ввода >>
-	friend istream& operator>>(istream& is, Room& r);
-
-	// Перегрузка вывода контейнера комнат
-	template <typename Container>
-	typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, ostream&>
-	friend operator<<(ostream& os, const Container& rooms);
+    /**
+     * @brief Перегрузка вывода для контейнера комнат
+     * @tparam Container Тип контейнера (должен содержать shared_ptr<Room>)
+     */
+    template <typename Container>
+    typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, ostream&>
+    friend operator<<(ostream& os, const Container& rooms);
 };
 
 #include "kondakov_lr5_room.hpp"
+
+/** @} */ // Конец группы room_hierarchy
 
 #endif // KONDAKOV_LR5_ROOM_H

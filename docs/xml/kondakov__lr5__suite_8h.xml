@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="kondakov__lr5__suite_8h" kind="file" language="C++">
+    <compoundname>kondakov_lr5_suite.h</compoundname>
+    <includes refid="kondakov__lr5__room_8h" local="yes">kondakov_lr5_room.h</includes>
+    <includes refid="kondakov__lr5__suite_8hpp" local="yes">kondakov_lr5_suite.hpp</includes>
+    <includedby refid="kondakov__lr5__serializer_8h" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_serializer.h</includedby>
+    <includedby refid="kondakov__lr5__suite_8cpp" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp</includedby>
+    <includedby refid="kondakov__lr5__suite_8hpp" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp</includedby>
+    <incdepgraph>
+      <node id="19">
+        <label>kondakov_lr5_container_operations.hpp</label>
+        <link refid="kondakov__lr5__container__operations_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>kondakov_lr5_def.h</label>
+        <link refid="kondakov__lr5__def_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>kondakov_lr5_input_control.h</label>
+        <link refid="kondakov__lr5__input__control_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>kondakov_lr5_input_control.hpp</label>
+        <link refid="kondakov__lr5__input__control_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>kondakov_lr5_room.h</label>
+        <link refid="kondakov__lr5__room_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>kondakov_lr5_room.hpp</label>
+        <link refid="kondakov__lr5__room_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_suite.h</label>
+        <link refid="kondakov__lr5__suite_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>kondakov_lr5_suite.hpp</label>
+        <link refid="kondakov__lr5__suite_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>algorithm</label>
+      </node>
+      <node id="16">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>limits</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+      <node id="17">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="15">
+        <label>tuple</label>
+      </node>
+      <node id="11">
+        <label>type_traits</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_main.cpp</label>
+        <link refid="kondakov__lr5__main_8cpp"/>
+      </node>
+      <node id="4">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp</label>
+        <link refid="kondakov__lr5__menu__object_8cpp"/>
+      </node>
+      <node id="3">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h</label>
+        <link refid="kondakov__lr5__menu__object_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp</label>
+        <link refid="kondakov__lr5__menu__object_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_methods.h</label>
+        <link refid="kondakov__lr5__methods_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp</label>
+        <link refid="kondakov__lr5__methods_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_serializer.cpp</label>
+        <link refid="kondakov__lr5__serializer_8cpp"/>
+      </node>
+      <node id="2">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_serializer.h</label>
+        <link refid="kondakov__lr5__serializer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_serializer.hpp</label>
+        <link refid="kondakov__lr5__serializer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp</label>
+        <link refid="kondakov__lr5__suite_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_suite.h</label>
+        <link refid="kondakov__lr5__suite_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp</label>
+        <link refid="kondakov__lr5__suite_8hpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_suite" prot="public">Suite</innerclass>
+    <briefdescription>
+<para>Заголовочный файл класса <ref refid="class_suite" kindref="compound">Suite</ref> (номер люкс) </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kondakov Fedor </para>
+</simplesect>
+<simplesect kind="date"><para>2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>KONDAKOV_LR5_SUITE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KONDAKOV_LR5_SUITE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kondakov__lr5__room_8h" kindref="compound">kondakov_lr5_room.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_suite" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kindref="member">Room</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>room_service;<sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jacuzzi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><sp/>amenities;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>SERVICE_PRICE<sp/>=<sp/>5000.0f;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ROOM_TYPE<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Люкс<sp/>комната&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>JSON_TYPE<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Suite&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>room_service);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>room_service,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>jacuzzi);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>room_service,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>jacuzzi,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>amenities);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kindref="member">is_booked</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>room_service,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>jacuzzi,<sp/>vector&lt;string&gt;<sp/>amenities);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="class_suite_1a84eeaf79508119b645c1932cc5d22369" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_suite_1a84eeaf79508119b645c1932cc5d22369" kindref="member">Suite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>(<ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;&amp;<sp/>other)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>operator=(<ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;&amp;)<sp/>noexcept<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="class_suite_1ad768458b39f93edf4554a8fb45c960d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>~<ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>()<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1ac8c879afd32bdc582b945f7f541bd2ca" kindref="member">get_room_service</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a5d9fd1e7fbc3b7cd38b165cb075f2b7c" kindref="member">get_jacuzzi</ref>()<sp/>const;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/>const<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/><ref refid="class_suite_1aedf54f1bdfbadeb7d5e0e88d17e56e50" kindref="member">get_amenities</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a7bd3a5de67c22d5f4c52de55222ef145" kindref="member">get_full_name</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a8256093cf9d2969b43f4d6414c36724b" kindref="member">set_room_service</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>room_service);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a0ede9e1d764ed3a2f7239824c04b2a6f" kindref="member">set_jacuzzi</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>jacuzzi);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a9f039af321d86c81d439b199ad1478c0" kindref="member">set_amenities</ref>(vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/>amenities);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a5872adbd701d687de599826b3fc84356" kindref="member">input_room_service</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a9d2c61fb1dd8d1585f60fcb8b8abae63" kindref="member">input_jacuzzi</ref>();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Delim&gt;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1ab9afe7569b0064693b1bc771ebec514b" kindref="member">input_amenities</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/>const<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="class_suite_1a5c36774e4bd5f9c9fb1bcb2f33ca60f0" kindref="member">get_room_type</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/>const<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="class_suite_1ae4543962753535fe6949179a061c7482" kindref="member">get_json_type</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a52e5526c81daabf55593d814d0da28b3" kindref="member">calculate_total</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>night_count)<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>inline<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a5dfc680a5053801d7564eac1e6884320" kindref="member">validate</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>inline<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" kindref="member">order_champagne</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>amenity);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/><ref refid="class_suite_1afd16f2512f214af813bd2123b2a6f309" kindref="member">to_json</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1ad1c3c76f53340da885309ef251d2898e" kindref="member">from_json</ref>(const<sp/><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref>&amp;<sp/>j)<sp/>override;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/><sp/>operator+<sp/>(const<sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>s1,<sp/>const<sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>s2);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/><sp/>operator+<sp/>(const<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>amenities,<sp/>const<sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;<sp/><sp/>operator+<sp/>(const<sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>s,<sp/>const<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>amenities);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>operator+=(vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>amenities,<sp/>const<sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>operator+=(<ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>s,<sp/>const<sp/>vector&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&gt;&amp;<sp/>amenities);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>operator+=(<ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>s,<sp/>const<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>amenities);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>explicit<sp/>operator<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">()<sp/>const;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>ostream&amp;<sp/>operator&lt;&lt;(ostream&amp;<sp/>os,<sp/>const<sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>friend<sp/>istream&amp;<sp/>operator&gt;&gt;(istream&amp;<sp/>is,<sp/><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite</ref>&amp;<sp/>r);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a31debd927684dc287f287030def6438d" kindref="member">print</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1ae6868783d1d9227a61d7d0afd7f9a79e" kindref="member">input</ref>()<sp/>override;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a4e720c17c1195264c65fa507a52d1edc" kindref="member">to_string</ref>()<sp/>const<sp/>override;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kondakov_lr5_suite.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>KONDAKOV_LR5_SUITE_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.h"/>
+  </compounddef>
+</doxygen>

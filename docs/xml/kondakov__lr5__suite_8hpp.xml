@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="kondakov__lr5__suite_8hpp" kind="file" language="C++">
+    <compoundname>kondakov_lr5_suite.hpp</compoundname>
+    <includes refid="kondakov__lr5__suite_8h" local="yes">kondakov_lr5_suite.h</includes>
+    <includedby refid="kondakov__lr5__suite_8h" local="yes">Kondakov_LR5_Hotel/kondakov_lr5_suite.h</includedby>
+    <incdepgraph>
+      <node id="20">
+        <label>kondakov_lr5_container_operations.hpp</label>
+        <link refid="kondakov__lr5__container__operations_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>kondakov_lr5_def.h</label>
+        <link refid="kondakov__lr5__def_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>kondakov_lr5_input_control.h</label>
+        <link refid="kondakov__lr5__input__control_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>kondakov_lr5_input_control.hpp</label>
+        <link refid="kondakov__lr5__input__control_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>kondakov_lr5_room.h</label>
+        <link refid="kondakov__lr5__room_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>kondakov_lr5_room.hpp</label>
+        <link refid="kondakov__lr5__room_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>kondakov_lr5_suite.h</label>
+        <link refid="kondakov__lr5__suite_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp</label>
+        <link refid="kondakov__lr5__suite_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>algorithm</label>
+      </node>
+      <node id="17">
+        <label>fstream</label>
+      </node>
+      <node id="11">
+        <label>functional</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="15">
+        <label>limits</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+      <node id="18">
+        <label>nlohmann/json.hpp</label>
+      </node>
+      <node id="10">
+        <label>sstream</label>
+      </node>
+      <node id="16">
+        <label>tuple</label>
+      </node>
+      <node id="12">
+        <label>type_traits</label>
+      </node>
+      <node id="7">
+        <label>utility</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_main.cpp</label>
+        <link refid="kondakov__lr5__main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.cpp</label>
+        <link refid="kondakov__lr5__menu__object_8cpp"/>
+      </node>
+      <node id="4">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.h</label>
+        <link refid="kondakov__lr5__menu__object_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_menu_object.hpp</label>
+        <link refid="kondakov__lr5__menu__object_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_methods.h</label>
+        <link refid="kondakov__lr5__methods_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp</label>
+        <link refid="kondakov__lr5__methods_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_serializer.cpp</label>
+        <link refid="kondakov__lr5__serializer_8cpp"/>
+      </node>
+      <node id="3">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_serializer.h</label>
+        <link refid="kondakov__lr5__serializer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_serializer.hpp</label>
+        <link refid="kondakov__lr5__serializer_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_suite.cpp</label>
+        <link refid="kondakov__lr5__suite_8cpp"/>
+      </node>
+      <node id="2">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_suite.h</label>
+        <link refid="kondakov__lr5__suite_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp</label>
+        <link refid="kondakov__lr5__suite_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+<para>Реализация методов класса <ref refid="class_suite" kindref="compound">Suite</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Kondakov Fedor </para>
+</simplesect>
+<simplesect kind="date"><para>2025 </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>KONDAKOV_LR5_SUITE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KONDAKOV_LR5_SUITE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kondakov__lr5__suite_8h" kindref="compound">kondakov_lr5_suite.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_suite_1ac8c879afd32bdc582b945f7f541bd2ca" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1ac8c879afd32bdc582b945f7f541bd2ca" kindref="member">Suite::get_room_service</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>room_service;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_suite_1a5d9fd1e7fbc3b7cd38b165cb075f2b7c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a5d9fd1e7fbc3b7cd38b165cb075f2b7c" kindref="member">Suite::get_jacuzzi</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>jacuzzi;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_suite_1aedf54f1bdfbadeb7d5e0e88d17e56e50" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;string&gt;&amp;<sp/><ref refid="class_suite_1aedf54f1bdfbadeb7d5e0e88d17e56e50" kindref="member">Suite::get_amenities</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>amenities;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="class_suite_1a7bd3a5de67c22d5f4c52de55222ef145" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a7bd3a5de67c22d5f4c52de55222ef145" kindref="member">Suite::get_full_name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>ostringstream<sp/>oss;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/>ROOM_TYPE<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>№&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kindref="member">room_number</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>oss.str();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_suite_1a8256093cf9d2969b43f4d6414c36724b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a8256093cf9d2969b43f4d6414c36724b" kindref="member">Suite::set_room_service</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>room_service)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;room_service<sp/>=<sp/>room_service;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_suite_1a0ede9e1d764ed3a2f7239824c04b2a6f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a0ede9e1d764ed3a2f7239824c04b2a6f" kindref="member">Suite::set_jacuzzi</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>jacuzzi)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;jacuzzi<sp/>=<sp/>jacuzzi;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_suite_1a9f039af321d86c81d439b199ad1478c0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a9f039af321d86c81d439b199ad1478c0" kindref="member">Suite::set_amenities</ref>(vector&lt;string&gt;<sp/>amenities)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;amenities<sp/>=<sp/>move(amenities);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_suite_1a5872adbd701d687de599826b3fc84356" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a5872adbd701d687de599826b3fc84356" kindref="member">Suite::input_room_service</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" kindref="member">InputControl::input</ref>(room_service,<sp/></highlight><highlight class="stringliteral">&quot;Наличие<sp/>обслуживания<sp/>(1/0):<sp/>&quot;</highlight><highlight class="normal">))<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="class_suite_1a9d2c61fb1dd8d1585f60fcb8b8abae63" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a9d2c61fb1dd8d1585f60fcb8b8abae63" kindref="member">Suite::input_jacuzzi</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" kindref="member">InputControl::input</ref>(jacuzzi,<sp/></highlight><highlight class="stringliteral">&quot;Наличие<sp/>джакузи<sp/>(1/0):<sp/>&quot;</highlight><highlight class="normal">))<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Delim&gt;</highlight></codeline>
+<codeline lineno="97" refid="class_suite_1ab9afe7569b0064693b1bc771ebec514b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1ab9afe7569b0064693b1bc771ebec514b" kindref="member">Suite::input_amenities</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Ввод<sp/>удобств<sp/>осуществляется<sp/>в<sp/>одну<sp/>строку<sp/>через<sp/>разделитель<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>Delim<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Удобства:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_input_control_1_1_delimited_container" kindref="compound">InputControl::DelimitedContainer&lt;Delim, vector&lt;string&gt;</ref>&amp;&gt;<sp/>dc(amenities);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cin<sp/>&gt;&gt;<sp/>dc)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>cin.clear();<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="class_suite_1a5c36774e4bd5f9c9fb1bcb2f33ca60f0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="class_suite_1a5c36774e4bd5f9c9fb1bcb2f33ca60f0" kindref="member">Suite::get_room_type</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ROOM_TYPE;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="class_suite_1ae4543962753535fe6949179a061c7482" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="class_suite_1ae4543962753535fe6949179a061c7482" kindref="member">Suite::get_json_type</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>JSON_TYPE;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="class_suite_1a52e5526c81daabf55593d814d0da28b3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a52e5526c81daabf55593d814d0da28b3" kindref="member">Suite::calculate_total</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>night_count)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref><sp/>*<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(night_count)<sp/>+<sp/>SERVICE_PRICE;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="class_suite_1a5dfc680a5053801d7564eac1e6884320" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a5dfc680a5053801d7564eac1e6884320" kindref="member">Suite::validate</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a52e5526c81daabf55593d814d0da28b3" kindref="member">calculate_total</ref>(1)<sp/>&gt;=<sp/>10000.0f;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" kindref="member">Suite::order_champagne</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>amenity)<sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kindref="member">price_per_night</ref><sp/>+=<sp/>2000.0f;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespace_input_control_1a7a885a9d6172b2874d95d1613ced53db" kindref="member">InputControl::make_first_letter_uppercase</ref>(amenity);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>+=<sp/>amenity;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>KONDAKOV_LR5_SUITE_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_suite.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<map id="FamilyRoom::FamilyRoom" name="FamilyRoom::FamilyRoom">
+<area shape="rect" id="Node000001" title="Конструктор по умолчанию" alt="" coords="239,132,416,159"/>
+<area shape="rect" id="Node000002" href="$class_family_room.html#ac559badac05d424145fdfed78e4b68a5" title="Конструктор копирования" alt="" coords="9,5,187,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,123,250,84,189,46,161,35,163,30,192,42,253,80,302,119"/>
+<area shape="rect" id="Node000003" href="$class_family_room.html#adbf8949f46b23f3c2480c950f4ba77e7" title="Конструктор перемещения" alt="" coords="9,56,187,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,128,190,97,152,86,153,81,192,92,278,123"/>
+<area shape="rect" id="Node000004" href="$class_family_room.html#a25b1fbf3a3f6dd3bfa4e87e5ef329038" title="Конструктор с удобствами по умолчанию" alt="" coords="9,107,187,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="223,136,187,132,187,127,224,131"/>
+<area shape="rect" id="Node000005" href="$class_family_room.html#a1a262e7b0b5506de30ca981ffcdf2c8d" title="Оператор вывода" alt="" coords="15,157,181,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="224,159,182,164,181,159,223,154"/>
+<area shape="rect" id="Node000006" href="$class_family_room.html#aa110140405778c5d9123cfcee37ad641" title="Оператор ввода" alt="" coords="15,208,181,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="278,167,192,199,153,210,152,205,190,193,276,162"/>
+<area shape="rect" id="Node000007" href="$class_family_room.html#a21a282df8f7b25ede341c5b3ff75f3ac" title="Деструктор" alt="" coords="5,259,191,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="302,172,253,211,192,249,163,260,161,256,189,244,250,207,298,167"/>
+</map>

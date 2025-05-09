@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="group__core__definitions" kind="group">
+    <compoundname>core_definitions</compoundname>
+    <title>Основные определения</title>
+    <innerfile refid="kondakov__lr5__def_8h">kondakov_lr5_def.h</innerfile>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" prot="public" static="no">
+        <type>nlohmann::json</type>
+        <definition>using json =  nlohmann::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <briefdescription>
+<para>Псевдоним для удобства работы с JSON библиотекой </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_def.h" line="40" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_def.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Группа основных определений и подключений библиотек </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

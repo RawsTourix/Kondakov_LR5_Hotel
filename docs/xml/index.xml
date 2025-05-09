@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.13.2" xml:lang="en-US">
+  <compound refid="class_child_care" kind="class"><name>ChildCare</name>
+    <member refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" kind="function"><name>ChildCare</name></member>
+    <member refid="class_child_care_1ae4c90f2cfe06561b7c34a94308e214c9" kind="function"><name>ChildCare</name></member>
+    <member refid="class_child_care_1a2cda946ceb332e12fb4247df6e6b6271" kind="function"><name>ChildCare</name></member>
+    <member refid="class_child_care_1aa00a980396497917f0004744d30d79c9" kind="function"><name>ChildCare</name></member>
+    <member refid="class_child_care_1a41c5037674193f91f93145b66e1f5b65" kind="function"><name>operator=</name></member>
+    <member refid="class_child_care_1a771d0c62bd7c363fce0a95ecbcc22437" kind="function"><name>ChildCare</name></member>
+    <member refid="class_child_care_1aa81667a6e11f8cfbe7a68d33051a2f88" kind="function"><name>operator=</name></member>
+    <member refid="class_child_care_1a3b70d8d9825589f117fc101b5a561eb3" kind="function"><name>get_child_care_price</name></member>
+    <member refid="class_child_care_1ad6ec7a48b59727eaadbc0ea34d9957b2" kind="function"><name>get_has_child_care</name></member>
+    <member refid="class_child_care_1a377685049ef6ffb9b33f94eea5d86256" kind="function"><name>set_child_care_price</name></member>
+    <member refid="class_child_care_1ab184b2aa9a83fd4f64e7379d72cc7824" kind="function"><name>set_has_child_care</name></member>
+    <member refid="class_child_care_1a1571c2d8aab1536723b87e76a1c13bf7" kind="function"><name>input_child_care_price</name></member>
+    <member refid="class_child_care_1ae92c24af5b5bdaa4f192702a56f38c59" kind="function"><name>input_has_child_care</name></member>
+    <member refid="class_child_care_1a5c8cbfd9b611b3afcd61318dd818018e" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_child_care_1a01ad1c87538a964bd9f5aa0a64123777" kind="friend"><name>operator&gt;&gt;</name></member>
+    <member refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" kind="variable"><name>child_care_price</name></member>
+    <member refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" kind="variable"><name>has_child_care</name></member>
+    <member refid="class_child_care_1ae7600dd47859718da86c03d7f41be31b" kind="variable"><name>CURRENCY</name></member>
+    <member refid="class_child_care_1a95d73362a889097544af48252fe35a4d" kind="function"><name>print</name></member>
+    <member refid="class_child_care_1a157a0313cef3440dbf065d975c0cb443" kind="function"><name>input</name></member>
+    <member refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63" kind="function"><name>~ChildCare</name></member>
+    <member refid="class_child_care_1a779d4fd7448a353a992f5910d4e5704d" kind="function"><name>operator string</name></member>
+    <member refid="class_child_care_1a5996576d0d4943533c78b3edb5290d14" kind="function"><name>to_string</name></member>
+  </compound>
+  <compound refid="struct_input_control_1_1_delimited_container" kind="struct"><name>InputControl::DelimitedContainer</name>
+  </compound>
+  <compound refid="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5" kind="struct"><name>InputControl::DelimitedContainer&lt; Delim, Container &amp;, enable_if_t&lt; is_same_v&lt; typename Container::value_type, string &gt;, void &gt; &gt;</name>
+    <member refid="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5_1a20d503e1d262d9b668bc6da532f2bf3d" kind="variable"><name>ref</name></member>
+    <member refid="struct_input_control_1_1_delimited_container_3_01_delim_00_01_container_01_6_00_01enable__if__t_e12e72f0c289026bc10ec07e7fe406c5_1a5d34f5e14f4a658a9e24f572d244058b" kind="function"><name>DelimitedContainer</name></member>
+  </compound>
+  <compound refid="class_family_room" kind="class"><name>FamilyRoom</name>
+    <member refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" kind="function"><name>FamilyRoom</name></member>
+    <member refid="class_family_room_1a3f59431db365d7048ecced77d637aee6" kind="function"><name>FamilyRoom</name></member>
+    <member refid="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" kind="function"><name>FamilyRoom</name></member>
+    <member refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" kind="function"><name>FamilyRoom</name></member>
+    <member refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" kind="function"><name>FamilyRoom</name></member>
+    <member refid="class_family_room_1ac559badac05d424145fdfed78e4b68a5" kind="function"><name>FamilyRoom</name></member>
+    <member refid="class_family_room_1a3b1efc521f3769b05930d2d1e8d4846b" kind="function"><name>operator=</name></member>
+    <member refid="class_family_room_1adbf8949f46b23f3c2480c950f4ba77e7" kind="function"><name>FamilyRoom</name></member>
+    <member refid="class_family_room_1aef3843f4d47b777ca5a75ccd16ed0969" kind="function"><name>operator=</name></member>
+    <member refid="class_family_room_1aa856fd908a82a2bae60b32d70bf46a6c" kind="function"><name>get_child_beds</name></member>
+    <member refid="class_family_room_1a284d071e4021ae51ee81959ee34daa24" kind="function"><name>get_toy_kit</name></member>
+    <member refid="class_family_room_1aeb63ccdccaa93d69b6086bc264e877b6" kind="function"><name>get_amenities</name></member>
+    <member refid="class_family_room_1aef7d738df1e02f504acfd559fc5717f7" kind="function"><name>get_full_name</name></member>
+    <member refid="class_family_room_1aa578557a9e04d8ae9d1514927b5ca3fc" kind="function"><name>set_child_beds</name></member>
+    <member refid="class_family_room_1ad02271d4a11244e0f0d019a09d534d20" kind="function"><name>set_toy_kit</name></member>
+    <member refid="class_family_room_1a3f442240266841fd1abce7f2e5cc01ff" kind="function"><name>set_amenities</name></member>
+    <member refid="class_family_room_1a1ebb4c81d3a9702ccc5728c493ef69a3" kind="function"><name>input_child_beds</name></member>
+    <member refid="class_family_room_1adf81aedd42e98a749f90960fc11f6cbc" kind="function"><name>input_toy_kit</name></member>
+    <member refid="class_family_room_1abb1954b03a8e3aa797e37de43bff05ec" kind="function"><name>input_amenities</name></member>
+    <member refid="class_family_room_1a9d7b9dde0586fd167ea83b823d19d31c" kind="function"><name>get_room_type</name></member>
+    <member refid="class_family_room_1a59483bf1fc2c54e70d75e3d8586ebc8b" kind="function"><name>get_json_type</name></member>
+    <member refid="class_family_room_1a3028a8b0bbf43ce29f60359fa1b11dab" kind="function"><name>calculate_total</name></member>
+    <member refid="class_family_room_1a1dcd7bbdd05f880434599c22d548c999" kind="function"><name>validate</name></member>
+    <member refid="class_family_room_1a90b94b412e2139d7cbe3fe9460419b6c" kind="function"><name>add_play_area</name></member>
+    <member refid="class_family_room_1aa7c9d20d36a0f7fadad338e5370c3677" kind="function"><name>remove_play_area</name></member>
+    <member refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" kind="function"><name>to_json</name></member>
+    <member refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" kind="function"><name>from_json</name></member>
+    <member refid="class_family_room_1a6b8a9a583efe7d0c175b89bc19fa094a" kind="function"><name>operator[]</name></member>
+    <member refid="class_family_room_1a42e3664ae2e083429bee603e693c241c" kind="function"><name>operator[]</name></member>
+    <member refid="class_family_room_1af3e85b25cc862b7fe45c92d151c6c067" kind="function"><name>operator[]</name></member>
+    <member refid="class_family_room_1a4b0a77d2468b817ef9e5e57e46c78867" kind="function"><name>operator[]</name></member>
+    <member refid="class_family_room_1a3411d02b50945ac3b3bd8a9f2961c8d4" kind="function"><name>operator[]</name></member>
+    <member refid="class_family_room_1a55b472a34768a130bde274bce15a3cd0" kind="function"><name>operator[]</name></member>
+    <member refid="class_family_room_1a6fd84863579cc1e5253a9beb41589987" kind="function"><name>operator[]</name></member>
+    <member refid="class_family_room_1a98720f9bcaa909c7978333f965ac4186" kind="function"><name>operator[]</name></member>
+    <member refid="class_family_room_1a032d2737288226097040629c4987691d" kind="function"><name>operator[]</name></member>
+    <member refid="class_family_room_1a3c2c1a263d0bb6bbc2c0970b342b0fc3" kind="function"><name>operator string</name></member>
+    <member refid="class_family_room_1a9c0a4570d5b466db2be534ac3b0b0f3c" kind="function"><name>print</name></member>
+    <member refid="class_family_room_1ae03def3879b27ffca22b392ca54283c4" kind="function"><name>input</name></member>
+    <member refid="class_family_room_1a271f00565274998fdabcf7caf292fff5" kind="function"><name>to_string</name></member>
+    <member refid="class_family_room_1a1a262e7b0b5506de30ca981ffcdf2c8d" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_family_room_1aa110140405778c5d9123cfcee37ad641" kind="friend"><name>operator&gt;&gt;</name></member>
+    <member refid="class_family_room_1a82081c07969efb5a7fb21efda24647d4" kind="friend"><name>operator+</name></member>
+    <member refid="class_family_room_1a7bb9e3bd6d06c33b763c526b43e574c0" kind="friend"><name>operator+</name></member>
+    <member refid="class_family_room_1a71c9fc936bc425638df0d312e70e74d9" kind="friend"><name>operator+</name></member>
+    <member refid="class_family_room_1aa007505ed8ae18656669dc3c9ae7bfe1" kind="friend"><name>operator+=</name></member>
+    <member refid="class_family_room_1a5ae85dc29b69889c3a74cfa298430c4b" kind="friend"><name>operator+=</name></member>
+    <member refid="class_family_room_1a4f652b894ac045655ace908b33ab98f3" kind="friend"><name>operator+=</name></member>
+    <member refid="class_family_room_1a4652e27eba37087434b72a5f92ce1ed1" kind="variable"><name>child_beds</name></member>
+    <member refid="class_family_room_1a45b6153ed139e33e936a7f60067ecb94" kind="variable"><name>toy_kit</name></member>
+    <member refid="class_family_room_1a3fee4b37e62ed942bd29c61eb7c523d4" kind="variable"><name>amenities</name></member>
+    <member refid="class_family_room_1a0d92f0e31fde7b375c601a0fe9be9086" kind="variable"><name>ROOM_TYPE</name></member>
+    <member refid="class_family_room_1a7772a066d478d4b60867875884d1c28d" kind="variable"><name>JSON_TYPE</name></member>
+    <member refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac" kind="function"><name>~FamilyRoom</name></member>
+  </compound>
+  <compound refid="class_menu_object" kind="class"><name>MenuObject</name>
+    <member refid="class_menu_object_1ae0d6d87d7380e0c21ad8f91c9f264fa3" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a0a3ce6da86682e5443328294b9a7cd8e" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a2ee26e3e2aa17b97248add106ab168a6" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a378e7c58f8704a8cf42896a9ba72d23a" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a56564b4de97cb0c00464dd8ce10099a3" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a8d8ed81bd4d1dcf826493574f6765e9a" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a4ca27840c4977a73db86dc19bbd43edd" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a72ed4cc45cae2455d3dddcbc5e7359dd" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a5b44b22cc8ccf70e5f67b2705c9c5629" kind="function"><name>operator=</name></member>
+    <member refid="class_menu_object_1a111fe1da7199d2ac2231ec3fdbf03e3b" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a3f9eec2bf5d769342dfe484f42650435" kind="function"><name>operator=</name></member>
+    <member refid="class_menu_object_1a24f8afbc68fb4cf9c07c096d610ff9ea" kind="function"><name>show</name></member>
+    <member refid="class_menu_object_1a946403b51b6cdca6436a52e370def59f" kind="function"><name>act</name></member>
+    <member refid="class_menu_object_1a0debe328757d5357858d882b400c0c36" kind="function"><name>get_label</name></member>
+    <member refid="class_menu_object_1aaa57ab0f94af99662e2fe85119c9a7ea" kind="function"><name>get_number</name></member>
+    <member refid="class_menu_object_1a2a117f60378680504a1c89e823140553" kind="function"><name>get_full_name</name></member>
+    <member refid="class_menu_object_1a02b93b7881760dfd7de04a5bf783c7f2" kind="function"><name>get_submenu</name></member>
+    <member refid="class_menu_object_1afcff500d4d66f422bde91e86b49d26ce" kind="function"><name>get_one_off_menu_inclusion</name></member>
+    <member refid="class_menu_object_1aca1cbebf08e1fb5c3f063e94d0e8f95b" kind="function"><name>show_menu</name></member>
+    <member refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" kind="function"><name>process</name></member>
+    <member refid="class_menu_object_1a6c5ecb8adb0a1e6a816d0214b234eeec" kind="variable"><name>number</name></member>
+    <member refid="class_menu_object_1a039cbc48b017d496533503a1b7148408" kind="variable"><name>label</name></member>
+    <member refid="class_menu_object_1a0be5d5e374d620da2a8815d29a7aea98" kind="variable"><name>action</name></member>
+    <member refid="class_menu_object_1a64bb0e708f01a31c2c47b1b32506504a" kind="variable"><name>submenu</name></member>
+    <member refid="class_menu_object_1a05ce72566d06c5f321f7cf4c8d975c6f" kind="variable"><name>one_off_menu_inclusion</name></member>
+    <member refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1" kind="function"><name>~MenuObject</name></member>
+  </compound>
+  <compound refid="class_room" kind="class"><name>Room</name>
+    <member refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a85a05efbf9e7aa79f9ea8bd009f03855" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a5b964942d5eb880206cc5bc93ccd9045" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a1cda0e12564c8fedcba0a4fa18ede003" kind="function"><name>operator=</name></member>
+    <member refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a4fd1667324eb508ecd1981481a37fdd0" kind="function"><name>operator=</name></member>
+    <member refid="class_room_1a8da5257d15eb131e471b59ba753dcedb" kind="function"><name>get_room_number</name></member>
+    <member refid="class_room_1a828dede24bf20f003892f71c9b08d2e9" kind="function"><name>get_price_per_night</name></member>
+    <member refid="class_room_1a263ae7170c7b5b3df8065a3605d39f28" kind="function"><name>get_is_booked</name></member>
+    <member refid="class_room_1ae6f809c97ae2d5a6ab101cd8771d9cb3" kind="function"><name>get_amenities</name></member>
+    <member refid="class_room_1a5e3f378b9991a36faa3172fce417715b" kind="function"><name>get_full_name</name></member>
+    <member refid="class_room_1a1b06ff753e0b5dd0a611fbdc52afa3a6" kind="function"><name>set_room_number</name></member>
+    <member refid="class_room_1a75c9b72c1c0a64e6b38b3b12ec94e226" kind="function"><name>set_price_per_night</name></member>
+    <member refid="class_room_1a488165c7e78bb66e8338835e0fdae5ae" kind="function"><name>set_is_booked</name></member>
+    <member refid="class_room_1a2e34a3971a1607066debe10b3577fde2" kind="function"><name>input_room_number</name></member>
+    <member refid="class_room_1a6cf26e8f3f928e18afae33e46bca7927" kind="function"><name>input_room_number</name></member>
+    <member refid="class_room_1aed37576ec13b3d3d24559e709d0adc32" kind="function"><name>input_price_per_night</name></member>
+    <member refid="class_room_1a693f8c26331cfee829f263c830f3e5ad" kind="function"><name>input_is_booked</name></member>
+    <member refid="class_room_1a0551c035cf42bed1ae6865561dd5e5de" kind="function"><name>get_room_type</name></member>
+    <member refid="class_room_1a3bc75b359d4b5d4f5f655f75478019d3" kind="function"><name>get_json_type</name></member>
+    <member refid="class_room_1a85c09226671b7572f5e3e4206fac09cb" kind="function"><name>calculate_total</name></member>
+    <member refid="class_room_1a481e9eaeeb4964748e0fe8f6cff33c57" kind="function"><name>validate</name></member>
+    <member refid="class_room_1a5188f0fe1d99561de97ab2b5fccde4b0" kind="function"><name>to_json</name></member>
+    <member refid="class_room_1a683b154738ffe3f6b20e9c3807735f9c" kind="function"><name>from_json</name></member>
+    <member refid="class_room_1a5bdf7a1de75c11ddd88a885a55aec2b2" kind="friend"><name>operator==</name></member>
+    <member refid="class_room_1aa0d7134aced47f8d978ff39f0a864db5" kind="friend"><name>operator==</name></member>
+    <member refid="class_room_1a7cf209698d3f77299918b41ac1edb880" kind="friend"><name>operator==</name></member>
+    <member refid="class_room_1a2bcc48d7125c732d1f968edefda56344" kind="friend"><name>operator&gt;=</name></member>
+    <member refid="class_room_1af90895751b7344c60584e5d83c5df4c7" kind="friend"><name>operator&gt;=</name></member>
+    <member refid="class_room_1a0f3c42df0072674a25f8423086932abc" kind="friend"><name>operator&gt;=</name></member>
+    <member refid="class_room_1a8f4f32a23a7f70c30b1719298080a3f6" kind="friend"><name>operator&lt;=</name></member>
+    <member refid="class_room_1affec85e4ee9e5372f03ecef2690cd917" kind="friend"><name>operator&lt;=</name></member>
+    <member refid="class_room_1a081c4e1598df929932d016deb4edd71e" kind="friend"><name>operator&lt;=</name></member>
+    <member refid="class_room_1a7eebef86e38c00ff4187d9d07a677fa6" kind="friend"><name>operator&gt;</name></member>
+    <member refid="class_room_1a00731c176c310af0b71eeacd44346308" kind="friend"><name>operator&gt;</name></member>
+    <member refid="class_room_1af321c6828f557795f589d9f227e26937" kind="friend"><name>operator&gt;</name></member>
+    <member refid="class_room_1a5e07051c5358a0c18092711c622e666d" kind="friend"><name>operator&lt;</name></member>
+    <member refid="class_room_1a1ca203c6f90c34ceaa451a75b1b330d0" kind="friend"><name>operator&lt;</name></member>
+    <member refid="class_room_1ae406d1a4e1a9f132f1f3a6e59efb5b72" kind="friend"><name>operator&lt;</name></member>
+    <member refid="class_room_1ac5c1ca74e258e0e7b085c01387fcf1c5" kind="friend"><name>operator!=</name></member>
+    <member refid="class_room_1a48fc1502df2a9d36b8a6a8989f5a6074" kind="friend"><name>operator!=</name></member>
+    <member refid="class_room_1aae7cfb3e2dbebb2113cefb251ff202cd" kind="friend"><name>operator!=</name></member>
+    <member refid="class_room_1a36eff138ff44b4dc96c10d5f439cc821" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_room_1a8b0c15f242679145b4922d1bb7b6ee6e" kind="friend"><name>operator&gt;&gt;</name></member>
+    <member refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" kind="variable"><name>room_number</name></member>
+    <member refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" kind="variable"><name>price_per_night</name></member>
+    <member refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" kind="variable"><name>is_booked</name></member>
+    <member refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" kind="variable"><name>CURRENCY</name></member>
+    <member refid="class_room_1af185fec4d7038c4640e2618817d41d95" kind="function"><name>print</name></member>
+    <member refid="class_room_1a3771355e58c0cac65cb836f72b7da113" kind="function"><name>input</name></member>
+    <member refid="class_room_1a508697104b1bdce37058c029ea5d7b2b" kind="function"><name>~Room</name></member>
+    <member refid="class_room_1aff42dadd005f91b3feed3dc2dfb41229" kind="function"><name>operator string</name></member>
+    <member refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" kind="function"><name>to_string</name></member>
+    <member refid="class_room_1a90389beafff4333dd690e5e3c185a8d0" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="struct_methods_1_1_room_info" kind="struct"><name>Methods::RoomInfo</name>
+    <member refid="struct_methods_1_1_room_info_1aa0da86b590c86e8fdedffc94c067ce2f" kind="variable"><name>number</name></member>
+    <member refid="struct_methods_1_1_room_info_1aa285b755db3bbd7d7824d9bf7f3ef4ed" kind="variable"><name>full_name</name></member>
+    <member refid="struct_methods_1_1_room_info_1a934968516c83d41fff7a39706b415297" kind="variable"><name>room</name></member>
+    <member refid="struct_methods_1_1_room_info_1a768786b9551b24da36057f257bb1dde0" kind="function"><name>RoomInfo</name></member>
+    <member refid="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" kind="function"><name>RoomInfo</name></member>
+    <member refid="struct_methods_1_1_room_info_1a092fbd35d2149cdd3d72e5ad3330cbc8" kind="function"><name>print</name></member>
+    <member refid="struct_methods_1_1_room_info_1a9c323c15d655febac79f968f8dc38719" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="struct_serializer_1_1_room_type_registry" kind="struct"><name>Serializer::RoomTypeRegistry</name>
+    <member refid="struct_serializer_1_1_room_type_registry_1a7dcbb2dc21617b8304fcc615fd496db1" kind="variable"><name>creators</name></member>
+    <member refid="struct_serializer_1_1_room_type_registry_1a942bb68c3c530fed0109960fe257352a" kind="function"><name>RoomTypeRegistry</name></member>
+  </compound>
+  <compound refid="class_standard_room" kind="class"><name>StandardRoom</name>
+    <member refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1ac4e5998244608a81fb3c43d0e726f516" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a854c437feec24655a64310a7adce06b0" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1af70fc0ba78a874aaf1cb87d04c6242ac" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a0320959fc237ea0da3d057fb1d9de63d" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a52219ce11a150a1c428a674d7085f5fb" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a5ba7f2a70d521545aed28c3374a814dd" kind="function"><name>operator=</name></member>
+    <member refid="class_standard_room_1a544e0f476c31c4e204704e79a3089a4e" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a664e24a4b27cb20b7cefd2c56045681a" kind="function"><name>operator=</name></member>
+    <member refid="class_standard_room_1a1e09746ff2f02ce0c634da7230f79b8f" kind="function"><name>get_bed_count</name></member>
+    <member refid="class_standard_room_1ae8ea3d346b46792c51d22a6423b255d1" kind="function"><name>get_has_tv</name></member>
+    <member refid="class_standard_room_1a9138d117561e302bf0d1dadde1f7401c" kind="function"><name>get_amenities</name></member>
+    <member refid="class_standard_room_1af62d306fc8c3735b2a2097768ec74f21" kind="function"><name>get_full_name</name></member>
+    <member refid="class_standard_room_1a89f97d3e1168e43a8f8e56c5c95e01d9" kind="function"><name>set_bed_count</name></member>
+    <member refid="class_standard_room_1a756122f9b973a88e7615eb2d4ab0eedb" kind="function"><name>set_has_tv</name></member>
+    <member refid="class_standard_room_1a7a90967661eb054e3005d7399f17808e" kind="function"><name>set_amenities</name></member>
+    <member refid="class_standard_room_1a006df2025213235b54bb5e58c277d224" kind="function"><name>input_bed_count</name></member>
+    <member refid="class_standard_room_1ad4ed425e8f2ed08253b5141cc96a6b71" kind="function"><name>input_has_tv</name></member>
+    <member refid="class_standard_room_1ab0d225d5a8b3c830ba892efc075c9547" kind="function"><name>input_amenities</name></member>
+    <member refid="class_standard_room_1afe04ed7e9c817111a6c1fb7aee10ba44" kind="function"><name>get_room_type</name></member>
+    <member refid="class_standard_room_1a602ea7d9edcc6f1a2f772f41f1e86d91" kind="function"><name>get_json_type</name></member>
+    <member refid="class_standard_room_1a8b4f0b7940b0a2dbfb3aab3063227a2b" kind="function"><name>calculate_total</name></member>
+    <member refid="class_standard_room_1abf5ec953669ccaae53f893db5a683ea8" kind="function"><name>validate</name></member>
+    <member refid="class_standard_room_1ac69d562b2b499115e781e42a0fe5d7ac" kind="function"><name>to_json</name></member>
+    <member refid="class_standard_room_1a2844b52435f2d070357dea921a3541ad" kind="function"><name>from_json</name></member>
+    <member refid="class_standard_room_1acf55a87a76c686170ce9c8e1d4cdf62a" kind="function"><name>print</name></member>
+    <member refid="class_standard_room_1a5c3965885d7f9455ac2106275ac658bf" kind="function"><name>input</name></member>
+    <member refid="class_standard_room_1a06b989063fdda125448921ce223029b9" kind="function"><name>to_string</name></member>
+    <member refid="class_standard_room_1a19f01e2381200a362ccbac4cb687b4d0" kind="friend"><name>operator+</name></member>
+    <member refid="class_standard_room_1a506aa585631eb7014c7e907c4a7ebf84" kind="friend"><name>operator+</name></member>
+    <member refid="class_standard_room_1ab7ec956a8efcab085c3243418a362adc" kind="friend"><name>operator+</name></member>
+    <member refid="class_standard_room_1af7ca5fa230c4bc00b5349a86bf91acbf" kind="friend"><name>operator+=</name></member>
+    <member refid="class_standard_room_1a9f53f70c9c33c0c9b1de7d1b1205a2d0" kind="friend"><name>operator+=</name></member>
+    <member refid="class_standard_room_1ae5334f1e7dd2489a2360d8275897f363" kind="friend"><name>operator+=</name></member>
+    <member refid="class_standard_room_1ae8832056f49dce6fba3249c49462ab84" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_standard_room_1aac82f7ed99fa1070a03d364518201169" kind="friend"><name>operator&gt;&gt;</name></member>
+    <member refid="class_standard_room_1a93e0e72810b7040061054b2c3162e71c" kind="variable"><name>bed_count</name></member>
+    <member refid="class_standard_room_1a0cbc252186862778e9e9dc663016bc8f" kind="variable"><name>has_tv</name></member>
+    <member refid="class_standard_room_1a87f2a0c22eef467e47044a572e948a12" kind="variable"><name>amenities</name></member>
+    <member refid="class_standard_room_1a000acd331653ce32200fb7740cf3ab04" kind="variable"><name>ROOM_TYPE</name></member>
+    <member refid="class_standard_room_1a8b5e17f342fefd745b88819481a30e65" kind="variable"><name>JSON_TYPE</name></member>
+    <member refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d" kind="function"><name>~StandardRoom</name></member>
+    <member refid="class_standard_room_1ab7c3a25d3d39eed18ac42c65c5cd9ed1" kind="function"><name>exstra_bed</name></member>
+    <member refid="class_standard_room_1a23c37c9cd1299d7d83a11ba37ed64fd0" kind="function"><name>operator string</name></member>
+  </compound>
+  <compound refid="class_suite" kind="class"><name>Suite</name>
+    <member refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kind="function"><name>Suite</name></member>
+    <member refid="class_suite_1a710a30c09147e4838ee42de34ae4fd96" kind="function"><name>Suite</name></member>
+    <member refid="class_suite_1a80d4f9db1d8cb72a3ca0286e7ea3a0c5" kind="function"><name>Suite</name></member>
+    <member refid="class_suite_1a9dda4162a1c67074b11e3d83da22d196" kind="function"><name>Suite</name></member>
+    <member refid="class_suite_1a395e66a54d3dbd412e64c60ddedb06b5" kind="function"><name>Suite</name></member>
+    <member refid="class_suite_1a84eeaf79508119b645c1932cc5d22369" kind="function"><name>Suite</name></member>
+    <member refid="class_suite_1aa363bed00f99871e569ee8950fd8bb73" kind="function"><name>operator=</name></member>
+    <member refid="class_suite_1aea409d24c05e53ba1d4c83a63da708c5" kind="function"><name>Suite</name></member>
+    <member refid="class_suite_1afee1e27929a9cc4354768862d47f11e0" kind="function"><name>operator=</name></member>
+    <member refid="class_suite_1ac8c879afd32bdc582b945f7f541bd2ca" kind="function"><name>get_room_service</name></member>
+    <member refid="class_suite_1a5d9fd1e7fbc3b7cd38b165cb075f2b7c" kind="function"><name>get_jacuzzi</name></member>
+    <member refid="class_suite_1aedf54f1bdfbadeb7d5e0e88d17e56e50" kind="function"><name>get_amenities</name></member>
+    <member refid="class_suite_1a7bd3a5de67c22d5f4c52de55222ef145" kind="function"><name>get_full_name</name></member>
+    <member refid="class_suite_1a8256093cf9d2969b43f4d6414c36724b" kind="function"><name>set_room_service</name></member>
+    <member refid="class_suite_1a0ede9e1d764ed3a2f7239824c04b2a6f" kind="function"><name>set_jacuzzi</name></member>
+    <member refid="class_suite_1a9f039af321d86c81d439b199ad1478c0" kind="function"><name>set_amenities</name></member>
+    <member refid="class_suite_1a5872adbd701d687de599826b3fc84356" kind="function"><name>input_room_service</name></member>
+    <member refid="class_suite_1a9d2c61fb1dd8d1585f60fcb8b8abae63" kind="function"><name>input_jacuzzi</name></member>
+    <member refid="class_suite_1ab9afe7569b0064693b1bc771ebec514b" kind="function"><name>input_amenities</name></member>
+    <member refid="class_suite_1a5c36774e4bd5f9c9fb1bcb2f33ca60f0" kind="function"><name>get_room_type</name></member>
+    <member refid="class_suite_1ae4543962753535fe6949179a061c7482" kind="function"><name>get_json_type</name></member>
+    <member refid="class_suite_1a52e5526c81daabf55593d814d0da28b3" kind="function"><name>calculate_total</name></member>
+    <member refid="class_suite_1a5dfc680a5053801d7564eac1e6884320" kind="function"><name>validate</name></member>
+    <member refid="class_suite_1afd16f2512f214af813bd2123b2a6f309" kind="function"><name>to_json</name></member>
+    <member refid="class_suite_1ad1c3c76f53340da885309ef251d2898e" kind="function"><name>from_json</name></member>
+    <member refid="class_suite_1a31debd927684dc287f287030def6438d" kind="function"><name>print</name></member>
+    <member refid="class_suite_1ae6868783d1d9227a61d7d0afd7f9a79e" kind="function"><name>input</name></member>
+    <member refid="class_suite_1a4e720c17c1195264c65fa507a52d1edc" kind="function"><name>to_string</name></member>
+    <member refid="class_suite_1adc5c089619b33563080d5ceaabe54a3b" kind="friend"><name>operator+</name></member>
+    <member refid="class_suite_1a9fdefa1bd2544b5ca49f43dc5ae63ce3" kind="friend"><name>operator+</name></member>
+    <member refid="class_suite_1a0dc07be86f09bfbe25de2c952d1a4947" kind="friend"><name>operator+</name></member>
+    <member refid="class_suite_1a97d282b33f7b403d82c71b7f086bb6cd" kind="friend"><name>operator+=</name></member>
+    <member refid="class_suite_1a0c170d552b09668a9c962de79fd6a37e" kind="friend"><name>operator+=</name></member>
+    <member refid="class_suite_1abf85c5c759098cfb8f9858606520c47b" kind="friend"><name>operator+=</name></member>
+    <member refid="class_suite_1a8f934acbbedc7d7381a0bd963cf4567c" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="class_suite_1aaf656a5dd660cdeaf6bcd773955fd249" kind="friend"><name>operator&gt;&gt;</name></member>
+    <member refid="class_suite_1a7e0c4b18040ddd0f5a1692095cd45610" kind="variable"><name>room_service</name></member>
+    <member refid="class_suite_1ab1fbcfed24b8efe1e7f43bb03db2559e" kind="variable"><name>jacuzzi</name></member>
+    <member refid="class_suite_1a4969bddb82e3193292a2b53475eabb13" kind="variable"><name>amenities</name></member>
+    <member refid="class_suite_1ad7684f0c399f61ca5ca1d3010cca0799" kind="variable"><name>SERVICE_PRICE</name></member>
+    <member refid="class_suite_1a8b18977089a6888c3dbb5ce822fd3c38" kind="variable"><name>ROOM_TYPE</name></member>
+    <member refid="class_suite_1a7d8254b4fcd73eff50465b103453af04" kind="variable"><name>JSON_TYPE</name></member>
+    <member refid="class_suite_1ad768458b39f93edf4554a8fb45c960d6" kind="function"><name>~Suite</name></member>
+    <member refid="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" kind="function"><name>order_champagne</name></member>
+    <member refid="class_suite_1afff31f8ff7b21a0174f304572c1b073f" kind="function"><name>operator string</name></member>
+  </compound>
+  <compound refid="namespace_input_control" kind="namespace"><name>InputControl</name>
+    <member refid="namespace_input_control_1a58f52a08f73fe9b352d19e80d84c64ea" kind="function"><name>trim</name></member>
+    <member refid="namespace_input_control_1a5df9ff92a406d7ffc174e3b3ddef8cd4" kind="function"><name>split</name></member>
+    <member refid="namespace_input_control_1a73b65170f1a042d18f40df91cfd62bdc" kind="function"><name>get_lowercase</name></member>
+    <member refid="namespace_input_control_1a7a885a9d6172b2874d95d1613ced53db" kind="function"><name>make_first_letter_uppercase</name></member>
+    <member refid="namespace_input_control_1a65e26d060b726037262418808215e1b5" kind="function"><name>is_input_empty</name></member>
+    <member refid="namespace_input_control_1ae598625feed83f92d1d22aa3d6839d22" kind="function"><name>check_min_max</name></member>
+    <member refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" kind="function"><name>input</name></member>
+    <member refid="namespace_input_control_1a34d4aa3144b48ab4fa3d5a719bcee8d7" kind="function"><name>input</name></member>
+    <member refid="namespace_input_control_1ab685d4d2f2828ba6eecd1438c26f7bef" kind="function"><name>input</name></member>
+    <member refid="namespace_input_control_1a1dde7a0934fa6bda46d58eb1c0bb63d2" kind="function"><name>get_char</name></member>
+    <member refid="namespace_input_control_1a5da443e5ec677b12d7b885fc46bed8bb" kind="function"><name>yes_or_no</name></member>
+  </compound>
+  <compound refid="namespace_methods" kind="namespace"><name>Methods</name>
+    <member refid="namespace_methods_1a4e95cf6a1ac5c99eeaa974f85bc7a4b5" kind="function"><name>show_rooms</name></member>
+    <member refid="namespace_methods_1a618de377d484a8d7a88b9f5e642518f3" kind="function"><name>add_room</name></member>
+    <member refid="namespace_methods_1a51179a7d6e8fb0608922a0d00f102f11" kind="function"><name>edit_room</name></member>
+    <member refid="namespace_methods_1a2e2cf54114db383e2d9b68bbfa3801d4" kind="function"><name>delete_room</name></member>
+    <member refid="namespace_methods_1a5836b360a5e2d3b056046d4ce04cbca2" kind="function"><name>sort_rooms</name></member>
+    <member refid="namespace_methods_1a7b9a83b3197577b58819541579717b4c" kind="function"><name>calculate_total</name></member>
+    <member refid="namespace_methods_1a05bd78f9a1464f73347e56dda5f53c37" kind="function"><name>validate_room</name></member>
+    <member refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" kind="function"><name>additional_room_methods</name></member>
+    <member refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" kind="function"><name>get_room_from_rooms_map</name></member>
+    <member refid="namespace_methods_1a54e67b3d003bb3031c74b7d803e12f54" kind="function"><name>get_room_numbers</name></member>
+    <member refid="namespace_methods_1abc76e3d214018960b9c50522c0769d75" kind="function"><name>room_in_rooms_by_room_number</name></member>
+  </compound>
+  <compound refid="namespace_serializer" kind="namespace"><name>Serializer</name>
+    <member refid="namespace_serializer_1a9f1a804962d97d89825821386f43ab52" kind="variable"><name>registry</name></member>
+    <member refid="namespace_serializer_1ad9ba9956a2b2bf0be83245d3621cb9dc" kind="function"><name>serialize_rooms</name></member>
+    <member refid="namespace_serializer_1a4703ee1c8aebc4ee00f07f6ece701e3c" kind="function"><name>deserialize_rooms</name></member>
+    <member refid="namespace_serializer_1a68f703f287bd0348bdd559f9664121f6" kind="function"><name>save_rooms_to_file</name></member>
+    <member refid="namespace_serializer_1a634c26f6c5a03bed3540431ba9846a1e" kind="function"><name>load_rooms_from_file</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="kondakov__lr5__child__care_8cpp" kind="file"><name>kondakov_lr5_child_care.cpp</name>
+    <member refid="kondakov__lr5__child__care_8cpp_1a5c8cbfd9b611b3afcd61318dd818018e" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="kondakov__lr5__child__care_8cpp_1a01ad1c87538a964bd9f5aa0a64123777" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__child__care_8h" kind="file"><name>kondakov_lr5_child_care.h</name>
+  </compound>
+  <compound refid="kondakov__lr5__child__care_8hpp" kind="file"><name>kondakov_lr5_child_care.hpp</name>
+  </compound>
+  <compound refid="kondakov__lr5__container__operations_8hpp" kind="file"><name>kondakov_lr5_container_operations.hpp</name>
+    <member refid="kondakov__lr5__container__operations_8hpp_1a780b67f65e7650b7621583a0c5f0aadb" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="kondakov__lr5__container__operations_8hpp_1a273372d7d09179966f6d26861fd41dcd" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__container__operations_8hpp_1a447cf4bccd292f53844905a5c88c7d27" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__container__operations_8hpp_1a6b0fc452e51eac8ef593ecc9d2fd0137" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__container__operations_8hpp_1af2721b39e850a7e2bf789e2b32cca184" kind="function"><name>operator&gt;&gt;</name></member>
+    <member refid="kondakov__lr5__container__operations_8hpp_1a95226ada92c9fc69c4d5d6771165dcb3" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__def_8h" kind="file"><name>kondakov_lr5_def.h</name>
+    <member refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__family__room_8cpp" kind="file"><name>kondakov_lr5_family_room.cpp</name>
+    <member refid="kondakov__lr5__family__room_8cpp_1a82081c07969efb5a7fb21efda24647d4" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__family__room_8cpp_1a7bb9e3bd6d06c33b763c526b43e574c0" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__family__room_8cpp_1a71c9fc936bc425638df0d312e70e74d9" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__family__room_8cpp_1aa007505ed8ae18656669dc3c9ae7bfe1" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__family__room_8cpp_1a5ae85dc29b69889c3a74cfa298430c4b" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__family__room_8cpp_1a4f652b894ac045655ace908b33ab98f3" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__family__room_8cpp_1a9293b4e7fad7c7a56ae6509be56648f2" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="kondakov__lr5__family__room_8cpp_1a153fa97c3f8848e350099c120272ceb1" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__family__room_8h" kind="file"><name>kondakov_lr5_family_room.h</name>
+  </compound>
+  <compound refid="kondakov__lr5__family__room_8hpp" kind="file"><name>kondakov_lr5_family_room.hpp</name>
+  </compound>
+  <compound refid="kondakov__lr5__input__control_8cpp" kind="file"><name>kondakov_lr5_input_control.cpp</name>
+  </compound>
+  <compound refid="kondakov__lr5__input__control_8h" kind="file"><name>kondakov_lr5_input_control.h</name>
+  </compound>
+  <compound refid="kondakov__lr5__input__control_8hpp" kind="file"><name>kondakov_lr5_input_control.hpp</name>
+  </compound>
+  <compound refid="kondakov__lr5__main_8cpp" kind="file"><name>kondakov_lr5_main.cpp</name>
+    <member refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__menu__object_8cpp" kind="file"><name>kondakov_lr5_menu_object.cpp</name>
+  </compound>
+  <compound refid="kondakov__lr5__menu__object_8h" kind="file"><name>kondakov_lr5_menu_object.h</name>
+  </compound>
+  <compound refid="kondakov__lr5__menu__object_8hpp" kind="file"><name>kondakov_lr5_menu_object.hpp</name>
+  </compound>
+  <compound refid="kondakov__lr5__methods_8h" kind="file"><name>kondakov_lr5_methods.h</name>
+  </compound>
+  <compound refid="kondakov__lr5__methods_8hpp" kind="file"><name>kondakov_lr5_methods.hpp</name>
+    <member refid="kondakov__lr5__methods_8hpp_1a7dae85ea71697ef36e7ccf787788527d" kind="function"><name>get_room_edit_methods</name></member>
+    <member refid="kondakov__lr5__methods_8hpp_1ac05511f73c89a40979bc6c880ca896cb" kind="function"><name>add_edit_menu_items</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__room_8cpp" kind="file"><name>kondakov_lr5_room.cpp</name>
+    <member refid="kondakov__lr5__room_8cpp_1a5bdf7a1de75c11ddd88a885a55aec2b2" kind="function"><name>operator==</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1aa0d7134aced47f8d978ff39f0a864db5" kind="function"><name>operator==</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a7cf209698d3f77299918b41ac1edb880" kind="function"><name>operator==</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a2bcc48d7125c732d1f968edefda56344" kind="function"><name>operator&gt;=</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1af90895751b7344c60584e5d83c5df4c7" kind="function"><name>operator&gt;=</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a0f3c42df0072674a25f8423086932abc" kind="function"><name>operator&gt;=</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a8f4f32a23a7f70c30b1719298080a3f6" kind="function"><name>operator&lt;=</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1affec85e4ee9e5372f03ecef2690cd917" kind="function"><name>operator&lt;=</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a081c4e1598df929932d016deb4edd71e" kind="function"><name>operator&lt;=</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a7eebef86e38c00ff4187d9d07a677fa6" kind="function"><name>operator&gt;</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a00731c176c310af0b71eeacd44346308" kind="function"><name>operator&gt;</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1af321c6828f557795f589d9f227e26937" kind="function"><name>operator&gt;</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a5e07051c5358a0c18092711c622e666d" kind="function"><name>operator&lt;</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a1ca203c6f90c34ceaa451a75b1b330d0" kind="function"><name>operator&lt;</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1ae406d1a4e1a9f132f1f3a6e59efb5b72" kind="function"><name>operator&lt;</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1ac5c1ca74e258e0e7b085c01387fcf1c5" kind="function"><name>operator!=</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a48fc1502df2a9d36b8a6a8989f5a6074" kind="function"><name>operator!=</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1aae7cfb3e2dbebb2113cefb251ff202cd" kind="function"><name>operator!=</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a36eff138ff44b4dc96c10d5f439cc821" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="kondakov__lr5__room_8cpp_1a8b0c15f242679145b4922d1bb7b6ee6e" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__room_8h" kind="file"><name>kondakov_lr5_room.h</name>
+  </compound>
+  <compound refid="kondakov__lr5__room_8hpp" kind="file"><name>kondakov_lr5_room.hpp</name>
+    <member refid="kondakov__lr5__room_8hpp_1aebc334705236d7988164efcc5f9d76bd" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__serializer_8cpp" kind="file"><name>kondakov_lr5_serializer.cpp</name>
+  </compound>
+  <compound refid="kondakov__lr5__serializer_8h" kind="file"><name>kondakov_lr5_serializer.h</name>
+  </compound>
+  <compound refid="kondakov__lr5__serializer_8hpp" kind="file"><name>kondakov_lr5_serializer.hpp</name>
+  </compound>
+  <compound refid="kondakov__lr5__standard__room_8cpp" kind="file"><name>kondakov_lr5_standard_room.cpp</name>
+    <member refid="kondakov__lr5__standard__room_8cpp_1a19f01e2381200a362ccbac4cb687b4d0" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__standard__room_8cpp_1a506aa585631eb7014c7e907c4a7ebf84" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__standard__room_8cpp_1ab7ec956a8efcab085c3243418a362adc" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__standard__room_8cpp_1af7ca5fa230c4bc00b5349a86bf91acbf" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__standard__room_8cpp_1a9f53f70c9c33c0c9b1de7d1b1205a2d0" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__standard__room_8cpp_1ae5334f1e7dd2489a2360d8275897f363" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__standard__room_8cpp_1ac493993c2bb1287c6178ff0dc82af08c" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="kondakov__lr5__standard__room_8cpp_1a5ebc17373611768a35a4d6a879dd9a9a" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__standard__room_8h" kind="file"><name>kondakov_lr5_standard_room.h</name>
+  </compound>
+  <compound refid="kondakov__lr5__standard__room_8hpp" kind="file"><name>kondakov_lr5_standard_room.hpp</name>
+  </compound>
+  <compound refid="kondakov__lr5__suite_8cpp" kind="file"><name>kondakov_lr5_suite.cpp</name>
+    <member refid="kondakov__lr5__suite_8cpp_1adc5c089619b33563080d5ceaabe54a3b" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__suite_8cpp_1a9fdefa1bd2544b5ca49f43dc5ae63ce3" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__suite_8cpp_1a0dc07be86f09bfbe25de2c952d1a4947" kind="function"><name>operator+</name></member>
+    <member refid="kondakov__lr5__suite_8cpp_1a97d282b33f7b403d82c71b7f086bb6cd" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__suite_8cpp_1a0c170d552b09668a9c962de79fd6a37e" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__suite_8cpp_1abf85c5c759098cfb8f9858606520c47b" kind="function"><name>operator+=</name></member>
+    <member refid="kondakov__lr5__suite_8cpp_1acdb6f4268269799d06e366ec857a6725" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="kondakov__lr5__suite_8cpp_1adb3e5ade4ad7257c38afbfb0bf9ef64b" kind="function"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="kondakov__lr5__suite_8h" kind="file"><name>kondakov_lr5_suite.h</name>
+  </compound>
+  <compound refid="kondakov__lr5__suite_8hpp" kind="file"><name>kondakov_lr5_suite.hpp</name>
+  </compound>
+  <compound refid="group__core__definitions" kind="group"><name>core_definitions</name>
+    <member refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
+  </compound>
+  <compound refid="group__input__control" kind="group"><name>input_control</name>
+  </compound>
+  <compound refid="group__menu__system" kind="group"><name>menu_system</name>
+  </compound>
+  <compound refid="group__room__operations" kind="group"><name>room_operations</name>
+  </compound>
+  <compound refid="group__room__hierarchy" kind="group"><name>room_hierarchy</name>
+  </compound>
+  <compound refid="group__serialization" kind="group"><name>serialization</name>
+  </compound>
+  <compound refid="dir_e09cad5e6c61f9e11f54ff01fcc27b07" kind="dir"><name>Kondakov_LR5_Hotel</name>
+  </compound>
+</doxygenindex>

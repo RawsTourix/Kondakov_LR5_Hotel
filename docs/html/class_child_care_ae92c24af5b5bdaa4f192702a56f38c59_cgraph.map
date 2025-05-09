@@ -1,0 +1,10 @@
+<map id="ChildCare::input_has_child_care" name="ChildCare::input_has_child_care">
+<area shape="rect" id="Node000001" title="Ввод наличия услуг для детей" alt="" coords="5,5,149,48"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="197,13,325,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,24,181,24,181,29,149,29"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="373,5,518,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,33,357,33,357,38,325,38"/>
+<area shape="rect" id="Node000004" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="384,72,507,99"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="306,38,388,64,386,69,305,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="372,21,341,20,341,15,373,15"/>
+</map>

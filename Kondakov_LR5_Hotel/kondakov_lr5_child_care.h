@@ -1,75 +1,117 @@
+/**
+ * @file kondakov_lr5_child_care.h
+ * @brief Заголовочный файл класса ChildCare (услуги для детей)
+ * @author Kondakov Fedor
+ * @date 2025
+ * @version 1.0
+ * @ingroup room_hierarchy
+ */
+
 #ifndef KONDAKOV_LR5_CHILD_CARE_H
 #define KONDAKOV_LR5_CHILD_CARE_H
 
 #include "kondakov_lr5_input_control.h"
 
-// Класс ChildCare (услуги для детей)
+/**
+ * @class ChildCare
+ * @brief Класс, представляющий услуги по уходу за детьми
+ */
 class ChildCare {
 protected:
-	float child_care_price;  // Стоимость услуг для детей
-	bool  has_child_care;	 // Наличие услуг для детей
+    float child_care_price;  ///< Стоимость услуг для детей (в рублях)
+    bool  has_child_care;    ///< Флаг наличия услуг для детей
 
-	// Переопределённый вывод
-	void print() const {
-		cout << *this << endl;
-	}
+    /**
+     * @brief Вывод информации об услугах
+     */
+    void print() const {
+        cout << *this << endl;
+    }
 
-	// Переопределённый ввод
-	bool input() {
-		return static_cast<bool>(cin >> *this);
-	}
+    /**
+     * @brief Ввод информации об услугах
+     * @return true если ввод отменен, false если успешен
+     */
+    bool input() {
+        return static_cast<bool>(cin >> *this);
+    }
 
 public:
-	// Валюта
-	static const string CURRENCY;
+    /// Валюта для отображения цен
+    static const string CURRENCY;
 
-	// Конструктор по умолчанию
-	ChildCare();
+    /// @name Конструкторы
+    /// @{
+    /**
+     * @brief Конструктор по умолчанию
+     * @details Создает услуги для детей с параметрами:
+     * - Стоимость услуг: 1000.0
+     * - Наличие услуг: нет
+     */
+    ChildCare();
 
-	// Конструктор преобразования
-	ChildCare(bool has_child_care);
+    /**
+     * @brief Конструктор преобразования
+     * @param has_child_care Наличие услуг для детей
+     * @details Создает услуги для детей с указанным параметром:
+     * - Стоимость услуг: 1000.0
+     */
+    ChildCare(bool has_child_care);
 
-	// Конструктор с параметрами
-	ChildCare(float child_care_price, bool has_child_care);
+    /**
+     * @brief Основной конструктор с параметрами
+     * @param child_care_price Стоимость услуг
+     * @param has_child_care Наличие услуг
+     */
+    ChildCare(float child_care_price, bool has_child_care);
 
-	// Конструктор копирования
-	ChildCare(const ChildCare&) = default;
-	ChildCare& operator=(const ChildCare&) = default;
+    /// Конструктор копирования
+    ChildCare(const ChildCare&) = default;
+    ChildCare& operator=(const ChildCare&) = default;
 
-	// Конструктор перемещения
-	ChildCare(ChildCare&& other) noexcept;
-	ChildCare& operator=(ChildCare&&) noexcept = default;
+    /// Конструктор перемещения
+    ChildCare(ChildCare&& other) noexcept;
+    ChildCare& operator=(ChildCare&&) noexcept = default;
+    /// @}
 
-	// Виртуальный деструктор
-	~ChildCare() = default;
+    /// Деструктор
+    ~ChildCare() = default;
 
-	// Геттер стоимости услуг для детей
-	inline float get_child_care_price() const;
+    /// @name Геттеры
+    /// @{
+    inline float get_child_care_price() const;
+    inline bool get_has_child_care() const;
+    /// @}
 
-	// Геттер стоимости услуг для детей
-	inline bool get_has_child_care() const;
+    /// @name Сеттеры
+    /// @{
+    inline void set_child_care_price(float child_care_price);
+    inline void set_has_child_care(bool has_child_care);
+    /// @}
 
-	// Сеттер стоимости услуг для детей
-	inline void set_child_care_price(float child_care_price);
+    /// @name Методы ввода
+    /// @{
+    inline bool input_child_care_price();
+    inline bool input_has_child_care();
+    /// @}
 
-	// Сеттер стоимости услуг для детей
-	inline void set_has_child_care(bool has_child_care);
+    /**
+     * @brief Преобразование в строку
+     * @return Строковое представление услуг
+     */
+    explicit operator string() const;
 
-	// Инпуттер стоимости услуг для детей
-	inline bool input_child_care_price();
+    /// @name Операторы ввода/вывода
+    /// @{
+    friend ostream& operator<<(ostream& os, const ChildCare& cr);
+    friend istream& operator>>(istream& is, ChildCare& cr);
+    /// @}
 
-	// Инпуттер стоимости услуг для детей
-	inline bool input_has_child_care();
-
-	// Красивый перевод в строку
-	explicit operator string() const;
-
-	// Переопределение операции вывода <<
-	friend ostream& operator<<(ostream& os, const ChildCare& cr);
-
-	// Переопределение операции ввода >>
-	friend istream& operator>>(istream& is, ChildCare& cr);
-
+    /**
+     * @brief Преобразование в строку
+     * @return Строковое представление объекта
+     */
+    virtual string to_string() const;
 };
 
 #include "kondakov_lr5_child_care.hpp"

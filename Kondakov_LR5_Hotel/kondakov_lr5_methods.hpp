@@ -1,19 +1,45 @@
+/**
+ * @file kondakov_lr5_methods.hpp
+ * @brief Реализация методов работы с комнатами
+ * @author Kondakov Fedor
+ * @date 2025
+ * @version 1.0
+ * @ingroup room_operations
+ */
+
 #ifndef KONDAKOV_LR5_METHODS_HPP
 #define KONDAKOV_LR5_METHODS_HPP
 
 #include "kondakov_lr5_methods.h"
 
-// Определение конструкторов и методов структуры RoomInfo
+ /**
+  * @brief Конструктор структуры RoomInfo
+  * @param number Порядковый номер комнаты
+  * @param full_name Полное название комнаты
+  * @param room Указатель на объект комнаты
+  */
 Methods::RoomInfo::RoomInfo(int number, string full_name, shared_ptr<Room> room) :
 	number(number), full_name(full_name), room(room) {
 }
 
+/**
+ * @brief Оператор вывода для RoomInfo
+ * @param os Поток вывода
+ * @param ri Объект RoomInfo для вывода
+ * @return Поток вывода
+ */
 ostream& Methods::operator<<(ostream& os, const RoomInfo& ri) {
 	os << ri.number << ". " << ri.full_name;
 	return os;
 }
 
-// 1. Вывод списка комнат
+/**
+ * @brief Вывод списка комнат
+ * @tparam Container Тип контейнера (должен содержать shared_ptr<Room>)
+ * @param rooms Контейнер с комнатами
+ * @return Функция для вывода списка
+ * @details Первая функция меню. Выводит форматированный список комнат.
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 Methods::show_rooms(const Container& rooms) {
@@ -22,7 +48,14 @@ Methods::show_rooms(const Container& rooms) {
 	};
 }
 
-// Получение методов для изменения комнаты
+/**
+ * @brief Получение методов редактирования комнаты
+ * @tparam RoomPtr Тип указателя на комнату
+ * @tparam Container Тип контейнера с комнатами
+ * @param room Комната для редактирования
+ * @param rooms Контейнер с комнатами
+ * @return Вектор функций редактирования
+ */
 template <typename RoomPtr, typename Container>
 typename enable_if_t<is_base_of_v<Room, typename RoomPtr::element_type>&&
                      is_same_v<typename Container::value_type, shared_ptr<Room>>, vector<function<bool()>>>
@@ -32,32 +65,45 @@ get_room_edit_methods(RoomPtr room, const Container& rooms) {
 
     // Составление вектора функций для изменения комнаты
     vector<function<bool()>> room_edit_methods{};
-    room_edit_methods.push_back([room, room_numbers]() -> bool { return room->input_room_number(room_numbers); });
+
+    room_edit_methods.push_back([room, room_numbers]() -> bool {
+        // Ввод номера комнаты с проверкой на уникальность
+        return room->input_room_number(room_numbers);
+    });
     room_edit_methods.push_back([room]() -> bool { return room->input_price_per_night(); });
     room_edit_methods.push_back([room]() -> bool { return room->input_is_booked(); });
 
-    if constexpr (is_same_v<typename RoomPtr::element_type, StandardRoom>) {
-        room_edit_methods.push_back([room]() -> bool { return room->input_bed_count(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_has_tv(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_amenities<','>(); });
+    if (auto sr = dynamic_pointer_cast<StandardRoom>(room)) {
+        room_edit_methods.push_back([sr]() -> bool { return sr->input_bed_count(); });
+        room_edit_methods.push_back([sr]() -> bool { return sr->input_has_tv(); });
+        room_edit_methods.push_back([sr]() -> bool { return sr->input_amenities<','>(); });
     }
-    else if constexpr (is_same_v<typename RoomPtr::element_type, Suite>) {
-        room_edit_methods.push_back([room]() -> bool { return room->input_room_service(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_jacuzzi(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_amenities<','>(); });
+    else if (auto s = dynamic_pointer_cast<Suite>(room)) {
+        room_edit_methods.push_back([s]() -> bool { return s->input_room_service(); });
+        room_edit_methods.push_back([s]() -> bool { return s->input_jacuzzi(); });
+        room_edit_methods.push_back([s]() -> bool { return s->input_amenities<','>(); });
     }
-    else if constexpr (is_same_v<typename RoomPtr::element_type, FamilyRoom>) {
-        room_edit_methods.push_back([room]() -> bool { return room->input_child_care_price(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_has_child_care(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_child_beds(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_toy_kit(); });
-        room_edit_methods.push_back([room]() -> bool { return room->input_amenities<','>(); });
+    else if (auto fr = dynamic_pointer_cast<FamilyRoom>(room)) {
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_child_care_price(); });
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_has_child_care(); });
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_child_beds(); });
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_toy_kit(); });
+        room_edit_methods.push_back([fr]() -> bool { return fr->input_amenities<','>(); });
     }
 
     return room_edit_methods;
 }
 
-// 2. Добавление комнаты
+/**
+ * @brief Добавление новой комнаты в контейнер
+ * @tparam RoomType Тип добавляемой комнаты (StandardRoom/Suite/FamilyRoom)
+ * @tparam Container Тип контейнера для хранения комнат
+ * @param rooms Контейнер с комнатами
+ * @return Функция-обработчик добавления комнаты
+ * @details Вторая функция меню. Создает комнату указанного типа,
+ * запрашивает параметры через меню и добавляет в контейнер.
+ * Проверяет уникальность номера комнаты.
+ */
 template <typename RoomType, typename Container>
 typename enable_if_t<is_base_of_v<Room, typename RoomType> &&
                      is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
@@ -68,6 +114,9 @@ Methods::add_room(Container& rooms) {
 
         // Получение методов для изменения комнаты
         vector<function<bool()>> edit_methods(get_room_edit_methods(room, rooms));
+
+        // Вывод типа комнаты
+        cout << "[" << room->get_room_type() << "]" << endl << endl;
 
         // Изменение параметров комнаты
         for (const auto& action : edit_methods) {
@@ -81,7 +130,14 @@ Methods::add_room(Container& rooms) {
 	};
 }
 
-// Создание динамического одноразового меню для изменения комнаты
+/**
+ * @brief Добавление пунктов меню для редактирования комнаты
+ * @tparam RoomPtr Тип указателя на комнату
+ * @tparam Container Тип контейнера с комнатами
+ * @param menu Вектор меню для заполнения
+ * @param room Комната для редактирования
+ * @param rooms Контейнер с комнатами
+ */
 template <typename RoomPtr, typename Container>
 typename enable_if_t<is_base_of_v<Room, typename RoomPtr::element_type> &&
                      is_same_v<typename Container::value_type, shared_ptr<Room>>, void>
@@ -93,7 +149,6 @@ add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room, const Container& roo
     menu.emplace_back(
         1, "Изменить номер комнаты;",
         room,
-        // Ввод номера комнаты с проверкой на уникальность
         edit_methods.at(0),
         "Изменение номера комнаты.",
         "Номер комнаты успешно изменён."
@@ -113,84 +168,84 @@ add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room, const Container& roo
         "Статус бронирования успешно изменён."
     );
 
-    if constexpr (is_same_v<typename RoomPtr::element_type, StandardRoom>) {
+    if (auto sr = dynamic_pointer_cast<StandardRoom>(room)) {
         menu.emplace_back(
             4, "Изменить количество кроватей;",
-            room,
+            sr,
             edit_methods.at(3),
             "Изменение количества кроватей.",
             "Количество кроватей успешно изменено."
         );
         menu.emplace_back(
             5, "Изменить наличие телевизора;",
-            room,
+            sr,
             edit_methods.at(4),
             "Изменение наличия телевизора.",
             "Наличие телевизора успешно изменено."
         );
         menu.emplace_back(
             6, "Изменить удобства;",
-            room,
+            sr,
             edit_methods.at(5),
             "Изменение удобств.",
             "Удобства успешно изменены."
         );
     }
-    else if constexpr (is_same_v<typename RoomPtr::element_type, Suite>) {
+    else if (auto s = dynamic_pointer_cast<Suite>(room)) {
         menu.emplace_back(
             4, "Изменить наличие обслуживания;",
-            room,
+            s,
             edit_methods.at(3),
             "Изменение наличия обслуживания.",
             "Наличие обслуживания успешно изменено."
         );
         menu.emplace_back(
             5, "Изменить наличие джакузи;",
-            room,
+            s,
             edit_methods.at(4),
             "Изменение наличия джакузи.",
             "Наличие джакузи успешно изменено."
         );
         menu.emplace_back(
             6, "Изменить удобства;",
-            room,
+            s,
             edit_methods.at(5),
             "Изменение удобств.",
             "Удобства успешно изменены."
         );
     }
-    else if constexpr (is_same_v<typename RoomPtr::element_type, FamilyRoom>) {
+    else if (auto fr = dynamic_pointer_cast<FamilyRoom>(room)) {
         menu.emplace_back(
             4, "Изменить стоимость услуг для детей;",
-            room,
+            fr,
             edit_methods.at(3),
             "Изменение стоимости услуг для детей.",
             "Стоимость услуг для детей успешно изменена."
         );
         menu.emplace_back(
             5, "Изменить наличие услуг для детей;",
-            room,
+            fr,
             edit_methods.at(4),
             "Изменение наличия услуг для детей.",
             "Наличие услуг для детей успешно изменено."
         );
         menu.emplace_back(
             6, "Изменить количество детских кроватей;",
-            room,
+            fr,
             edit_methods.at(5),
             "Изменение количества детских кроватей.",
             "Количество детских кроватей успешно изменено."
         );
         menu.emplace_back(
             7, "Изменить наличие набора детских игрушек;",
-            room,
+            fr,
             edit_methods.at(6),
             "Изменение наличия набора детских игрушек.",
             "Наличие набора детских игрушек успешно изменено."
         );
         menu.emplace_back(
             8, "Изменить удобства;",
-            room,
+            fr,
             edit_methods.at(7),
             "Изменение удобств.",
             "Удобства успешно изменены."
@@ -198,7 +253,15 @@ add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room, const Container& roo
     }
 }
 
-// 3. Изменение комнаты
+/**
+ * @brief Изменение комнаты
+ * @tparam Container Тип контейнера с комнатами
+ * @param rooms Контейнер с комнатами
+ * @return Функция-обработчик изменения комнаты
+ * @details Третья функция меню. Создает динамическое
+ * меню для редактирования всех параметров выбранной
+ * комнаты с учетом ее конкретного типа
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 Methods::edit_room(Container& rooms) {
@@ -209,25 +272,30 @@ Methods::edit_room(Container& rooms) {
 
 		// Создание динамического меню для конкретной комнаты
 		vector<MenuObject> edit_room_menu {};
-		if (room->get_room_type() == "Стандартная комната") {
-			// Для стандартной комнаты
-			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<StandardRoom>(room), rooms);
-		}
-		else if (room->get_room_type() == "Люкс комната") {
-			// Для люкс комнаты
-			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<Suite>(room), rooms);
-		}
-		else if (room->get_room_type() == "Семейная комната") {
-			// Для семейной комнаты
-			add_edit_menu_items(edit_room_menu, dynamic_pointer_cast<FamilyRoom>(room), rooms);
-		}
 
-		// Обработка динамического одноразового меню для изменения конкретной комнаты
-		MenuObject::process(edit_room_menu, room->get_full_name(), "Назад.", 0, true);
+		if (auto sr = dynamic_pointer_cast<StandardRoom>(room)) {
+			add_edit_menu_items(edit_room_menu, sr, rooms);
+            MenuObject::process(edit_room_menu, sr->to_string(), "Назад.", 0, true);
+		}
+		else if (auto s = dynamic_pointer_cast<Suite>(room)) {
+			add_edit_menu_items(edit_room_menu, s, rooms);
+            MenuObject::process(edit_room_menu, s->to_string(), "Назад.", 0, true);
+		}
+		else if (auto fr = dynamic_pointer_cast<FamilyRoom>(room)) {
+			add_edit_menu_items(edit_room_menu, fr, rooms);
+            MenuObject::process(edit_room_menu, fr->to_string(), "Назад.", 0, true);
+		}
 	};
 }
 
-// 4. Удаление комнаты
+/**
+ * @brief Удаление комнаты
+ * @tparam Container Тип контейнера с комнатами
+ * @param rooms Контейнер с комнатами
+ * @return Функция-обработчик удаления комнаты
+ * @details Четвёртая функция меню. Запрашивает подтверждение
+ * перед удалением. При удалении сохраняет целостность нумерации в списке.
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 Methods::delete_room(Container& rooms) {
@@ -259,26 +327,37 @@ Methods::delete_room(Container& rooms) {
     };
 }
 
-// 5. Сортировка списка комнат
+/**
+ * @brief Сортировка списка комнат
+ * @tparam Container Тип контейнера с комнатами
+ * @param rooms Контейнер с комнатами
+ * @return Функция-обработчик сортировки
+ * @details Пятая функция меню.
+ * Предоставляет подменю с вариантами сортировки:
+ * - По номеру комнаты
+ * - По типу комнаты
+ * - По цене за ночь
+ * - По статусу бронирования
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 Methods::sort_rooms(Container& rooms) {
     return [&rooms]() {
         // Создание меню для сортировки
         vector<MenuObject> sort_menu {
-            { 1, "Отсортировать по номеру комнаты.",
+            { 1, "Отсортировать по номеру комнаты;",
                 [&rooms]() {
                     vector<MenuObject> sort_by_room_number_menu {
                         { 1, "По возрастанию;", [&rooms]() {
                                 sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
-                                    return r1->get_room_number() < r2->get_room_number(); }
+                                    return *r1 < *r2; }
                                 );
                                 cout << endl << endl << "Список комнат успешно отсортирован по возрастанию номеров комнат." << endl;
                             }
                         },
-                        { 2, "По убыванию.", [&rooms]() {
+                        { 2, "По убыванию;", [&rooms]() {
                                 sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
-                                    return r1->get_room_number() > r2->get_room_number(); }
+                                    return *r1 > *r2; }
                                 );
                                 cout << endl << endl << "Список комнат успешно отсортирован по убыванию номеров комнат." << endl;
                             }
@@ -288,7 +367,7 @@ Methods::sort_rooms(Container& rooms) {
                     MenuObject::process(sort_by_room_number_menu, "\n\nОтсортировать по номеру комнаты:", "Назад.", 0, true);
                 }
             },
-            { 2, "Отсортировать по типу комнаты.",
+            { 2, "Отсортировать по типу комнаты;",
                 [&rooms]() {
                     vector<MenuObject> sort_by_room_type_menu {
                         { 1, "По возрастанию;", [&rooms]() {
@@ -299,7 +378,7 @@ Methods::sort_rooms(Container& rooms) {
                                 cout << endl << endl << "Список комнат успешно отсортирован по возрастанию типов комнат." << endl;
                             }
                         },
-                        { 2, "По убыванию.", [&rooms]() {
+                        { 2, "По убыванию;", [&rooms]() {
                                 sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
                                     return make_tuple(r1->get_room_type(), r1->get_room_number()) >
                                         make_tuple(r2->get_room_type(), r2->get_room_number()); }
@@ -312,7 +391,7 @@ Methods::sort_rooms(Container& rooms) {
                     MenuObject::process(sort_by_room_type_menu, "\n\nОтсортировать по типу комнаты:", "Назад.", 0, true);
                 }
             },
-            { 3, "Отсортировать по цене за ночь.",
+            { 3, "Отсортировать по цене за ночь;",
                 [&rooms]() {
                     vector<MenuObject> sort_by_price_per_night_menu {
                         { 1, "По возрастанию;", [&rooms]() {
@@ -323,7 +402,7 @@ Methods::sort_rooms(Container& rooms) {
                                 cout << endl << endl << "Список комнат успешно отсортирован по возрастанию цен за ночь." << endl;
                             }
                         },
-                        { 2, "По убыванию.", [&rooms]() {
+                        { 2, "По убыванию;", [&rooms]() {
                                 sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
                                     return make_tuple(r1->get_price_per_night(), r1->get_room_number()) >
                                         make_tuple(r2->get_price_per_night(), r2->get_room_number()); }
@@ -336,7 +415,7 @@ Methods::sort_rooms(Container& rooms) {
                     MenuObject::process(sort_by_price_per_night_menu, "\n\nОтсортировать по цене за ночь:", "Назад.", 0, true);
                 }
             },
-            { 4, "Отсортировать по статусу бронирования.",
+            { 4, "Отсортировать по статусу бронирования;",
                 [&rooms]() {
                     vector<MenuObject> sort_by_is_booked_menu {
                         { 1, "По возрастанию;", [&rooms]() {
@@ -347,7 +426,7 @@ Methods::sort_rooms(Container& rooms) {
                                 cout << endl << endl << "Список комнат успешно отсортирован по возрастанию статусов бронирования." << endl;
                             }
                         },
-                        { 2, "По убыванию.", [&rooms]() {
+                        { 2, "По убыванию;", [&rooms]() {
                                 sort(rooms.begin(), rooms.end(), [](shared_ptr<Room> r1, shared_ptr<Room> r2) {
                                     return make_tuple(r1->get_is_booked(), r1->get_room_number()) >
                                         make_tuple(r2->get_is_booked(), r2->get_room_number()); }
@@ -367,7 +446,15 @@ Methods::sort_rooms(Container& rooms) {
     };
 }
 
-// 6. Расчёт стоимости проживания
+/**
+ * @brief Расчет стоимости проживания
+ * @tparam Container Тип контейнера с комнатами
+ * @param rooms Контейнер с комнатами
+ * @return Функция-обработчик расчета стоимости
+ * @details Шестая функция меню.
+ * Запрашивает количество ночей и выводит детализированный расчет
+ * с учетом особенностей конкретного типа комнаты.
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 Methods::calculate_total(Container& rooms) {
@@ -378,7 +465,7 @@ Methods::calculate_total(Container& rooms) {
 
         // Ввод количества ночей и вычисление стоимости проживания
         int night_count;
-        if (InputControl::input(night_count, "Количество ночей: ", 0, 365)) { return; }
+        if (InputControl::input(night_count, "Количество ночей: ", 1, 365)) { return; }
         cout << endl << endl << 
             "Стоимость проживания в [" << room->get_full_name() << "]." << endl << endl <<
             "Количество ночей: " << night_count << endl << endl <<
@@ -386,7 +473,17 @@ Methods::calculate_total(Container& rooms) {
     };
 }
 
-// 7. Проверка валидности комнаты
+/**
+ * @brief Проверка валидности комнаты
+ * @tparam Container Тип контейнера с комнатами
+ * @param rooms Контейнер с комнатами
+ * @return Функция-обработчик проверки валидности
+ * @details Седьмая функция меню.
+ * Проверяет соблюдение бизнес-правил для выбранной комнаты:
+ * - Для StandardRoom: количество кроватей >= 1
+ * - Для Suite: общая стоимость >= 10000
+ * - Для FamilyRoom: детских кроватей <= 4
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 Methods::validate_room(Container& rooms) {
@@ -399,7 +496,17 @@ Methods::validate_room(Container& rooms) {
     };
 }
 
-// 8. Дополнительные методы комнат
+/**
+ * @brief Дополнительные методы комнат
+ * @tparam Container Тип контейнера с комнатами
+ * @param rooms Контейнер с комнатами
+ * @return Функция-обработчик дополнительных операций
+ * @details Восьмая функция меню.
+ * Предоставляет доступ к уникальным функциям каждого типа комнат:
+ * - StandardRoom: добавление кровати (+20% к цене)
+ * - Suite: добавление услуги (+2000 к цене)
+ * - FamilyRoom: активация игровой зоны (+1500 к цене)
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, function<void()>>
 Methods::additional_room_methods(Container& rooms) {
@@ -415,14 +522,14 @@ Methods::additional_room_methods(Container& rooms) {
 
             cout << "Добавление дополнительной кровати (+20% к стоимости)." << endl << endl;
 
-            cout << "Текущее количество кроватей: " << sr->get_bed_count() << endl;
+            cout << "Текущее количество кроватей: " << sr->get_bed_count() << endl << endl;
             cout << "Текущая стоимость за ночь: " << sr->get_price_per_night() << " " << Room::CURRENCY << endl << endl;
 
             if (InputControl::yes_or_no("Добавить кровать?")) {
                 sr->exstra_bed();
                 cout << "Кровать добавлена." << endl << endl;
 
-                cout << "Изменившееся количество кроватей: " << sr->get_bed_count() << endl;
+                cout << "Изменившееся количество кроватей: " << sr->get_bed_count() << endl << endl;
                 cout << "Изменившаяся стоимость за ночь: " << sr->get_price_per_night() << " " << Room::CURRENCY;
             }
             else {
@@ -434,7 +541,7 @@ Methods::additional_room_methods(Container& rooms) {
 
             cout << "Добавление услуги (+2000 руб. к стоимости)." << endl << endl;
 
-            cout << "Текущие услуги: " << s->get_amenities() << endl;
+            cout << "Текущие услуги: " << s->get_amenities() << endl << endl;
             cout << "Текущая стоимость за ночь: " << s->get_price_per_night() << " " << Room::CURRENCY << endl << endl;
 
             if (InputControl::yes_or_no("Добавить услугу?")) {
@@ -443,7 +550,7 @@ Methods::additional_room_methods(Container& rooms) {
                 s->order_champagne(amenity);
                 cout << endl << "Услуга добавлена." << endl << endl;
 
-                cout << "Изменившиеся услуги: " << s->get_amenities() << endl;
+                cout << "Изменившиеся услуги: " << s->get_amenities() << endl << endl;
                 cout << "Изменившаяся стоимость за ночь: " << s->get_price_per_night() << " " << Room::CURRENCY;
             }
             else {
@@ -475,7 +582,16 @@ Methods::additional_room_methods(Container& rooms) {
 
 /* Вспомогательные методы */
 
-// Вывод нумерованного списка комнат и выбор комнаты по номеру с возвратом её указателя
+/**
+ * @brief Выбор комнаты из списка с нумерацией
+ * @tparam Container Тип контейнера с комнатами
+ * @param main_label Заголовок меню выбора
+ * @param message Приглашение для ввода
+ * @param rooms Контейнер с комнатами
+ * @return Указатель на выбранную комнату или nullptr при отмене
+ * @details Отображает пронумерованный список всех комнат
+ * и возвращает выбранный вариант
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, shared_ptr<Room>>
 Methods::get_room_from_rooms_map(string main_label, string message, Container& rooms) {
@@ -503,7 +619,12 @@ Methods::get_room_from_rooms_map(string main_label, string message, Container& r
     return it->room;
 }
 
-// Получение списка номеров комнат
+/**
+ * @brief Получение списка номеров всех комнат
+ * @tparam Container Тип контейнера с комнатами
+ * @param rooms Контейнер с комнатами
+ * @return Вектор номеров комнат
+ */
 template <typename Container>
 typename enable_if_t<is_same_v<typename Container::value_type, shared_ptr<Room>>, vector<int>>
 Methods::get_room_numbers(const Container& rooms) {
@@ -514,13 +635,20 @@ Methods::get_room_numbers(const Container& rooms) {
     return room_numbers;
 }
 
-// Проверка наличия комнаты с таким же номером в списке комнат
+/**
+ * @brief Проверка существования комнаты с указанным номером
+ * @tparam RoomType Тип комнаты
+ * @tparam Container Тип контейнера с комнатами
+ * @param room Комната для проверки
+ * @param rooms Контейнер с комнатами
+ * @return true если комната с таким номером уже существует
+ */
 template <typename RoomType, typename Container>
 typename enable_if_t<is_base_of_v<Room, typename RoomType> &&
                      is_same_v<typename Container::value_type, shared_ptr<Room>>, bool>
 Methods::room_in_rooms_by_room_number(RoomType room, const Container& rooms) {
-    // Получение списка номеров комнат
-    vector<int> room_numbers(get_room_numbers(rooms));
+    
+    vector<int> room_numbers(get_room_numbers(rooms));  ///< Получение списка номеров комнат
 
     return find(room_numbers.begin(), room_numbers.end(), room.get_room_number()) != room_numbers.end();
 }

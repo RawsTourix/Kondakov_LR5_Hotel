@@ -1,0 +1,8 @@
+<map id="Suite::to_string" name="Suite::to_string">
+<area shape="rect" id="Node000001" title="Преобразование в строку" alt="" coords="283,31,392,57"/>
+<area shape="rect" id="Node000002" href="$class_suite.html#a31debd927684dc287f287030def6438d" title="Вывод информации о номере" alt="" coords="151,5,235,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,34,235,29,236,23,268,29"/>
+<area shape="rect" id="Node000003" href="$class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,31,103,57"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="268,47,103,47,103,41,268,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="136,32,104,38,103,32,135,26"/>
+</map>

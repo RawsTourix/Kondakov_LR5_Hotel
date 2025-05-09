@@ -1,0 +1,16 @@
+<map id="Methods::delete_room" name="Methods::delete_room">
+<area shape="rect" id="Node000001" title="Удаление комнаты" alt="" coords="5,43,156,69"/>
+<area shape="rect" id="Node000002" href="$namespace_methods.html#ab322c1df8c8e7b7a424478005a309c87" title="Выбор комнаты из списка" alt="" coords="204,5,370,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,43,188,38,188,43,156,48"/>
+<area shape="rect" id="Node000006" href="$namespace_input_control.html#a5da443e5ec677b12d7b885fc46bed8bb" title="Запрашивает подтверждение (y/n)" alt="" coords="207,72,367,99"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="156,64,192,69,191,74,156,69"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="429,13,557,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,24,414,24,414,29,370,29"/>
+<area shape="rect" id="Node000004" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="616,5,762,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="558,33,601,33,601,38,558,38"/>
+<area shape="rect" id="Node000005" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="628,72,750,99"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="541,38,628,64,626,70,540,43"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="616,21,573,20,573,15,616,15"/>
+<area shape="rect" id="Node000007" href="$namespace_input_control.html#a1dde7a0934fa6bda46d58eb1c0bb63d2" title="Получает один символ из ввода" alt="" coords="418,72,568,99"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="367,83,403,83,403,88,367,88"/>
+</map>

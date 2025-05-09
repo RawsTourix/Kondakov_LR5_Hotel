@@ -1,0 +1,887 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="namespace_methods" kind="namespace" language="C++">
+    <compoundname>Methods</compoundname>
+    <innerclass refid="struct_methods_1_1_room_info" prot="public">Methods::RoomInfo</innerclass>
+    <sectiondef kind="user-defined">
+      <header>Основные операции с комнатами</header>
+      <memberdef kind="function" id="namespace_methods_1a4e95cf6a1ac5c99eeaa974f85bc7a4b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, function&lt; void()&gt; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, function&lt; void()&gt; &gt; Methods::show_rooms</definition>
+        <argsstring>(const Container &amp;rooms)</argsstring>
+        <name>show_rooms</name>
+        <qualifiedname>Methods::show_rooms</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Вывод списка комнат </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция для вывода списка</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера (должен содержать shared_ptr&lt;Room&gt;) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция для вывода списка</para>
+</simplesect>
+Первая функция меню. Выводит форматированный список комнат. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="67" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="45" bodyend="49" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="67" declcolumn="5"/>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_methods_1a618de377d484a8d7a88b9f5e642518f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RoomType</type>
+          </param>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_base_of_v&lt; <ref refid="class_room" kindref="compound">Room</ref>, typename RoomType &gt; &amp;&amp;is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, function&lt; void()&gt; &gt;</type>
+        <definition>enable_if_t&lt; is_base_of_v&lt; Room, typename RoomType &gt; &amp;&amp;is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, function&lt; void()&gt; &gt; Methods::add_room</definition>
+        <argsstring>(Container &amp;rooms)</argsstring>
+        <name>add_room</name>
+        <qualifiedname>Methods::add_room</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Добавление комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Добавление новой комнаты в контейнер</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>RoomType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип добавляемой комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер для добавления </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция для добавления комнаты</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>RoomType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип добавляемой комнаты (StandardRoom/Suite/FamilyRoom) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера для хранения комнат </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция-обработчик добавления комнаты</para>
+</simplesect>
+Вторая функция меню. Создает комнату указанного типа, запрашивает параметры через меню и добавляет в контейнер. Проверяет уникальность номера комнаты. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="79" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="110" bodyend="131" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="79" declcolumn="5"/>
+        <references refid="kondakov__lr5__methods_8hpp_1a7dae85ea71697ef36e7ccf787788527d" compoundref="kondakov__lr5__methods_8hpp" startline="62" endline="95">get_room_edit_methods</references>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_methods_1a51179a7d6e8fb0608922a0d00f102f11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, function&lt; void()&gt; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, function&lt; void()&gt; &gt; Methods::edit_room</definition>
+        <argsstring>(Container &amp;rooms)</argsstring>
+        <name>edit_room</name>
+        <qualifiedname>Methods::edit_room</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Изменение комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция для изменения комнаты</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция-обработчик изменения комнаты</para>
+</simplesect>
+Третья функция меню. Создает динамическое меню для редактирования всех параметров выбранной комнаты с учетом ее конкретного типа </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="89" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="267" bodyend="289" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="89" declcolumn="5"/>
+        <references refid="kondakov__lr5__methods_8hpp_1ac05511f73c89a40979bc6c880ca896cb" compoundref="kondakov__lr5__methods_8hpp" startline="144" endline="254">add_edit_menu_items</references>
+        <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
+        <references refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">MenuObject::process</references>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_methods_1a2e2cf54114db383e2d9b68bbfa3801d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, function&lt; void()&gt; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, function&lt; void()&gt; &gt; Methods::delete_room</definition>
+        <argsstring>(Container &amp;rooms)</argsstring>
+        <name>delete_room</name>
+        <qualifiedname>Methods::delete_room</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Удаление комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция для удаления комнаты</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция-обработчик удаления комнаты</para>
+</simplesect>
+Четвёртая функция меню. Запрашивает подтверждение перед удалением. При удалении сохраняет целостность нумерации в списке. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="99" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="301" bodyend="328" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="99" declcolumn="5"/>
+        <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
+        <references refid="namespace_input_control_1a5da443e5ec677b12d7b885fc46bed8bb" compoundref="kondakov__lr5__input__control_8cpp" startline="116" endline="129">InputControl::yes_or_no</references>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_methods_1a5836b360a5e2d3b056046d4ce04cbca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, function&lt; void()&gt; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, function&lt; void()&gt; &gt; Methods::sort_rooms</definition>
+        <argsstring>(Container &amp;rooms)</argsstring>
+        <name>sort_rooms</name>
+        <qualifiedname>Methods::sort_rooms</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Сортировка комнат </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Сортировка списка комнат</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер для сортировки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция для сортировки</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция-обработчик сортировки</para>
+</simplesect>
+Пятая функция меню. Предоставляет подменю с вариантами сортировки:<itemizedlist>
+<listitem><para>По номеру комнаты</para>
+</listitem><listitem><para>По типу комнаты</para>
+</listitem><listitem><para>По цене за ночь</para>
+</listitem><listitem><para>По статусу бронирования </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="109" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="344" bodyend="447" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="109" declcolumn="5"/>
+        <references refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">MenuObject::process</references>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_methods_1a7b9a83b3197577b58819541579717b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, function&lt; void()&gt; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, function&lt; void()&gt; &gt; Methods::calculate_total</definition>
+        <argsstring>(Container &amp;rooms)</argsstring>
+        <name>calculate_total</name>
+        <qualifiedname>Methods::calculate_total</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Расчёт стоимости проживания </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Расчет стоимости проживания</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция для расчёта</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция-обработчик расчета стоимости</para>
+</simplesect>
+Шестая функция меню. Запрашивает количество ночей и выводит детализированный расчет с учетом особенностей конкретного типа комнаты. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="119" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="460" bodyend="474" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="119" declcolumn="5"/>
+        <references refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" compoundref="kondakov__lr5__room_8h" startline="48">Room::CURRENCY</references>
+        <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_methods_1a05bd78f9a1464f73347e56dda5f53c37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, function&lt; void()&gt; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, function&lt; void()&gt; &gt; Methods::validate_room</definition>
+        <argsstring>(Container &amp;rooms)</argsstring>
+        <name>validate_room</name>
+        <qualifiedname>Methods::validate_room</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Проверка валидности комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция для проверки</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция-обработчик проверки валидности</para>
+</simplesect>
+Седьмая функция меню. Проверяет соблюдение бизнес-правил для выбранной комнаты:<itemizedlist>
+<listitem><para>Для <ref refid="class_standard_room" kindref="compound">StandardRoom</ref>: количество кроватей &gt;= 1</para>
+</listitem><listitem><para>Для <ref refid="class_suite" kindref="compound">Suite</ref>: общая стоимость &gt;= 10000</para>
+</listitem><listitem><para>Для <ref refid="class_family_room" kindref="compound">FamilyRoom</ref>: детских кроватей &lt;= 4 </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="129" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="489" bodyend="497" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="129" declcolumn="5"/>
+        <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, function&lt; void()&gt; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, function&lt; void()&gt; &gt; Methods::additional_room_methods</definition>
+        <argsstring>(Container &amp;rooms)</argsstring>
+        <name>additional_room_methods</name>
+        <qualifiedname>Methods::additional_room_methods</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Дополнительные методы комнат </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция для работы с доп. методами</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Функция-обработчик дополнительных операций</para>
+</simplesect>
+Восьмая функция меню. Предоставляет доступ к уникальным функциям каждого типа комнат:<itemizedlist>
+<listitem><para><ref refid="class_standard_room" kindref="compound">StandardRoom</ref>: добавление кровати (+20% к цене)</para>
+</listitem><listitem><para><ref refid="class_suite" kindref="compound">Suite</ref>: заказ шампанского (+2000 к цене)</para>
+</listitem><listitem><para><ref refid="class_family_room" kindref="compound">FamilyRoom</ref>: активация игровой зоны (+1500 к цене) </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="139" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="512" bodyend="580" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="139" declcolumn="5"/>
+        <references refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" compoundref="kondakov__lr5__room_8h" startline="48">Room::CURRENCY</references>
+        <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <references refid="namespace_input_control_1a5da443e5ec677b12d7b885fc46bed8bb" compoundref="kondakov__lr5__input__control_8cpp" startline="116" endline="129">InputControl::yes_or_no</references>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Вспомогательные методы</header>
+      <memberdef kind="function" id="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, shared_ptr&lt; Room &gt; &gt; Methods::get_room_from_rooms_map</definition>
+        <argsstring>(string main_label, string message, Container &amp;rooms)</argsstring>
+        <name>get_room_from_rooms_map</name>
+        <qualifiedname>Methods::get_room_from_rooms_map</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>main_label</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Выбор комнаты из списка </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Выбор комнаты из списка с нумерацией</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>main_label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок меню </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Приглашение для ввода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на выбранную комнату</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>main_label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок меню выбора </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Приглашение для ввода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на выбранную комнату или nullptr при отмене</para>
+</simplesect>
+Отображает пронумерованный список всех комнат и возвращает выбранный вариант </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="154" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="597" bodyend="620" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="154" declcolumn="5"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <referencedby refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" compoundref="kondakov__lr5__methods_8hpp" startline="512" endline="580">additional_room_methods</referencedby>
+        <referencedby refid="namespace_methods_1a7b9a83b3197577b58819541579717b4c" compoundref="kondakov__lr5__methods_8hpp" startline="460" endline="474">calculate_total</referencedby>
+        <referencedby refid="namespace_methods_1a2e2cf54114db383e2d9b68bbfa3801d4" compoundref="kondakov__lr5__methods_8hpp" startline="301" endline="328">delete_room</referencedby>
+        <referencedby refid="namespace_methods_1a51179a7d6e8fb0608922a0d00f102f11" compoundref="kondakov__lr5__methods_8hpp" startline="267" endline="289">edit_room</referencedby>
+        <referencedby refid="namespace_methods_1a05bd78f9a1464f73347e56dda5f53c37" compoundref="kondakov__lr5__methods_8hpp" startline="489" endline="497">validate_room</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_methods_1a54e67b3d003bb3031c74b7d803e12f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, vector&lt; int &gt; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, vector&lt; int &gt; &gt; Methods::get_room_numbers</definition>
+        <argsstring>(const Container &amp;rooms)</argsstring>
+        <name>get_room_numbers</name>
+        <qualifiedname>Methods::get_room_numbers</qualifiedname>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Получение списка номеров комнат </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Получение списка номеров всех комнат</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Вектор номеров комнат</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Вектор номеров комнат </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="164" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="630" bodyend="636" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="164" declcolumn="5"/>
+        <referencedby refid="kondakov__lr5__methods_8hpp_1a7dae85ea71697ef36e7ccf787788527d" compoundref="kondakov__lr5__methods_8hpp" startline="62" endline="95">get_room_edit_methods</referencedby>
+        <referencedby refid="namespace_methods_1abc76e3d214018960b9c50522c0769d75" compoundref="kondakov__lr5__methods_8hpp" startline="649" endline="654">room_in_rooms_by_room_number</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_methods_1abc76e3d214018960b9c50522c0769d75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RoomType</type>
+          </param>
+          <param>
+            <type>typename Container</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_base_of_v&lt; <ref refid="class_room" kindref="compound">Room</ref>, typename RoomType &gt; &amp;&amp;is_same_v&lt; typename Container::value_type, shared_ptr&lt; <ref refid="class_room" kindref="compound">Room</ref> &gt; &gt;, bool &gt;</type>
+        <definition>enable_if_t&lt; is_base_of_v&lt; Room, typename RoomType &gt; &amp;&amp;is_same_v&lt; typename Container::value_type, shared_ptr&lt; Room &gt; &gt;, bool &gt; Methods::room_in_rooms_by_room_number</definition>
+        <argsstring>(RoomType room, const Container &amp;rooms)</argsstring>
+        <name>room_in_rooms_by_room_number</name>
+        <qualifiedname>Methods::room_in_rooms_by_room_number</qualifiedname>
+        <param>
+          <type>RoomType</type>
+          <declname>room</declname>
+        </param>
+        <param>
+          <type>const Container &amp;</type>
+          <declname>rooms</declname>
+        </param>
+        <briefdescription>
+<para>Проверка существования комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Проверка существования комнаты с указанным номером</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>RoomType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Проверяемая комната </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер для проверки </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если комната существует, иначе false</para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>RoomType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип контейнера с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для проверки </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rooms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контейнер с комнатами </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если комната с таким номером уже существует </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Получение списка номеров комнат</para>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="177" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="649" bodyend="654" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="177" declcolumn="5"/>
+        <references refid="namespace_methods_1a54e67b3d003bb3031c74b7d803e12f54" compoundref="kondakov__lr5__methods_8hpp" startline="630" endline="636">get_room_numbers</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Пространство имён для операций с комнатами </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="22" column="1"/>
+  </compounddef>
+</doxygen>

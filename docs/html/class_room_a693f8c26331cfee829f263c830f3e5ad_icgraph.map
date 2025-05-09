@@ -1,0 +1,7 @@
+<map id="Room::input_is_booked" name="Room::input_is_booked">
+<area shape="rect" id="Node000001" title="Ввод статуса бронирования" alt="" coords="181,31,339,57"/>
+<area shape="rect" id="Node000002" href="$class_room.html#a8b0c15f242679145b4922d1bb7b6ee6e" title="Оператор ввода" alt="" coords="5,5,133,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,34,133,30,133,24,166,29"/>
+<area shape="rect" id="Node000003" href="$class_room.html#a508697104b1bdce37058c029ea5d7b2b" title="Виртуальный деструктор" alt="" coords="15,56,123,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,59,123,65,122,60,165,54"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="MenuObject::process" name="MenuObject::process">
+<area shape="rect" id="Node000001" title="Обработка взаимодействия с меню" alt="" coords="5,64,151,91"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="43,65,37,55,41,46,55,39,78,37,102,40,115,46,113,51,101,45,78,43,57,45,45,49,42,55,48,62"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="219,13,348,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,61,211,42,212,47,136,66"/>
+<area shape="rect" id="Node000005" href="$class_menu_object.html#a964f07536c901358392d30188a5fb322" title="Удаленный конструктор по умолчанию" alt="" coords="199,64,368,91"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="151,75,183,75,183,80,151,80"/>
+<area shape="rect" id="Node000006" href="$class_menu_object.html#aca1cbebf08e1fb5c3f063e94d0e8f95b" title="Вывод меню" alt="" coords="199,139,368,165"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="118,89,231,130,229,135,116,94"/>
+<area shape="rect" id="Node000003" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="416,5,561,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,32,400,33,400,38,348,38"/>
+<area shape="rect" id="Node000004" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="428,72,550,99"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="333,38,426,65,424,70,332,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="416,21,363,21,363,15,416,15"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="249,140,242,130,247,120,261,114,283,112,308,115,321,121,318,126,306,120,283,117,262,119,250,124,248,129,253,137"/>
+</map>

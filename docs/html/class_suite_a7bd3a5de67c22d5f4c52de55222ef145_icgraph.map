@@ -1,0 +1,11 @@
+<map id="Suite::get_full_name" name="Suite::get_full_name">
+<area shape="rect" id="Node000001" title="Получить полное название комнаты" alt="" coords="440,81,581,108"/>
+<area shape="rect" id="Node000002" href="$class_suite.html#a4e720c17c1195264c65fa507a52d1edc" title="Преобразование в строку" alt="" coords="283,56,392,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="425,85,392,80,393,75,425,79"/>
+<area shape="rect" id="Node000004" href="$class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,56,103,83"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="425,100,283,97,187,89,103,79,103,74,187,84,283,92,425,94"/>
+<area shape="rect" id="Node000003" href="$class_suite.html#a31debd927684dc287f287030def6438d" title="Вывод информации о номере" alt="" coords="151,5,235,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="282,53,232,35,234,30,284,48"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="268,72,103,72,103,67,268,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="141,40,94,58,92,53,139,35"/>
+</map>

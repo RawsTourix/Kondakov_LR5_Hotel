@@ -1,0 +1,2056 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_family_room" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>FamilyRoom</compoundname>
+    <basecompoundref refid="class_room" prot="public" virt="virtual">Room</basecompoundref>
+    <basecompoundref refid="class_child_care" prot="public" virt="virtual">ChildCare</basecompoundref>
+    <includes refid="kondakov__lr5__family__room_8h" local="no">kondakov_lr5_family_room.h</includes>
+    <sectiondef kind="user-defined">
+      <header>Конструкторы</header>
+      <memberdef kind="function" id="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FamilyRoom::FamilyRoom</definition>
+        <argsstring>()</argsstring>
+        <name>FamilyRoom</name>
+        <qualifiedname>FamilyRoom::FamilyRoom</qualifiedname>
+        <briefdescription>
+<para>Конструктор по умолчанию </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Создает семейный номер с параметрами:<itemizedlist>
+<listitem><para>Номер комнаты: 0</para>
+</listitem><listitem><para>Цена за ночь: 0.0</para>
+</listitem><listitem><para>Статус бронирования: нет</para>
+</listitem><listitem><para>Стоимость услуг для детей: 0.0</para>
+</listitem><listitem><para>Наличие услуг для детей: нет</para>
+</listitem><listitem><para>Детских кроватей: 0</para>
+</listitem><listitem><para>Набор игрушек: нет</para>
+</listitem><listitem><para>Список удобств: &quot;Wi-Fi&quot;, &quot;Air condition&quot; </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="44" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="15" bodyend="21"/>
+        <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare::ChildCare</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+        <referencedby refid="class_family_room_1ac559badac05d424145fdfed78e4b68a5">FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1adbf8949f46b23f3c2480c950f4ba77e7" compoundref="kondakov__lr5__family__room_8cpp" startline="100" endline="105">FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" compoundref="kondakov__lr5__family__room_8cpp" startline="46" endline="51">FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a1a262e7b0b5506de30ca981ffcdf2c8d" compoundref="kondakov__lr5__family__room_8cpp" startline="214" endline="217">operator&lt;&lt;</referencedby>
+        <referencedby refid="class_family_room_1aa110140405778c5d9123cfcee37ad641" compoundref="kondakov__lr5__family__room_8cpp" startline="225" endline="230">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a3f59431db365d7048ecced77d637aee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FamilyRoom::FamilyRoom</definition>
+        <argsstring>(int room_number, int child_beds)</argsstring>
+        <name>FamilyRoom</name>
+        <qualifiedname>FamilyRoom::FamilyRoom</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>child_beds</declname>
+        </param>
+        <briefdescription>
+<para>Базовый конструктор </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор преобразования</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_beds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество детских кроватей</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Создает семейный номер с указанными параметрами:<itemizedlist>
+<listitem><para>Цена за ночь: 0.0</para>
+</listitem><listitem><para>Статус бронирования: нет</para>
+</listitem><listitem><para>Стоимость услуг для детей: 0.0</para>
+</listitem><listitem><para>Наличие услуг для детей: нет</para>
+</listitem><listitem><para>Набор игрушек: нет</para>
+</listitem><listitem><para>Список удобств: &quot;Wi-Fi&quot;, &quot;Air condition&quot;</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_beds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество детских кроватей </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="58" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="28" bodyend="34"/>
+        <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare::ChildCare</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FamilyRoom::FamilyRoom</definition>
+        <argsstring>(int room_number, float price_per_night, bool is_booked, float child_care_price, bool has_child_care, int child_beds, bool toy_kit)</argsstring>
+        <name>FamilyRoom</name>
+        <qualifiedname>FamilyRoom::FamilyRoom</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>price_per_night</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_booked</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>child_care_price</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>has_child_care</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>child_beds</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>toy_kit</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с удобствами по умолчанию </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_care_price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Стоимость услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>has_child_care</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_beds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество детских кроватей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toy_kit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор игрушек</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Создает семейный номер с указанными параметрамис и удобствами по умолчанию: &quot;Wi-Fi&quot;, &quot;Air condition&quot;</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_care_price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Стоимость услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>has_child_care</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_beds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество детских кроватей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toy_kit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие набора игрушек </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="71" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="46" bodyend="51"/>
+        <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">ChildCare::child_care_price</references>
+        <references refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" compoundref="kondakov__lr5__family__room_8cpp" startline="15" endline="21">FamilyRoom</references>
+        <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">ChildCare::has_child_care</references>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FamilyRoom::FamilyRoom</definition>
+        <argsstring>(int room_number, float price_per_night, bool is_booked, float child_care_price, bool has_child_care, int child_beds, bool toy_kit, string amenities)</argsstring>
+        <name>FamilyRoom</name>
+        <qualifiedname>FamilyRoom::FamilyRoom</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>price_per_night</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_booked</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>child_care_price</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>has_child_care</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>child_beds</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>toy_kit</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с параметрами (удобства в строке) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с параметрами (удобства строка)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_care_price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Стоимость услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>has_child_care</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_beds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество детских кроватей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toy_kit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор игрушек </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Удобства (строка, разделитель - запятая)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_care_price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Стоимость услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>has_child_care</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_beds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество детских кроватей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toy_kit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие набора игрушек </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список удобств (строка, разделитель - запятая) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="86" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="64" bodyend="73"/>
+        <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">ChildCare::child_care_price</references>
+        <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare::ChildCare</references>
+        <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">ChildCare::has_child_care</references>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FamilyRoom::FamilyRoom</definition>
+        <argsstring>(int room_number, float price_per_night, bool is_booked, float child_care_price, bool has_child_care, int child_beds, bool toy_kit, vector&lt; string &gt; amenities)</argsstring>
+        <name>FamilyRoom</name>
+        <qualifiedname>FamilyRoom::FamilyRoom</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>room_number</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>price_per_night</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_booked</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>child_care_price</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>has_child_care</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>child_beds</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>toy_kit</declname>
+        </param>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор с параметрами (удобства в векторе) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Конструктор с параметрами (удобства вектор)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_care_price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Стоимость услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>has_child_care</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_beds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество детских кроватей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toy_kit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Набор игрушек </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Удобства (вектор строк)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_care_price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Стоимость услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>has_child_care</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие услуг для детей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>child_beds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество детских кроватей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toy_kit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие набора игрушек </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Список удобств (вектор строк) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="101" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="86" bodyend="94"/>
+        <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">ChildCare::child_care_price</references>
+        <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare::ChildCare</references>
+        <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">ChildCare::has_child_care</references>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1ac559badac05d424145fdfed78e4b68a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FamilyRoom::FamilyRoom</definition>
+        <argsstring>(const FamilyRoom &amp;)=default</argsstring>
+        <name>FamilyRoom</name>
+        <qualifiedname>FamilyRoom::FamilyRoom</qualifiedname>
+        <param>
+          <type>const <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Конструктор копирования </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="106" column="5"/>
+        <references refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" compoundref="kondakov__lr5__family__room_8cpp" startline="15" endline="21">FamilyRoom</references>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a3b1efc521f3769b05930d2d1e8d4846b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+        <definition>FamilyRoom &amp; FamilyRoom::operator=</definition>
+        <argsstring>(const FamilyRoom &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>FamilyRoom::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="107" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1adbf8949f46b23f3c2480c950f4ba77e7" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>FamilyRoom::FamilyRoom</definition>
+        <argsstring>(FamilyRoom &amp;&amp;other) noexcept</argsstring>
+        <name>FamilyRoom</name>
+        <qualifiedname>FamilyRoom::FamilyRoom</qualifiedname>
+        <param>
+          <type><ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор перемещения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Другой объект <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="110" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="100" bodyend="105"/>
+        <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare::ChildCare</references>
+        <references refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" compoundref="kondakov__lr5__family__room_8cpp" startline="15" endline="21">FamilyRoom</references>
+        <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1aef3843f4d47b777ca5a75ccd16ed0969" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+        <definition>FamilyRoom &amp; FamilyRoom::operator=</definition>
+        <argsstring>(FamilyRoom &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>FamilyRoom::operator=</qualifiedname>
+        <param>
+          <type><ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="111" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Геттеры</header>
+      <memberdef kind="function" id="class_family_room_1aa856fd908a82a2bae60b32d70bf46a6c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int FamilyRoom::get_child_beds</definition>
+        <argsstring>() const</argsstring>
+        <name>get_child_beds</name>
+        <qualifiedname>FamilyRoom::get_child_beds</qualifiedname>
+        <briefdescription>
+<para>Получить количество детских кроватей </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Количество детских кроватей </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="119" column="16" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="19" bodyend="21"/>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a284d071e4021ae51ee81959ee34daa24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FamilyRoom::get_toy_kit</definition>
+        <argsstring>() const</argsstring>
+        <name>get_toy_kit</name>
+        <qualifiedname>FamilyRoom::get_toy_kit</qualifiedname>
+        <briefdescription>
+<para>Получить наличие набора игрушек </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если набор есть, false если нет </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="120" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="27" bodyend="29"/>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1aeb63ccdccaa93d69b6086bc264e877b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const vector&lt; string &gt; &amp;</type>
+        <definition>const vector&lt; string &gt; &amp; FamilyRoom::get_amenities</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_amenities</name>
+        <qualifiedname>FamilyRoom::get_amenities</qualifiedname>
+        <reimplements refid="class_room_1ae6f809c97ae2d5a6ab101cd8771d9cb3">get_amenities</reimplements>
+        <briefdescription>
+<para>Получить список удобств </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на вектор удобств </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="121" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="35" bodyend="37"/>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1aef7d738df1e02f504acfd559fc5717f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>string FamilyRoom::get_full_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_full_name</name>
+        <qualifiedname>FamilyRoom::get_full_name</qualifiedname>
+        <reimplements refid="class_room_1a5e3f378b9991a36faa3172fce417715b">get_full_name</reimplements>
+        <briefdescription>
+<para>Получить полное название комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Строка вида &quot;Семейная комната №X&quot; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="122" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="43" bodyend="47"/>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+        <referencedby refid="class_family_room_1a271f00565274998fdabcf7caf292fff5" compoundref="kondakov__lr5__family__room_8cpp" startline="259" endline="266">to_string</referencedby>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Сеттеры</header>
+      <memberdef kind="function" id="class_family_room_1aa578557a9e04d8ae9d1514927b5ca3fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FamilyRoom::set_child_beds</definition>
+        <argsstring>(int child_beds)</argsstring>
+        <name>set_child_beds</name>
+        <qualifiedname>FamilyRoom::set_child_beds</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>child_beds</declname>
+        </param>
+        <briefdescription>
+<para>Установить количество детских кроватей </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>child_beds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое количество кроватей </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="127" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="53" bodyend="55"/>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1ad02271d4a11244e0f0d019a09d534d20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FamilyRoom::set_toy_kit</definition>
+        <argsstring>(bool toy_kit)</argsstring>
+        <name>set_toy_kit</name>
+        <qualifiedname>FamilyRoom::set_toy_kit</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>toy_kit</declname>
+        </param>
+        <briefdescription>
+<para>Установить наличие набора игрушек </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toy_kit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое значение наличия набора </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="128" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="61" bodyend="63"/>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a3f442240266841fd1abce7f2e5cc01ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FamilyRoom::set_amenities</definition>
+        <argsstring>(vector&lt; string &gt; amenities)</argsstring>
+        <name>set_amenities</name>
+        <qualifiedname>FamilyRoom::set_amenities</qualifiedname>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+<para>Установить список удобств </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый список удобств </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="129" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="69" bodyend="71"/>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Методы ввода</header>
+      <memberdef kind="function" id="class_family_room_1a1ebb4c81d3a9702ccc5728c493ef69a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FamilyRoom::input_child_beds</definition>
+        <argsstring>()</argsstring>
+        <name>input_child_beds</name>
+        <qualifiedname>FamilyRoom::input_child_beds</qualifiedname>
+        <briefdescription>
+<para>Ввод количества детских кроватей </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если ввод отменен, false если успешен </para>
+</simplesect>
+<simplesect kind="note"><para>Использует оператор [] для доступа к полю </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="134" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="78" bodyend="83"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <referencedby refid="class_family_room_1aa110140405778c5d9123cfcee37ad641" compoundref="kondakov__lr5__family__room_8cpp" startline="225" endline="230">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1adf81aedd42e98a749f90960fc11f6cbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FamilyRoom::input_toy_kit</definition>
+        <argsstring>()</argsstring>
+        <name>input_toy_kit</name>
+        <qualifiedname>FamilyRoom::input_toy_kit</qualifiedname>
+        <briefdescription>
+<para>Ввод наличия набора игрушек </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если ввод отменен, false если успешен </para>
+</simplesect>
+<simplesect kind="note"><para>Использует оператор [] для доступа к полю </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="135" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="90" bodyend="95"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <referencedby refid="class_family_room_1aa110140405778c5d9123cfcee37ad641" compoundref="kondakov__lr5__family__room_8cpp" startline="225" endline="230">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1abb1954b03a8e3aa797e37de43bff05ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>char</type>
+            <declname>Delim</declname>
+            <defname>Delim</defname>
+            <defval>&apos;,&apos;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool FamilyRoom::input_amenities</definition>
+        <argsstring>()</argsstring>
+        <name>input_amenities</name>
+        <qualifiedname>FamilyRoom::input_amenities</qualifiedname>
+        <briefdescription>
+<para>Ввод удобств с разделителем </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Delim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разделитель (по умолчанию &apos;,&apos;) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если ввод отменен, false если успешен </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="137" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="103" bodyend="109"/>
+        <referencedby refid="class_family_room_1aa110140405778c5d9123cfcee37ad641" compoundref="kondakov__lr5__family__room_8cpp" startline="225" endline="230">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Переопределенные методы</header>
+      <memberdef kind="function" id="class_family_room_1a9d7b9dde0586fd167ea83b823d19d31c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; FamilyRoom::get_room_type</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_room_type</name>
+        <qualifiedname>FamilyRoom::get_room_type</qualifiedname>
+        <reimplements refid="class_room_1a0551c035cf42bed1ae6865561dd5e5de">get_room_type</reimplements>
+        <briefdescription>
+<para>Получить тип комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на строку с типом </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="142" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="115" bodyend="117"/>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a59483bf1fc2c54e70d75e3d8586ebc8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; FamilyRoom::get_json_type</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_json_type</name>
+        <qualifiedname>FamilyRoom::get_json_type</qualifiedname>
+        <reimplements refid="class_room_1a3bc75b359d4b5d4f5f655f75478019d3">get_json_type</reimplements>
+        <briefdescription>
+<para>Получить тип для JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на строку с типом </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="143" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="123" bodyend="125"/>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a3028a8b0bbf43ce29f60359fa1b11dab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>float FamilyRoom::calculate_total</definition>
+        <argsstring>(int night_count) const override</argsstring>
+        <name>calculate_total</name>
+        <qualifiedname>FamilyRoom::calculate_total</qualifiedname>
+        <reimplements refid="class_room_1a85c09226671b7572f5e3e4206fac09cb">calculate_total</reimplements>
+        <param>
+          <type>int</type>
+          <declname>night_count</declname>
+        </param>
+        <briefdescription>
+<para>Расчет общей стоимости проживания </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>night_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество ночей </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Общая стоимость (цена * ночи + 1000 руб./ребенок) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="144" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="132" bodyend="134"/>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a1dcd7bbdd05f880434599c22d548c999" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool FamilyRoom::validate</definition>
+        <argsstring>() const override</argsstring>
+        <name>validate</name>
+        <qualifiedname>FamilyRoom::validate</qualifiedname>
+        <reimplements refid="class_room_1a481e9eaeeb4964748e0fe8f6cff33c57">validate</reimplements>
+        <briefdescription>
+<para>Проверка валидности номера </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если количество детских кроватей &lt;= 4, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="145" column="25" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="140" bodyend="142"/>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Дополнительные методы</header>
+      <memberdef kind="function" id="class_family_room_1a90b94b412e2139d7cbe3fe9460419b6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FamilyRoom::add_play_area</definition>
+        <argsstring>()</argsstring>
+        <name>add_play_area</name>
+        <qualifiedname>FamilyRoom::add_play_area</qualifiedname>
+        <briefdescription>
+<para>Активировать игровую зону </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Добавляет 1500 руб. к стоимости и устанавливает флаг наличия игрушек </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="150" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="148" bodyend="151"/>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1aa7c9d20d36a0f7fadad338e5370c3677" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FamilyRoom::remove_play_area</definition>
+        <argsstring>()</argsstring>
+        <name>remove_play_area</name>
+        <qualifiedname>FamilyRoom::remove_play_area</qualifiedname>
+        <briefdescription>
+<para>Деактивировать игровую зону </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Убирает 1500 руб. из стоимости, если игровая зона была активна </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="151" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="157" bodyend="162"/>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>JSON методы</header>
+      <memberdef kind="function" id="class_family_room_1a10602a13e2dc66bac603fd645c832bac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+        <definition>json FamilyRoom::to_json</definition>
+        <argsstring>() const override</argsstring>
+        <name>to_json</name>
+        <qualifiedname>FamilyRoom::to_json</qualifiedname>
+        <reimplements refid="class_room_1a5188f0fe1d99561de97ab2b5fccde4b0">to_json</reimplements>
+        <briefdescription>
+<para>Преобразование в JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>JSON объект с данными номера </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="156" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="111" bodyend="122"/>
+        <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">ChildCare::child_care_price</references>
+        <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">ChildCare::has_child_care</references>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a365aeff13e2accb19d1c55513f94010c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FamilyRoom::from_json</definition>
+        <argsstring>(const json &amp;j) override</argsstring>
+        <name>from_json</name>
+        <qualifiedname>FamilyRoom::from_json</qualifiedname>
+        <reimplements refid="class_room_1a683b154738ffe3f6b20e9c3807735f9c">from_json</reimplements>
+        <param>
+          <type>const <ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref> &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Загрузка из JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON объект с данными номера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="157" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="128" bodyend="137"/>
+        <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">ChildCare::child_care_price</references>
+        <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">ChildCare::has_child_care</references>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Операторы доступа по индексу</header>
+      <memberdef kind="function" id="class_family_room_1a6b8a9a583efe7d0c175b89bc19fa094a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string FamilyRoom::operator[]</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>FamilyRoom::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Оператор доступа по индексу (строковая версия) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс поля (0-4) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Строковое представление запрошенного поля </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если индекс вне диапазона </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="162" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="145" bodyend="159"/>
+        <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">ChildCare::child_care_price</references>
+        <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">ChildCare::has_child_care</references>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a42e3664ae2e083429bee603e693c241c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; T, float &gt;, T &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; T, float &gt;, T &gt; FamilyRoom::operator[]</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>FamilyRoom::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Шаблонный оператор доступа по индексу (const) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип возвращаемого значения </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс поля (0-4) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение запрошенного поля </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если индекс не соответствует типу </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="164" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="173" bodyend="176"/>
+        <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">ChildCare::child_care_price</references>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1af3e85b25cc862b7fe45c92d151c6c067" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; T, bool &gt;, T &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; T, bool &gt;, T &gt; FamilyRoom::operator[]</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>FamilyRoom::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="166" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="180" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a4b0a77d2468b817ef9e5e57e46c78867" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; T, int &gt;, T &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; T, int &gt;, T &gt; FamilyRoom::operator[]</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>FamilyRoom::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="168" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a3411d02b50945ac3b3bd8a9f2961c8d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; T, string &gt;, T &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; T, string &gt;, T &gt; FamilyRoom::operator[]</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>FamilyRoom::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="170" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a55b472a34768a130bde274bce15a3cd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; T, float &gt;, T &amp; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; T, float &gt;, T &amp; &gt; FamilyRoom::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>FamilyRoom::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Шаблонный оператор доступа по индексу (non-const) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип возвращаемого значения </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс поля (0-4) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ссылка на запрошенное поле </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если индекс не соответствует типу </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="172" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="209" bodyend="212"/>
+        <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">ChildCare::child_care_price</references>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a6fd84863579cc1e5253a9beb41589987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; T, bool &gt;, T &amp; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; T, bool &gt;, T &amp; &gt; FamilyRoom::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>FamilyRoom::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="174" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="216" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a98720f9bcaa909c7978333f965ac4186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; T, int &gt;, T &amp; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; T, int &gt;, T &amp; &gt; FamilyRoom::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>FamilyRoom::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="176" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="224" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a032d2737288226097040629c4987691d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>enable_if_t&lt; is_same_v&lt; T, string &gt;, T &amp; &gt;</type>
+        <definition>enable_if_t&lt; is_same_v&lt; T, string &gt;, T &amp; &gt; FamilyRoom::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>FamilyRoom::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="178" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.hpp" bodystart="231" bodyend="234"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Преобразования и ввод/вывод</header>
+      <memberdef kind="function" id="class_family_room_1a3c2c1a263d0bb6bbc2c0970b342b0fc3" prot="public" static="no" const="yes" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FamilyRoom::operator string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator string</name>
+        <qualifiedname>FamilyRoom::operator string</qualifiedname>
+        <briefdescription>
+<para>Преобразование в строку </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="193" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="200" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a9c0a4570d5b466db2be534ac3b0b0f3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void FamilyRoom::print</definition>
+        <argsstring>() const override</argsstring>
+        <name>print</name>
+        <qualifiedname>FamilyRoom::print</qualifiedname>
+        <reimplements refid="class_room_1af185fec4d7038c4640e2618817d41d95">print</reimplements>
+        <briefdescription>
+<para>Вывод информации о номере </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="196" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="235" bodyend="237"/>
+        <references refid="class_family_room_1a271f00565274998fdabcf7caf292fff5" compoundref="kondakov__lr5__family__room_8cpp" startline="259" endline="266">to_string</references>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1ae03def3879b27ffca22b392ca54283c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FamilyRoom::input</definition>
+        <argsstring>() override</argsstring>
+        <name>input</name>
+        <qualifiedname>FamilyRoom::input</qualifiedname>
+        <reimplements refid="class_room_1a3771355e58c0cac65cb836f72b7da113">input</reimplements>
+        <briefdescription>
+<para>Ввод информации о номере </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если ввод отменен, false если успешен </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="197" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="243" bodyend="253"/>
+        <references refid="class_child_care_1a157a0313cef3440dbf065d975c0cb443" compoundref="kondakov__lr5__child__care_8h" startline="35" endline="37">ChildCare::input</references>
+        <references refid="class_room_1a3771355e58c0cac65cb836f72b7da113" compoundref="kondakov__lr5__room_8h" startline="42" endline="44">Room::input</references>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_family_room_1a271f00565274998fdabcf7caf292fff5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string FamilyRoom::to_string</definition>
+        <argsstring>() const override</argsstring>
+        <name>to_string</name>
+        <qualifiedname>FamilyRoom::to_string</qualifiedname>
+        <reimplements refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370">to_string</reimplements>
+        <briefdescription>
+<para>Преобразование в строку </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Полное строковое представление номера </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="198" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="259" bodyend="266"/>
+        <references refid="class_family_room_1aef7d738df1e02f504acfd559fc5717f7" compoundref="kondakov__lr5__family__room_8hpp" startline="43" endline="47">get_full_name</references>
+        <references refid="class_child_care_1a5996576d0d4943533c78b3edb5290d14" compoundref="kondakov__lr5__child__care_8cpp" startline="85" endline="89">ChildCare::to_string</references>
+        <references refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" compoundref="kondakov__lr5__room_8cpp" startline="114" endline="118">Room::to_string</references>
+        <referencedby refid="class_family_room_1a9c0a4570d5b466db2be534ac3b0b0f3c" compoundref="kondakov__lr5__family__room_8cpp" startline="235" endline="237">print</referencedby>
+        <referencedby refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac">~FamilyRoom</referencedby>
+      </memberdef>
+      <memberdef kind="friend" id="class_family_room_1a1a262e7b0b5506de30ca981ffcdf2c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const FamilyRoom &amp;r)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>FamilyRoom::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Оператор вывода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток вывода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для вывода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток вывода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="194" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="214" bodyend="217"/>
+        <references refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" compoundref="kondakov__lr5__family__room_8cpp" startline="15" endline="21">FamilyRoom</references>
+      </memberdef>
+      <memberdef kind="friend" id="class_family_room_1aa110140405778c5d9123cfcee37ad641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>istream &amp;</type>
+        <definition>istream &amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, FamilyRoom &amp;r)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <qualifiedname>FamilyRoom::operator&gt;&gt;</qualifiedname>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Оператор ввода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток ввода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток ввода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="195" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="225" bodyend="230"/>
+        <references refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" compoundref="kondakov__lr5__family__room_8cpp" startline="15" endline="21">FamilyRoom</references>
+        <references refid="class_family_room_1abb1954b03a8e3aa797e37de43bff05ec" compoundref="kondakov__lr5__family__room_8hpp" startline="103" endline="109">input_amenities</references>
+        <references refid="class_family_room_1a1ebb4c81d3a9702ccc5728c493ef69a3" compoundref="kondakov__lr5__family__room_8hpp" startline="78" endline="83">input_child_beds</references>
+        <references refid="class_family_room_1adf81aedd42e98a749f90960fc11f6cbc" compoundref="kondakov__lr5__family__room_8hpp" startline="90" endline="95">input_toy_kit</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Операторы сложения удобств</header>
+      <memberdef kind="friend" id="class_family_room_1a82081c07969efb5a7fb21efda24647d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const FamilyRoom &amp;fr1, const FamilyRoom &amp;fr2)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>FamilyRoom::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+          <declname>fr1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+          <declname>fr2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="183" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="163" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_family_room_1a7bb9e3bd6d06c33b763c526b43e574c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const vector&lt; string &gt; &amp;amenities, const FamilyRoom &amp;fr)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>FamilyRoom::operator+</qualifiedname>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+          <declname>fr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="184" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_family_room_1a71c9fc936bc425638df0d312e70e74d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const FamilyRoom &amp;fr, const vector&lt; string &gt; &amp;amenities)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>FamilyRoom::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="185" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="175" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_family_room_1aa007505ed8ae18656669dc3c9ae7bfe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt; &amp;</type>
+        <definition>vector&lt; string &gt; &amp; operator+=</definition>
+        <argsstring>(vector&lt; string &gt; &amp;amenities, const FamilyRoom &amp;fr)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>FamilyRoom::operator+=</qualifiedname>
+        <param>
+          <type>vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+          <declname>fr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="186" column="19" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_family_room_1a5ae85dc29b69889c3a74cfa298430c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+        <definition>FamilyRoom &amp; operator+=</definition>
+        <argsstring>(FamilyRoom &amp;fr, const vector&lt; string &gt; &amp;amenities)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>FamilyRoom::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="187" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_family_room_1a4f652b894ac045655ace908b33ab98f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+        <definition>FamilyRoom &amp; operator+=</definition>
+        <argsstring>(FamilyRoom &amp;fr, const string &amp;amenities)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>FamilyRoom::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="class_family_room" kindref="compound">FamilyRoom</ref> &amp;</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="188" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.cpp" bodystart="191" bodyend="194"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_family_room_1a4652e27eba37087434b72a5f92ce1ed1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FamilyRoom::child_beds</definition>
+        <argsstring></argsstring>
+        <name>child_beds</name>
+        <qualifiedname>FamilyRoom::child_beds</qualifiedname>
+        <briefdescription>
+<para>Количество детских кроватей </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="22" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_family_room_1a45b6153ed139e33e936a7f60067ecb94" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FamilyRoom::toy_kit</definition>
+        <argsstring></argsstring>
+        <name>toy_kit</name>
+        <qualifiedname>FamilyRoom::toy_kit</qualifiedname>
+        <briefdescription>
+<para>Наличие набора игрушек </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="23" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_family_room_1a3fee4b37e62ed942bd29c61eb7c523d4" prot="private" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; FamilyRoom::amenities</definition>
+        <argsstring></argsstring>
+        <name>amenities</name>
+        <qualifiedname>FamilyRoom::amenities</qualifiedname>
+        <briefdescription>
+<para>Список удобств </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="24" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_family_room_1a0d92f0e31fde7b375c601a0fe9be9086" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string FamilyRoom::ROOM_TYPE</definition>
+        <argsstring></argsstring>
+        <name>ROOM_TYPE</name>
+        <qualifiedname>FamilyRoom::ROOM_TYPE</qualifiedname>
+        <initializer>= &quot;Семейная комната&quot;</initializer>
+        <briefdescription>
+<para>Тип комнаты для отображения </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="26" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_family_room_1a7772a066d478d4b60867875884d1c28d" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string FamilyRoom::JSON_TYPE</definition>
+        <argsstring></argsstring>
+        <name>JSON_TYPE</name>
+        <qualifiedname>FamilyRoom::JSON_TYPE</qualifiedname>
+        <initializer>= &quot;Family&quot;</initializer>
+        <briefdescription>
+<para>Тип для сериализации в JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="27" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual FamilyRoom::~FamilyRoom</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FamilyRoom</name>
+        <qualifiedname>FamilyRoom::~FamilyRoom</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="115" column="13"/>
+        <references refid="class_family_room_1a90b94b412e2139d7cbe3fe9460419b6c" compoundref="kondakov__lr5__family__room_8hpp" startline="148" endline="151">add_play_area</references>
+        <references refid="class_family_room_1a3028a8b0bbf43ce29f60359fa1b11dab" compoundref="kondakov__lr5__family__room_8hpp" startline="132" endline="134">calculate_total</references>
+        <references refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" compoundref="kondakov__lr5__family__room_8cpp" startline="15" endline="21">FamilyRoom</references>
+        <references refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" compoundref="kondakov__lr5__family__room_8cpp" startline="128" endline="137">from_json</references>
+        <references refid="class_family_room_1aeb63ccdccaa93d69b6086bc264e877b6" compoundref="kondakov__lr5__family__room_8hpp" startline="35" endline="37">get_amenities</references>
+        <references refid="class_family_room_1aa856fd908a82a2bae60b32d70bf46a6c" compoundref="kondakov__lr5__family__room_8hpp" startline="19" endline="21">get_child_beds</references>
+        <references refid="class_family_room_1aef7d738df1e02f504acfd559fc5717f7" compoundref="kondakov__lr5__family__room_8hpp" startline="43" endline="47">get_full_name</references>
+        <references refid="class_family_room_1a59483bf1fc2c54e70d75e3d8586ebc8b" compoundref="kondakov__lr5__family__room_8hpp" startline="123" endline="125">get_json_type</references>
+        <references refid="class_family_room_1a9d7b9dde0586fd167ea83b823d19d31c" compoundref="kondakov__lr5__family__room_8hpp" startline="115" endline="117">get_room_type</references>
+        <references refid="class_family_room_1a284d071e4021ae51ee81959ee34daa24" compoundref="kondakov__lr5__family__room_8hpp" startline="27" endline="29">get_toy_kit</references>
+        <references refid="class_family_room_1ae03def3879b27ffca22b392ca54283c4" compoundref="kondakov__lr5__family__room_8cpp" startline="243" endline="253">input</references>
+        <references refid="class_family_room_1abb1954b03a8e3aa797e37de43bff05ec" compoundref="kondakov__lr5__family__room_8hpp" startline="103" endline="109">input_amenities</references>
+        <references refid="class_family_room_1a1ebb4c81d3a9702ccc5728c493ef69a3" compoundref="kondakov__lr5__family__room_8hpp" startline="78" endline="83">input_child_beds</references>
+        <references refid="class_family_room_1adf81aedd42e98a749f90960fc11f6cbc" compoundref="kondakov__lr5__family__room_8hpp" startline="90" endline="95">input_toy_kit</references>
+        <references refid="class_family_room_1a9c0a4570d5b466db2be534ac3b0b0f3c" compoundref="kondakov__lr5__family__room_8cpp" startline="235" endline="237">print</references>
+        <references refid="class_family_room_1aa7c9d20d36a0f7fadad338e5370c3677" compoundref="kondakov__lr5__family__room_8hpp" startline="157" endline="162">remove_play_area</references>
+        <references refid="class_family_room_1a3f442240266841fd1abce7f2e5cc01ff" compoundref="kondakov__lr5__family__room_8hpp" startline="69" endline="71">set_amenities</references>
+        <references refid="class_family_room_1aa578557a9e04d8ae9d1514927b5ca3fc" compoundref="kondakov__lr5__family__room_8hpp" startline="53" endline="55">set_child_beds</references>
+        <references refid="class_family_room_1ad02271d4a11244e0f0d019a09d534d20" compoundref="kondakov__lr5__family__room_8hpp" startline="61" endline="63">set_toy_kit</references>
+        <references refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" compoundref="kondakov__lr5__family__room_8cpp" startline="111" endline="122">to_json</references>
+        <references refid="class_family_room_1a271f00565274998fdabcf7caf292fff5" compoundref="kondakov__lr5__family__room_8cpp" startline="259" endline="266">to_string</references>
+        <references refid="class_family_room_1a1dcd7bbdd05f880434599c22d548c999" compoundref="kondakov__lr5__family__room_8hpp" startline="140" endline="142">validate</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс семейного номера, наследует <ref refid="class_room" kindref="compound">Room</ref> и <ref refid="class_child_care" kindref="compound">ChildCare</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ChildCare</label>
+        <link refid="class_child_care"/>
+      </node>
+      <node id="1">
+        <label>FamilyRoom</label>
+        <link refid="class_family_room"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Room</label>
+        <link refid="class_room"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ChildCare</label>
+        <link refid="class_child_care"/>
+      </node>
+      <node id="1">
+        <label>FamilyRoom</label>
+        <link refid="class_family_room"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Room</label>
+        <link refid="class_room"/>
+      </node>
+    </collaborationgraph>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" line="20" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_family_room.h" bodystart="20" bodyend="200"/>
+    <listofallmembers>
+      <member refid="class_family_room_1a90b94b412e2139d7cbe3fe9460419b6c" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>add_play_area</name></member>
+      <member refid="class_family_room_1a3fee4b37e62ed942bd29c61eb7c523d4" prot="private" virt="non-virtual"><scope>FamilyRoom</scope><name>amenities</name></member>
+      <member refid="class_family_room_1a3028a8b0bbf43ce29f60359fa1b11dab" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>calculate_total</name></member>
+      <member refid="class_family_room_1a4652e27eba37087434b72a5f92ce1ed1" prot="private" virt="non-virtual"><scope>FamilyRoom</scope><name>child_beds</name></member>
+      <member refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" prot="protected" virt="non-virtual"><scope>FamilyRoom</scope><name>child_care_price</name></member>
+      <member refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>ChildCare</name></member>
+      <member refid="class_child_care_1ae4c90f2cfe06561b7c34a94308e214c9" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>ChildCare</name></member>
+      <member refid="class_child_care_1a2cda946ceb332e12fb4247df6e6b6271" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>ChildCare</name></member>
+      <member refid="class_child_care_1aa00a980396497917f0004744d30d79c9" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>ChildCare</name></member>
+      <member refid="class_child_care_1a771d0c62bd7c363fce0a95ecbcc22437" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>ChildCare</name></member>
+      <member refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" prot="public" virt="non-virtual" ambiguityscope="Room::"><scope>FamilyRoom</scope><name>CURRENCY</name></member>
+      <member refid="class_child_care_1ae7600dd47859718da86c03d7f41be31b" prot="public" virt="non-virtual" ambiguityscope="ChildCare::"><scope>FamilyRoom</scope><name>CURRENCY</name></member>
+      <member refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>FamilyRoom</name></member>
+      <member refid="class_family_room_1a3f59431db365d7048ecced77d637aee6" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>FamilyRoom</name></member>
+      <member refid="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>FamilyRoom</name></member>
+      <member refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>FamilyRoom</name></member>
+      <member refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>FamilyRoom</name></member>
+      <member refid="class_family_room_1ac559badac05d424145fdfed78e4b68a5" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>FamilyRoom</name></member>
+      <member refid="class_family_room_1adbf8949f46b23f3c2480c950f4ba77e7" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>FamilyRoom</name></member>
+      <member refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>from_json</name></member>
+      <member refid="class_family_room_1aeb63ccdccaa93d69b6086bc264e877b6" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>get_amenities</name></member>
+      <member refid="class_family_room_1aa856fd908a82a2bae60b32d70bf46a6c" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>get_child_beds</name></member>
+      <member refid="class_child_care_1a3b70d8d9825589f117fc101b5a561eb3" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>get_child_care_price</name></member>
+      <member refid="class_family_room_1aef7d738df1e02f504acfd559fc5717f7" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>get_full_name</name></member>
+      <member refid="class_child_care_1ad6ec7a48b59727eaadbc0ea34d9957b2" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>get_has_child_care</name></member>
+      <member refid="class_room_1a263ae7170c7b5b3df8065a3605d39f28" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>get_is_booked</name></member>
+      <member refid="class_family_room_1a59483bf1fc2c54e70d75e3d8586ebc8b" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>get_json_type</name></member>
+      <member refid="class_room_1a828dede24bf20f003892f71c9b08d2e9" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>get_price_per_night</name></member>
+      <member refid="class_room_1a8da5257d15eb131e471b59ba753dcedb" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>get_room_number</name></member>
+      <member refid="class_family_room_1a9d7b9dde0586fd167ea83b823d19d31c" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>get_room_type</name></member>
+      <member refid="class_family_room_1a284d071e4021ae51ee81959ee34daa24" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>get_toy_kit</name></member>
+      <member refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" prot="protected" virt="non-virtual"><scope>FamilyRoom</scope><name>has_child_care</name></member>
+      <member refid="class_family_room_1ae03def3879b27ffca22b392ca54283c4" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>input</name></member>
+      <member refid="class_family_room_1abb1954b03a8e3aa797e37de43bff05ec" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>input_amenities</name></member>
+      <member refid="class_family_room_1a1ebb4c81d3a9702ccc5728c493ef69a3" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>input_child_beds</name></member>
+      <member refid="class_child_care_1a1571c2d8aab1536723b87e76a1c13bf7" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>input_child_care_price</name></member>
+      <member refid="class_child_care_1ae92c24af5b5bdaa4f192702a56f38c59" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>input_has_child_care</name></member>
+      <member refid="class_room_1a693f8c26331cfee829f263c830f3e5ad" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>input_is_booked</name></member>
+      <member refid="class_room_1aed37576ec13b3d3d24559e709d0adc32" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>input_price_per_night</name></member>
+      <member refid="class_room_1a2e34a3971a1607066debe10b3577fde2" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>input_room_number</name></member>
+      <member refid="class_room_1a6cf26e8f3f928e18afae33e46bca7927" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>input_room_number</name></member>
+      <member refid="class_family_room_1adf81aedd42e98a749f90960fc11f6cbc" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>input_toy_kit</name></member>
+      <member refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" prot="protected" virt="non-virtual"><scope>FamilyRoom</scope><name>is_booked</name></member>
+      <member refid="class_family_room_1a7772a066d478d4b60867875884d1c28d" prot="private" virt="non-virtual"><scope>FamilyRoom</scope><name>JSON_TYPE</name></member>
+      <member refid="class_family_room_1a3c2c1a263d0bb6bbc2c0970b342b0fc3" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator string</name></member>
+      <member refid="class_family_room_1a82081c07969efb5a7fb21efda24647d4" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator+</name></member>
+      <member refid="class_family_room_1a7bb9e3bd6d06c33b763c526b43e574c0" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator+</name></member>
+      <member refid="class_family_room_1a71c9fc936bc425638df0d312e70e74d9" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator+</name></member>
+      <member refid="class_family_room_1aa007505ed8ae18656669dc3c9ae7bfe1" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator+=</name></member>
+      <member refid="class_family_room_1a5ae85dc29b69889c3a74cfa298430c4b" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator+=</name></member>
+      <member refid="class_family_room_1a4f652b894ac045655ace908b33ab98f3" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator+=</name></member>
+      <member refid="class_family_room_1a1a262e7b0b5506de30ca981ffcdf2c8d" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_room_1a90389beafff4333dd690e5e3c185a8d0" prot="public" virt="non-virtual" ambiguityscope="Room::"><scope>FamilyRoom</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_family_room_1a3b1efc521f3769b05930d2d1e8d4846b" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator=</name></member>
+      <member refid="class_family_room_1aef3843f4d47b777ca5a75ccd16ed0969" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator=</name></member>
+      <member refid="class_room_1a1cda0e12564c8fedcba0a4fa18ede003" prot="public" virt="non-virtual" ambiguityscope="Room::"><scope>FamilyRoom</scope><name>operator=</name></member>
+      <member refid="class_room_1a4fd1667324eb508ecd1981481a37fdd0" prot="public" virt="non-virtual" ambiguityscope="Room::"><scope>FamilyRoom</scope><name>operator=</name></member>
+      <member refid="class_child_care_1a41c5037674193f91f93145b66e1f5b65" prot="public" virt="non-virtual" ambiguityscope="ChildCare::"><scope>FamilyRoom</scope><name>operator=</name></member>
+      <member refid="class_child_care_1aa81667a6e11f8cfbe7a68d33051a2f88" prot="public" virt="non-virtual" ambiguityscope="ChildCare::"><scope>FamilyRoom</scope><name>operator=</name></member>
+      <member refid="class_family_room_1aa110140405778c5d9123cfcee37ad641" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_family_room_1a6b8a9a583efe7d0c175b89bc19fa094a" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator[]</name></member>
+      <member refid="class_family_room_1a42e3664ae2e083429bee603e693c241c" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator[]</name></member>
+      <member refid="class_family_room_1af3e85b25cc862b7fe45c92d151c6c067" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator[]</name></member>
+      <member refid="class_family_room_1a4b0a77d2468b817ef9e5e57e46c78867" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator[]</name></member>
+      <member refid="class_family_room_1a3411d02b50945ac3b3bd8a9f2961c8d4" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator[]</name></member>
+      <member refid="class_family_room_1a55b472a34768a130bde274bce15a3cd0" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator[]</name></member>
+      <member refid="class_family_room_1a6fd84863579cc1e5253a9beb41589987" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator[]</name></member>
+      <member refid="class_family_room_1a98720f9bcaa909c7978333f965ac4186" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator[]</name></member>
+      <member refid="class_family_room_1a032d2737288226097040629c4987691d" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>operator[]</name></member>
+      <member refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" prot="protected" virt="non-virtual"><scope>FamilyRoom</scope><name>price_per_night</name></member>
+      <member refid="class_family_room_1a9c0a4570d5b466db2be534ac3b0b0f3c" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>print</name></member>
+      <member refid="class_family_room_1aa7c9d20d36a0f7fadad338e5370c3677" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>remove_play_area</name></member>
+      <member refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>Room</name></member>
+      <member refid="class_room_1a85a05efbf9e7aa79f9ea8bd009f03855" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>Room</name></member>
+      <member refid="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>Room</name></member>
+      <member refid="class_room_1a5b964942d5eb880206cc5bc93ccd9045" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>Room</name></member>
+      <member refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>Room</name></member>
+      <member refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" prot="protected" virt="non-virtual"><scope>FamilyRoom</scope><name>room_number</name></member>
+      <member refid="class_family_room_1a0d92f0e31fde7b375c601a0fe9be9086" prot="private" virt="non-virtual"><scope>FamilyRoom</scope><name>ROOM_TYPE</name></member>
+      <member refid="class_family_room_1a3f442240266841fd1abce7f2e5cc01ff" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>set_amenities</name></member>
+      <member refid="class_family_room_1aa578557a9e04d8ae9d1514927b5ca3fc" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>set_child_beds</name></member>
+      <member refid="class_child_care_1a377685049ef6ffb9b33f94eea5d86256" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>set_child_care_price</name></member>
+      <member refid="class_child_care_1ab184b2aa9a83fd4f64e7379d72cc7824" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>set_has_child_care</name></member>
+      <member refid="class_room_1a488165c7e78bb66e8338835e0fdae5ae" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>set_is_booked</name></member>
+      <member refid="class_room_1a75c9b72c1c0a64e6b38b3b12ec94e226" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>set_price_per_night</name></member>
+      <member refid="class_room_1a1b06ff753e0b5dd0a611fbdc52afa3a6" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>set_room_number</name></member>
+      <member refid="class_family_room_1ad02271d4a11244e0f0d019a09d534d20" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>set_toy_kit</name></member>
+      <member refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>to_json</name></member>
+      <member refid="class_family_room_1a271f00565274998fdabcf7caf292fff5" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>to_string</name></member>
+      <member refid="class_family_room_1a45b6153ed139e33e936a7f60067ecb94" prot="private" virt="non-virtual"><scope>FamilyRoom</scope><name>toy_kit</name></member>
+      <member refid="class_family_room_1a1dcd7bbdd05f880434599c22d548c999" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>validate</name></member>
+      <member refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63" prot="public" virt="non-virtual"><scope>FamilyRoom</scope><name>~ChildCare</name></member>
+      <member refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>~FamilyRoom</name></member>
+      <member refid="class_room_1a508697104b1bdce37058c029ea5d7b2b" prot="public" virt="virtual"><scope>FamilyRoom</scope><name>~Room</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

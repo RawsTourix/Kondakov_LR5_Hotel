@@ -1,0 +1,14 @@
+<map id="MenuObject::process" name="MenuObject::process">
+<area shape="rect" id="Node000001" title="Обработка взаимодействия с меню" alt="" coords="328,81,473,108"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="436,68,424,62,401,60,379,62,367,67,364,72,370,79,365,82,359,73,363,63,377,57,401,55,426,57,439,64"/>
+<area shape="rect" id="Node000002" href="$namespace_methods.html#a51179a7d6e8fb0608922a0d00f102f11" title="Изменение комнаты" alt="" coords="123,5,260,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="347,78,279,53,230,35,231,30,281,48,349,73"/>
+<area shape="rect" id="Node000003" href="$kondakov__lr5__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Точка входа в приложение" alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="312,91,55,74,55,68,312,86"/>
+<area shape="rect" id="Node000004" href="$namespace_methods.html#a5836b360a5e2d3b056046d4ce04cbca2" title="Сортировка комнат" alt="" coords="119,107,264,133"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="313,108,264,114,264,109,313,103"/>
+<area shape="rect" id="Node000005" href="$class_menu_object.html#a735690ac6e9a08bdc2bda4689d54a4b1" title="Деструктор" alt="" coords="103,157,280,184"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="356,117,281,148,246,159,244,154,279,143,354,112"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,40,56,64,54,59,131,35"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="131,104,54,80,56,74,133,99"/>
+</map>

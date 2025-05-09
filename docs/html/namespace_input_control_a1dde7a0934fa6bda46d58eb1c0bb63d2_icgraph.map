@@ -1,0 +1,12 @@
+<map id="InputControl::get_char" name="InputControl::get_char">
+<area shape="rect" id="Node000001" title="Получает один символ из ввода" alt="" coords="509,43,660,69"/>
+<area shape="rect" id="Node000002" href="$namespace_input_control.html#a5da443e5ec677b12d7b885fc46bed8bb" title="Запрашивает подтверждение (y/n)" alt="" coords="301,43,461,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="494,59,462,59,462,53,494,53"/>
+<area shape="rect" id="Node000003" href="$namespace_methods.html#ab0fcd3db72d0a91b170489bf0f18f6c6" title="Дополнительные методы комнат" alt="" coords="111,5,245,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,45,245,39,246,34,286,40"/>
+<area shape="rect" id="Node000005" href="$namespace_methods.html#a2e2cf54114db383e2d9b68bbfa3801d4" title="Удаление комнаты" alt="" coords="103,72,253,99"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="286,72,254,77,253,72,285,67"/>
+<area shape="rect" id="Node000004" href="$kondakov__lr5__main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Точка входа в приложение" alt="" coords="5,43,55,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,46,56,54,55,49,95,40"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="92,71,55,63,56,58,93,66"/>
+</map>
