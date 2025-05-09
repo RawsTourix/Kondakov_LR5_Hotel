@@ -29,20 +29,90 @@ private:
 public:
     /// @name Конструкторы
     /// @{
+    /**
+     * @brief Конструктор по умолчанию
+     * @details Создает семейный номер с параметрами:
+     * - Номер комнаты: 0
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     * - Стоимость услуг для детей: 0.0
+     * - Наличие услуг для детей: нет
+     * - Детских кроватей: 0
+     * - Набор игрушек: нет
+     * - Список удобств: "Wi-Fi", "Air condition"
+     */
     FamilyRoom();
+
+    /**
+     * @brief Базовый конструктор
+     * @param room_number Номер комнаты
+     * @param child_beds Количество детских кроватей
+     * @details Создает семейный номер с указанными параметрами:
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     * - Стоимость услуг для детей: 0.0
+     * - Наличие услуг для детей: нет
+     * - Набор игрушек: нет
+     * - Список удобств: "Wi-Fi", "Air condition"
+     */
     FamilyRoom(int room_number, int child_beds);
-    FamilyRoom(int room_number, float price_per_night, bool is_booked, 
-              float child_care_price, bool has_child_care, 
-              int child_beds, bool toy_kit);
+
+    /**
+     * @brief Конструктор с удобствами по умолчанию
+     * @param room_number Номер комнаты
+     * @param price_per_night Цена за ночь
+     * @param is_booked Статус бронирования
+     * @param child_care_price Стоимость услуг для детей
+     * @param has_child_care Наличие услуг для детей
+     * @param child_beds Количество детских кроватей
+     * @param toy_kit Набор игрушек
+     * @details Создает семейный номер с указанными параметрамис и удобствами по умолчанию: "Wi-Fi", "Air condition"
+     */
     FamilyRoom(int room_number, float price_per_night, bool is_booked,
-              float child_care_price, bool has_child_care,
-              int child_beds, bool toy_kit, string amenities);
+        float child_care_price, bool has_child_care,
+        int child_beds, bool toy_kit);
+
+    /**
+     * @brief Конструктор с параметрами (удобства в строке)
+     * @param room_number Номер комнаты
+     * @param price_per_night Цена за ночь
+     * @param is_booked Статус бронирования
+     * @param child_care_price Стоимость услуг для детей
+     * @param has_child_care Наличие услуг для детей
+     * @param child_beds Количество детских кроватей
+     * @param toy_kit Набор игрушек
+     * @param amenities Удобства (строка, разделитель - запятая)
+     */
+    FamilyRoom(int room_number, float price_per_night, bool is_booked,
+        float child_care_price, bool has_child_care,
+        int child_beds, bool toy_kit, string amenities);
+
+    /**
+     * @brief Конструктор с параметрами (удобства в векторе)
+     * @param room_number Номер комнаты
+     * @param price_per_night Цена за ночь
+     * @param is_booked Статус бронирования
+     * @param child_care_price Стоимость услуг для детей
+     * @param has_child_care Наличие услуг для детей
+     * @param child_beds Количество детских кроватей
+     * @param toy_kit Набор игрушек
+     * @param amenities Удобства (вектор строк)
+     */
+    FamilyRoom(int room_number, float price_per_night, bool is_booked,
+        float child_care_price, bool has_child_care,
+        int child_beds, bool toy_kit, vector<string> amenities);
+
+    /// Конструктор копирования
     FamilyRoom(const FamilyRoom&) = default;
     FamilyRoom& operator=(const FamilyRoom&) = default;
+
+    /// Конструктор перемещения
     FamilyRoom(FamilyRoom&& other) noexcept;
     FamilyRoom& operator=(FamilyRoom&&) noexcept = default;
-    virtual ~FamilyRoom() = default;
     /// @}
+
+    /// Деструктор
+    virtual ~FamilyRoom() = default;
 
     /// @name Геттеры
     /// @{

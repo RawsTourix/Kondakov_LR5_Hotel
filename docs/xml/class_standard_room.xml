@@ -5,793 +5,7 @@
     <basecompoundref refid="class_room" prot="public" virt="virtual">Room</basecompoundref>
     <includes refid="kondakov__lr5__standard__room_8h" local="no">kondakov_lr5_standard_room.h</includes>
     <sectiondef kind="user-defined">
-      <header>Геттеры</header>
-      <memberdef kind="function" id="class_standard_room_1a1e09746ff2f02ce0c634da7230f79b8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int StandardRoom::get_bed_count</definition>
-        <argsstring>() const</argsstring>
-        <name>get_bed_count</name>
-        <qualifiedname>StandardRoom::get_bed_count</qualifiedname>
-        <briefdescription>
-<para>Получить количество кроватей </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>Количество кроватей </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="84" column="16" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="19" bodyend="21"/>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1ae8ea3d346b46792c51d22a6423b255d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool StandardRoom::get_has_tv</definition>
-        <argsstring>() const</argsstring>
-        <name>get_has_tv</name>
-        <qualifiedname>StandardRoom::get_has_tv</qualifiedname>
-        <briefdescription>
-<para>Получить наличие телевизора </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true если есть телевизор, иначе false </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="85" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="27" bodyend="29"/>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1a9138d117561e302bf0d1dadde1f7401c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>const vector&lt; string &gt; &amp;</type>
-        <definition>const vector&lt; string &gt; &amp; StandardRoom::get_amenities</definition>
-        <argsstring>() const override</argsstring>
-        <name>get_amenities</name>
-        <qualifiedname>StandardRoom::get_amenities</qualifiedname>
-        <reimplements refid="class_room_1ae6f809c97ae2d5a6ab101cd8771d9cb3">get_amenities</reimplements>
-        <briefdescription>
-<para>Получить список удобств </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>Константная ссылка на вектор удобств </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="86" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="35" bodyend="37"/>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1af62d306fc8c3735b2a2097768ec74f21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>string</type>
-        <definition>string StandardRoom::get_full_name</definition>
-        <argsstring>() const override</argsstring>
-        <name>get_full_name</name>
-        <qualifiedname>StandardRoom::get_full_name</qualifiedname>
-        <reimplements refid="class_room_1a5e3f378b9991a36faa3172fce417715b">get_full_name</reimplements>
-        <briefdescription>
-<para>Получить полное название комнаты </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>Строка с полным названием комнаты </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="87" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="43" bodyend="47"/>
-        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
-        <referencedby refid="class_standard_room_1a06b989063fdda125448921ce223029b9" compoundref="kondakov__lr5__standard__room_8cpp" startline="210" endline="216">to_string</referencedby>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="user-defined">
-      <header>Сеттеры</header>
-      <memberdef kind="function" id="class_standard_room_1a89f97d3e1168e43a8f8e56c5c95e01d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void StandardRoom::set_bed_count</definition>
-        <argsstring>(int bed_count)</argsstring>
-        <name>set_bed_count</name>
-        <qualifiedname>StandardRoom::set_bed_count</qualifiedname>
-        <param>
-          <type>int</type>
-          <declname>bed_count</declname>
-        </param>
-        <briefdescription>
-<para>Установить количество кроватей </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>bed_count</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Новое количество кроватей </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="92" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="53" bodyend="55"/>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1a756122f9b973a88e7615eb2d4ab0eedb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void StandardRoom::set_has_tv</definition>
-        <argsstring>(bool has_tv)</argsstring>
-        <name>set_has_tv</name>
-        <qualifiedname>StandardRoom::set_has_tv</qualifiedname>
-        <param>
-          <type>bool</type>
-          <declname>has_tv</declname>
-        </param>
-        <briefdescription>
-<para>Установить наличие телевизора </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>has_tv</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Наличие телевизора </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="93" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="61" bodyend="63"/>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1a7a90967661eb054e3005d7399f17808e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void StandardRoom::set_amenities</definition>
-        <argsstring>(vector&lt; string &gt; amenities)</argsstring>
-        <name>set_amenities</name>
-        <qualifiedname>StandardRoom::set_amenities</qualifiedname>
-        <param>
-          <type>vector&lt; string &gt;</type>
-          <declname>amenities</declname>
-        </param>
-        <briefdescription>
-<para>Установить список удобств </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>amenities</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Новый список удобств </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="94" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="69" bodyend="71"/>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="user-defined">
-      <header>Методы ввода</header>
-      <memberdef kind="function" id="class_standard_room_1a006df2025213235b54bb5e58c277d224" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool StandardRoom::input_bed_count</definition>
-        <argsstring>()</argsstring>
-        <name>input_bed_count</name>
-        <qualifiedname>StandardRoom::input_bed_count</qualifiedname>
-        <briefdescription>
-<para>Ввод количества кроватей </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="99" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="77" bodyend="80"/>
-        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
-        <referencedby refid="class_standard_room_1aac82f7ed99fa1070a03d364518201169" compoundref="kondakov__lr5__standard__room_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1ad4ed425e8f2ed08253b5141cc96a6b71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool StandardRoom::input_has_tv</definition>
-        <argsstring>()</argsstring>
-        <name>input_has_tv</name>
-        <qualifiedname>StandardRoom::input_has_tv</qualifiedname>
-        <briefdescription>
-<para>Ввод наличия телевизора </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="100" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="86" bodyend="89"/>
-        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
-        <referencedby refid="class_standard_room_1aac82f7ed99fa1070a03d364518201169" compoundref="kondakov__lr5__standard__room_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1ab0d225d5a8b3c830ba892efc075c9547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>char</type>
-            <declname>Delim</declname>
-            <defname>Delim</defname>
-          </param>
-        </templateparamlist>
-        <type>bool</type>
-        <definition>bool StandardRoom::input_amenities</definition>
-        <argsstring>()</argsstring>
-        <name>input_amenities</name>
-        <qualifiedname>StandardRoom::input_amenities</qualifiedname>
-        <briefdescription>
-<para>Ввод удобств с разделителем </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>Delim</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Разделитель для ввода </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>true если операция отменена, иначе false </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="102" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="97" bodyend="103"/>
-        <referencedby refid="class_standard_room_1aac82f7ed99fa1070a03d364518201169" compoundref="kondakov__lr5__standard__room_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="user-defined">
-      <header>Переопределенные методы</header>
-      <memberdef kind="function" id="class_standard_room_1afe04ed7e9c817111a6c1fb7aee10ba44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>const string &amp;</type>
-        <definition>const string &amp; StandardRoom::get_room_type</definition>
-        <argsstring>() const override</argsstring>
-        <name>get_room_type</name>
-        <qualifiedname>StandardRoom::get_room_type</qualifiedname>
-        <reimplements refid="class_room_1a0551c035cf42bed1ae6865561dd5e5de">get_room_type</reimplements>
-        <briefdescription>
-<para>Получить тип комнаты </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>Константная ссылка на строку с типом комнаты </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="107" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="109" bodyend="111"/>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1a602ea7d9edcc6f1a2f772f41f1e86d91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>const string &amp;</type>
-        <definition>const string &amp; StandardRoom::get_json_type</definition>
-        <argsstring>() const override</argsstring>
-        <name>get_json_type</name>
-        <qualifiedname>StandardRoom::get_json_type</qualifiedname>
-        <reimplements refid="class_room_1a3bc75b359d4b5d4f5f655f75478019d3">get_json_type</reimplements>
-        <briefdescription>
-<para>Получить тип для JSON. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>Константная ссылка на строку с типом для JSON </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="108" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="117" bodyend="119"/>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1a8b4f0b7940b0a2dbfb3aab3063227a2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>float</type>
-        <definition>float StandardRoom::calculate_total</definition>
-        <argsstring>(int night_count) const override</argsstring>
-        <name>calculate_total</name>
-        <qualifiedname>StandardRoom::calculate_total</qualifiedname>
-        <reimplements refid="class_room_1a85c09226671b7572f5e3e4206fac09cb">calculate_total</reimplements>
-        <param>
-          <type>int</type>
-          <declname>night_count</declname>
-        </param>
-        <briefdescription>
-<para>Расчет общей стоимости проживания </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>night_count</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Количество ночей </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Общая стоимость </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="109" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="126" bodyend="128"/>
-        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1abf5ec953669ccaae53f893db5a683ea8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>bool</type>
-        <definition>bool StandardRoom::validate</definition>
-        <argsstring>() const override</argsstring>
-        <name>validate</name>
-        <qualifiedname>StandardRoom::validate</qualifiedname>
-        <reimplements refid="class_room_1a481e9eaeeb4964748e0fe8f6cff33c57">validate</reimplements>
-        <briefdescription>
-<para>Проверка валидности номера </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true если номер валиден (количество кроватей &gt;= 1), иначе false </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="110" column="25" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="134" bodyend="136"/>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="user-defined">
-      <header>JSON методы</header>
-      <memberdef kind="function" id="class_standard_room_1ac69d562b2b499115e781e42a0fe5d7ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
-        <definition>json StandardRoom::to_json</definition>
-        <argsstring>() const override</argsstring>
-        <name>to_json</name>
-        <qualifiedname>StandardRoom::to_json</qualifiedname>
-        <reimplements refid="class_room_1a5188f0fe1d99561de97ab2b5fccde4b0">to_json</reimplements>
-        <briefdescription>
-<para>Преобразование в JSON. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>JSON объект с данными номера </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="118" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="95" bodyend="104"/>
-        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
-        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
-        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1a2844b52435f2d070357dea921a3541ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>void StandardRoom::from_json</definition>
-        <argsstring>(const json &amp;j) override</argsstring>
-        <name>from_json</name>
-        <qualifiedname>StandardRoom::from_json</qualifiedname>
-        <reimplements refid="class_room_1a683b154738ffe3f6b20e9c3807735f9c">from_json</reimplements>
-        <param>
-          <type>const <ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref> &amp;</type>
-          <declname>j</declname>
-        </param>
-        <briefdescription>
-<para>Загрузка из JSON. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>j</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>JSON объект с данными номера </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="119" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="110" bodyend="117"/>
-        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
-        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
-        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="user-defined">
-      <header>Переопределенные методы вывода/ввода</header>
-      <memberdef kind="function" id="class_standard_room_1acf55a87a76c686170ce9c8e1d4cdf62a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>void StandardRoom::print</definition>
-        <argsstring>() const override</argsstring>
-        <name>print</name>
-        <qualifiedname>StandardRoom::print</qualifiedname>
-        <reimplements refid="class_room_1af185fec4d7038c4640e2618817d41d95">print</reimplements>
-        <briefdescription>
-<para>Вывод информации о номере </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="143" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="188" bodyend="190"/>
-        <references refid="class_standard_room_1a06b989063fdda125448921ce223029b9" compoundref="kondakov__lr5__standard__room_8cpp" startline="210" endline="216">to_string</references>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1a5c3965885d7f9455ac2106275ac658bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
-        <definition>bool StandardRoom::input</definition>
-        <argsstring>() override</argsstring>
-        <name>input</name>
-        <qualifiedname>StandardRoom::input</qualifiedname>
-        <reimplements refid="class_room_1a3771355e58c0cac65cb836f72b7da113">input</reimplements>
-        <briefdescription>
-<para>Ввод информации о номере </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="144" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="196" bodyend="204"/>
-        <references refid="class_room_1a3771355e58c0cac65cb836f72b7da113" compoundref="kondakov__lr5__room_8h" startline="36" endline="38">Room::input</references>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-      <memberdef kind="function" id="class_standard_room_1a06b989063fdda125448921ce223029b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>string</type>
-        <definition>string StandardRoom::to_string</definition>
-        <argsstring>() const override</argsstring>
-        <name>to_string</name>
-        <qualifiedname>StandardRoom::to_string</qualifiedname>
-        <reimplements refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370">to_string</reimplements>
-        <briefdescription>
-<para>Преобразование в строку </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>Строковое представление номера </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="145" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="210" bodyend="216"/>
-        <references refid="class_standard_room_1af62d306fc8c3735b2a2097768ec74f21" compoundref="kondakov__lr5__standard__room_8hpp" startline="43" endline="47">get_full_name</references>
-        <references refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" compoundref="kondakov__lr5__room_8cpp" startline="114" endline="118">Room::to_string</references>
-        <referencedby refid="class_standard_room_1acf55a87a76c686170ce9c8e1d4cdf62a" compoundref="kondakov__lr5__standard__room_8cpp" startline="188" endline="190">print</referencedby>
-        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="user-defined">
-      <header>Операторы сложения удобств</header>
-      <memberdef kind="friend" id="class_standard_room_1a19f01e2381200a362ccbac4cb687b4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vector&lt; string &gt;</type>
-        <definition>vector&lt; string &gt; operator+</definition>
-        <argsstring>(const StandardRoom &amp;sr1, const StandardRoom &amp;sr2)</argsstring>
-        <name>operator+</name>
-        <qualifiedname>StandardRoom::operator+</qualifiedname>
-        <param>
-          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-          <declname>sr1</declname>
-        </param>
-        <param>
-          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-          <declname>sr2</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="124" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="121" bodyend="125"/>
-      </memberdef>
-      <memberdef kind="friend" id="class_standard_room_1a506aa585631eb7014c7e907c4a7ebf84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vector&lt; string &gt;</type>
-        <definition>vector&lt; string &gt; operator+</definition>
-        <argsstring>(const vector&lt; string &gt; &amp;amenities, const StandardRoom &amp;sr)</argsstring>
-        <name>operator+</name>
-        <qualifiedname>StandardRoom::operator+</qualifiedname>
-        <param>
-          <type>const vector&lt; string &gt; &amp;</type>
-          <declname>amenities</declname>
-        </param>
-        <param>
-          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-          <declname>sr</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="125" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="126" bodyend="130"/>
-      </memberdef>
-      <memberdef kind="friend" id="class_standard_room_1ab7ec956a8efcab085c3243418a362adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vector&lt; string &gt;</type>
-        <definition>vector&lt; string &gt; operator+</definition>
-        <argsstring>(const StandardRoom &amp;sr, const vector&lt; string &gt; &amp;amenities)</argsstring>
-        <name>operator+</name>
-        <qualifiedname>StandardRoom::operator+</qualifiedname>
-        <param>
-          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-          <declname>sr</declname>
-        </param>
-        <param>
-          <type>const vector&lt; string &gt; &amp;</type>
-          <declname>amenities</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="126" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="131" bodyend="135"/>
-      </memberdef>
-      <memberdef kind="friend" id="class_standard_room_1af7ca5fa230c4bc00b5349a86bf91acbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vector&lt; string &gt; &amp;</type>
-        <definition>vector&lt; string &gt; &amp; operator+=</definition>
-        <argsstring>(vector&lt; string &gt; &amp;amenities, const StandardRoom &amp;sr)</argsstring>
-        <name>operator+=</name>
-        <qualifiedname>StandardRoom::operator+=</qualifiedname>
-        <param>
-          <type>vector&lt; string &gt; &amp;</type>
-          <declname>amenities</declname>
-        </param>
-        <param>
-          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-          <declname>sr</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="127" column="19" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="136" bodyend="139"/>
-      </memberdef>
-      <memberdef kind="friend" id="class_standard_room_1a9f53f70c9c33c0c9b1de7d1b1205a2d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-        <definition>StandardRoom &amp; operator+=</definition>
-        <argsstring>(StandardRoom &amp;sr, const vector&lt; string &gt; &amp;amenities)</argsstring>
-        <name>operator+=</name>
-        <qualifiedname>StandardRoom::operator+=</qualifiedname>
-        <param>
-          <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-          <declname>sr</declname>
-        </param>
-        <param>
-          <type>const vector&lt; string &gt; &amp;</type>
-          <declname>amenities</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="128" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="140" bodyend="143"/>
-      </memberdef>
-      <memberdef kind="friend" id="class_standard_room_1ae5334f1e7dd2489a2360d8275897f363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-        <definition>StandardRoom &amp; operator+=</definition>
-        <argsstring>(StandardRoom &amp;sr, const string &amp;amenities)</argsstring>
-        <name>operator+=</name>
-        <qualifiedname>StandardRoom::operator+=</qualifiedname>
-        <param>
-          <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-          <declname>sr</declname>
-        </param>
-        <param>
-          <type>const string &amp;</type>
-          <declname>amenities</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="129" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="144" bodyend="147"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="user-defined">
-      <header>Операторы ввода/вывода</header>
-      <memberdef kind="friend" id="class_standard_room_1ae8832056f49dce6fba3249c49462ab84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>ostream &amp;</type>
-        <definition>ostream &amp; operator&lt;&lt;</definition>
-        <argsstring>(ostream &amp;os, const StandardRoom &amp;r)</argsstring>
-        <name>operator&lt;&lt;</name>
-        <qualifiedname>StandardRoom::operator&lt;&lt;</qualifiedname>
-        <param>
-          <type>ostream &amp;</type>
-          <declname>os</declname>
-        </param>
-        <param>
-          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-          <declname>r</declname>
-        </param>
-        <briefdescription>
-<para>Оператор вывода </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>os</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Поток вывода </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>sr</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Комната для вывода </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Поток вывода </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="137" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="167" bodyend="170"/>
-        <references refid="class_standard_room_1a32dadc773859aac18048b08855c26377" compoundref="kondakov__lr5__standard__room_8cpp" startline="15" endline="20">StandardRoom</references>
-      </memberdef>
-      <memberdef kind="friend" id="class_standard_room_1aac82f7ed99fa1070a03d364518201169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>istream &amp;</type>
-        <definition>istream &amp; operator&gt;&gt;</definition>
-        <argsstring>(istream &amp;is, StandardRoom &amp;r)</argsstring>
-        <name>operator&gt;&gt;</name>
-        <qualifiedname>StandardRoom::operator&gt;&gt;</qualifiedname>
-        <param>
-          <type>istream &amp;</type>
-          <declname>is</declname>
-        </param>
-        <param>
-          <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
-          <declname>r</declname>
-        </param>
-        <briefdescription>
-<para>Оператор ввода </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>is</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Поток ввода </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>sr</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Комната для ввода </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Поток ввода </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="138" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="178" bodyend="183"/>
-        <references refid="class_standard_room_1ab0d225d5a8b3c830ba892efc075c9547" compoundref="kondakov__lr5__standard__room_8hpp" startline="97" endline="103">input_amenities</references>
-        <references refid="class_standard_room_1a006df2025213235b54bb5e58c277d224" compoundref="kondakov__lr5__standard__room_8hpp" startline="77" endline="80">input_bed_count</references>
-        <references refid="class_standard_room_1ad4ed425e8f2ed08253b5141cc96a6b71" compoundref="kondakov__lr5__standard__room_8hpp" startline="86" endline="89">input_has_tv</references>
-        <references refid="class_standard_room_1a32dadc773859aac18048b08855c26377" compoundref="kondakov__lr5__standard__room_8cpp" startline="15" endline="20">StandardRoom</references>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_standard_room_1a93e0e72810b7040061054b2c3162e71c" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int StandardRoom::bed_count</definition>
-        <argsstring></argsstring>
-        <name>bed_count</name>
-        <qualifiedname>StandardRoom::bed_count</qualifiedname>
-        <briefdescription>
-<para>Количество кроватей </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="21" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="21" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_standard_room_1a0cbc252186862778e9e9dc663016bc8f" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool StandardRoom::has_tv</definition>
-        <argsstring></argsstring>
-        <name>has_tv</name>
-        <qualifiedname>StandardRoom::has_tv</qualifiedname>
-        <briefdescription>
-<para>Наличие телевизора </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="22" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="22" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_standard_room_1a87f2a0c22eef467e47044a572e948a12" prot="private" static="no" mutable="no">
-        <type>vector&lt; string &gt;</type>
-        <definition>vector&lt;string&gt; StandardRoom::amenities</definition>
-        <argsstring></argsstring>
-        <name>amenities</name>
-        <qualifiedname>StandardRoom::amenities</qualifiedname>
-        <briefdescription>
-<para>Удобства </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="23" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="23" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_standard_room_1a000acd331653ce32200fb7740cf3ab04" prot="private" static="no" mutable="no">
-        <type>const string</type>
-        <definition>const string StandardRoom::ROOM_TYPE</definition>
-        <argsstring></argsstring>
-        <name>ROOM_TYPE</name>
-        <qualifiedname>StandardRoom::ROOM_TYPE</qualifiedname>
-        <initializer>= &quot;Стандартная комната&quot;</initializer>
-        <briefdescription>
-<para>Тип комнаты </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="25" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="25" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_standard_room_1a8b5e17f342fefd745b88819481a30e65" prot="private" static="no" mutable="no">
-        <type>const string</type>
-        <definition>const string StandardRoom::JSON_TYPE</definition>
-        <argsstring></argsstring>
-        <name>JSON_TYPE</name>
-        <qualifiedname>StandardRoom::JSON_TYPE</qualifiedname>
-        <initializer>= &quot;Standard&quot;</initializer>
-        <briefdescription>
-<para>Тип для JSON. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="26" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="26" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
+      <header>Конструкторы</header>
       <memberdef kind="function" id="class_standard_room_1a32dadc773859aac18048b08855c26377" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>StandardRoom::StandardRoom</definition>
@@ -802,10 +16,19 @@
 <para>Конструктор по умолчанию </para>
         </briefdescription>
         <detaileddescription>
+<para>Создает стандартный номер с параметрами:<itemizedlist>
+<listitem><para>Номер комнаты: 0</para>
+</listitem><listitem><para>Цена за ночь: 0.0</para>
+</listitem><listitem><para>Статус бронирования: нет</para>
+</listitem><listitem><para>Количество кроватей: 1</para>
+</listitem><listitem><para>Наличие телевизора: нет</para>
+</listitem><listitem><para>Список удобств: &quot;Wi-Fi&quot;, &quot;Air condition&quot; </para>
+</listitem></itemizedlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="30" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="15" bodyend="20"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="41" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="15" bodyend="20"/>
         <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
         <referencedby refid="class_standard_room_1ae8832056f49dce6fba3249c49462ab84" compoundref="kondakov__lr5__standard__room_8cpp" startline="167" endline="170">operator&lt;&lt;</referencedby>
         <referencedby refid="class_standard_room_1aac82f7ed99fa1070a03d364518201169" compoundref="kondakov__lr5__standard__room_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
@@ -845,6 +68,30 @@
 <parametername>bed_count</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>Количество кроватей</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Создает стандартный номер с указанными параметрами и значениями по умолчанию:<itemizedlist>
+<listitem><para>Цена за ночь: 0.0</para>
+</listitem><listitem><para>Статус бронирования: нет</para>
+</listitem><listitem><para>Наличие телевизора: нет</para>
+</listitem><listitem><para>Список удобств: &quot;Wi-Fi&quot;, &quot;Air condition&quot;</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bed_count</parametername>
+</parameternamelist>
+<parameterdescription>
 <para>Количество кроватей </para>
 </parameterdescription>
 </parameteritem>
@@ -853,9 +100,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="37" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="27" bodyend="32"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="53" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="27" bodyend="32"/>
         <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
-        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
       </memberdef>
       <memberdef kind="function" id="class_standard_room_1a854c437feec24655a64310a7adce06b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -924,6 +171,48 @@
 <parametername>has_tv</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>Наличие телевизора</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Создает стандартный номер с указанными параметрами и удобствами по умолчанию: &quot;Wi-Fi&quot;, &quot;Air condition&quot;</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bed_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество кроватей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>has_tv</parametername>
+</parameternamelist>
+<parameterdescription>
 <para>Наличие телевизора </para>
 </parameterdescription>
 </parameteritem>
@@ -932,10 +221,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="47" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="42" bodyend="44"/>
-        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
-        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
-        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="64" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="42" bodyend="44"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
         <references refid="class_standard_room_1a32dadc773859aac18048b08855c26377" compoundref="kondakov__lr5__standard__room_8cpp" startline="15" endline="20">StandardRoom</references>
       </memberdef>
       <memberdef kind="function" id="class_standard_room_1af70fc0ba78a874aaf1cb87d04c6242ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1017,6 +306,54 @@
 <parametername>amenities</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>Удобства (строка, разделитель - запятая)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>room_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Номер комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price_per_night</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Цена за ночь </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is_booked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Статус бронирования </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bed_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество кроватей </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>has_tv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие телевизора </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
 <para>Удобства (строка с разделителями) </para>
 </parameterdescription>
 </parameteritem>
@@ -1025,11 +362,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="58" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="55" bodyend="62"/>
-        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
-        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="75" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="55" bodyend="62"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
         <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
-        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
       </memberdef>
       <memberdef kind="function" id="class_standard_room_1a0320959fc237ea0da3d057fb1d9de63d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1118,11 +455,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="69" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="73" bodyend="78"/>
-        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="23">Room::is_booked</references>
-        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="86" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="73" bodyend="78"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
         <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
-        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="21">Room::room_number</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
       </memberdef>
       <memberdef kind="function" id="class_standard_room_1a52219ce11a150a1c428a674d7085f5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1140,7 +477,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="72" column="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="89" column="5"/>
         <references refid="class_standard_room_1a32dadc773859aac18048b08855c26377" compoundref="kondakov__lr5__standard__room_8cpp" startline="15" endline="20">StandardRoom</references>
       </memberdef>
       <memberdef kind="function" id="class_standard_room_1a5ba7f2a70d521545aed28c3374a814dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1158,7 +495,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="73" column="18"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="90" column="18"/>
       </memberdef>
       <memberdef kind="function" id="class_standard_room_1a544e0f476c31c4e204704e79a3089a4e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -1187,7 +524,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="76" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="84" bodyend="89"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="93" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="84" bodyend="89"/>
         <references refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" compoundref="kondakov__lr5__room_8cpp" startline="18" endline="20">Room::Room</references>
         <references refid="class_standard_room_1a32dadc773859aac18048b08855c26377" compoundref="kondakov__lr5__standard__room_8cpp" startline="15" endline="20">StandardRoom</references>
       </memberdef>
@@ -1206,8 +543,797 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="77" column="18"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="94" column="18"/>
       </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Геттеры</header>
+      <memberdef kind="function" id="class_standard_room_1a1e09746ff2f02ce0c634da7230f79b8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int StandardRoom::get_bed_count</definition>
+        <argsstring>() const</argsstring>
+        <name>get_bed_count</name>
+        <qualifiedname>StandardRoom::get_bed_count</qualifiedname>
+        <briefdescription>
+<para>Получить количество кроватей </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Количество кроватей </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="102" column="16" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="19" bodyend="21"/>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1ae8ea3d346b46792c51d22a6423b255d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StandardRoom::get_has_tv</definition>
+        <argsstring>() const</argsstring>
+        <name>get_has_tv</name>
+        <qualifiedname>StandardRoom::get_has_tv</qualifiedname>
+        <briefdescription>
+<para>Получить наличие телевизора </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если есть телевизор, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="103" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="27" bodyend="29"/>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1a9138d117561e302bf0d1dadde1f7401c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const vector&lt; string &gt; &amp;</type>
+        <definition>const vector&lt; string &gt; &amp; StandardRoom::get_amenities</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_amenities</name>
+        <qualifiedname>StandardRoom::get_amenities</qualifiedname>
+        <reimplements refid="class_room_1ae6f809c97ae2d5a6ab101cd8771d9cb3">get_amenities</reimplements>
+        <briefdescription>
+<para>Получить список удобств </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на вектор удобств </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="104" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="35" bodyend="37"/>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1af62d306fc8c3735b2a2097768ec74f21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>string StandardRoom::get_full_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_full_name</name>
+        <qualifiedname>StandardRoom::get_full_name</qualifiedname>
+        <reimplements refid="class_room_1a5e3f378b9991a36faa3172fce417715b">get_full_name</reimplements>
+        <briefdescription>
+<para>Получить полное название комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Строка с полным названием комнаты </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="105" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="43" bodyend="47"/>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+        <referencedby refid="class_standard_room_1a06b989063fdda125448921ce223029b9" compoundref="kondakov__lr5__standard__room_8cpp" startline="210" endline="216">to_string</referencedby>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Сеттеры</header>
+      <memberdef kind="function" id="class_standard_room_1a89f97d3e1168e43a8f8e56c5c95e01d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StandardRoom::set_bed_count</definition>
+        <argsstring>(int bed_count)</argsstring>
+        <name>set_bed_count</name>
+        <qualifiedname>StandardRoom::set_bed_count</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bed_count</declname>
+        </param>
+        <briefdescription>
+<para>Установить количество кроватей </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bed_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое количество кроватей </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="110" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="53" bodyend="55"/>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1a756122f9b973a88e7615eb2d4ab0eedb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StandardRoom::set_has_tv</definition>
+        <argsstring>(bool has_tv)</argsstring>
+        <name>set_has_tv</name>
+        <qualifiedname>StandardRoom::set_has_tv</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>has_tv</declname>
+        </param>
+        <briefdescription>
+<para>Установить наличие телевизора </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>has_tv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наличие телевизора </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="111" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="61" bodyend="63"/>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1a7a90967661eb054e3005d7399f17808e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StandardRoom::set_amenities</definition>
+        <argsstring>(vector&lt; string &gt; amenities)</argsstring>
+        <name>set_amenities</name>
+        <qualifiedname>StandardRoom::set_amenities</qualifiedname>
+        <param>
+          <type>vector&lt; string &gt;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+<para>Установить список удобств </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amenities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый список удобств </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="112" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="69" bodyend="71"/>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Методы ввода</header>
+      <memberdef kind="function" id="class_standard_room_1a006df2025213235b54bb5e58c277d224" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StandardRoom::input_bed_count</definition>
+        <argsstring>()</argsstring>
+        <name>input_bed_count</name>
+        <qualifiedname>StandardRoom::input_bed_count</qualifiedname>
+        <briefdescription>
+<para>Ввод количества кроватей </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="117" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="77" bodyend="80"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <referencedby refid="class_standard_room_1aac82f7ed99fa1070a03d364518201169" compoundref="kondakov__lr5__standard__room_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1ad4ed425e8f2ed08253b5141cc96a6b71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StandardRoom::input_has_tv</definition>
+        <argsstring>()</argsstring>
+        <name>input_has_tv</name>
+        <qualifiedname>StandardRoom::input_has_tv</qualifiedname>
+        <briefdescription>
+<para>Ввод наличия телевизора </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="118" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="86" bodyend="89"/>
+        <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
+        <referencedby refid="class_standard_room_1aac82f7ed99fa1070a03d364518201169" compoundref="kondakov__lr5__standard__room_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1ab0d225d5a8b3c830ba892efc075c9547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>char</type>
+            <declname>Delim</declname>
+            <defname>Delim</defname>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool StandardRoom::input_amenities</definition>
+        <argsstring>()</argsstring>
+        <name>input_amenities</name>
+        <qualifiedname>StandardRoom::input_amenities</qualifiedname>
+        <briefdescription>
+<para>Ввод удобств с разделителем </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Delim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Разделитель для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="120" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="97" bodyend="103"/>
+        <referencedby refid="class_standard_room_1aac82f7ed99fa1070a03d364518201169" compoundref="kondakov__lr5__standard__room_8cpp" startline="178" endline="183">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Переопределенные методы</header>
+      <memberdef kind="function" id="class_standard_room_1afe04ed7e9c817111a6c1fb7aee10ba44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; StandardRoom::get_room_type</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_room_type</name>
+        <qualifiedname>StandardRoom::get_room_type</qualifiedname>
+        <reimplements refid="class_room_1a0551c035cf42bed1ae6865561dd5e5de">get_room_type</reimplements>
+        <briefdescription>
+<para>Получить тип комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на строку с типом комнаты </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="125" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="109" bodyend="111"/>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1a602ea7d9edcc6f1a2f772f41f1e86d91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; StandardRoom::get_json_type</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_json_type</name>
+        <qualifiedname>StandardRoom::get_json_type</qualifiedname>
+        <reimplements refid="class_room_1a3bc75b359d4b5d4f5f655f75478019d3">get_json_type</reimplements>
+        <briefdescription>
+<para>Получить тип для JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на строку с типом для JSON </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="126" column="33" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="117" bodyend="119"/>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1a8b4f0b7940b0a2dbfb3aab3063227a2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>float StandardRoom::calculate_total</definition>
+        <argsstring>(int night_count) const override</argsstring>
+        <name>calculate_total</name>
+        <qualifiedname>StandardRoom::calculate_total</qualifiedname>
+        <reimplements refid="class_room_1a85c09226671b7572f5e3e4206fac09cb">calculate_total</reimplements>
+        <param>
+          <type>int</type>
+          <declname>night_count</declname>
+        </param>
+        <briefdescription>
+<para>Расчет общей стоимости проживания </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>night_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество ночей </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Общая стоимость </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="127" column="26" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="126" bodyend="128"/>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1abf5ec953669ccaae53f893db5a683ea8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool StandardRoom::validate</definition>
+        <argsstring>() const override</argsstring>
+        <name>validate</name>
+        <qualifiedname>StandardRoom::validate</qualifiedname>
+        <reimplements refid="class_room_1a481e9eaeeb4964748e0fe8f6cff33c57">validate</reimplements>
+        <briefdescription>
+<para>Проверка валидности номера </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если номер валиден (количество кроватей &gt;= 1), иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="128" column="25" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="134" bodyend="136"/>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>JSON методы</header>
+      <memberdef kind="function" id="class_standard_room_1ac69d562b2b499115e781e42a0fe5d7ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+        <definition>json StandardRoom::to_json</definition>
+        <argsstring>() const override</argsstring>
+        <name>to_json</name>
+        <qualifiedname>StandardRoom::to_json</qualifiedname>
+        <reimplements refid="class_room_1a5188f0fe1d99561de97ab2b5fccde4b0">to_json</reimplements>
+        <briefdescription>
+<para>Преобразование в JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>JSON объект с данными номера </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="136" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="95" bodyend="104"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1a2844b52435f2d070357dea921a3541ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void StandardRoom::from_json</definition>
+        <argsstring>(const json &amp;j) override</argsstring>
+        <name>from_json</name>
+        <qualifiedname>StandardRoom::from_json</qualifiedname>
+        <reimplements refid="class_room_1a683b154738ffe3f6b20e9c3807735f9c">from_json</reimplements>
+        <param>
+          <type>const <ref refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref> &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Загрузка из JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON объект с данными номера </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="137" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="110" bodyend="117"/>
+        <references refid="class_room_1adeba14cded5e6e9ddc73ca144fc78470" compoundref="kondakov__lr5__room_8h" startline="29">Room::is_booked</references>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
+        <references refid="class_room_1a120b984b4105e8f795ca6039302aa0f6" compoundref="kondakov__lr5__room_8h" startline="27">Room::room_number</references>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Переопределенные методы вывода/ввода</header>
+      <memberdef kind="function" id="class_standard_room_1acf55a87a76c686170ce9c8e1d4cdf62a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void StandardRoom::print</definition>
+        <argsstring>() const override</argsstring>
+        <name>print</name>
+        <qualifiedname>StandardRoom::print</qualifiedname>
+        <reimplements refid="class_room_1af185fec4d7038c4640e2618817d41d95">print</reimplements>
+        <briefdescription>
+<para>Вывод информации о номере </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="161" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="188" bodyend="190"/>
+        <references refid="class_standard_room_1a06b989063fdda125448921ce223029b9" compoundref="kondakov__lr5__standard__room_8cpp" startline="210" endline="216">to_string</references>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1a5c3965885d7f9455ac2106275ac658bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool StandardRoom::input</definition>
+        <argsstring>() override</argsstring>
+        <name>input</name>
+        <qualifiedname>StandardRoom::input</qualifiedname>
+        <reimplements refid="class_room_1a3771355e58c0cac65cb836f72b7da113">input</reimplements>
+        <briefdescription>
+<para>Ввод информации о номере </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true если операция отменена, иначе false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="162" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="196" bodyend="204"/>
+        <references refid="class_room_1a3771355e58c0cac65cb836f72b7da113" compoundref="kondakov__lr5__room_8h" startline="42" endline="44">Room::input</references>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_standard_room_1a06b989063fdda125448921ce223029b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string StandardRoom::to_string</definition>
+        <argsstring>() const override</argsstring>
+        <name>to_string</name>
+        <qualifiedname>StandardRoom::to_string</qualifiedname>
+        <reimplements refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370">to_string</reimplements>
+        <briefdescription>
+<para>Преобразование в строку </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Строковое представление номера </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="163" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="210" bodyend="216"/>
+        <references refid="class_standard_room_1af62d306fc8c3735b2a2097768ec74f21" compoundref="kondakov__lr5__standard__room_8hpp" startline="43" endline="47">get_full_name</references>
+        <references refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" compoundref="kondakov__lr5__room_8cpp" startline="114" endline="118">Room::to_string</references>
+        <referencedby refid="class_standard_room_1acf55a87a76c686170ce9c8e1d4cdf62a" compoundref="kondakov__lr5__standard__room_8cpp" startline="188" endline="190">print</referencedby>
+        <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Операторы сложения удобств</header>
+      <memberdef kind="friend" id="class_standard_room_1a19f01e2381200a362ccbac4cb687b4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const StandardRoom &amp;sr1, const StandardRoom &amp;sr2)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>StandardRoom::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="142" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_standard_room_1a506aa585631eb7014c7e907c4a7ebf84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const vector&lt; string &gt; &amp;amenities, const StandardRoom &amp;sr)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>StandardRoom::operator+</qualifiedname>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="143" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_standard_room_1ab7ec956a8efcab085c3243418a362adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; operator+</definition>
+        <argsstring>(const StandardRoom &amp;sr, const vector&lt; string &gt; &amp;amenities)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>StandardRoom::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="144" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_standard_room_1af7ca5fa230c4bc00b5349a86bf91acbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt; &amp;</type>
+        <definition>vector&lt; string &gt; &amp; operator+=</definition>
+        <argsstring>(vector&lt; string &gt; &amp;amenities, const StandardRoom &amp;sr)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>StandardRoom::operator+=</qualifiedname>
+        <param>
+          <type>vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="145" column="19" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_standard_room_1a9f53f70c9c33c0c9b1de7d1b1205a2d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+        <definition>StandardRoom &amp; operator+=</definition>
+        <argsstring>(StandardRoom &amp;sr, const vector&lt; string &gt; &amp;amenities)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>StandardRoom::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="146" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_standard_room_1ae5334f1e7dd2489a2360d8275897f363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+        <definition>StandardRoom &amp; operator+=</definition>
+        <argsstring>(StandardRoom &amp;sr, const string &amp;amenities)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>StandardRoom::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>sr</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>amenities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="147" column="27" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Операторы ввода/вывода</header>
+      <memberdef kind="friend" id="class_standard_room_1ae8832056f49dce6fba3249c49462ab84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const StandardRoom &amp;r)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>StandardRoom::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Оператор вывода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток вывода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для вывода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток вывода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="155" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="167" bodyend="170"/>
+        <references refid="class_standard_room_1a32dadc773859aac18048b08855c26377" compoundref="kondakov__lr5__standard__room_8cpp" startline="15" endline="20">StandardRoom</references>
+      </memberdef>
+      <memberdef kind="friend" id="class_standard_room_1aac82f7ed99fa1070a03d364518201169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>istream &amp;</type>
+        <definition>istream &amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, StandardRoom &amp;r)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <qualifiedname>StandardRoom::operator&gt;&gt;</qualifiedname>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_standard_room" kindref="compound">StandardRoom</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Оператор ввода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Поток ввода </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Комната для ввода </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Поток ввода </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="156" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="178" bodyend="183"/>
+        <references refid="class_standard_room_1ab0d225d5a8b3c830ba892efc075c9547" compoundref="kondakov__lr5__standard__room_8hpp" startline="97" endline="103">input_amenities</references>
+        <references refid="class_standard_room_1a006df2025213235b54bb5e58c277d224" compoundref="kondakov__lr5__standard__room_8hpp" startline="77" endline="80">input_bed_count</references>
+        <references refid="class_standard_room_1ad4ed425e8f2ed08253b5141cc96a6b71" compoundref="kondakov__lr5__standard__room_8hpp" startline="86" endline="89">input_has_tv</references>
+        <references refid="class_standard_room_1a32dadc773859aac18048b08855c26377" compoundref="kondakov__lr5__standard__room_8cpp" startline="15" endline="20">StandardRoom</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_standard_room_1a93e0e72810b7040061054b2c3162e71c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StandardRoom::bed_count</definition>
+        <argsstring></argsstring>
+        <name>bed_count</name>
+        <qualifiedname>StandardRoom::bed_count</qualifiedname>
+        <briefdescription>
+<para>Количество кроватей </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="21" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_standard_room_1a0cbc252186862778e9e9dc663016bc8f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool StandardRoom::has_tv</definition>
+        <argsstring></argsstring>
+        <name>has_tv</name>
+        <qualifiedname>StandardRoom::has_tv</qualifiedname>
+        <briefdescription>
+<para>Наличие телевизора </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="22" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_standard_room_1a87f2a0c22eef467e47044a572e948a12" prot="private" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; StandardRoom::amenities</definition>
+        <argsstring></argsstring>
+        <name>amenities</name>
+        <qualifiedname>StandardRoom::amenities</qualifiedname>
+        <briefdescription>
+<para>Удобства </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="23" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_standard_room_1a000acd331653ce32200fb7740cf3ab04" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StandardRoom::ROOM_TYPE</definition>
+        <argsstring></argsstring>
+        <name>ROOM_TYPE</name>
+        <qualifiedname>StandardRoom::ROOM_TYPE</qualifiedname>
+        <initializer>= &quot;Стандартная комната&quot;</initializer>
+        <briefdescription>
+<para>Тип комнаты для отображения </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="25" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_standard_room_1a8b5e17f342fefd745b88819481a30e65" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StandardRoom::JSON_TYPE</definition>
+        <argsstring></argsstring>
+        <name>JSON_TYPE</name>
+        <qualifiedname>StandardRoom::JSON_TYPE</qualifiedname>
+        <initializer>= &quot;Standard&quot;</initializer>
+        <briefdescription>
+<para>Тип для сериализации в JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="26" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
       <memberdef kind="function" id="class_standard_room_1a2e46e90889222820009f40e6e231f32d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
         <definition>virtual StandardRoom::~StandardRoom</definition>
@@ -1221,7 +1347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="80" column="13"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="98" column="13"/>
         <references refid="class_standard_room_1a8b4f0b7940b0a2dbfb3aab3063227a2b" compoundref="kondakov__lr5__standard__room_8hpp" startline="126" endline="128">calculate_total</references>
         <references refid="class_standard_room_1ab7c3a25d3d39eed18ac42c65c5cd9ed1" compoundref="kondakov__lr5__standard__room_8hpp" startline="142" endline="145">exstra_bed</references>
         <references refid="class_standard_room_1a2844b52435f2d070357dea921a3541ad" compoundref="kondakov__lr5__standard__room_8cpp" startline="110" endline="117">from_json</references>
@@ -1259,8 +1385,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="114" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="142" bodyend="145"/>
-        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="22">Room::price_per_night</references>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="132" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.hpp" bodystart="142" bodyend="145"/>
+        <references refid="class_room_1a76266e1148de995bdfa05d07a94ee93e" compoundref="kondakov__lr5__room_8h" startline="28">Room::price_per_night</references>
         <referencedby refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d">~StandardRoom</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_standard_room_1a23c37c9cd1299d7d83a11ba37ed64fd0" prot="public" static="no" const="yes" explicit="yes" inline="no" virt="non-virtual">
@@ -1276,7 +1402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="133" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="153" bodyend="159"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="151" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.cpp" bodystart="153" bodyend="159"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -1308,7 +1434,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="19" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="19" bodyend="147"/>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" line="19" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_standard_room.h" bodystart="19" bodyend="165"/>
     <listofallmembers>
       <member refid="class_standard_room_1a87f2a0c22eef467e47044a572e948a12" prot="private" virt="non-virtual"><scope>StandardRoom</scope><name>amenities</name></member>
       <member refid="class_standard_room_1a93e0e72810b7040061054b2c3162e71c" prot="private" virt="non-virtual"><scope>StandardRoom</scope><name>bed_count</name></member>

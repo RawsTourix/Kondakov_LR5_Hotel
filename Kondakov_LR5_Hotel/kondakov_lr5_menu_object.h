@@ -10,6 +10,12 @@
 #ifndef KONDAKOV_LR5_MENU_OBJECT_H
 #define KONDAKOV_LR5_MENU_OBJECT_H
 
+/**
+ * @defgroup menu_system Система меню
+ * @brief Создание и взаимодействие с меню
+ * @{
+ */
+
 #include "kondakov_lr5_serializer.h"
 
 /**
@@ -104,16 +110,16 @@ public:
     MenuObject(int number, string label, RoomPtr room, Action action,
                string main_message, string success_message);
 
-    /// @}
-
-    /// @name Специальные методы
-    /// @{
+    /// Конструктор копирования
     MenuObject(const MenuObject&) = default;
     MenuObject& operator=(const MenuObject&) = default;
+
+    /// Конструктор перемещения
     MenuObject(MenuObject&&) noexcept;
     MenuObject& operator=(MenuObject&&) = default;
-    ~MenuObject() = default;
     /// @}
+
+    ~MenuObject() = default;  ///< Деструктор
 
     /// @name Методы работы с меню
     /// @{
@@ -140,5 +146,7 @@ public:
 };
 
 #include "kondakov_lr5_menu_object.hpp"
+
+/** @} */ // Конец группы input_control
 
 #endif // KONDAKOV_LR5_MENU_OBJECT_H

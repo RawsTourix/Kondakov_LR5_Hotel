@@ -51,7 +51,7 @@ FamilyRoom::FamilyRoom(int room_number, float price_per_night, bool is_booked,
 }
 
 /**
- * @brief Конструктор с параметрами
+ * @brief Конструктор с параметрами (удобства строка)
  * @param room_number Номер комнаты
  * @param price_per_night Цена за ночь
  * @param is_booked Статус бронирования
@@ -59,7 +59,7 @@ FamilyRoom::FamilyRoom(int room_number, float price_per_night, bool is_booked,
  * @param has_child_care Наличие услуг для детей
  * @param child_beds Количество детских кроватей
  * @param toy_kit Наличие набора игрушек
- * @param amenities Список удобств (строка с разделителями)
+ * @param amenities Список удобств (строка, разделитель - запятая)
  */
 FamilyRoom::FamilyRoom(int room_number, float price_per_night, bool is_booked,
                      float child_care_price, bool has_child_care,
@@ -70,6 +70,27 @@ FamilyRoom::FamilyRoom(int room_number, float price_per_night, bool is_booked,
       toy_kit(toy_kit) {
     InputControl::DelimitedContainer<',', vector<string>&> dc(this->amenities);
     dc >> amenities;
+}
+
+/**
+ * @brief Конструктор с параметрами (удобства вектор)
+ * @param room_number Номер комнаты
+ * @param price_per_night Цена за ночь
+ * @param is_booked Статус бронирования
+ * @param child_care_price Стоимость услуг для детей
+ * @param has_child_care Наличие услуг для детей
+ * @param child_beds Количество детских кроватей
+ * @param toy_kit Наличие набора игрушек
+ * @param amenities Список удобств (вектор строк)
+ */
+FamilyRoom::FamilyRoom(int room_number, float price_per_night, bool is_booked,
+    float child_care_price, bool has_child_care,
+    int child_beds, bool toy_kit, vector<string> amenities)
+    : Room(room_number, price_per_night, is_booked),
+    ChildCare(child_care_price, has_child_care),
+    child_beds(child_beds),
+    toy_kit(toy_kit),
+    amenities(amenities) {
 }
 
 /**

@@ -364,7 +364,7 @@
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15" refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" refkind="member"><highlight class="normal"><ref refid="class_suite_1ac6d5e58a508fcf431ea7448da070f802" kindref="member">Suite::Suite</ref>()</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kindref="member">Room</ref>(),</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>room_service(true),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>room_service(false),</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>jacuzzi(false),</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>amenities({<sp/></highlight><highlight class="stringliteral">&quot;Lux&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Room<sp/>service&quot;</highlight><highlight class="normal"><sp/>})<sp/>{</highlight></codeline>
 <codeline lineno="20"><highlight class="normal">}</highlight></codeline>

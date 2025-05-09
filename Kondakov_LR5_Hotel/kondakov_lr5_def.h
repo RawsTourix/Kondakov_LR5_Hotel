@@ -6,10 +6,11 @@
  * @date 2025
  * @version 1.0
  * @ingroup core_definitions
+ * @copyright Copyright (c) 2025 Fedor Kondakov
+ * @license MIT
  */
 
 #ifndef KONDAKOV_LR5_DEF_H
- /// @brief Макрос защиты от повторного включения заголовочного файла
 #define KONDAKOV_LR5_DEF_H
 
 /**
@@ -19,7 +20,7 @@
  */
 
 #include <iostream>      ///< Потоки ввода-вывода (std::cin, std::cout).
-#include <utility>       ///< Утилиты: std::pair, std::move, std::forward.
+#include <utility>       ///< Утилиты: std::pair, std::move.
 #include <vector>        ///< Динамический массив (std::vector).
 #include <map>           ///< Ассоциативный контейнер (std::map).
 #include <sstream>       ///< Строковые потоки (std::stringstream).
@@ -32,11 +33,12 @@
 #include <fstream>       ///< Файловые потоки (std::ifstream, std::ofstream).
 #include <nlohmann/json.hpp> ///< JSON-библиотека (nlohmann::json).
 
- /// @brief Использование стандартного пространства имён (может приводить к конфликтам имен)
+/// Использование стандартного пространства имён
 using namespace std;
-/// @brief Псевдоним для удобства работы с JSON библиотекой
+
+/// Псевдоним для удобства работы с JSON библиотекой
 using json = nlohmann::json;
 
-/** @} */ // end of core_definitions
+/** @} */ // Конец группы core_definitions
 
 #endif // KONDAKOV_LR5_DEF_H

@@ -50,15 +50,21 @@ protected:
     }
 
 public:
-    static const string CURRENCY;  
+    static const string CURRENCY;
+
 
     ChildCare();
+
     ChildCare(bool has_child_care);
+
     ChildCare(float child_care_price, bool has_child_care);
+
     ChildCare(const ChildCare&) = default;
     ChildCare& operator=(const ChildCare&) = default;
+
     ChildCare(ChildCare&& other) noexcept;
     ChildCare& operator=(ChildCare&&) noexcept = default;
+
     ~ChildCare() = default;
 
     inline float get_child_care_price() const;
@@ -86,4 +92,4 @@ public:
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

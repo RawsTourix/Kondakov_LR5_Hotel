@@ -34,6 +34,7 @@ summary: Заголовочный файл абстрактного класса
 #ifndef KONDAKOV_LR5_ROOM_H
 #define KONDAKOV_LR5_ROOM_H
 
+
 #include "kondakov_lr5_input_control.h"
 
 class Room {
@@ -52,6 +53,7 @@ protected:
 
 public:
     static const string CURRENCY;
+
 
     Room();
 
@@ -123,6 +125,7 @@ public:
 };
 
 #include "kondakov_lr5_room.hpp"
+ // Конец группы room_hierarchy
 
 #endif // KONDAKOV_LR5_ROOM_H
 ```
@@ -130,4 +133,4 @@ public:
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

@@ -10,6 +10,12 @@
 #ifndef KONDAKOV_LR5_METHODS_H
 #define KONDAKOV_LR5_METHODS_H
 
+/**
+ * @defgroup room_operations Функции для работы с комнатами
+ * @brief Операции с комнатами
+ * @{
+ */
+
 #include "kondakov_lr5_menu_object.h"
 
 /**
@@ -163,7 +169,7 @@ namespace Methods {
      * @tparam Container Тип контейнера
      * @param room Проверяемая комната
      * @param rooms Контейнер для проверки
-     * @return true если комната существует
+     * @return true если комната существует, иначе false
      */
     template <typename RoomType, typename Container>
     typename enable_if_t<is_base_of_v<Room, typename RoomType>&&
@@ -173,5 +179,7 @@ namespace Methods {
 };
 
 #include "kondakov_lr5_methods.hpp"
+
+/** @} */ // Конец группы room_operations
 
 #endif // KONDAKOV_LR5_METHODS_H

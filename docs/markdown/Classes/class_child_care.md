@@ -21,18 +21,18 @@ Inherited by [FamilyRoom](Classes/class_family_room.md)
 | -------------- | -------------- |
 | | **[ChildCare](Classes/class_child_care.md#function-childcare)**()<br>Конструктор по умолчанию  |
 | | **[ChildCare](Classes/class_child_care.md#function-childcare)**(bool has_child_care)<br>Конструктор преобразования  |
-| | **[ChildCare](Classes/class_child_care.md#function-childcare)**(float child_care_price, bool has_child_care)<br>Конструктор с параметрами  |
-| | **[ChildCare](Classes/class_child_care.md#function-childcare)**(const [ChildCare](Classes/class_child_care.md) & ) =default |
+| | **[ChildCare](Classes/class_child_care.md#function-childcare)**(float child_care_price, bool has_child_care)<br>Основной конструктор с параметрами  |
+| | **[ChildCare](Classes/class_child_care.md#function-childcare)**(const [ChildCare](Classes/class_child_care.md) & ) =default<br>Конструктор копирования  |
 | [ChildCare](Classes/class_child_care.md) & | **[operator=](Classes/class_child_care.md#function-operator=)**(const [ChildCare](Classes/class_child_care.md) & ) =default |
 | | **[ChildCare](Classes/class_child_care.md#function-childcare)**([ChildCare](Classes/class_child_care.md) && other)<br>Конструктор перемещения  |
 | [ChildCare](Classes/class_child_care.md) & | **[operator=](Classes/class_child_care.md#function-operator=)**([ChildCare](Classes/class_child_care.md) && ) =default |
-| | **[~ChildCare](Classes/class_child_care.md#function-~childcare)**() =default |
 | float | **[get_child_care_price](Classes/class_child_care.md#function-get-child-care-price)**() const<br>Получить стоимость услуг для детей  |
 | bool | **[get_has_child_care](Classes/class_child_care.md#function-get-has-child-care)**() const<br>Получить наличие услуг для детей  |
 | void | **[set_child_care_price](Classes/class_child_care.md#function-set-child-care-price)**(float child_care_price)<br>Установить стоимость услуг для детей  |
 | void | **[set_has_child_care](Classes/class_child_care.md#function-set-has-child-care)**(bool has_child_care)<br>Установить наличие услуг для детей  |
 | bool | **[input_child_care_price](Classes/class_child_care.md#function-input-child-care-price)**()<br>Ввод стоимости услуг для детей  |
 | bool | **[input_has_child_care](Classes/class_child_care.md#function-input-has-child-care)**()<br>Ввод наличия услуг для детей  |
+| | **[~ChildCare](Classes/class_child_care.md#function-~childcare)**() =default<br>Деструктор  |
 | | **[operator string](Classes/class_child_care.md#function-operator-string)**() const<br>Преобразование в строку  |
 | virtual string | **[to_string](Classes/class_child_care.md#function-to-string)**() const<br>Преобразование в строку  |
 
@@ -73,6 +73,12 @@ ChildCare()
 
 Конструктор по умолчанию 
 
+Создает услуги для детей с параметрами:
+
+* Стоимость услуг: 1000.0
+* Наличие услуг: нет 
+
+
 ### function ChildCare
 
 ```cpp
@@ -85,7 +91,14 @@ ChildCare(
 
 **Parameters**: 
 
+  * **has_child_care** Наличие услуг для детей
   * **has_child_care** Наличие услуг для детей 
+
+
+
+Создает услуги для детей с указанным параметром:
+
+* Стоимость услуг: 1000.0
 
 
 ### function ChildCare
@@ -97,12 +110,15 @@ ChildCare(
 )
 ```
 
-Конструктор с параметрами 
+Основной конструктор с параметрами 
 
 **Parameters**: 
 
   * **child_care_price** Стоимость услуг 
   * **has_child_care** Наличие услуг 
+
+
+Конструктор с параметрами
 
 
 ### function ChildCare
@@ -113,6 +129,7 @@ ChildCare(
 ) =default
 ```
 
+Конструктор копирования 
 
 ### function operator=
 
@@ -144,13 +161,6 @@ ChildCare(
 ChildCare & operator=(
     ChildCare && 
 ) =default
-```
-
-
-### function ~ChildCare
-
-```cpp
-~ChildCare() =default
 ```
 
 
@@ -223,6 +233,14 @@ inline bool input_has_child_care()
 Ввод наличия услуг для детей 
 
 **Return**: true если ввод отменен, false если успешен 
+
+### function ~ChildCare
+
+```cpp
+~ChildCare() =default
+```
+
+Деструктор 
 
 ### function operator string
 
@@ -342,4 +360,4 @@ friend istream & operator>>(
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:46 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

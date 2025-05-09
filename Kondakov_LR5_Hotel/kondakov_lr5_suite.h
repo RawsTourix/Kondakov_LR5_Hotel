@@ -21,26 +21,83 @@ class Suite final : virtual public Room {
 private:
     bool            room_service;  ///< Наличие обслуживания в номере
     bool            jacuzzi;       ///< Наличие джакузи
-    vector<string>  amenities;     ///< Список дополнительных удобств
+    vector<string>  amenities;     ///< Удобства
 
-    const float SERVICE_PRICE = 5000.0f;  ///< Базовая стоимость услуг
+    const float SERVICE_PRICE = 5000.0f;      ///< Базовая стоимость услуг
     const string ROOM_TYPE = "Люкс комната";  ///< Тип комнаты для отображения
     const string JSON_TYPE = "Suite";         ///< Тип для сериализации в JSON
 
 public:
     /// @name Конструкторы
     /// @{
+    /**
+     * @brief Конструктор по умолчанию
+     * @details Создает номер люкс с параметрами:
+     * - Номер комнаты: 0
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     * - Обслуживание в номере: нет
+     * - Наличие джакузи: нет
+     * - Список удобств: "Lux", "Room service"
+     */
     Suite();
+
+    /**
+     * @brief Конструктор преобразования
+     * @param room_number Номер комнаты
+     * @param room_service Обслуживание в номере
+     * @details Создает номер люкс с указанными параметрами и значениями по умолчанию:
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     * - Наличие джакузи: нет
+     * - Список удобств: "Lux", "Room service"
+     */
     Suite(int room_number, bool room_service);
+
+    /**
+     * @brief Конструктор с удобствами по умолчанию
+     * @param room_number Номер комнаты
+     * @param price_per_night Цена за ночь
+     * @param is_booked Статус бронирования
+     * @param room_service Обслуживание в номере
+     * @param jacuzzi Наличие джакузи
+     * @details Создает номер люкс с указанными параметрами и удобствами по умолчанию: "Lux", "Room service"
+     */
     Suite(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi);
+
+    /**
+     * @brief Конструктор с параметрами (удобства строка)
+     * @param room_number Номер комнаты
+     * @param price_per_night Цена за ночь
+     * @param is_booked Статус бронирования
+     * @param room_service Обслуживание в номере
+     * @param jacuzzi Наличие джакузи
+     * @param amenities Удобства (строка, разделитель - запятая)
+     */
     Suite(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi, string amenities);
+
+    /**
+     * @brief Конструктор с параметрами (удобства вектор)
+     * @param room_number Номер комнаты
+     * @param price_per_night Цена за ночь
+     * @param is_booked Статус бронирования
+     * @param room_service Обслуживание в номере
+     * @param jacuzzi Наличие джакузи
+     * @param amenities Удобства (вектор строк)
+     */
     Suite(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi, vector<string> amenities);
+
+    /// Конструктор копирования
     Suite(const Suite&) = default;
     Suite& operator=(const Suite&) = default;
+
+    /// Конструктор перемещения
     Suite(Suite&& other) noexcept;
     Suite& operator=(Suite&&) noexcept = default;
-    virtual ~Suite() = default;
     /// @}
+
+    /// Деструктор
+    virtual ~Suite() = default;
 
     /// @name Геттеры
     /// @{

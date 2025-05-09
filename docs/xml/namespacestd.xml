@@ -6,9 +6,8 @@
 <para>&lt; JSON-библиотека (nlohmann::json). </para>
     </briefdescription>
     <detaileddescription>
-<para>&lt; Потоки ввода-вывода (std::cin, std::cout). Утилиты: std::pair, std::move, std::forward. &lt; Динамический массив (std::vector). &lt; Ассоциативный контейнер (std::map). &lt; Строковые потоки (std::stringstream). &lt; Функциональные объекты (std::function). &lt; Метапрограммирование (std::is_same, std::enable_if). &lt; Умные указатели (std::shared_ptr, std::unique_ptr). &lt; Алгоритмы (std::sort, std::find). &lt; Пределы типов (std::numeric_limits). Кортежи (std::tuple). &lt; Файловые потоки (std::ifstream, std::ofstream).</para>
-<para>Использование стандартного пространства имён (может приводить к конфликтам имен) </para>
+<para>&lt; Потоки ввода-вывода (std::cin, std::cout). Утилиты: std::pair, std::move. &lt; Динамический массив (std::vector). &lt; Ассоциативный контейнер (std::map). &lt; Строковые потоки (std::stringstream). &lt; Функциональные объекты (std::function). &lt; Метапрограммирование (std::is_same, std::enable_if). &lt; Умные указатели (std::shared_ptr, std::unique_ptr). &lt; Алгоритмы (std::sort, std::find). &lt; Пределы типов (std::numeric_limits). Кортежи (std::tuple). &lt; Файловые потоки (std::ifstream, std::ofstream). Использование стандартного пространства имён </para>
     </detaileddescription>
-    <location file="Kondakov_LR5_Hotel/kondakov_lr5_def.h" line="36" column="1"/>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_def.h" line="37" column="1"/>
   </compounddef>
 </doxygen>

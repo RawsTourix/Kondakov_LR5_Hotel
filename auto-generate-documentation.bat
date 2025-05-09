@@ -10,7 +10,7 @@ set RESET_COLOR=07
 echo Генерация документации с помощью Doxygen
 powershell -NoProfile -ExecutionPolicy Bypass -File "generate-documentation.ps1"
 if %ERRORLEVEL% NEQ 0 (
-    call :error "Ошибка при выполнении generate-markdown.ps1"
+    call :error "Ошибка при выполнении generate-documentation.ps1"
     goto end
 )
 

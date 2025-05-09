@@ -1,7 +1,12 @@
 <map id="ChildCare::to_string" name="ChildCare::to_string">
-<area shape="rect" id="Node000001" title="Преобразование в строку" alt="" coords="383,5,520,32"/>
-<area shape="rect" id="Node000002" href="$class_family_room.html#a271f00565274998fdabcf7caf292fff5" title="Преобразование в строку" alt="" coords="182,5,335,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,21,336,21,336,16,367,16"/>
-<area shape="rect" id="Node000003" href="$class_family_room.html#a9c0a4570d5b466db2be534ac3b0b0f3c" title="Вывод информации о номере" alt="" coords="5,5,134,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="166,21,134,21,134,16,166,16"/>
+<area shape="rect" id="Node000001" title="Преобразование в строку" alt="" coords="616,56,754,83"/>
+<area shape="rect" id="Node000002" href="$class_family_room.html#a271f00565274998fdabcf7caf292fff5" title="Преобразование в строку" alt="" coords="415,31,568,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="601,61,569,57,569,51,601,56"/>
+<area shape="rect" id="Node000005" href="$class_child_care.html#a194abbe995da7c1edc6cabb891631b63" title="Деструктор" alt="" coords="415,81,568,108"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="601,83,569,87,569,82,601,78"/>
+<area shape="rect" id="Node000003" href="$class_family_room.html#a9c0a4570d5b466db2be534ac3b0b0f3c" title="Вывод информации о номере" alt="" coords="239,5,367,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,34,367,30,368,25,400,29"/>
+<area shape="rect" id="Node000004" href="$class_family_room.html#a21a282df8f7b25ede341c5b3ff75f3ac" title="Деструктор" alt="" coords="5,31,191,57"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="399,47,191,47,191,41,399,41"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,31,191,35,191,30,223,26"/>
 </map>

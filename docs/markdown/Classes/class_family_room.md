@@ -20,14 +20,14 @@ Inherits from [Room](Classes/class_room.md), [ChildCare](Classes/class_child_car
 |                | Name           |
 | -------------- | -------------- |
 | | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**()<br>Конструктор по умолчанию  |
-| | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**(int room_number, int child_beds)<br>Конструктор преобразования  |
+| | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**(int room_number, int child_beds)<br>Базовый конструктор  |
 | | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**(int room_number, float price_per_night, bool is_booked, float child_care_price, bool has_child_care, int child_beds, bool toy_kit)<br>Конструктор с удобствами по умолчанию  |
-| | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**(int room_number, float price_per_night, bool is_booked, float child_care_price, bool has_child_care, int child_beds, bool toy_kit, string amenities)<br>Конструктор с параметрами  |
-| | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**(const [FamilyRoom](Classes/class_family_room.md) & ) =default |
+| | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**(int room_number, float price_per_night, bool is_booked, float child_care_price, bool has_child_care, int child_beds, bool toy_kit, string amenities)<br>Конструктор с параметрами (удобства в строке)  |
+| | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**(int room_number, float price_per_night, bool is_booked, float child_care_price, bool has_child_care, int child_beds, bool toy_kit, vector< string > amenities)<br>Конструктор с параметрами (удобства в векторе)  |
+| | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**(const [FamilyRoom](Classes/class_family_room.md) & ) =default<br>Конструктор копирования  |
 | [FamilyRoom](Classes/class_family_room.md) & | **[operator=](Classes/class_family_room.md#function-operator=)**(const [FamilyRoom](Classes/class_family_room.md) & ) =default |
 | | **[FamilyRoom](Classes/class_family_room.md#function-familyroom)**([FamilyRoom](Classes/class_family_room.md) && other)<br>Конструктор перемещения  |
 | [FamilyRoom](Classes/class_family_room.md) & | **[operator=](Classes/class_family_room.md#function-operator=)**([FamilyRoom](Classes/class_family_room.md) && ) =default |
-| virtual | **[~FamilyRoom](Classes/class_family_room.md#function-~familyroom)**() =default |
 | int | **[get_child_beds](Classes/class_family_room.md#function-get-child-beds)**() const<br>Получить количество детских кроватей  |
 | bool | **[get_toy_kit](Classes/class_family_room.md#function-get-toy-kit)**() const<br>Получить наличие набора игрушек  |
 | virtual const vector< string > & | **[get_amenities](Classes/class_family_room.md#function-get-amenities)**() const override<br>Получить список удобств  |
@@ -59,6 +59,7 @@ Inherits from [Room](Classes/class_room.md), [ChildCare](Classes/class_child_car
 | virtual void | **[print](Classes/class_family_room.md#function-print)**() const override<br>Вывод информации о номере  |
 | virtual bool | **[input](Classes/class_family_room.md#function-input)**() override<br>Ввод информации о номере  |
 | virtual string | **[to_string](Classes/class_family_room.md#function-to-string)**() const override<br>Преобразование в строку  |
+| virtual | **[~FamilyRoom](Classes/class_family_room.md#function-~familyroom)**() =default<br>Деструктор  |
 
 ## Friends
 
@@ -79,6 +80,11 @@ Inherits from [Room](Classes/class_room.md), [ChildCare](Classes/class_child_car
 
 |                | Name           |
 | -------------- | -------------- |
+| | **[Room](Classes/class_room.md#function-room)**()<br>Конструктор по умолчанию  |
+| | **[Room](Classes/class_room.md#function-room)**(int room_number)<br>Конструктор преобразования  |
+| | **[Room](Classes/class_room.md#function-room)**(int room_number, float price_per_night, bool is_booked)<br>Основной конструктор с параметрами  |
+| | **[Room](Classes/class_room.md#function-room)**(const [Room](Classes/class_room.md) & ) =default<br>Конструктор копирования  |
+| | **[Room](Classes/class_room.md#function-room)**([Room](Classes/class_room.md) && other)<br>Конструктор перемещения  |
 | int | **[get_room_number](Classes/class_room.md#function-get-room-number)**() const<br>Получить номер комнаты  |
 | float | **[get_price_per_night](Classes/class_room.md#function-get-price-per-night)**() const<br>Получить цену за ночь  |
 | bool | **[get_is_booked](Classes/class_room.md#function-get-is-booked)**() const<br>Получить статус бронирования  |
@@ -89,11 +95,6 @@ Inherits from [Room](Classes/class_room.md), [ChildCare](Classes/class_child_car
 | template <typename Container \> <br>enable_if_t< is_same_v< typename Container::value_type, int >, bool > | **[input_room_number](Classes/class_room.md#function-input-room-number)**(const Container & room_numbers)<br>Ввод номера комнаты с проверкой уникальности  |
 | bool | **[input_price_per_night](Classes/class_room.md#function-input-price-per-night)**()<br>Ввод цены за ночь  |
 | bool | **[input_is_booked](Classes/class_room.md#function-input-is-booked)**()<br>Ввод статуса бронирования  |
-| | **[Room](Classes/class_room.md#function-room)**()<br>Конструктор по умолчанию  |
-| | **[Room](Classes/class_room.md#function-room)**(int room_number)<br>Конструктор преобразования (по номеру комнаты)  |
-| | **[Room](Classes/class_room.md#function-room)**(int room_number, float price_per_night, bool is_booked)<br>Конструктор с параметрами  |
-| | **[Room](Classes/class_room.md#function-room)**(const [Room](Classes/class_room.md) & ) =default<br>Конструктор копирования  |
-| | **[Room](Classes/class_room.md#function-room)**([Room](Classes/class_room.md) && other)<br>Конструктор перемещения  |
 | virtual | **[~Room](Classes/class_room.md#function-~room)**() =default<br>Виртуальный деструктор  |
 
 **Public Attributes inherited from [Room](Classes/class_room.md)**
@@ -139,16 +140,16 @@ Inherits from [Room](Classes/class_room.md), [ChildCare](Classes/class_child_car
 | -------------- | -------------- |
 | | **[ChildCare](Classes/class_child_care.md#function-childcare)**()<br>Конструктор по умолчанию  |
 | | **[ChildCare](Classes/class_child_care.md#function-childcare)**(bool has_child_care)<br>Конструктор преобразования  |
-| | **[ChildCare](Classes/class_child_care.md#function-childcare)**(float child_care_price, bool has_child_care)<br>Конструктор с параметрами  |
-| | **[ChildCare](Classes/class_child_care.md#function-childcare)**(const [ChildCare](Classes/class_child_care.md) & ) =default |
+| | **[ChildCare](Classes/class_child_care.md#function-childcare)**(float child_care_price, bool has_child_care)<br>Основной конструктор с параметрами  |
+| | **[ChildCare](Classes/class_child_care.md#function-childcare)**(const [ChildCare](Classes/class_child_care.md) & ) =default<br>Конструктор копирования  |
 | | **[ChildCare](Classes/class_child_care.md#function-childcare)**([ChildCare](Classes/class_child_care.md) && other)<br>Конструктор перемещения  |
-| | **[~ChildCare](Classes/class_child_care.md#function-~childcare)**() =default |
 | float | **[get_child_care_price](Classes/class_child_care.md#function-get-child-care-price)**() const<br>Получить стоимость услуг для детей  |
 | bool | **[get_has_child_care](Classes/class_child_care.md#function-get-has-child-care)**() const<br>Получить наличие услуг для детей  |
 | void | **[set_child_care_price](Classes/class_child_care.md#function-set-child-care-price)**(float child_care_price)<br>Установить стоимость услуг для детей  |
 | void | **[set_has_child_care](Classes/class_child_care.md#function-set-has-child-care)**(bool has_child_care)<br>Установить наличие услуг для детей  |
 | bool | **[input_child_care_price](Classes/class_child_care.md#function-input-child-care-price)**()<br>Ввод стоимости услуг для детей  |
 | bool | **[input_has_child_care](Classes/class_child_care.md#function-input-has-child-care)**()<br>Ввод наличия услуг для детей  |
+| | **[~ChildCare](Classes/class_child_care.md#function-~childcare)**() =default<br>Деструктор  |
 
 **Public Attributes inherited from [ChildCare](Classes/class_child_care.md)**
 
@@ -174,6 +175,18 @@ FamilyRoom()
 
 Конструктор по умолчанию 
 
+Создает семейный номер с параметрами:
+
+* Номер комнаты: 0
+* Цена за ночь: 0.0
+* Статус бронирования: нет
+* Стоимость услуг для детей: 0.0
+* Наличие услуг для детей: нет
+* Детских кроватей: 0
+* Набор игрушек: нет
+* Список удобств: "Wi-Fi", "Air condition" 
+
+
 ### function FamilyRoom
 
 ```cpp
@@ -183,12 +196,27 @@ FamilyRoom(
 )
 ```
 
-Конструктор преобразования 
+Базовый конструктор 
 
 **Parameters**: 
 
   * **room_number** Номер комнаты 
+  * **child_beds** Количество детских кроватей
+  * **room_number** Номер комнаты 
   * **child_beds** Количество детских кроватей 
+
+
+Конструктор преобразования
+
+
+Создает семейный номер с указанными параметрами:
+
+* Цена за ночь: 0.0
+* Статус бронирования: нет
+* Стоимость услуг для детей: 0.0
+* Наличие услуг для детей: нет
+* Набор игрушек: нет
+* Список удобств: "Wi-Fi", "Air condition"
 
 
 ### function FamilyRoom
@@ -215,7 +243,18 @@ FamilyRoom(
   * **child_care_price** Стоимость услуг для детей 
   * **has_child_care** Наличие услуг для детей 
   * **child_beds** Количество детских кроватей 
+  * **toy_kit** Набор игрушек
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **child_care_price** Стоимость услуг для детей 
+  * **has_child_care** Наличие услуг для детей 
+  * **child_beds** Количество детских кроватей 
   * **toy_kit** Наличие набора игрушек 
+
+
+
+Создает семейный номер с указанными параметрамис и удобствами по умолчанию: "Wi-Fi", "Air condition"
 
 
 ### function FamilyRoom
@@ -233,7 +272,7 @@ FamilyRoom(
 )
 ```
 
-Конструктор с параметрами 
+Конструктор с параметрами (удобства в строке) 
 
 **Parameters**: 
 
@@ -243,8 +282,59 @@ FamilyRoom(
   * **child_care_price** Стоимость услуг для детей 
   * **has_child_care** Наличие услуг для детей 
   * **child_beds** Количество детских кроватей 
+  * **toy_kit** Набор игрушек 
+  * **amenities** Удобства (строка, разделитель - запятая)
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **child_care_price** Стоимость услуг для детей 
+  * **has_child_care** Наличие услуг для детей 
+  * **child_beds** Количество детских кроватей 
   * **toy_kit** Наличие набора игрушек 
-  * **amenities** Список удобств (строка с разделителями) 
+  * **amenities** Список удобств (строка, разделитель - запятая) 
+
+
+Конструктор с параметрами (удобства строка)
+
+
+### function FamilyRoom
+
+```cpp
+FamilyRoom(
+    int room_number,
+    float price_per_night,
+    bool is_booked,
+    float child_care_price,
+    bool has_child_care,
+    int child_beds,
+    bool toy_kit,
+    vector< string > amenities
+)
+```
+
+Конструктор с параметрами (удобства в векторе) 
+
+**Parameters**: 
+
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **child_care_price** Стоимость услуг для детей 
+  * **has_child_care** Наличие услуг для детей 
+  * **child_beds** Количество детских кроватей 
+  * **toy_kit** Набор игрушек 
+  * **amenities** Удобства (вектор строк)
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **child_care_price** Стоимость услуг для детей 
+  * **has_child_care** Наличие услуг для детей 
+  * **child_beds** Количество детских кроватей 
+  * **toy_kit** Наличие набора игрушек 
+  * **amenities** Список удобств (вектор строк) 
+
+
+Конструктор с параметрами (удобства вектор)
 
 
 ### function FamilyRoom
@@ -255,6 +345,7 @@ FamilyRoom(
 ) =default
 ```
 
+Конструктор копирования 
 
 ### function operator=
 
@@ -286,13 +377,6 @@ FamilyRoom(
 FamilyRoom & operator=(
     FamilyRoom && 
 ) =default
-```
-
-
-### function ~FamilyRoom
-
-```cpp
-virtual ~FamilyRoom() =default
 ```
 
 
@@ -722,6 +806,14 @@ virtual string to_string() const override
 **Reimplements**: [Room::to_string](Classes/class_room.md#function-to-string)
 
 
+### function ~FamilyRoom
+
+```cpp
+virtual ~FamilyRoom() =default
+```
+
+Деструктор 
+
 ## Friends
 
 ### friend operator<<
@@ -832,4 +924,4 @@ friend FamilyRoom & operator+=(
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:46 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

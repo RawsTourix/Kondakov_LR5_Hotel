@@ -37,19 +37,45 @@ protected:
     }
 
 public:
-    static const string CURRENCY;  ///< Валюта для отображения цен
+    /// Валюта для отображения цен
+    static const string CURRENCY;
 
     /// @name Конструкторы
     /// @{
+    /**
+     * @brief Конструктор по умолчанию
+     * @details Создает услуги для детей с параметрами:
+     * - Стоимость услуг: 1000.0
+     * - Наличие услуг: нет
+     */
     ChildCare();
+
+    /**
+     * @brief Конструктор преобразования
+     * @param has_child_care Наличие услуг для детей
+     * @details Создает услуги для детей с указанным параметром:
+     * - Стоимость услуг: 1000.0
+     */
     ChildCare(bool has_child_care);
+
+    /**
+     * @brief Основной конструктор с параметрами
+     * @param child_care_price Стоимость услуг
+     * @param has_child_care Наличие услуг
+     */
     ChildCare(float child_care_price, bool has_child_care);
+
+    /// Конструктор копирования
     ChildCare(const ChildCare&) = default;
     ChildCare& operator=(const ChildCare&) = default;
+
+    /// Конструктор перемещения
     ChildCare(ChildCare&& other) noexcept;
     ChildCare& operator=(ChildCare&&) noexcept = default;
-    ~ChildCare() = default;
     /// @}
+
+    /// Деструктор
+    ~ChildCare() = default;
 
     /// @name Геттеры
     /// @{

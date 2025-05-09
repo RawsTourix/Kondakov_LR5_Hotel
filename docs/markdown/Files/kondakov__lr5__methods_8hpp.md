@@ -463,7 +463,7 @@ Methods::calculate_total(Container& rooms) {
 
         // Ввод количества ночей и вычисление стоимости проживания
         int night_count;
-        if (InputControl::input(night_count, "Количество ночей: ", 0, 365)) { return; }
+        if (InputControl::input(night_count, "Количество ночей: ", 1, 365)) { return; }
         cout << endl << endl << 
             "Стоимость проживания в [" << room->get_full_name() << "]." << endl << endl <<
             "Количество ночей: " << night_count << endl << endl <<
@@ -611,4 +611,4 @@ Methods::room_in_rooms_by_room_number(RoomType room, const Container& rooms) {
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

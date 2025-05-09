@@ -6,6 +6,8 @@ summary: Абстрактный базовый класс для предста�
 
 # Room
 
+**Module:** **[Иерархия комнат](Modules/group__room__hierarchy.md)**
+
 
 
 Абстрактный базовый класс для представления гостиничного номера 
@@ -19,6 +21,13 @@ Inherited by [FamilyRoom](Classes/class_family_room.md), [StandardRoom](Classes/
 
 |                | Name           |
 | -------------- | -------------- |
+| | **[Room](Classes/class_room.md#function-room)**()<br>Конструктор по умолчанию  |
+| | **[Room](Classes/class_room.md#function-room)**(int room_number)<br>Конструктор преобразования  |
+| | **[Room](Classes/class_room.md#function-room)**(int room_number, float price_per_night, bool is_booked)<br>Основной конструктор с параметрами  |
+| | **[Room](Classes/class_room.md#function-room)**(const [Room](Classes/class_room.md) & ) =default<br>Конструктор копирования  |
+| [Room](Classes/class_room.md) & | **[operator=](Classes/class_room.md#function-operator=)**(const [Room](Classes/class_room.md) & ) =default |
+| | **[Room](Classes/class_room.md#function-room)**([Room](Classes/class_room.md) && other)<br>Конструктор перемещения  |
+| [Room](Classes/class_room.md) & | **[operator=](Classes/class_room.md#function-operator=)**([Room](Classes/class_room.md) && ) =default |
 | int | **[get_room_number](Classes/class_room.md#function-get-room-number)**() const<br>Получить номер комнаты  |
 | float | **[get_price_per_night](Classes/class_room.md#function-get-price-per-night)**() const<br>Получить цену за ночь  |
 | bool | **[get_is_booked](Classes/class_room.md#function-get-is-booked)**() const<br>Получить статус бронирования  |
@@ -37,13 +46,6 @@ Inherited by [FamilyRoom](Classes/class_family_room.md), [StandardRoom](Classes/
 | virtual bool | **[validate](Classes/class_room.md#function-validate)**() const =0 |
 | virtual [json](Modules/group__core__definitions.md#using-json) | **[to_json](Classes/class_room.md#function-to-json)**() const =0 |
 | virtual void | **[from_json](Classes/class_room.md#function-from-json)**(const [json](Modules/group__core__definitions.md#using-json) & j) =0 |
-| | **[Room](Classes/class_room.md#function-room)**()<br>Конструктор по умолчанию  |
-| | **[Room](Classes/class_room.md#function-room)**(int room_number)<br>Конструктор преобразования (по номеру комнаты)  |
-| | **[Room](Classes/class_room.md#function-room)**(int room_number, float price_per_night, bool is_booked)<br>Конструктор с параметрами  |
-| | **[Room](Classes/class_room.md#function-room)**(const [Room](Classes/class_room.md) & ) =default<br>Конструктор копирования  |
-| [Room](Classes/class_room.md) & | **[operator=](Classes/class_room.md#function-operator=)**(const [Room](Classes/class_room.md) & ) =default |
-| | **[Room](Classes/class_room.md#function-room)**([Room](Classes/class_room.md) && other)<br>Конструктор перемещения  |
-| [Room](Classes/class_room.md) & | **[operator=](Classes/class_room.md#function-operator=)**([Room](Classes/class_room.md) && ) =default |
 | virtual | **[~Room](Classes/class_room.md#function-~room)**() =default<br>Виртуальный деструктор  |
 | | **[operator string](Classes/class_room.md#function-operator-string)**() const<br>Преобразование в строку  |
 | virtual string | **[to_string](Classes/class_room.md#function-to-string)**() const<br>Виртуальный метод преобразования в строку  |
@@ -96,6 +98,109 @@ Inherited by [FamilyRoom](Classes/class_family_room.md), [StandardRoom](Classes/
 | istream & | **[operator>>](Classes/class_room.md#friend-operator>>)**(istream & is, [Room](Classes/class_room.md) & r) <br>Оператор ввода  |
 
 ## Public Functions Documentation
+
+### function Room
+
+```cpp
+Room()
+```
+
+Конструктор по умолчанию 
+
+Создает комнату с параметрами:
+
+* Номер комнаты: 0
+* Цена за ночь: 0.0
+* Статус бронирования: нет 
+
+
+### function Room
+
+```cpp
+Room(
+    int room_number
+)
+```
+
+Конструктор преобразования 
+
+**Parameters**: 
+
+  * **room_number** Номер комнаты
+  * **room_number** Номер комнаты 
+
+
+
+Создает комнату с указанным номером и значениями по умолчанию:
+
+* Цена за ночь: 0.0
+* Статус бронирования: нет
+
+
+### function Room
+
+```cpp
+Room(
+    int room_number,
+    float price_per_night,
+    bool is_booked
+)
+```
+
+Основной конструктор с параметрами 
+
+**Parameters**: 
+
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+
+
+Конструктор с параметрами
+
+
+### function Room
+
+```cpp
+Room(
+    const Room & 
+) =default
+```
+
+Конструктор копирования 
+
+### function operator=
+
+```cpp
+Room & operator=(
+    const Room & 
+) =default
+```
+
+
+### function Room
+
+```cpp
+Room(
+    Room && other
+)
+```
+
+Конструктор перемещения 
+
+**Parameters**: 
+
+  * **other** Другой объект [Room](Classes/class_room.md)
+
+
+### function operator=
+
+```cpp
+Room & operator=(
+    Room && 
+) =default
+```
+
 
 ### function get_room_number
 
@@ -307,94 +412,6 @@ virtual void from_json(
 
 
 **Reimplemented by**: [FamilyRoom::from_json](Classes/class_family_room.md#function-from-json), [StandardRoom::from_json](Classes/class_standard_room.md#function-from-json), [Suite::from_json](Classes/class_suite.md#function-from-json)
-
-
-### function Room
-
-```cpp
-Room()
-```
-
-Конструктор по умолчанию 
-
-### function Room
-
-```cpp
-Room(
-    int room_number
-)
-```
-
-Конструктор преобразования (по номеру комнаты) 
-
-**Parameters**: 
-
-  * **room_number** Номер комнаты 
-
-
-Конструктор преобразования
-
-
-### function Room
-
-```cpp
-Room(
-    int room_number,
-    float price_per_night,
-    bool is_booked
-)
-```
-
-Конструктор с параметрами 
-
-**Parameters**: 
-
-  * **room_number** Номер комнаты 
-  * **price_per_night** Цена за ночь 
-  * **is_booked** Статус бронирования 
-
-
-### function Room
-
-```cpp
-Room(
-    const Room & 
-) =default
-```
-
-Конструктор копирования 
-
-### function operator=
-
-```cpp
-Room & operator=(
-    const Room & 
-) =default
-```
-
-
-### function Room
-
-```cpp
-Room(
-    Room && other
-)
-```
-
-Конструктор перемещения 
-
-**Parameters**: 
-
-  * **other** Другой объект [Room](Classes/class_room.md)
-
-
-### function operator=
-
-```cpp
-Room & operator=(
-    Room && 
-) =default
-```
 
 
 ### function ~Room
@@ -753,4 +770,4 @@ friend istream & operator>>(
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

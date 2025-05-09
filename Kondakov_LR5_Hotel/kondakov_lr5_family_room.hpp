@@ -101,7 +101,7 @@ inline bool FamilyRoom::input_toy_kit() {
  */
 template <char Delim>
 inline bool FamilyRoom::input_amenities() {
-    cout << "¬вод удобств осуществл€етс€ в одну строку через разделитель '" << Delim << "'." << endl << endl;
+    cout << "¬вод удобств осуществл€етс€ в одну строку через разделитель '" << Delim << "'." << endl;
     cout << "”добства: ";
     InputControl::DelimitedContainer<Delim, vector<string>&> dc(amenities);
     if (cin >> dc) { return false; }

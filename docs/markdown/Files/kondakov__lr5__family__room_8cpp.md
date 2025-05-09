@@ -174,6 +174,16 @@ FamilyRoom::FamilyRoom(int room_number, float price_per_night, bool is_booked,
     dc >> amenities;
 }
 
+FamilyRoom::FamilyRoom(int room_number, float price_per_night, bool is_booked,
+    float child_care_price, bool has_child_care,
+    int child_beds, bool toy_kit, vector<string> amenities)
+    : Room(room_number, price_per_night, is_booked),
+    ChildCare(child_care_price, has_child_care),
+    child_beds(child_beds),
+    toy_kit(toy_kit),
+    amenities(amenities) {
+}
+
 FamilyRoom::FamilyRoom(FamilyRoom&& other) noexcept
     : Room(move(other)),
       ChildCare(move(other)),
@@ -303,4 +313,4 @@ string FamilyRoom::to_string() const {
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

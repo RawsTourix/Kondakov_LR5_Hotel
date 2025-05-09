@@ -42,20 +42,28 @@ private:
     bool            jacuzzi;       
     vector<string>  amenities;     
 
-    const float SERVICE_PRICE = 5000.0f;  
+    const float SERVICE_PRICE = 5000.0f;      
     const string ROOM_TYPE = "Люкс комната";  
     const string JSON_TYPE = "Suite";         
 
 public:
+
     Suite();
+
     Suite(int room_number, bool room_service);
+
     Suite(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi);
+
     Suite(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi, string amenities);
+
     Suite(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi, vector<string> amenities);
+
     Suite(const Suite&) = default;
     Suite& operator=(const Suite&) = default;
+
     Suite(Suite&& other) noexcept;
     Suite& operator=(Suite&&) noexcept = default;
+
     virtual ~Suite() = default;
 
     inline bool get_room_service() const;
@@ -107,4 +115,4 @@ public:
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

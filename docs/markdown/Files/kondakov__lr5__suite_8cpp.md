@@ -142,7 +142,7 @@ istream & operator>>(
 
 Suite::Suite()
     : Room(),
-    room_service(true),
+    room_service(false),
     jacuzzi(false),
     amenities({ "Lux", "Room service" }) {
 }
@@ -275,4 +275,4 @@ string Suite::to_string() const {
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

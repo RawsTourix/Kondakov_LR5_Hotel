@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="27" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="27" bodyend="-1"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="33" column="13" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="33" bodyend="-1"/>
         <referencedby refid="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" compoundref="kondakov__lr5__methods_8hpp" startline="21" endline="23">RoomInfo</referencedby>
       </memberdef>
       <memberdef kind="variable" id="struct_methods_1_1_room_info_1aa285b755db3bbd7d7824d9bf7f3ef4ed" prot="public" static="no" mutable="no">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="28" column="16" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="28" bodyend="-1"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="34" column="16" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="34" bodyend="-1"/>
         <referencedby refid="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" compoundref="kondakov__lr5__methods_8hpp" startline="21" endline="23">RoomInfo</referencedby>
       </memberdef>
       <memberdef kind="variable" id="struct_methods_1_1_room_info_1a934968516c83d41fff7a39706b415297" prot="public" static="no" mutable="no">
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="29" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="29" bodyend="-1"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="35" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="35" bodyend="-1"/>
         <referencedby refid="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" compoundref="kondakov__lr5__methods_8hpp" startline="21" endline="23">RoomInfo</referencedby>
       </memberdef>
     </sectiondef>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="31" column="9"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="37" column="9"/>
       </memberdef>
       <memberdef kind="function" id="struct_methods_1_1_room_info_1a5cdb75b095aed2d3411e44964d958f51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -144,10 +144,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="39" column="9" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="21" bodyend="23"/>
-        <references refid="struct_methods_1_1_room_info_1aa285b755db3bbd7d7824d9bf7f3ef4ed" compoundref="kondakov__lr5__methods_8h" startline="28">full_name</references>
-        <references refid="struct_methods_1_1_room_info_1aa0da86b590c86e8fdedffc94c067ce2f" compoundref="kondakov__lr5__methods_8h" startline="27">number</references>
-        <references refid="struct_methods_1_1_room_info_1a934968516c83d41fff7a39706b415297" compoundref="kondakov__lr5__methods_8h" startline="29">room</references>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="45" column="9" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="21" bodyend="23"/>
+        <references refid="struct_methods_1_1_room_info_1aa285b755db3bbd7d7824d9bf7f3ef4ed" compoundref="kondakov__lr5__methods_8h" startline="34">full_name</references>
+        <references refid="struct_methods_1_1_room_info_1aa0da86b590c86e8fdedffc94c067ce2f" compoundref="kondakov__lr5__methods_8h" startline="33">number</references>
+        <references refid="struct_methods_1_1_room_info_1a934968516c83d41fff7a39706b415297" compoundref="kondakov__lr5__methods_8h" startline="35">room</references>
       </memberdef>
       <memberdef kind="function" id="struct_methods_1_1_room_info_1a092fbd35d2149cdd3d72e5ad3330cbc8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -162,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="44" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="44" bodyend="46"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="50" column="21" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="50" bodyend="52"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="friend">
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="48" column="16"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="54" column="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -194,7 +194,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="26" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="26" bodyend="49"/>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="32" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" bodystart="32" bodyend="55"/>
     <listofallmembers>
       <member refid="struct_methods_1_1_room_info_1aa285b755db3bbd7d7824d9bf7f3ef4ed" prot="public" virt="non-virtual"><scope>Methods::RoomInfo</scope><name>full_name</name></member>
       <member refid="struct_methods_1_1_room_info_1aa0da86b590c86e8fdedffc94c067ce2f" prot="public" virt="non-virtual"><scope>Methods::RoomInfo</scope><name>number</name></member>

@@ -34,6 +34,7 @@ summary: Заголовочный файл для управления ввод�
 #ifndef KONDAKOV_LR5_INPUT_CONTROL_H
 #define KONDAKOV_LR5_INPUT_CONTROL_H
 
+
 #include "kondakov_lr5_def.h"
 
 namespace InputControl {
@@ -72,6 +73,7 @@ namespace InputControl {
 
 #include "kondakov_lr5_input_control.hpp"
 #include "kondakov_lr5_container_operations.hpp"  
+ // Конец группы input_control
 
 #endif // KONDAKOV_LR5_INPUT_CONTROL_H
 ```
@@ -79,4 +81,4 @@ namespace InputControl {
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

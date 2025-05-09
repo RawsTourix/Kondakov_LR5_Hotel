@@ -68,8 +68,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="61" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="45" bodyend="49" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="61" declcolumn="5"/>
-        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="22" endline="90">main</referencedby>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="67" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="45" bodyend="49" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="67" declcolumn="5"/>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespace_methods_1a618de377d484a8d7a88b9f5e642518f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -154,9 +154,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="73" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="110" bodyend="131" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="73" declcolumn="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="79" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="110" bodyend="131" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="79" declcolumn="5"/>
         <references refid="kondakov__lr5__methods_8hpp_1a7dae85ea71697ef36e7ccf787788527d" compoundref="kondakov__lr5__methods_8hpp" startline="62" endline="95">get_room_edit_methods</references>
-        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="22" endline="90">main</referencedby>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespace_methods_1a51179a7d6e8fb0608922a0d00f102f11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -177,7 +177,6 @@
 <para>Изменение комнаты </para>
         </briefdescription>
         <detaileddescription>
-<para>Редактирование существующей комнаты</para>
 <para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>Container</parametername>
@@ -216,17 +215,17 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Функция-обработчик редактирования комнаты</para>
+<simplesect kind="return"><para>Функция-обработчик изменения комнаты</para>
 </simplesect>
 Третья функция меню. Создает динамическое меню для редактирования всех параметров выбранной комнаты с учетом ее конкретного типа </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="83" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="267" bodyend="289" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="83" declcolumn="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="89" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="267" bodyend="289" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="89" declcolumn="5"/>
         <references refid="kondakov__lr5__methods_8hpp_1ac05511f73c89a40979bc6c880ca896cb" compoundref="kondakov__lr5__methods_8hpp" startline="144" endline="254">add_edit_menu_items</references>
         <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
         <references refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">MenuObject::process</references>
-        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="22" endline="90">main</referencedby>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespace_methods_1a2e2cf54114db383e2d9b68bbfa3801d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -247,7 +246,6 @@
 <para>Удаление комнаты </para>
         </briefdescription>
         <detaileddescription>
-<para>Удаление комнаты из контейнера</para>
 <para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>Container</parametername>
@@ -292,10 +290,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="93" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="301" bodyend="328" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="93" declcolumn="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="99" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="301" bodyend="328" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="99" declcolumn="5"/>
         <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
         <references refid="namespace_input_control_1a5da443e5ec677b12d7b885fc46bed8bb" compoundref="kondakov__lr5__input__control_8cpp" startline="116" endline="129">InputControl::yes_or_no</references>
-        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="22" endline="90">main</referencedby>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespace_methods_1a5836b360a5e2d3b056046d4ce04cbca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -316,7 +314,7 @@
 <para>Сортировка комнат </para>
         </briefdescription>
         <detaileddescription>
-<para>Сортировка комнат по различным критериям</para>
+<para>Сортировка списка комнат</para>
 <para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>Container</parametername>
@@ -367,9 +365,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="103" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="344" bodyend="447" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="103" declcolumn="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="109" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="344" bodyend="447" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="109" declcolumn="5"/>
         <references refid="class_menu_object_1a73408405a4bd7e569997cd5dfd49d08e" compoundref="kondakov__lr5__menu__object_8hpp" startline="121" endline="164">MenuObject::process</references>
-        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="22" endline="90">main</referencedby>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespace_methods_1a7b9a83b3197577b58819541579717b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -390,7 +388,7 @@
 <para>Расчёт стоимости проживания </para>
         </briefdescription>
         <detaileddescription>
-<para>Расчет стоимости проживания в выбранной комнате</para>
+<para>Расчет стоимости проживания</para>
 <para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>Container</parametername>
@@ -435,11 +433,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="113" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="460" bodyend="474" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="113" declcolumn="5"/>
-        <references refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" compoundref="kondakov__lr5__room_8h" startline="42">Room::CURRENCY</references>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="119" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="460" bodyend="474" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="119" declcolumn="5"/>
+        <references refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" compoundref="kondakov__lr5__room_8h" startline="48">Room::CURRENCY</references>
         <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
         <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
-        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="22" endline="90">main</referencedby>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespace_methods_1a05bd78f9a1464f73347e56dda5f53c37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -460,7 +458,6 @@
 <para>Проверка валидности комнаты </para>
         </briefdescription>
         <detaileddescription>
-<para>Проверка валидности параметров комнаты</para>
 <para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>Container</parametername>
@@ -510,9 +507,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="123" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="489" bodyend="497" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="123" declcolumn="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="129" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="489" bodyend="497" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="129" declcolumn="5"/>
         <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
-        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="22" endline="90">main</referencedby>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -533,7 +530,6 @@
 <para>Дополнительные методы комнат </para>
         </briefdescription>
         <detaileddescription>
-<para>Дополнительные специфичные операции с комнатами</para>
 <para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>Container</parametername>
@@ -583,12 +579,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="133" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="512" bodyend="580" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="133" declcolumn="5"/>
-        <references refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" compoundref="kondakov__lr5__room_8h" startline="42">Room::CURRENCY</references>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="139" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="512" bodyend="580" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="139" declcolumn="5"/>
+        <references refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" compoundref="kondakov__lr5__room_8h" startline="48">Room::CURRENCY</references>
         <references refid="namespace_methods_1ab322c1df8c8e7b7a424478005a309c87" compoundref="kondakov__lr5__methods_8hpp" startline="597" endline="620">get_room_from_rooms_map</references>
         <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
         <references refid="namespace_input_control_1a5da443e5ec677b12d7b885fc46bed8bb" compoundref="kondakov__lr5__input__control_8cpp" startline="116" endline="129">InputControl::yes_or_no</references>
-        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="22" endline="90">main</referencedby>
+        <referencedby refid="kondakov__lr5__main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="kondakov__lr5__main_8cpp" startline="21" endline="89">main</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="user-defined">
@@ -697,7 +693,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="148" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="597" bodyend="620" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="148" declcolumn="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="154" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="597" bodyend="620" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="154" declcolumn="5"/>
         <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
         <referencedby refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" compoundref="kondakov__lr5__methods_8hpp" startline="512" endline="580">additional_room_methods</referencedby>
         <referencedby refid="namespace_methods_1a7b9a83b3197577b58819541579717b4c" compoundref="kondakov__lr5__methods_8hpp" startline="460" endline="474">calculate_total</referencedby>
@@ -769,7 +765,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="158" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="630" bodyend="636" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="158" declcolumn="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="164" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="630" bodyend="636" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="164" declcolumn="5"/>
         <referencedby refid="kondakov__lr5__methods_8hpp_1a7dae85ea71697ef36e7ccf787788527d" compoundref="kondakov__lr5__methods_8hpp" startline="62" endline="95">get_room_edit_methods</referencedby>
         <referencedby refid="namespace_methods_1abc76e3d214018960b9c50522c0769d75" compoundref="kondakov__lr5__methods_8hpp" startline="649" endline="654">room_in_rooms_by_room_number</referencedby>
       </memberdef>
@@ -834,7 +830,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>true если комната существует</para>
+<simplesect kind="return"><para>true если комната существует, иначе false</para>
 </simplesect>
 <parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
@@ -877,7 +873,7 @@
         <inbodydescription>
 <para>&lt; Получение списка номеров комнат</para>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="171" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="649" bodyend="654" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="171" declcolumn="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="177" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.hpp" bodystart="649" bodyend="654" declfile="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" declline="177" declcolumn="5"/>
         <references refid="namespace_methods_1a54e67b3d003bb3031c74b7d803e12f54" compoundref="kondakov__lr5__methods_8hpp" startline="630" endline="636">get_room_numbers</references>
       </memberdef>
     </sectiondef>
@@ -886,6 +882,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="16" column="1"/>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_methods.h" line="22" column="1"/>
   </compounddef>
 </doxygen>

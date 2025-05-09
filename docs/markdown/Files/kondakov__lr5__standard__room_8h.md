@@ -46,6 +46,7 @@ private:
     const string JSON_TYPE = "Standard";             
 
 public:
+
     StandardRoom();
 
     StandardRoom(int room_number, int bed_count);
@@ -61,7 +62,7 @@ public:
 
     StandardRoom(StandardRoom&& other) noexcept;
     StandardRoom& operator=(StandardRoom&&) noexcept = default;
-
+    
     virtual ~StandardRoom() = default;
 
     inline int get_bed_count() const;
@@ -113,4 +114,4 @@ public:
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

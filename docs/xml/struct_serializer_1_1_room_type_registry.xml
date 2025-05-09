@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="28" column="15" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" bodystart="28" bodyend="-1"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="34" column="15" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" bodystart="34" bodyend="-1"/>
         <referencedby refid="struct_serializer_1_1_room_type_registry_1a942bb68c3c530fed0109960fe257352a" compoundref="kondakov__lr5__serializer_8cpp" startline="16" endline="20">RoomTypeRegistry</referencedby>
       </memberdef>
     </sectiondef>
@@ -38,8 +38,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="34" column="9" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.cpp" bodystart="16" bodyend="20"/>
-        <references refid="struct_serializer_1_1_room_type_registry_1a7dcbb2dc21617b8304fcc615fd496db1" compoundref="kondakov__lr5__serializer_8h" startline="28">creators</references>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="40" column="9" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.cpp" bodystart="16" bodyend="20"/>
+        <references refid="struct_serializer_1_1_room_type_registry_1a7dcbb2dc21617b8304fcc615fd496db1" compoundref="kondakov__lr5__serializer_8h" startline="34">creators</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -47,7 +47,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="27" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" bodystart="27" bodyend="35"/>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" line="33" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_serializer.h" bodystart="33" bodyend="41"/>
     <listofallmembers>
       <member refid="struct_serializer_1_1_room_type_registry_1a7dcbb2dc21617b8304fcc615fd496db1" prot="public" virt="non-virtual"><scope>Serializer::RoomTypeRegistry</scope><name>creators</name></member>
       <member refid="struct_serializer_1_1_room_type_registry_1a942bb68c3c530fed0109960fe257352a" prot="public" virt="non-virtual"><scope>Serializer::RoomTypeRegistry</scope><name>RoomTypeRegistry</name></member>

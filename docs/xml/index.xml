@@ -8,7 +8,6 @@
     <member refid="class_child_care_1a41c5037674193f91f93145b66e1f5b65" kind="function"><name>operator=</name></member>
     <member refid="class_child_care_1a771d0c62bd7c363fce0a95ecbcc22437" kind="function"><name>ChildCare</name></member>
     <member refid="class_child_care_1aa81667a6e11f8cfbe7a68d33051a2f88" kind="function"><name>operator=</name></member>
-    <member refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63" kind="function"><name>~ChildCare</name></member>
     <member refid="class_child_care_1a3b70d8d9825589f117fc101b5a561eb3" kind="function"><name>get_child_care_price</name></member>
     <member refid="class_child_care_1ad6ec7a48b59727eaadbc0ea34d9957b2" kind="function"><name>get_has_child_care</name></member>
     <member refid="class_child_care_1a377685049ef6ffb9b33f94eea5d86256" kind="function"><name>set_child_care_price</name></member>
@@ -22,6 +21,7 @@
     <member refid="class_child_care_1ae7600dd47859718da86c03d7f41be31b" kind="variable"><name>CURRENCY</name></member>
     <member refid="class_child_care_1a95d73362a889097544af48252fe35a4d" kind="function"><name>print</name></member>
     <member refid="class_child_care_1a157a0313cef3440dbf065d975c0cb443" kind="function"><name>input</name></member>
+    <member refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63" kind="function"><name>~ChildCare</name></member>
     <member refid="class_child_care_1a779d4fd7448a353a992f5910d4e5704d" kind="function"><name>operator string</name></member>
     <member refid="class_child_care_1a5996576d0d4943533c78b3edb5290d14" kind="function"><name>to_string</name></member>
   </compound>
@@ -36,11 +36,11 @@
     <member refid="class_family_room_1a3f59431db365d7048ecced77d637aee6" kind="function"><name>FamilyRoom</name></member>
     <member refid="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" kind="function"><name>FamilyRoom</name></member>
     <member refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" kind="function"><name>FamilyRoom</name></member>
+    <member refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" kind="function"><name>FamilyRoom</name></member>
     <member refid="class_family_room_1ac559badac05d424145fdfed78e4b68a5" kind="function"><name>FamilyRoom</name></member>
     <member refid="class_family_room_1a3b1efc521f3769b05930d2d1e8d4846b" kind="function"><name>operator=</name></member>
     <member refid="class_family_room_1adbf8949f46b23f3c2480c950f4ba77e7" kind="function"><name>FamilyRoom</name></member>
     <member refid="class_family_room_1aef3843f4d47b777ca5a75ccd16ed0969" kind="function"><name>operator=</name></member>
-    <member refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac" kind="function"><name>~FamilyRoom</name></member>
     <member refid="class_family_room_1aa856fd908a82a2bae60b32d70bf46a6c" kind="function"><name>get_child_beds</name></member>
     <member refid="class_family_room_1a284d071e4021ae51ee81959ee34daa24" kind="function"><name>get_toy_kit</name></member>
     <member refid="class_family_room_1aeb63ccdccaa93d69b6086bc264e877b6" kind="function"><name>get_amenities</name></member>
@@ -85,6 +85,7 @@
     <member refid="class_family_room_1a3fee4b37e62ed942bd29c61eb7c523d4" kind="variable"><name>amenities</name></member>
     <member refid="class_family_room_1a0d92f0e31fde7b375c601a0fe9be9086" kind="variable"><name>ROOM_TYPE</name></member>
     <member refid="class_family_room_1a7772a066d478d4b60867875884d1c28d" kind="variable"><name>JSON_TYPE</name></member>
+    <member refid="class_family_room_1a21a282df8f7b25ede341c5b3ff75f3ac" kind="function"><name>~FamilyRoom</name></member>
   </compound>
   <compound refid="class_menu_object" kind="class"><name>MenuObject</name>
     <member refid="class_menu_object_1ae0d6d87d7380e0c21ad8f91c9f264fa3" kind="function"><name>MenuObject</name></member>
@@ -98,7 +99,6 @@
     <member refid="class_menu_object_1a5b44b22cc8ccf70e5f67b2705c9c5629" kind="function"><name>operator=</name></member>
     <member refid="class_menu_object_1a111fe1da7199d2ac2231ec3fdbf03e3b" kind="function"><name>MenuObject</name></member>
     <member refid="class_menu_object_1a3f9eec2bf5d769342dfe484f42650435" kind="function"><name>operator=</name></member>
-    <member refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1" kind="function"><name>~MenuObject</name></member>
     <member refid="class_menu_object_1a24f8afbc68fb4cf9c07c096d610ff9ea" kind="function"><name>show</name></member>
     <member refid="class_menu_object_1a946403b51b6cdca6436a52e370def59f" kind="function"><name>act</name></member>
     <member refid="class_menu_object_1a0debe328757d5357858d882b400c0c36" kind="function"><name>get_label</name></member>
@@ -114,8 +114,16 @@
     <member refid="class_menu_object_1a64bb0e708f01a31c2c47b1b32506504a" kind="variable"><name>submenu</name></member>
     <member refid="class_menu_object_1a05ce72566d06c5f321f7cf4c8d975c6f" kind="variable"><name>one_off_menu_inclusion</name></member>
     <member refid="class_menu_object_1a964f07536c901358392d30188a5fb322" kind="function"><name>MenuObject</name></member>
+    <member refid="class_menu_object_1a735690ac6e9a08bdc2bda4689d54a4b1" kind="function"><name>~MenuObject</name></member>
   </compound>
   <compound refid="class_room" kind="class"><name>Room</name>
+    <member refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a85a05efbf9e7aa79f9ea8bd009f03855" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a5b964942d5eb880206cc5bc93ccd9045" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a1cda0e12564c8fedcba0a4fa18ede003" kind="function"><name>operator=</name></member>
+    <member refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" kind="function"><name>Room</name></member>
+    <member refid="class_room_1a4fd1667324eb508ecd1981481a37fdd0" kind="function"><name>operator=</name></member>
     <member refid="class_room_1a8da5257d15eb131e471b59ba753dcedb" kind="function"><name>get_room_number</name></member>
     <member refid="class_room_1a828dede24bf20f003892f71c9b08d2e9" kind="function"><name>get_price_per_night</name></member>
     <member refid="class_room_1a263ae7170c7b5b3df8065a3605d39f28" kind="function"><name>get_is_booked</name></member>
@@ -160,13 +168,6 @@
     <member refid="class_room_1ada5e1a0d1221c7ec5dab01c330db4d7a" kind="variable"><name>CURRENCY</name></member>
     <member refid="class_room_1af185fec4d7038c4640e2618817d41d95" kind="function"><name>print</name></member>
     <member refid="class_room_1a3771355e58c0cac65cb836f72b7da113" kind="function"><name>input</name></member>
-    <member refid="class_room_1ac6ef93a7d9c3e1d624e025058d5f16ff" kind="function"><name>Room</name></member>
-    <member refid="class_room_1a85a05efbf9e7aa79f9ea8bd009f03855" kind="function"><name>Room</name></member>
-    <member refid="class_room_1a1e34f7ecec4b9c6ef694227b38639ba1" kind="function"><name>Room</name></member>
-    <member refid="class_room_1a5b964942d5eb880206cc5bc93ccd9045" kind="function"><name>Room</name></member>
-    <member refid="class_room_1a1cda0e12564c8fedcba0a4fa18ede003" kind="function"><name>operator=</name></member>
-    <member refid="class_room_1aef15fbcb799551fd9e3008fe51266b01" kind="function"><name>Room</name></member>
-    <member refid="class_room_1a4fd1667324eb508ecd1981481a37fdd0" kind="function"><name>operator=</name></member>
     <member refid="class_room_1a508697104b1bdce37058c029ea5d7b2b" kind="function"><name>~Room</name></member>
     <member refid="class_room_1aff42dadd005f91b3feed3dc2dfb41229" kind="function"><name>operator string</name></member>
     <member refid="class_room_1a8587d8bc9a7bfbadbe83fbf969c9b370" kind="function"><name>to_string</name></member>
@@ -186,6 +187,15 @@
     <member refid="struct_serializer_1_1_room_type_registry_1a942bb68c3c530fed0109960fe257352a" kind="function"><name>RoomTypeRegistry</name></member>
   </compound>
   <compound refid="class_standard_room" kind="class"><name>StandardRoom</name>
+    <member refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1ac4e5998244608a81fb3c43d0e726f516" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a854c437feec24655a64310a7adce06b0" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1af70fc0ba78a874aaf1cb87d04c6242ac" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a0320959fc237ea0da3d057fb1d9de63d" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a52219ce11a150a1c428a674d7085f5fb" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a5ba7f2a70d521545aed28c3374a814dd" kind="function"><name>operator=</name></member>
+    <member refid="class_standard_room_1a544e0f476c31c4e204704e79a3089a4e" kind="function"><name>StandardRoom</name></member>
+    <member refid="class_standard_room_1a664e24a4b27cb20b7cefd2c56045681a" kind="function"><name>operator=</name></member>
     <member refid="class_standard_room_1a1e09746ff2f02ce0c634da7230f79b8f" kind="function"><name>get_bed_count</name></member>
     <member refid="class_standard_room_1ae8ea3d346b46792c51d22a6423b255d1" kind="function"><name>get_has_tv</name></member>
     <member refid="class_standard_room_1a9138d117561e302bf0d1dadde1f7401c" kind="function"><name>get_amenities</name></member>
@@ -218,15 +228,6 @@
     <member refid="class_standard_room_1a87f2a0c22eef467e47044a572e948a12" kind="variable"><name>amenities</name></member>
     <member refid="class_standard_room_1a000acd331653ce32200fb7740cf3ab04" kind="variable"><name>ROOM_TYPE</name></member>
     <member refid="class_standard_room_1a8b5e17f342fefd745b88819481a30e65" kind="variable"><name>JSON_TYPE</name></member>
-    <member refid="class_standard_room_1a32dadc773859aac18048b08855c26377" kind="function"><name>StandardRoom</name></member>
-    <member refid="class_standard_room_1ac4e5998244608a81fb3c43d0e726f516" kind="function"><name>StandardRoom</name></member>
-    <member refid="class_standard_room_1a854c437feec24655a64310a7adce06b0" kind="function"><name>StandardRoom</name></member>
-    <member refid="class_standard_room_1af70fc0ba78a874aaf1cb87d04c6242ac" kind="function"><name>StandardRoom</name></member>
-    <member refid="class_standard_room_1a0320959fc237ea0da3d057fb1d9de63d" kind="function"><name>StandardRoom</name></member>
-    <member refid="class_standard_room_1a52219ce11a150a1c428a674d7085f5fb" kind="function"><name>StandardRoom</name></member>
-    <member refid="class_standard_room_1a5ba7f2a70d521545aed28c3374a814dd" kind="function"><name>operator=</name></member>
-    <member refid="class_standard_room_1a544e0f476c31c4e204704e79a3089a4e" kind="function"><name>StandardRoom</name></member>
-    <member refid="class_standard_room_1a664e24a4b27cb20b7cefd2c56045681a" kind="function"><name>operator=</name></member>
     <member refid="class_standard_room_1a2e46e90889222820009f40e6e231f32d" kind="function"><name>~StandardRoom</name></member>
     <member refid="class_standard_room_1ab7c3a25d3d39eed18ac42c65c5cd9ed1" kind="function"><name>exstra_bed</name></member>
     <member refid="class_standard_room_1a23c37c9cd1299d7d83a11ba37ed64fd0" kind="function"><name>operator string</name></member>
@@ -241,7 +242,6 @@
     <member refid="class_suite_1aa363bed00f99871e569ee8950fd8bb73" kind="function"><name>operator=</name></member>
     <member refid="class_suite_1aea409d24c05e53ba1d4c83a63da708c5" kind="function"><name>Suite</name></member>
     <member refid="class_suite_1afee1e27929a9cc4354768862d47f11e0" kind="function"><name>operator=</name></member>
-    <member refid="class_suite_1ad768458b39f93edf4554a8fb45c960d6" kind="function"><name>~Suite</name></member>
     <member refid="class_suite_1ac8c879afd32bdc582b945f7f541bd2ca" kind="function"><name>get_room_service</name></member>
     <member refid="class_suite_1a5d9fd1e7fbc3b7cd38b165cb075f2b7c" kind="function"><name>get_jacuzzi</name></member>
     <member refid="class_suite_1aedf54f1bdfbadeb7d5e0e88d17e56e50" kind="function"><name>get_amenities</name></member>
@@ -275,6 +275,7 @@
     <member refid="class_suite_1ad7684f0c399f61ca5ca1d3010cca0799" kind="variable"><name>SERVICE_PRICE</name></member>
     <member refid="class_suite_1a8b18977089a6888c3dbb5ce822fd3c38" kind="variable"><name>ROOM_TYPE</name></member>
     <member refid="class_suite_1a7d8254b4fcd73eff50465b103453af04" kind="variable"><name>JSON_TYPE</name></member>
+    <member refid="class_suite_1ad768458b39f93edf4554a8fb45c960d6" kind="function"><name>~Suite</name></member>
     <member refid="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" kind="function"><name>order_champagne</name></member>
     <member refid="class_suite_1afff31f8ff7b21a0174f304572c1b073f" kind="function"><name>operator string</name></member>
   </compound>
@@ -330,7 +331,6 @@
     <member refid="kondakov__lr5__container__operations_8hpp_1a95226ada92c9fc69c4d5d6771165dcb3" kind="function"><name>operator&gt;&gt;</name></member>
   </compound>
   <compound refid="kondakov__lr5__def_8h" kind="file"><name>kondakov_lr5_def.h</name>
-    <member refid="kondakov__lr5__def_8h_1a814da1a54df2e37b98f7cabbada251bd" kind="define"><name>KONDAKOV_LR5_DEF_H</name></member>
     <member refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
   </compound>
   <compound refid="kondakov__lr5__family__room_8cpp" kind="file"><name>kondakov_lr5_family_room.cpp</name>
@@ -431,6 +431,16 @@
   </compound>
   <compound refid="group__core__definitions" kind="group"><name>core_definitions</name>
     <member refid="group__core__definitions_1gab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
+  </compound>
+  <compound refid="group__input__control" kind="group"><name>input_control</name>
+  </compound>
+  <compound refid="group__menu__system" kind="group"><name>menu_system</name>
+  </compound>
+  <compound refid="group__room__operations" kind="group"><name>room_operations</name>
+  </compound>
+  <compound refid="group__room__hierarchy" kind="group"><name>room_hierarchy</name>
+  </compound>
+  <compound refid="group__serialization" kind="group"><name>serialization</name>
   </compound>
   <compound refid="dir_e09cad5e6c61f9e11f54ff01fcc27b07" kind="dir"><name>Kondakov_LR5_Hotel</name>
   </compound>

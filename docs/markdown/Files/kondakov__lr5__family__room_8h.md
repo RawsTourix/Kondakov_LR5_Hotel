@@ -47,18 +47,29 @@ private:
     const string JSON_TYPE = "Family";            
 
 public:
+
     FamilyRoom();
+
     FamilyRoom(int room_number, int child_beds);
-    FamilyRoom(int room_number, float price_per_night, bool is_booked, 
-              float child_care_price, bool has_child_care, 
-              int child_beds, bool toy_kit);
+
     FamilyRoom(int room_number, float price_per_night, bool is_booked,
-              float child_care_price, bool has_child_care,
-              int child_beds, bool toy_kit, string amenities);
+        float child_care_price, bool has_child_care,
+        int child_beds, bool toy_kit);
+
+    FamilyRoom(int room_number, float price_per_night, bool is_booked,
+        float child_care_price, bool has_child_care,
+        int child_beds, bool toy_kit, string amenities);
+
+    FamilyRoom(int room_number, float price_per_night, bool is_booked,
+        float child_care_price, bool has_child_care,
+        int child_beds, bool toy_kit, vector<string> amenities);
+
     FamilyRoom(const FamilyRoom&) = default;
     FamilyRoom& operator=(const FamilyRoom&) = default;
+
     FamilyRoom(FamilyRoom&& other) noexcept;
     FamilyRoom& operator=(FamilyRoom&&) noexcept = default;
+
     virtual ~FamilyRoom() = default;
 
     inline int get_child_beds() const;
@@ -127,4 +138,4 @@ public:
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

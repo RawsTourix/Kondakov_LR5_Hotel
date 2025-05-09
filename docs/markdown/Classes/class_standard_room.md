@@ -19,6 +19,15 @@ Inherits from [Room](Classes/class_room.md)
 
 |                | Name           |
 | -------------- | -------------- |
+| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**()<br>Конструктор по умолчанию  |
+| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(int room_number, int bed_count)<br>Конструктор преобразования  |
+| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(int room_number, float price_per_night, bool is_booked, int bed_count, bool has_tv)<br>Конструктор с удобствами по умолчанию  |
+| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(int room_number, float price_per_night, bool is_booked, int bed_count, bool has_tv, string amenities)<br>Конструктор с параметрами (удобства строка)  |
+| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(int room_number, float price_per_night, bool is_booked, int bed_count, bool has_tv, vector< string > amenities)<br>Конструктор с параметрами (удобства вектор)  |
+| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(const [StandardRoom](Classes/class_standard_room.md) & ) =default<br>Конструктор копирования  |
+| [StandardRoom](Classes/class_standard_room.md) & | **[operator=](Classes/class_standard_room.md#function-operator=)**(const [StandardRoom](Classes/class_standard_room.md) & ) =default |
+| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**([StandardRoom](Classes/class_standard_room.md) && other)<br>Конструктор перемещения  |
+| [StandardRoom](Classes/class_standard_room.md) & | **[operator=](Classes/class_standard_room.md#function-operator=)**([StandardRoom](Classes/class_standard_room.md) && ) =default |
 | int | **[get_bed_count](Classes/class_standard_room.md#function-get-bed-count)**() const<br>Получить количество кроватей  |
 | bool | **[get_has_tv](Classes/class_standard_room.md#function-get-has-tv)**() const<br>Получить наличие телевизора  |
 | virtual const vector< string > & | **[get_amenities](Classes/class_standard_room.md#function-get-amenities)**() const override<br>Получить список удобств  |
@@ -38,15 +47,6 @@ Inherits from [Room](Classes/class_room.md)
 | virtual void | **[print](Classes/class_standard_room.md#function-print)**() const override<br>Вывод информации о номере  |
 | virtual bool | **[input](Classes/class_standard_room.md#function-input)**() override<br>Ввод информации о номере  |
 | virtual string | **[to_string](Classes/class_standard_room.md#function-to-string)**() const override<br>Преобразование в строку  |
-| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**()<br>Конструктор по умолчанию  |
-| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(int room_number, int bed_count)<br>Конструктор преобразования  |
-| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(int room_number, float price_per_night, bool is_booked, int bed_count, bool has_tv)<br>Конструктор с удобствами по умолчанию  |
-| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(int room_number, float price_per_night, bool is_booked, int bed_count, bool has_tv, string amenities)<br>Конструктор с параметрами (удобства строка)  |
-| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(int room_number, float price_per_night, bool is_booked, int bed_count, bool has_tv, vector< string > amenities)<br>Конструктор с параметрами (удобства вектор)  |
-| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**(const [StandardRoom](Classes/class_standard_room.md) & ) =default<br>Конструктор копирования  |
-| [StandardRoom](Classes/class_standard_room.md) & | **[operator=](Classes/class_standard_room.md#function-operator=)**(const [StandardRoom](Classes/class_standard_room.md) & ) =default |
-| | **[StandardRoom](Classes/class_standard_room.md#function-standardroom)**([StandardRoom](Classes/class_standard_room.md) && other)<br>Конструктор перемещения  |
-| [StandardRoom](Classes/class_standard_room.md) & | **[operator=](Classes/class_standard_room.md#function-operator=)**([StandardRoom](Classes/class_standard_room.md) && ) =default |
 | virtual | **[~StandardRoom](Classes/class_standard_room.md#function-~standardroom)**() =default<br>Деструктор  |
 | void | **[exstra_bed](Classes/class_standard_room.md#function-exstra-bed)**()<br>Добавить дополнительную кровать (+20% к цене)  |
 | | **[operator string](Classes/class_standard_room.md#function-operator-string)**() const<br>Преобразование в строку  |
@@ -70,6 +70,11 @@ Inherits from [Room](Classes/class_room.md)
 
 |                | Name           |
 | -------------- | -------------- |
+| | **[Room](Classes/class_room.md#function-room)**()<br>Конструктор по умолчанию  |
+| | **[Room](Classes/class_room.md#function-room)**(int room_number)<br>Конструктор преобразования  |
+| | **[Room](Classes/class_room.md#function-room)**(int room_number, float price_per_night, bool is_booked)<br>Основной конструктор с параметрами  |
+| | **[Room](Classes/class_room.md#function-room)**(const [Room](Classes/class_room.md) & ) =default<br>Конструктор копирования  |
+| | **[Room](Classes/class_room.md#function-room)**([Room](Classes/class_room.md) && other)<br>Конструктор перемещения  |
 | int | **[get_room_number](Classes/class_room.md#function-get-room-number)**() const<br>Получить номер комнаты  |
 | float | **[get_price_per_night](Classes/class_room.md#function-get-price-per-night)**() const<br>Получить цену за ночь  |
 | bool | **[get_is_booked](Classes/class_room.md#function-get-is-booked)**() const<br>Получить статус бронирования  |
@@ -80,11 +85,6 @@ Inherits from [Room](Classes/class_room.md)
 | template <typename Container \> <br>enable_if_t< is_same_v< typename Container::value_type, int >, bool > | **[input_room_number](Classes/class_room.md#function-input-room-number)**(const Container & room_numbers)<br>Ввод номера комнаты с проверкой уникальности  |
 | bool | **[input_price_per_night](Classes/class_room.md#function-input-price-per-night)**()<br>Ввод цены за ночь  |
 | bool | **[input_is_booked](Classes/class_room.md#function-input-is-booked)**()<br>Ввод статуса бронирования  |
-| | **[Room](Classes/class_room.md#function-room)**()<br>Конструктор по умолчанию  |
-| | **[Room](Classes/class_room.md#function-room)**(int room_number)<br>Конструктор преобразования (по номеру комнаты)  |
-| | **[Room](Classes/class_room.md#function-room)**(int room_number, float price_per_night, bool is_booked)<br>Конструктор с параметрами  |
-| | **[Room](Classes/class_room.md#function-room)**(const [Room](Classes/class_room.md) & ) =default<br>Конструктор копирования  |
-| | **[Room](Classes/class_room.md#function-room)**([Room](Classes/class_room.md) && other)<br>Конструктор перемещения  |
 | virtual | **[~Room](Classes/class_room.md#function-~room)**() =default<br>Виртуальный деструктор  |
 
 **Public Attributes inherited from [Room](Classes/class_room.md)**
@@ -126,6 +126,183 @@ Inherits from [Room](Classes/class_room.md)
 
 
 ## Public Functions Documentation
+
+### function StandardRoom
+
+```cpp
+StandardRoom()
+```
+
+Конструктор по умолчанию 
+
+Создает стандартный номер с параметрами:
+
+* Номер комнаты: 0
+* Цена за ночь: 0.0
+* Статус бронирования: нет
+* Количество кроватей: 1
+* Наличие телевизора: нет
+* Список удобств: "Wi-Fi", "Air condition" 
+
+
+### function StandardRoom
+
+```cpp
+StandardRoom(
+    int room_number,
+    int bed_count
+)
+```
+
+Конструктор преобразования 
+
+**Parameters**: 
+
+  * **room_number** Номер комнаты 
+  * **bed_count** Количество кроватей
+  * **room_number** Номер комнаты 
+  * **bed_count** Количество кроватей 
+
+
+
+Создает стандартный номер с указанными параметрами и значениями по умолчанию:
+
+* Цена за ночь: 0.0
+* Статус бронирования: нет
+* Наличие телевизора: нет
+* Список удобств: "Wi-Fi", "Air condition"
+
+
+### function StandardRoom
+
+```cpp
+StandardRoom(
+    int room_number,
+    float price_per_night,
+    bool is_booked,
+    int bed_count,
+    bool has_tv
+)
+```
+
+Конструктор с удобствами по умолчанию 
+
+**Parameters**: 
+
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **bed_count** Количество кроватей 
+  * **has_tv** Наличие телевизора
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **bed_count** Количество кроватей 
+  * **has_tv** Наличие телевизора 
+
+
+
+Создает стандартный номер с указанными параметрами и удобствами по умолчанию: "Wi-Fi", "Air condition"
+
+
+### function StandardRoom
+
+```cpp
+StandardRoom(
+    int room_number,
+    float price_per_night,
+    bool is_booked,
+    int bed_count,
+    bool has_tv,
+    string amenities
+)
+```
+
+Конструктор с параметрами (удобства строка) 
+
+**Parameters**: 
+
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **bed_count** Количество кроватей 
+  * **has_tv** Наличие телевизора 
+  * **amenities** Удобства (строка, разделитель - запятая)
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **bed_count** Количество кроватей 
+  * **has_tv** Наличие телевизора 
+  * **amenities** Удобства (строка с разделителями) 
+
+
+### function StandardRoom
+
+```cpp
+StandardRoom(
+    int room_number,
+    float price_per_night,
+    bool is_booked,
+    int bed_count,
+    bool has_tv,
+    vector< string > amenities
+)
+```
+
+Конструктор с параметрами (удобства вектор) 
+
+**Parameters**: 
+
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **bed_count** Количество кроватей 
+  * **has_tv** Наличие телевизора 
+  * **amenities** Удобства (вектор строк) 
+
+
+### function StandardRoom
+
+```cpp
+StandardRoom(
+    const StandardRoom & 
+) =default
+```
+
+Конструктор копирования 
+
+### function operator=
+
+```cpp
+StandardRoom & operator=(
+    const StandardRoom & 
+) =default
+```
+
+
+### function StandardRoom
+
+```cpp
+StandardRoom(
+    StandardRoom && other
+)
+```
+
+Конструктор перемещения 
+
+**Parameters**: 
+
+  * **other** Другой объект [StandardRoom](Classes/class_standard_room.md)
+
+
+### function operator=
+
+```cpp
+StandardRoom & operator=(
+    StandardRoom && 
+) =default
+```
+
 
 ### function get_bed_count
 
@@ -381,147 +558,6 @@ virtual string to_string() const override
 **Reimplements**: [Room::to_string](Classes/class_room.md#function-to-string)
 
 
-### function StandardRoom
-
-```cpp
-StandardRoom()
-```
-
-Конструктор по умолчанию 
-
-### function StandardRoom
-
-```cpp
-StandardRoom(
-    int room_number,
-    int bed_count
-)
-```
-
-Конструктор преобразования 
-
-**Parameters**: 
-
-  * **room_number** Номер комнаты 
-  * **bed_count** Количество кроватей 
-
-
-### function StandardRoom
-
-```cpp
-StandardRoom(
-    int room_number,
-    float price_per_night,
-    bool is_booked,
-    int bed_count,
-    bool has_tv
-)
-```
-
-Конструктор с удобствами по умолчанию 
-
-**Parameters**: 
-
-  * **room_number** Номер комнаты 
-  * **price_per_night** Цена за ночь 
-  * **is_booked** Статус бронирования 
-  * **bed_count** Количество кроватей 
-  * **has_tv** Наличие телевизора 
-
-
-### function StandardRoom
-
-```cpp
-StandardRoom(
-    int room_number,
-    float price_per_night,
-    bool is_booked,
-    int bed_count,
-    bool has_tv,
-    string amenities
-)
-```
-
-Конструктор с параметрами (удобства строка) 
-
-**Parameters**: 
-
-  * **room_number** Номер комнаты 
-  * **price_per_night** Цена за ночь 
-  * **is_booked** Статус бронирования 
-  * **bed_count** Количество кроватей 
-  * **has_tv** Наличие телевизора 
-  * **amenities** Удобства (строка с разделителями) 
-
-
-### function StandardRoom
-
-```cpp
-StandardRoom(
-    int room_number,
-    float price_per_night,
-    bool is_booked,
-    int bed_count,
-    bool has_tv,
-    vector< string > amenities
-)
-```
-
-Конструктор с параметрами (удобства вектор) 
-
-**Parameters**: 
-
-  * **room_number** Номер комнаты 
-  * **price_per_night** Цена за ночь 
-  * **is_booked** Статус бронирования 
-  * **bed_count** Количество кроватей 
-  * **has_tv** Наличие телевизора 
-  * **amenities** Удобства (вектор строк) 
-
-
-### function StandardRoom
-
-```cpp
-StandardRoom(
-    const StandardRoom & 
-) =default
-```
-
-Конструктор копирования 
-
-### function operator=
-
-```cpp
-StandardRoom & operator=(
-    const StandardRoom & 
-) =default
-```
-
-
-### function StandardRoom
-
-```cpp
-StandardRoom(
-    StandardRoom && other
-)
-```
-
-Конструктор перемещения 
-
-**Parameters**: 
-
-  * **other** Другой объект [StandardRoom](Classes/class_standard_room.md)
-
-
-### function operator=
-
-```cpp
-StandardRoom & operator=(
-    StandardRoom && 
-) =default
-```
-
-
 ### function ~StandardRoom
 
 ```cpp
@@ -661,4 +697,4 @@ friend istream & operator>>(
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

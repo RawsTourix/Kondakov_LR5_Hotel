@@ -254,10 +254,10 @@ add_edit_menu_items(vector<MenuObject>& menu, RoomPtr room, const Container& roo
 }
 
 /**
- * @brief Редактирование существующей комнаты
+ * @brief Изменение комнаты
  * @tparam Container Тип контейнера с комнатами
  * @param rooms Контейнер с комнатами
- * @return Функция-обработчик редактирования комнаты
+ * @return Функция-обработчик изменения комнаты
  * @details Третья функция меню. Создает динамическое
  * меню для редактирования всех параметров выбранной
  * комнаты с учетом ее конкретного типа
@@ -289,7 +289,7 @@ Methods::edit_room(Container& rooms) {
 }
 
 /**
- * @brief Удаление комнаты из контейнера
+ * @brief Удаление комнаты
  * @tparam Container Тип контейнера с комнатами
  * @param rooms Контейнер с комнатами
  * @return Функция-обработчик удаления комнаты
@@ -328,7 +328,7 @@ Methods::delete_room(Container& rooms) {
 }
 
 /**
- * @brief Сортировка комнат по различным критериям
+ * @brief Сортировка списка комнат
  * @tparam Container Тип контейнера с комнатами
  * @param rooms Контейнер с комнатами
  * @return Функция-обработчик сортировки
@@ -447,7 +447,7 @@ Methods::sort_rooms(Container& rooms) {
 }
 
 /**
- * @brief Расчет стоимости проживания в выбранной комнате
+ * @brief Расчет стоимости проживания
  * @tparam Container Тип контейнера с комнатами
  * @param rooms Контейнер с комнатами
  * @return Функция-обработчик расчета стоимости
@@ -465,7 +465,7 @@ Methods::calculate_total(Container& rooms) {
 
         // Ввод количества ночей и вычисление стоимости проживания
         int night_count;
-        if (InputControl::input(night_count, "Количество ночей: ", 0, 365)) { return; }
+        if (InputControl::input(night_count, "Количество ночей: ", 1, 365)) { return; }
         cout << endl << endl << 
             "Стоимость проживания в [" << room->get_full_name() << "]." << endl << endl <<
             "Количество ночей: " << night_count << endl << endl <<
@@ -474,7 +474,7 @@ Methods::calculate_total(Container& rooms) {
 }
 
 /**
- * @brief Проверка валидности параметров комнаты
+ * @brief Проверка валидности комнаты
  * @tparam Container Тип контейнера с комнатами
  * @param rooms Контейнер с комнатами
  * @return Функция-обработчик проверки валидности
@@ -497,14 +497,14 @@ Methods::validate_room(Container& rooms) {
 }
 
 /**
- * @brief Дополнительные специфичные операции с комнатами
+ * @brief Дополнительные методы комнат
  * @tparam Container Тип контейнера с комнатами
  * @param rooms Контейнер с комнатами
  * @return Функция-обработчик дополнительных операций
  * @details Восьмая функция меню.
  * Предоставляет доступ к уникальным функциям каждого типа комнат:
  * - StandardRoom: добавление кровати (+20% к цене)
- * - Suite: заказ шампанского (+2000 к цене)
+ * - Suite: добавление услуги (+2000 к цене)
  * - FamilyRoom: активация игровой зоны (+1500 к цене)
  */
 template <typename Container>

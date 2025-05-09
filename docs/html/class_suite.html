@@ -137,6 +137,10 @@ Collaboration diagram for Suite:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad768458b39f93edf4554a8fb45c960d6" id="r_ad768458b39f93edf4554a8fb45c960d6"><td class="memItemLeft" align="right" valign="top"><a id="ad768458b39f93edf4554a8fb45c960d6" name="ad768458b39f93edf4554a8fb45c960d6"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Suite</b> ()=default</td></tr>
+<tr class="memdesc:ad768458b39f93edf4554a8fb45c960d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор <br /></td></tr>
+<tr class="separator:ad768458b39f93edf4554a8fb45c960d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83d2b91e040f3e4f24b37f14fa1e63ef" id="r_a83d2b91e040f3e4f24b37f14fa1e63ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83d2b91e040f3e4f24b37f14fa1e63ef">order_champagne</a> (string amenity)</td></tr>
 <tr class="memdesc:a83d2b91e040f3e4f24b37f14fa1e63ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заказать шампанское (добавляет услугу)  <br /></td></tr>
 <tr class="separator:a83d2b91e040f3e4f24b37f14fa1e63ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +165,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a395e66a54d3dbd412e64c60ddedb06b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84eeaf79508119b645c1932cc5d22369" id="r_a84eeaf79508119b645c1932cc5d22369"><td class="memItemLeft" align="right" valign="top"><a id="a84eeaf79508119b645c1932cc5d22369" name="a84eeaf79508119b645c1932cc5d22369"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Suite</b> (const <a class="el" href="class_suite.html">Suite</a> &amp;)=default</td></tr>
+<tr class="memdesc:a84eeaf79508119b645c1932cc5d22369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования <br /></td></tr>
 <tr class="separator:a84eeaf79508119b645c1932cc5d22369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa363bed00f99871e569ee8950fd8bb73" id="r_aa363bed00f99871e569ee8950fd8bb73"><td class="memItemLeft" align="right" valign="top"><a id="aa363bed00f99871e569ee8950fd8bb73" name="aa363bed00f99871e569ee8950fd8bb73"></a>
 <a class="el" href="class_suite.html">Suite</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_suite.html">Suite</a> &amp;)=default</td></tr>
@@ -236,14 +241,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4e720c17c1195264c65fa507a52d1edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование в строку  <br /></td></tr>
 <tr class="separator:a4e720c17c1195264c65fa507a52d1edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_room"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_room')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_room.html">Room</a></td></tr>
+<tr class="memitem:a508697104b1bdce37058c029ea5d7b2b inherit pub_methods_class_room" id="r_a508697104b1bdce37058c029ea5d7b2b"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Room</b> ()=default</td></tr>
+<tr class="memdesc:a508697104b1bdce37058c029ea5d7b2b inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виртуальный деструктор <br /></td></tr>
+<tr class="separator:a508697104b1bdce37058c029ea5d7b2b inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff42dadd005f91b3feed3dc2dfb41229 inherit pub_methods_class_room" id="r_aff42dadd005f91b3feed3dc2dfb41229"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#aff42dadd005f91b3feed3dc2dfb41229">operator string</a> () const</td></tr>
+<tr class="memdesc:aff42dadd005f91b3feed3dc2dfb41229 inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование в строку  <br /></td></tr>
+<tr class="separator:aff42dadd005f91b3feed3dc2dfb41229 inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90389beafff4333dd690e5e3c185a8d0 inherit pub_methods_class_room" id="r_a90389beafff4333dd690e5e3c185a8d0"><td class="memTemplParams" colspan="2">template&lt;typename Container&gt; </td></tr>
+<tr class="memitem:a90389beafff4333dd690e5e3c185a8d0 inherit pub_methods_class_room"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <a class="el" href="class_room.html">Room</a> &gt; &gt;, ostream &amp; &gt; friend&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_room.html#a90389beafff4333dd690e5e3c185a8d0">operator&lt;&lt;</a> (ostream &amp;os, const Container &amp;rooms)</td></tr>
+<tr class="memdesc:a90389beafff4333dd690e5e3c185a8d0 inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка вывода для контейнера комнат  <br /></td></tr>
+<tr class="separator:a90389beafff4333dd690e5e3c185a8d0 inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ef93a7d9c3e1d624e025058d5f16ff inherit pub_methods_class_room" id="r_ac6ef93a7d9c3e1d624e025058d5f16ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#ac6ef93a7d9c3e1d624e025058d5f16ff">Room</a> ()</td></tr>
 <tr class="memdesc:ac6ef93a7d9c3e1d624e025058d5f16ff inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию  <br /></td></tr>
 <tr class="separator:ac6ef93a7d9c3e1d624e025058d5f16ff inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85a05efbf9e7aa79f9ea8bd009f03855 inherit pub_methods_class_room" id="r_a85a05efbf9e7aa79f9ea8bd009f03855"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a85a05efbf9e7aa79f9ea8bd009f03855">Room</a> (int <a class="el" href="class_room.html#a120b984b4105e8f795ca6039302aa0f6">room_number</a>)</td></tr>
-<tr class="memdesc:a85a05efbf9e7aa79f9ea8bd009f03855 inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор преобразования (по номеру комнаты)  <br /></td></tr>
+<tr class="memdesc:a85a05efbf9e7aa79f9ea8bd009f03855 inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор преобразования  <br /></td></tr>
 <tr class="separator:a85a05efbf9e7aa79f9ea8bd009f03855 inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e34f7ecec4b9c6ef694227b38639ba1 inherit pub_methods_class_room" id="r_a1e34f7ecec4b9c6ef694227b38639ba1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a1e34f7ecec4b9c6ef694227b38639ba1">Room</a> (int <a class="el" href="class_room.html#a120b984b4105e8f795ca6039302aa0f6">room_number</a>, float <a class="el" href="class_room.html#a76266e1148de995bdfa05d07a94ee93e">price_per_night</a>, bool <a class="el" href="class_room.html#adeba14cded5e6e9ddc73ca144fc78470">is_booked</a>)</td></tr>
-<tr class="memdesc:a1e34f7ecec4b9c6ef694227b38639ba1 inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор с параметрами  <br /></td></tr>
+<tr class="memdesc:a1e34f7ecec4b9c6ef694227b38639ba1 inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основной конструктор с параметрами  <br /></td></tr>
 <tr class="separator:a1e34f7ecec4b9c6ef694227b38639ba1 inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b964942d5eb880206cc5bc93ccd9045 inherit pub_methods_class_room" id="r_a5b964942d5eb880206cc5bc93ccd9045"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Room</b> (const <a class="el" href="class_room.html">Room</a> &amp;)=default</td></tr>
@@ -258,17 +274,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4fd1667324eb508ecd1981481a37fdd0 inherit pub_methods_class_room" id="r_a4fd1667324eb508ecd1981481a37fdd0"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_room.html">Room</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_room.html">Room</a> &amp;&amp;) noexcept=default</td></tr>
 <tr class="separator:a4fd1667324eb508ecd1981481a37fdd0 inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a508697104b1bdce37058c029ea5d7b2b inherit pub_methods_class_room" id="r_a508697104b1bdce37058c029ea5d7b2b"><td class="memItemLeft" align="right" valign="top">
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Room</b> ()=default</td></tr>
-<tr class="memdesc:a508697104b1bdce37058c029ea5d7b2b inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виртуальный деструктор <br /></td></tr>
-<tr class="separator:a508697104b1bdce37058c029ea5d7b2b inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff42dadd005f91b3feed3dc2dfb41229 inherit pub_methods_class_room" id="r_aff42dadd005f91b3feed3dc2dfb41229"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#aff42dadd005f91b3feed3dc2dfb41229">operator string</a> () const</td></tr>
-<tr class="memdesc:aff42dadd005f91b3feed3dc2dfb41229 inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование в строку  <br /></td></tr>
-<tr class="separator:aff42dadd005f91b3feed3dc2dfb41229 inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90389beafff4333dd690e5e3c185a8d0 inherit pub_methods_class_room" id="r_a90389beafff4333dd690e5e3c185a8d0"><td class="memTemplParams" colspan="2">template&lt;typename Container&gt; </td></tr>
-<tr class="memitem:a90389beafff4333dd690e5e3c185a8d0 inherit pub_methods_class_room"><td class="memTemplItemLeft" align="right" valign="top">enable_if_t&lt; is_same_v&lt; typename Container::value_type, shared_ptr&lt; <a class="el" href="class_room.html">Room</a> &gt; &gt;, ostream &amp; &gt; friend&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_room.html#a90389beafff4333dd690e5e3c185a8d0">operator&lt;&lt;</a> (ostream &amp;os, const Container &amp;rooms)</td></tr>
-<tr class="memdesc:a90389beafff4333dd690e5e3c185a8d0 inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка вывода для контейнера комнат  <br /></td></tr>
-<tr class="separator:a90389beafff4333dd690e5e3c185a8d0 inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8da5257d15eb131e471b59ba753dcedb inherit pub_methods_class_room" id="r_a8da5257d15eb131e471b59ba753dcedb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room.html#a8da5257d15eb131e471b59ba753dcedb">get_room_number</a> () const</td></tr>
 <tr class="memdesc:a8da5257d15eb131e471b59ba753dcedb inherit pub_methods_class_room"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить номер комнаты  <br /></td></tr>
 <tr class="separator:a8da5257d15eb131e471b59ba753dcedb inherit pub_methods_class_room"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,12 +369,20 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Конструктор по умолчанию </p>
+<p>Создает номер люкс с параметрами:</p><ul>
+<li>Номер комнаты: 0</li>
+<li>Цена за ночь: 0.0</li>
+<li>Статус бронирования: нет</li>
+<li>Обслуживание в номере: нет</li>
+<li>Наличие джакузи: нет</li>
+<li>Список удобств: "Lux", "Room service" </li>
+</ul>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00015">15</a> of file <a class="el" href="kondakov__lr5__suite_8cpp_source.html">kondakov_lr5_suite.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="kondakov__lr5__room_8cpp_source.html#l00018">Room::Room()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00167">operator&lt;&lt;</a>, <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00178">operator&gt;&gt;</a>, <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00042">Suite()</a>, and <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00084">Suite()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00167">operator&lt;&lt;</a>, <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00178">operator&gt;&gt;</a>, <a class="el" href="#a84eeaf79508119b645c1932cc5d22369">Suite()</a>, <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00042">Suite()</a>, <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00084">Suite()</a>, and <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -386,15 +399,19 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_suite_ac6d5e58a508fcf431ea7448da070f802_icgraph.png" border="0" usemap="#aclass_suite_ac6d5e58a508fcf431ea7448da070f802_icgraph" alt=""/></div>
 <map name="aclass_suite_ac6d5e58a508fcf431ea7448da070f802_icgraph" id="aclass_suite_ac6d5e58a508fcf431ea7448da070f802_icgraph">
-<area shape="rect" title="Конструктор по умолчанию" alt="" coords="176,81,265,108"/>
+<area shape="rect" title="Конструктор по умолчанию" alt="" coords="176,132,265,159"/>
 <area shape="rect" href="class_suite.html#a8f934acbbedc7d7381a0bd963cf4567c" title="Оператор вывода" alt="" coords="5,5,128,32"/>
-<area shape="poly" title=" " alt="" coords="181,76,126,46,101,35,103,30,129,42,184,71"/>
+<area shape="poly" title=" " alt="" coords="199,121,167,83,126,46,106,35,108,30,129,42,171,79,203,118"/>
 <area shape="rect" href="class_suite.html#aaf656a5dd660cdeaf6bcd773955fd249" title="Оператор ввода" alt="" coords="5,56,128,83"/>
-<area shape="poly" title=" " alt="" coords="160,87,128,82,129,77,161,82"/>
-<area shape="rect" href="class_suite.html#a80d4f9db1d8cb72a3ca0286e7ea3a0c5" title="Конструктор с удобствами по умолчанию" alt="" coords="22,107,111,133"/>
-<area shape="poly" title=" " alt="" coords="161,107,112,115,111,110,160,102"/>
-<area shape="rect" href="class_suite.html#aea409d24c05e53ba1d4c83a63da708c5" title="Конструктор перемещения" alt="" coords="22,157,111,184"/>
-<area shape="poly" title=" " alt="" coords="184,118,129,148,103,159,101,154,126,143,181,114"/>
+<area shape="poly" title=" " alt="" coords="181,126,126,97,101,86,103,81,129,92,184,122"/>
+<area shape="rect" href="class_suite.html#a84eeaf79508119b645c1932cc5d22369" title="Конструктор копирования" alt="" coords="22,107,111,133"/>
+<area shape="poly" title=" " alt="" coords="160,138,111,130,112,125,161,133"/>
+<area shape="rect" href="class_suite.html#a80d4f9db1d8cb72a3ca0286e7ea3a0c5" title="Конструктор с удобствами по умолчанию" alt="" coords="22,157,111,184"/>
+<area shape="poly" title=" " alt="" coords="161,158,112,166,111,161,160,153"/>
+<area shape="rect" href="class_suite.html#aea409d24c05e53ba1d4c83a63da708c5" title="Конструктор перемещения" alt="" coords="22,208,111,235"/>
+<area shape="poly" title=" " alt="" coords="184,169,129,198,103,210,101,205,126,194,181,164"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="18,259,115,285"/>
+<area shape="poly" title=" " alt="" coords="203,173,171,211,129,249,108,261,106,256,126,245,167,208,199,169"/>
 </map>
 </div>
 
@@ -423,6 +440,19 @@ Here is the caller graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">room_number</td><td>Номер комнаты </td></tr>
+    <tr><td class="paramname">room_service</td><td>Обслуживание в номере</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Создает номер люкс с указанными параметрами и значениями по умолчанию:</p><ul>
+<li>Цена за ночь: 0.0</li>
+<li>Статус бронирования: нет</li>
+<li>Наличие джакузи: нет</li>
+<li>Список удобств: "Lux", "Room service"</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">room_number</td><td>Номер комнаты </td></tr>
     <tr><td class="paramname">room_service</td><td>Наличие обслуживания </td></tr>
   </table>
   </dd>
@@ -430,7 +460,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00027">27</a> of file <a class="el" href="kondakov__lr5__suite_8cpp_source.html">kondakov_lr5_suite.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__room_8cpp_source.html#l00018">Room::Room()</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00021">Room::room_number</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__room_8cpp_source.html#l00018">Room::Room()</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00027">Room::room_number</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -485,6 +515,17 @@ Here is the call graph for this function:</div>
     <tr><td class="paramname">room_number</td><td>Номер комнаты </td></tr>
     <tr><td class="paramname">price_per_night</td><td>Цена за ночь </td></tr>
     <tr><td class="paramname">is_booked</td><td>Статус бронирования </td></tr>
+    <tr><td class="paramname">room_service</td><td>Обслуживание в номере </td></tr>
+    <tr><td class="paramname">jacuzzi</td><td>Наличие джакузи</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Создает номер люкс с указанными параметрами и удобствами по умолчанию: "Lux", "Room service"</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">room_number</td><td>Номер комнаты </td></tr>
+    <tr><td class="paramname">price_per_night</td><td>Цена за ночь </td></tr>
+    <tr><td class="paramname">is_booked</td><td>Статус бронирования </td></tr>
     <tr><td class="paramname">room_service</td><td>Наличие обслуживания </td></tr>
     <tr><td class="paramname">jacuzzi</td><td>Наличие джакузи </td></tr>
   </table>
@@ -493,7 +534,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00042">42</a> of file <a class="el" href="kondakov__lr5__suite_8cpp_source.html">kondakov_lr5_suite.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00023">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00022">Room::price_per_night</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00021">Room::room_number</a>, and <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00015">Suite()</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00029">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00028">Room::price_per_night</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00027">Room::room_number</a>, and <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00015">Suite()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -555,6 +596,12 @@ Here is the call graph for this function:</div>
     <tr><td class="paramname">room_number</td><td>Номер комнаты </td></tr>
     <tr><td class="paramname">price_per_night</td><td>Цена за ночь </td></tr>
     <tr><td class="paramname">is_booked</td><td>Статус бронирования </td></tr>
+    <tr><td class="paramname">room_service</td><td>Обслуживание в номере </td></tr>
+    <tr><td class="paramname">jacuzzi</td><td>Наличие джакузи </td></tr>
+    <tr><td class="paramname">amenities</td><td>Удобства (строка, разделитель - запятая)</td></tr>
+    <tr><td class="paramname">room_number</td><td>Номер комнаты </td></tr>
+    <tr><td class="paramname">price_per_night</td><td>Цена за ночь </td></tr>
+    <tr><td class="paramname">is_booked</td><td>Статус бронирования </td></tr>
     <tr><td class="paramname">room_service</td><td>Наличие обслуживания </td></tr>
     <tr><td class="paramname">jacuzzi</td><td>Наличие джакузи </td></tr>
     <tr><td class="paramname">amenities</td><td>Удобства (строка с разделителями) </td></tr>
@@ -564,7 +611,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00055">55</a> of file <a class="el" href="kondakov__lr5__suite_8cpp_source.html">kondakov_lr5_suite.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00023">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00022">Room::price_per_night</a>, <a class="el" href="kondakov__lr5__room_8cpp_source.html#l00018">Room::Room()</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00021">Room::room_number</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00029">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00028">Room::price_per_night</a>, <a class="el" href="kondakov__lr5__room_8cpp_source.html#l00018">Room::Room()</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00027">Room::room_number</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -624,6 +671,12 @@ Here is the call graph for this function:</div>
     <tr><td class="paramname">room_number</td><td>Номер комнаты </td></tr>
     <tr><td class="paramname">price_per_night</td><td>Цена за ночь </td></tr>
     <tr><td class="paramname">is_booked</td><td>Статус бронирования </td></tr>
+    <tr><td class="paramname">room_service</td><td>Обслуживание в номере </td></tr>
+    <tr><td class="paramname">jacuzzi</td><td>Наличие джакузи </td></tr>
+    <tr><td class="paramname">amenities</td><td>Удобства (вектор строк)</td></tr>
+    <tr><td class="paramname">room_number</td><td>Номер комнаты </td></tr>
+    <tr><td class="paramname">price_per_night</td><td>Цена за ночь </td></tr>
+    <tr><td class="paramname">is_booked</td><td>Статус бронирования </td></tr>
     <tr><td class="paramname">room_service</td><td>Наличие обслуживания </td></tr>
     <tr><td class="paramname">jacuzzi</td><td>Наличие джакузи </td></tr>
     <tr><td class="paramname">amenities</td><td>Удобства (вектор строк) </td></tr>
@@ -633,7 +686,7 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00073">73</a> of file <a class="el" href="kondakov__lr5__suite_8cpp_source.html">kondakov_lr5_suite.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00023">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00022">Room::price_per_night</a>, <a class="el" href="kondakov__lr5__room_8cpp_source.html#l00018">Room::Room()</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00021">Room::room_number</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00029">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00028">Room::price_per_night</a>, <a class="el" href="kondakov__lr5__room_8cpp_source.html#l00018">Room::Room()</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00027">Room::room_number</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -736,17 +789,20 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00126">126</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00022">Room::price_per_night</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00028">Room::price_per_night</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00134">validate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00134">validate()</a>, and <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_suite_a52e5526c81daabf55593d814d0da28b3_icgraph.png" border="0" usemap="#aclass_suite_a52e5526c81daabf55593d814d0da28b3_icgraph" alt=""/></div>
 <map name="aclass_suite_a52e5526c81daabf55593d814d0da28b3_icgraph" id="aclass_suite_a52e5526c81daabf55593d814d0da28b3_icgraph">
-<area shape="rect" title="Расчет общей стоимости проживания" alt="" coords="158,5,301,32"/>
-<area shape="rect" href="class_suite.html#a5dfc680a5053801d7564eac1e6884320" title="Проверка валидности номера" alt="" coords="5,5,110,32"/>
-<area shape="poly" title=" " alt="" coords="142,21,110,21,110,16,142,16"/>
+<area shape="rect" title="Расчет общей стоимости проживания" alt="" coords="303,31,446,57"/>
+<area shape="rect" href="class_suite.html#a5dfc680a5053801d7564eac1e6884320" title="Проверка валидности номера" alt="" coords="151,5,255,32"/>
+<area shape="poly" title=" " alt="" coords="287,34,255,29,256,24,288,29"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,31,103,57"/>
+<area shape="poly" title=" " alt="" coords="287,47,103,47,103,41,287,41"/>
+<area shape="poly" title=" " alt="" coords="136,33,104,38,103,33,135,28"/>
 </map>
 </div>
 
@@ -787,7 +843,19 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00110">110</a> of file <a class="el" href="kondakov__lr5__suite_8cpp_source.html">kondakov_lr5_suite.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00023">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00022">Room::price_per_night</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00021">Room::room_number</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00029">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00028">Room::price_per_night</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00027">Room::room_number</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_ad1c3c76f53340da885309ef251d2898e_icgraph.png" border="0" usemap="#aclass_suite_ad1c3c76f53340da885309ef251d2898e_icgraph" alt=""/></div>
+<map name="aclass_suite_ad1c3c76f53340da885309ef251d2898e_icgraph" id="aclass_suite_ad1c3c76f53340da885309ef251d2898e_icgraph">
+<area shape="rect" title="Загрузка из JSON." alt="" coords="151,5,267,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -821,6 +889,18 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00035">35</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_aedf54f1bdfbadeb7d5e0e88d17e56e50_icgraph.png" border="0" usemap="#aclass_suite_aedf54f1bdfbadeb7d5e0e88d17e56e50_icgraph" alt=""/></div>
+<map name="aclass_suite_aedf54f1bdfbadeb7d5e0e88d17e56e50_icgraph" id="aclass_suite_aedf54f1bdfbadeb7d5e0e88d17e56e50_icgraph">
+<area shape="rect" title="Получить список удобств" alt="" coords="151,5,291,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a7bd3a5de67c22d5f4c52de55222ef145" name="a7bd3a5de67c22d5f4c52de55222ef145"></a>
@@ -853,19 +933,23 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00043">43</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00021">Room::room_number</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00027">Room::room_number</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00210">to_string()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00210">to_string()</a>, and <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_suite_a7bd3a5de67c22d5f4c52de55222ef145_icgraph.png" border="0" usemap="#aclass_suite_a7bd3a5de67c22d5f4c52de55222ef145_icgraph" alt=""/></div>
 <map name="aclass_suite_a7bd3a5de67c22d5f4c52de55222ef145_icgraph" id="aclass_suite_a7bd3a5de67c22d5f4c52de55222ef145_icgraph">
-<area shape="rect" title="Получить полное название комнаты" alt="" coords="295,5,435,32"/>
-<area shape="rect" href="class_suite.html#a4e720c17c1195264c65fa507a52d1edc" title="Преобразование в строку" alt="" coords="138,5,247,32"/>
-<area shape="poly" title=" " alt="" coords="280,21,247,21,247,16,280,16"/>
-<area shape="rect" href="class_suite.html#a31debd927684dc287f287030def6438d" title="Вывод информации о номере" alt="" coords="5,5,90,32"/>
-<area shape="poly" title=" " alt="" coords="122,21,90,21,90,16,122,16"/>
+<area shape="rect" title="Получить полное название комнаты" alt="" coords="440,81,581,108"/>
+<area shape="rect" href="class_suite.html#a4e720c17c1195264c65fa507a52d1edc" title="Преобразование в строку" alt="" coords="283,56,392,83"/>
+<area shape="poly" title=" " alt="" coords="425,85,392,80,393,75,425,79"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,56,103,83"/>
+<area shape="poly" title=" " alt="" coords="425,100,283,97,187,89,103,79,103,74,187,84,283,92,425,94"/>
+<area shape="rect" href="class_suite.html#a31debd927684dc287f287030def6438d" title="Вывод информации о номере" alt="" coords="151,5,235,32"/>
+<area shape="poly" title=" " alt="" coords="282,53,232,35,234,30,284,48"/>
+<area shape="poly" title=" " alt="" coords="268,72,103,72,103,67,268,67"/>
+<area shape="poly" title=" " alt="" coords="141,40,94,58,92,53,139,35"/>
 </map>
 </div>
 
@@ -899,6 +983,18 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00027">27</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_a5d9fd1e7fbc3b7cd38b165cb075f2b7c_icgraph.png" border="0" usemap="#aclass_suite_a5d9fd1e7fbc3b7cd38b165cb075f2b7c_icgraph" alt=""/></div>
+<map name="aclass_suite_a5d9fd1e7fbc3b7cd38b165cb075f2b7c_icgraph" id="aclass_suite_a5d9fd1e7fbc3b7cd38b165cb075f2b7c_icgraph">
+<area shape="rect" title="Получить наличие джакузи" alt="" coords="151,5,276,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ae4543962753535fe6949179a061c7482" name="ae4543962753535fe6949179a061c7482"></a>
@@ -931,6 +1027,18 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00117">117</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_ae4543962753535fe6949179a061c7482_icgraph.png" border="0" usemap="#aclass_suite_ae4543962753535fe6949179a061c7482_icgraph" alt=""/></div>
+<map name="aclass_suite_ae4543962753535fe6949179a061c7482_icgraph" id="aclass_suite_ae4543962753535fe6949179a061c7482_icgraph">
+<area shape="rect" title="Получить тип для JSON." alt="" coords="151,5,291,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac8c879afd32bdc582b945f7f541bd2ca" name="ac8c879afd32bdc582b945f7f541bd2ca"></a>
@@ -960,6 +1068,18 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>true если есть обслуживание, иначе false </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00019">19</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_ac8c879afd32bdc582b945f7f541bd2ca_icgraph.png" border="0" usemap="#aclass_suite_ac8c879afd32bdc582b945f7f541bd2ca_icgraph" alt=""/></div>
+<map name="aclass_suite_ac8c879afd32bdc582b945f7f541bd2ca_icgraph" id="aclass_suite_ac8c879afd32bdc582b945f7f541bd2ca_icgraph">
+<area shape="rect" title="Получить наличие обслуживания" alt="" coords="151,5,313,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -993,6 +1113,18 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00109">109</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_a5c36774e4bd5f9c9fb1bcb2f33ca60f0_icgraph.png" border="0" usemap="#aclass_suite_a5c36774e4bd5f9c9fb1bcb2f33ca60f0_icgraph" alt=""/></div>
+<map name="aclass_suite_a5c36774e4bd5f9c9fb1bcb2f33ca60f0_icgraph" id="aclass_suite_a5c36774e4bd5f9c9fb1bcb2f33ca60f0_icgraph">
+<area shape="rect" title="Получить тип комнаты" alt="" coords="151,5,296,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ae6868783d1d9227a61d7d0afd7f9a79e" name="ae6868783d1d9227a61d7d0afd7f9a79e"></a>
@@ -1025,7 +1157,9 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00196">196</a> of file <a class="el" href="kondakov__lr5__suite_8cpp_source.html">kondakov_lr5_suite.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00036">Room::input()</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00042">Room::input()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1034,6 +1168,16 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Ввод информации о номере" alt="" coords="5,5,93,32"/>
 <area shape="rect" href="class_room.html#a3771355e58c0cac65cb836f72b7da113" title="Виртуальный метод ввода информации о комнате" alt="" coords="141,5,233,32"/>
 <area shape="poly" title=" " alt="" coords="93,16,125,16,125,21,93,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_ae6868783d1d9227a61d7d0afd7f9a79e_icgraph.png" border="0" usemap="#aclass_suite_ae6868783d1d9227a61d7d0afd7f9a79e_icgraph" alt=""/></div>
+<map name="aclass_suite_ae6868783d1d9227a61d7d0afd7f9a79e_icgraph" id="aclass_suite_ae6868783d1d9227a61d7d0afd7f9a79e_icgraph">
+<area shape="rect" title="Ввод информации о номере" alt="" coords="151,5,238,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
 </map>
 </div>
 
@@ -1075,15 +1219,17 @@ template&lt;char Delim&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00097">97</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00178">operator&gt;&gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00178">operator&gt;&gt;</a>, and <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_suite_ab9afe7569b0064693b1bc771ebec514b_icgraph.png" border="0" usemap="#aclass_suite_ab9afe7569b0064693b1bc771ebec514b_icgraph" alt=""/></div>
 <map name="aclass_suite_ab9afe7569b0064693b1bc771ebec514b_icgraph" id="aclass_suite_ab9afe7569b0064693b1bc771ebec514b_icgraph">
-<area shape="rect" title="Ввод удобств с разделителем" alt="" coords="176,5,326,32"/>
+<area shape="rect" title="Ввод удобств с разделителем" alt="" coords="176,31,326,57"/>
 <area shape="rect" href="class_suite.html#aaf656a5dd660cdeaf6bcd773955fd249" title="Оператор ввода" alt="" coords="5,5,128,32"/>
-<area shape="poly" title=" " alt="" coords="160,21,128,21,128,16,160,16"/>
+<area shape="poly" title=" " alt="" coords="160,34,128,30,128,24,161,29"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="18,56,115,83"/>
+<area shape="poly" title=" " alt="" coords="161,59,116,65,115,60,160,54"/>
 </map>
 </div>
 
@@ -1119,7 +1265,7 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="kondakov__lr5__input__control_8cpp_source.html#l00068">InputControl::input()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00178">operator&gt;&gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00178">operator&gt;&gt;</a>, and <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1140,9 +1286,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_suite_a9d2c61fb1dd8d1585f60fcb8b8abae63_icgraph.png" border="0" usemap="#aclass_suite_a9d2c61fb1dd8d1585f60fcb8b8abae63_icgraph" alt=""/></div>
 <map name="aclass_suite_a9d2c61fb1dd8d1585f60fcb8b8abae63_icgraph" id="aclass_suite_a9d2c61fb1dd8d1585f60fcb8b8abae63_icgraph">
-<area shape="rect" title="Ввод наличия джакузи" alt="" coords="176,5,311,32"/>
+<area shape="rect" title="Ввод наличия джакузи" alt="" coords="176,31,311,57"/>
 <area shape="rect" href="class_suite.html#aaf656a5dd660cdeaf6bcd773955fd249" title="Оператор ввода" alt="" coords="5,5,128,32"/>
-<area shape="poly" title=" " alt="" coords="160,21,128,21,128,16,160,16"/>
+<area shape="poly" title=" " alt="" coords="160,35,128,30,128,25,160,29"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="18,56,115,83"/>
+<area shape="poly" title=" " alt="" coords="160,59,116,65,115,60,160,53"/>
 </map>
 </div>
 
@@ -1178,7 +1326,7 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="kondakov__lr5__input__control_8cpp_source.html#l00068">InputControl::input()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00178">operator&gt;&gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00178">operator&gt;&gt;</a>, and <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1199,9 +1347,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_suite_a5872adbd701d687de599826b3fc84356_icgraph.png" border="0" usemap="#aclass_suite_a5872adbd701d687de599826b3fc84356_icgraph" alt=""/></div>
 <map name="aclass_suite_a5872adbd701d687de599826b3fc84356_icgraph" id="aclass_suite_a5872adbd701d687de599826b3fc84356_icgraph">
-<area shape="rect" title="Ввод наличия обслуживания" alt="" coords="176,5,348,32"/>
+<area shape="rect" title="Ввод наличия обслуживания" alt="" coords="176,31,348,57"/>
 <area shape="rect" href="class_suite.html#aaf656a5dd660cdeaf6bcd773955fd249" title="Оператор ввода" alt="" coords="5,5,128,32"/>
-<area shape="poly" title=" " alt="" coords="160,21,128,21,128,16,160,16"/>
+<area shape="poly" title=" " alt="" coords="160,33,128,29,129,24,161,28"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="18,56,115,83"/>
+<area shape="poly" title=" " alt="" coords="161,60,116,66,115,60,160,55"/>
 </map>
 </div>
 
@@ -1260,7 +1410,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Заказать шампанское (добавляет услугу) </p>
-<p>Заказать шампанское (добавить услугу)</p>
+<p>Добавить услугу</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">amenity</td><td>Название услуги</td></tr>
@@ -1271,7 +1421,9 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00143">143</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__input__control_8cpp_source.html#l00042">InputControl::make_first_letter_uppercase()</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00022">Room::price_per_night</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__input__control_8cpp_source.html#l00042">InputControl::make_first_letter_uppercase()</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00028">Room::price_per_night</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1280,6 +1432,16 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Заказать шампанское (добавляет услугу)" alt="" coords="5,13,168,40"/>
 <area shape="rect" href="namespace_input_control.html#a7a885a9d6172b2874d95d1613ced53db" title="Делает первую букву строки заглавной" alt="" coords="216,5,369,48"/>
 <area shape="poly" title=" " alt="" coords="168,24,200,24,200,29,168,29"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_a83d2b91e040f3e4f24b37f14fa1e63ef_icgraph.png" border="0" usemap="#aclass_suite_a83d2b91e040f3e4f24b37f14fa1e63ef_icgraph" alt=""/></div>
+<map name="aclass_suite_a83d2b91e040f3e4f24b37f14fa1e63ef_icgraph" id="aclass_suite_a83d2b91e040f3e4f24b37f14fa1e63ef_icgraph">
+<area shape="rect" title="Заказать шампанское (добавляет услугу)" alt="" coords="151,5,313,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
 </map>
 </div>
 
@@ -1315,6 +1477,8 @@ Here is the call graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00188">188</a> of file <a class="el" href="kondakov__lr5__suite_8cpp_source.html">kondakov_lr5_suite.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00210">to_string()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1327,6 +1491,16 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="247,33,279,29,280,34,248,39"/>
 <area shape="rect" href="class_room.html#a8587d8bc9a7bfbadbe83fbf969c9b370" title="Виртуальный метод преобразования в строку" alt="" coords="308,56,422,83"/>
 <area shape="poly" title=" " alt="" coords="248,49,293,56,292,61,247,55"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_a31debd927684dc287f287030def6438d_icgraph.png" border="0" usemap="#aclass_suite_a31debd927684dc287f287030def6438d_icgraph" alt=""/></div>
+<map name="aclass_suite_a31debd927684dc287f287030def6438d_icgraph" id="aclass_suite_a31debd927684dc287f287030def6438d_icgraph">
+<area shape="rect" title="Вывод информации о номере" alt="" coords="151,5,235,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
 </map>
 </div>
 
@@ -1365,6 +1539,18 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00069">69</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_a9f039af321d86c81d439b199ad1478c0_icgraph.png" border="0" usemap="#aclass_suite_a9f039af321d86c81d439b199ad1478c0_icgraph" alt=""/></div>
+<map name="aclass_suite_a9f039af321d86c81d439b199ad1478c0_icgraph" id="aclass_suite_a9f039af321d86c81d439b199ad1478c0_icgraph">
+<area shape="rect" title="Установить список удобств" alt="" coords="151,5,291,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a0ede9e1d764ed3a2f7239824c04b2a6f" name="a0ede9e1d764ed3a2f7239824c04b2a6f"></a>
@@ -1399,6 +1585,18 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00061">61</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_a0ede9e1d764ed3a2f7239824c04b2a6f_icgraph.png" border="0" usemap="#aclass_suite_a0ede9e1d764ed3a2f7239824c04b2a6f_icgraph" alt=""/></div>
+<map name="aclass_suite_a0ede9e1d764ed3a2f7239824c04b2a6f_icgraph" id="aclass_suite_a0ede9e1d764ed3a2f7239824c04b2a6f_icgraph">
+<area shape="rect" title="Установить наличие джакузи" alt="" coords="151,5,276,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1435,6 +1633,18 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00053">53</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_a8256093cf9d2969b43f4d6414c36724b_icgraph.png" border="0" usemap="#aclass_suite_a8256093cf9d2969b43f4d6414c36724b_icgraph" alt=""/></div>
+<map name="aclass_suite_a8256093cf9d2969b43f4d6414c36724b_icgraph" id="aclass_suite_a8256093cf9d2969b43f4d6414c36724b_icgraph">
+<area shape="rect" title="Установить наличие обслуживания" alt="" coords="151,5,313,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="afd16f2512f214af813bd2123b2a6f309" name="afd16f2512f214af813bd2123b2a6f309"></a>
@@ -1467,7 +1677,19 @@ Here is the call graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00095">95</a> of file <a class="el" href="kondakov__lr5__suite_8cpp_source.html">kondakov_lr5_suite.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00023">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00022">Room::price_per_night</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00021">Room::room_number</a>.</p>
+<p class="reference">References <a class="el" href="kondakov__lr5__room_8h_source.html#l00029">Room::is_booked</a>, <a class="el" href="kondakov__lr5__room_8h_source.html#l00028">Room::price_per_night</a>, and <a class="el" href="kondakov__lr5__room_8h_source.html#l00027">Room::room_number</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_afd16f2512f214af813bd2123b2a6f309_icgraph.png" border="0" usemap="#aclass_suite_afd16f2512f214af813bd2123b2a6f309_icgraph" alt=""/></div>
+<map name="aclass_suite_afd16f2512f214af813bd2123b2a6f309_icgraph" id="aclass_suite_afd16f2512f214af813bd2123b2a6f309_icgraph">
+<area shape="rect" title="Преобразование в JSON." alt="" coords="151,5,252,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1503,7 +1725,7 @@ Here is the call graph for this function:</div>
 
 <p class="reference">References <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00043">get_full_name()</a>, and <a class="el" href="kondakov__lr5__room_8cpp_source.html#l00114">Room::to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00188">print()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="kondakov__lr5__suite_8cpp_source.html#l00188">print()</a>, and <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1521,9 +1743,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_suite_a4e720c17c1195264c65fa507a52d1edc_icgraph.png" border="0" usemap="#aclass_suite_a4e720c17c1195264c65fa507a52d1edc_icgraph" alt=""/></div>
 <map name="aclass_suite_a4e720c17c1195264c65fa507a52d1edc_icgraph" id="aclass_suite_a4e720c17c1195264c65fa507a52d1edc_icgraph">
-<area shape="rect" title="Преобразование в строку" alt="" coords="138,5,247,32"/>
-<area shape="rect" href="class_suite.html#a31debd927684dc287f287030def6438d" title="Вывод информации о номере" alt="" coords="5,5,90,32"/>
-<area shape="poly" title=" " alt="" coords="122,21,90,21,90,16,122,16"/>
+<area shape="rect" title="Преобразование в строку" alt="" coords="283,31,392,57"/>
+<area shape="rect" href="class_suite.html#a31debd927684dc287f287030def6438d" title="Вывод информации о номере" alt="" coords="151,5,235,32"/>
+<area shape="poly" title=" " alt="" coords="267,34,235,29,236,23,268,29"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,31,103,57"/>
+<area shape="poly" title=" " alt="" coords="268,47,103,47,103,41,268,41"/>
+<area shape="poly" title=" " alt="" coords="136,32,104,38,103,32,135,26"/>
 </map>
 </div>
 
@@ -1560,6 +1785,8 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00134">134</a> of file <a class="el" href="kondakov__lr5__suite_8hpp_source.html">kondakov_lr5_suite.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="kondakov__lr5__suite_8hpp_source.html#l00126">calculate_total()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="#ad768458b39f93edf4554a8fb45c960d6">~Suite()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1568,6 +1795,16 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Проверка валидности номера" alt="" coords="5,5,110,32"/>
 <area shape="rect" href="class_suite.html#a52e5526c81daabf55593d814d0da28b3" title="Расчет общей стоимости проживания" alt="" coords="158,5,301,32"/>
 <area shape="poly" title=" " alt="" coords="110,16,143,16,143,21,110,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_suite_a5dfc680a5053801d7564eac1e6884320_icgraph.png" border="0" usemap="#aclass_suite_a5dfc680a5053801d7564eac1e6884320_icgraph" alt=""/></div>
+<map name="aclass_suite_a5dfc680a5053801d7564eac1e6884320_icgraph" id="aclass_suite_a5dfc680a5053801d7564eac1e6884320_icgraph">
+<area shape="rect" title="Проверка валидности номера" alt="" coords="151,5,255,32"/>
+<area shape="rect" href="class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="5,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
 </map>
 </div>
 

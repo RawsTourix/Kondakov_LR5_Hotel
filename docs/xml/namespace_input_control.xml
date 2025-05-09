@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="41" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="16" bodyend="24" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="41" declcolumn="10"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="47" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="16" bodyend="24" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="47" declcolumn="10"/>
         <referencedby refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">input</referencedby>
         <referencedby refid="namespace_input_control_1ab685d4d2f2828ba6eecd1438c26f7bef" compoundref="kondakov__lr5__input__control_8hpp" startline="86" endline="104">input</referencedby>
         <referencedby refid="kondakov__lr5__container__operations_8hpp_1af2721b39e850a7e2bf789e2b32cca184" compoundref="kondakov__lr5__container__operations_8hpp" startline="116" endline="132">operator&gt;&gt;</referencedby>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="51" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.hpp" bodystart="26" bodyend="50" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="51" declcolumn="10"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="57" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.hpp" bodystart="26" bodyend="50" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="57" declcolumn="10"/>
         <references refid="namespace_input_control_1a7a885a9d6172b2874d95d1613ced53db" compoundref="kondakov__lr5__input__control_8cpp" startline="42" endline="46">make_first_letter_uppercase</references>
         <references refid="namespace_input_control_1a58f52a08f73fe9b352d19e80d84c64ea" compoundref="kondakov__lr5__input__control_8cpp" startline="16" endline="24">trim</references>
         <referencedby refid="kondakov__lr5__container__operations_8hpp_1a95226ada92c9fc69c4d5d6771165dcb3" compoundref="kondakov__lr5__container__operations_8hpp" startline="144" endline="147">operator&gt;&gt;</referencedby>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="58" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="31" bodyend="36" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="58" declcolumn="12"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="64" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="31" bodyend="36" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="64" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="namespace_input_control_1a7a885a9d6172b2874d95d1613ced53db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -202,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="64" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="42" bodyend="46" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="64" declcolumn="10"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="70" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="42" bodyend="46" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="70" declcolumn="10"/>
         <referencedby refid="class_suite_1a83d2b91e040f3e4f24b37f14fa1e63ef" compoundref="kondakov__lr5__suite_8hpp" startline="143" endline="147">Suite::order_champagne</referencedby>
         <referencedby refid="namespace_input_control_1a5df9ff92a406d7ffc174e3b3ddef8cd4" compoundref="kondakov__lr5__input__control_8hpp" startline="26" endline="50">split</referencedby>
       </memberdef>
@@ -246,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="71" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="54" bodyend="60" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="71" declcolumn="10"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="77" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="54" bodyend="60" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="77" declcolumn="10"/>
         <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">input</references>
         <referencedby refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">input</referencedby>
         <referencedby refid="namespace_input_control_1ab685d4d2f2828ba6eecd1438c26f7bef" compoundref="kondakov__lr5__input__control_8hpp" startline="86" endline="104">input</referencedby>
@@ -355,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="82" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.hpp" bodystart="62" bodyend="72" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="82" declcolumn="10"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="88" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.hpp" bodystart="62" bodyend="72" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="88" declcolumn="10"/>
         <referencedby refid="namespace_input_control_1ab685d4d2f2828ba6eecd1438c26f7bef" compoundref="kondakov__lr5__input__control_8hpp" startline="86" endline="104">input</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespace_input_control_1a3c4c474950e493e6530183f688733929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -399,7 +399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="90" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="68" bodyend="80" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="90" declcolumn="10"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="96" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="68" bodyend="80" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="96" declcolumn="10"/>
         <references refid="namespace_input_control_1a65e26d060b726037262418808215e1b5" compoundref="kondakov__lr5__input__control_8cpp" startline="54" endline="60">is_input_empty</references>
         <references refid="namespace_input_control_1a58f52a08f73fe9b352d19e80d84c64ea" compoundref="kondakov__lr5__input__control_8cpp" startline="16" endline="24">trim</references>
         <referencedby refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" compoundref="kondakov__lr5__methods_8hpp" startline="512" endline="580">Methods::additional_room_methods</referencedby>
@@ -481,7 +481,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="98" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="89" bodyend="96" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="98" declcolumn="10"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="104" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="89" bodyend="96" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="104" declcolumn="10"/>
         <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">input</references>
       </memberdef>
       <memberdef kind="function" id="namespace_input_control_1ab685d4d2f2828ba6eecd1438c26f7bef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -609,7 +609,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="111" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.hpp" bodystart="86" bodyend="104" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="111" declcolumn="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="117" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.hpp" bodystart="86" bodyend="104" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="117" declcolumn="5"/>
         <references refid="namespace_input_control_1ae598625feed83f92d1d22aa3d6839d22" compoundref="kondakov__lr5__input__control_8hpp" startline="62" endline="72">check_min_max</references>
         <references refid="namespace_input_control_1a65e26d060b726037262418808215e1b5" compoundref="kondakov__lr5__input__control_8cpp" startline="54" endline="60">is_input_empty</references>
         <references refid="namespace_input_control_1a58f52a08f73fe9b352d19e80d84c64ea" compoundref="kondakov__lr5__input__control_8cpp" startline="16" endline="24">trim</references>
@@ -632,7 +632,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="117" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="103" bodyend="108" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="117" declcolumn="10"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="123" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="103" bodyend="108" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="123" declcolumn="10"/>
         <referencedby refid="namespace_input_control_1a5da443e5ec677b12d7b885fc46bed8bb" compoundref="kondakov__lr5__input__control_8cpp" startline="116" endline="129">yes_or_no</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespace_input_control_1a5da443e5ec677b12d7b885fc46bed8bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -675,7 +675,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="124" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="116" bodyend="129" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="124" declcolumn="10"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="130" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.cpp" bodystart="116" bodyend="129" declfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" declline="130" declcolumn="10"/>
         <references refid="namespace_input_control_1a1dde7a0934fa6bda46d58eb1c0bb63d2" compoundref="kondakov__lr5__input__control_8cpp" startline="103" endline="108">get_char</references>
         <referencedby refid="namespace_methods_1ab0fcd3db72d0a91b170489bf0f18f6c6" compoundref="kondakov__lr5__methods_8hpp" startline="512" endline="580">Methods::additional_room_methods</referencedby>
         <referencedby refid="namespace_methods_1a2e2cf54114db383e2d9b68bbfa3801d4" compoundref="kondakov__lr5__methods_8hpp" startline="301" endline="328">Methods::delete_room</referencedby>
@@ -686,6 +686,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="16" column="1"/>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="22" column="1"/>
   </compounddef>
 </doxygen>

@@ -34,6 +34,7 @@ summary: Заголовочный файл класса MenuObject.
 #ifndef KONDAKOV_LR5_MENU_OBJECT_H
 #define KONDAKOV_LR5_MENU_OBJECT_H
 
+
 #include "kondakov_lr5_serializer.h"
 
 class MenuObject {
@@ -67,12 +68,13 @@ public:
     MenuObject(int number, string label, RoomPtr room, Action action,
                string main_message, string success_message);
 
-
     MenuObject(const MenuObject&) = default;
     MenuObject& operator=(const MenuObject&) = default;
+
     MenuObject(MenuObject&&) noexcept;
     MenuObject& operator=(MenuObject&&) = default;
-    ~MenuObject() = default;
+
+    ~MenuObject() = default;  
 
     inline void show(const string& indentation = "") const;
     inline void act() const;
@@ -93,6 +95,7 @@ public:
 };
 
 #include "kondakov_lr5_menu_object.hpp"
+ // Конец группы input_control
 
 #endif // KONDAKOV_LR5_MENU_OBJECT_H
 ```
@@ -100,4 +103,4 @@ public:
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

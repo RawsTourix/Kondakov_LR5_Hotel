@@ -40,6 +40,7 @@ summary: Заголовочный файл для сериализации/де�
 #ifndef KONDAKOV_LR5_SERIALIZER_H
 #define KONDAKOV_LR5_SERIALIZER_H
 
+
 #include "kondakov_lr5_standard_room.h"
 #include "kondakov_lr5_suite.h"
 #include "kondakov_lr5_family_room.h"
@@ -72,6 +73,7 @@ namespace Serializer {
 }
 
 #include "kondakov_lr5_serializer.hpp"
+ // Конец группы serialization
 
 #endif // KONDAKOV_LR5_SERIALIZER_H
 ```
@@ -79,4 +81,4 @@ namespace Serializer {
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

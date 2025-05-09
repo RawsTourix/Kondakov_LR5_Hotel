@@ -40,6 +40,7 @@ summary: Заголовочный файл с методами работы с �
 #ifndef KONDAKOV_LR5_METHODS_H
 #define KONDAKOV_LR5_METHODS_H
 
+
 #include "kondakov_lr5_menu_object.h"
 
 namespace Methods {
@@ -111,6 +112,7 @@ namespace Methods {
 };
 
 #include "kondakov_lr5_methods.hpp"
+ // Конец группы room_operations
 
 #endif // KONDAKOV_LR5_METHODS_H
 ```
@@ -118,4 +120,4 @@ namespace Methods {
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

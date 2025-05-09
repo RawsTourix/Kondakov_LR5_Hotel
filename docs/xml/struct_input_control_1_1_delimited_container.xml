@@ -47,7 +47,7 @@
 </parameterlist>
 </para>
     </detaileddescription>
-    <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="27" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" bodystart="27" bodyend="-1"/>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" line="33" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_input_control.h" bodystart="33" bodyend="-1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

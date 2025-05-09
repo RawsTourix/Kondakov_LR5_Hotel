@@ -16,20 +16,28 @@
 <para>Конструктор по умолчанию </para>
         </briefdescription>
         <detaileddescription>
+<para>Создает услуги для детей с параметрами:<itemizedlist>
+<listitem><para>Стоимость услуг: 1000.0</para>
+</listitem><listitem><para>Наличие услуг: нет </para>
+</listitem></itemizedlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="44" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="17" bodyend="19"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="51" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="17" bodyend="19"/>
         <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare</references>
         <referencedby refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare</referencedby>
         <referencedby refid="class_child_care_1ae4c90f2cfe06561b7c34a94308e214c9" compoundref="kondakov__lr5__child__care_8cpp" startline="25" endline="27">ChildCare</referencedby>
         <referencedby refid="class_child_care_1a771d0c62bd7c363fce0a95ecbcc22437" compoundref="kondakov__lr5__child__care_8cpp" startline="43" endline="46">ChildCare</referencedby>
+        <referencedby refid="class_child_care_1aa00a980396497917f0004744d30d79c9">ChildCare</referencedby>
         <referencedby refid="class_family_room_1ad9cdeeaead73fab70d4d0220448da2e5" compoundref="kondakov__lr5__family__room_8cpp" startline="15" endline="21">FamilyRoom::FamilyRoom</referencedby>
-        <referencedby refid="class_family_room_1adbf8949f46b23f3c2480c950f4ba77e7" compoundref="kondakov__lr5__family__room_8cpp" startline="79" endline="84">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1adbf8949f46b23f3c2480c950f4ba77e7" compoundref="kondakov__lr5__family__room_8cpp" startline="100" endline="105">FamilyRoom::FamilyRoom</referencedby>
         <referencedby refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" compoundref="kondakov__lr5__family__room_8cpp" startline="64" endline="73">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" compoundref="kondakov__lr5__family__room_8cpp" startline="86" endline="94">FamilyRoom::FamilyRoom</referencedby>
         <referencedby refid="class_family_room_1a3f59431db365d7048ecced77d637aee6" compoundref="kondakov__lr5__family__room_8cpp" startline="28" endline="34">FamilyRoom::FamilyRoom</referencedby>
         <referencedby refid="class_child_care_1a5c8cbfd9b611b3afcd61318dd818018e" compoundref="kondakov__lr5__child__care_8cpp" startline="64" endline="67">operator&lt;&lt;</referencedby>
         <referencedby refid="class_child_care_1a01ad1c87538a964bd9f5aa0a64123777" compoundref="kondakov__lr5__child__care_8cpp" startline="75" endline="79">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_child_care_1ae4c90f2cfe06561b7c34a94308e214c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -50,6 +58,19 @@
 <parametername>has_child_care</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>Наличие услуг для детей</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Создает услуги для детей с указанным параметром:<itemizedlist>
+<listitem><para>Стоимость услуг: 1000.0</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>has_child_care</parametername>
+</parameternamelist>
+<parameterdescription>
 <para>Наличие услуг для детей </para>
 </parameterdescription>
 </parameteritem>
@@ -58,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="45" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="25" bodyend="27"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="59" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="25" bodyend="27"/>
         <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare</references>
         <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">has_child_care</references>
       </memberdef>
@@ -77,9 +98,10 @@
           <declname>has_child_care</declname>
         </param>
         <briefdescription>
-<para>Конструктор с параметрами </para>
+<para>Основной конструктор с параметрами </para>
         </briefdescription>
         <detaileddescription>
+<para>Конструктор с параметрами</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>child_care_price</parametername>
@@ -101,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="46" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="34" bodyend="37"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="66" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="34" bodyend="37"/>
         <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">child_care_price</references>
         <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">has_child_care</references>
       </memberdef>
@@ -115,12 +137,14 @@
           <type>const <ref refid="class_child_care" kindref="compound">ChildCare</ref> &amp;</type>
         </param>
         <briefdescription>
+<para>Конструктор копирования </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="47" column="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="69" column="5"/>
+        <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare</references>
       </memberdef>
       <memberdef kind="function" id="class_child_care_1a41c5037674193f91f93145b66e1f5b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_child_care" kindref="compound">ChildCare</ref> &amp;</type>
@@ -137,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="48" column="15"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="70" column="15"/>
       </memberdef>
       <memberdef kind="function" id="class_child_care_1a771d0c62bd7c363fce0a95ecbcc22437" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -166,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="49" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="43" bodyend="46"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="73" column="5" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="43" bodyend="46"/>
         <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">child_care_price</references>
         <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare</references>
         <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">has_child_care</references>
@@ -186,21 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="50" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="class_child_care_1a194abbe995da7c1edc6cabb891631b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>ChildCare::~ChildCare</definition>
-        <argsstring>()=default</argsstring>
-        <name>~ChildCare</name>
-        <qualifiedname>ChildCare::~ChildCare</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="51" column="5"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="74" column="15"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="user-defined">
@@ -221,8 +231,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="56" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="19" bodyend="21"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="82" column="18" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="19" bodyend="21"/>
         <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">child_care_price</references>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_child_care_1ad6ec7a48b59727eaadbc0ea34d9957b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -240,8 +251,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="57" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="27" bodyend="29"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="83" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="27" bodyend="29"/>
         <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">has_child_care</references>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="user-defined">
@@ -273,8 +285,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="62" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="35" bodyend="37"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="88" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="35" bodyend="37"/>
         <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">child_care_price</references>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_child_care_1ab184b2aa9a83fd4f64e7379d72cc7824" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -303,8 +316,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="63" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="43" bodyend="45"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="89" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="43" bodyend="45"/>
         <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">has_child_care</references>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="user-defined">
@@ -325,11 +339,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="68" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="51" bodyend="58"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="94" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="51" bodyend="58"/>
         <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">child_care_price</references>
-        <references refid="class_child_care_1ae7600dd47859718da86c03d7f41be31b" compoundref="kondakov__lr5__child__care_8h" startline="40">CURRENCY</references>
+        <references refid="class_child_care_1ae7600dd47859718da86c03d7f41be31b" compoundref="kondakov__lr5__child__care_8h" startline="41">CURRENCY</references>
         <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
         <referencedby refid="class_child_care_1a01ad1c87538a964bd9f5aa0a64123777" compoundref="kondakov__lr5__child__care_8cpp" startline="75" endline="79">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_child_care_1ae92c24af5b5bdaa4f192702a56f38c59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -347,10 +362,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="69" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="64" bodyend="69"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="95" column="17" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.hpp" bodystart="64" bodyend="69"/>
         <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">has_child_care</references>
         <references refid="namespace_input_control_1a3c4c474950e493e6530183f688733929" compoundref="kondakov__lr5__input__control_8cpp" startline="68" endline="80">InputControl::input</references>
         <referencedby refid="class_child_care_1a01ad1c87538a964bd9f5aa0a64123777" compoundref="kondakov__lr5__child__care_8cpp" startline="75" endline="79">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="user-defined">
@@ -396,7 +412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="80" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="64" bodyend="67"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="106" column="12" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="64" bodyend="67"/>
         <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare</references>
       </memberdef>
       <memberdef kind="friend" id="class_child_care_1a01ad1c87538a964bd9f5aa0a64123777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -440,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="81" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="75" bodyend="79"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="107" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="75" bodyend="79"/>
         <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare</references>
         <references refid="class_child_care_1a1571c2d8aab1536723b87e76a1c13bf7" compoundref="kondakov__lr5__child__care_8hpp" startline="51" endline="58">input_child_care_price</references>
         <references refid="class_child_care_1ae92c24af5b5bdaa4f192702a56f38c59" compoundref="kondakov__lr5__child__care_8hpp" startline="64" endline="69">input_has_child_care</references>
@@ -465,14 +481,16 @@
         <referencedby refid="class_child_care_1a2cda946ceb332e12fb4247df6e6b6271" compoundref="kondakov__lr5__child__care_8cpp" startline="34" endline="37">ChildCare</referencedby>
         <referencedby refid="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" compoundref="kondakov__lr5__family__room_8cpp" startline="46" endline="51">FamilyRoom::FamilyRoom</referencedby>
         <referencedby refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" compoundref="kondakov__lr5__family__room_8cpp" startline="64" endline="73">FamilyRoom::FamilyRoom</referencedby>
-        <referencedby refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" compoundref="kondakov__lr5__family__room_8cpp" startline="107" endline="116">FamilyRoom::from_json</referencedby>
+        <referencedby refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" compoundref="kondakov__lr5__family__room_8cpp" startline="86" endline="94">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" compoundref="kondakov__lr5__family__room_8cpp" startline="128" endline="137">FamilyRoom::from_json</referencedby>
         <referencedby refid="class_child_care_1a3b70d8d9825589f117fc101b5a561eb3" compoundref="kondakov__lr5__child__care_8hpp" startline="19" endline="21">get_child_care_price</referencedby>
         <referencedby refid="class_child_care_1a1571c2d8aab1536723b87e76a1c13bf7" compoundref="kondakov__lr5__child__care_8hpp" startline="51" endline="58">input_child_care_price</referencedby>
         <referencedby refid="class_child_care_1a779d4fd7448a353a992f5910d4e5704d" compoundref="kondakov__lr5__child__care_8cpp" startline="51" endline="56">operator string</referencedby>
         <referencedby refid="class_family_room_1a55b472a34768a130bde274bce15a3cd0" compoundref="kondakov__lr5__family__room_8hpp" startline="209" endline="212">FamilyRoom::operator[]</referencedby>
-        <referencedby refid="class_family_room_1a6b8a9a583efe7d0c175b89bc19fa094a" compoundref="kondakov__lr5__family__room_8cpp" startline="124" endline="138">FamilyRoom::operator[]</referencedby>
+        <referencedby refid="class_family_room_1a6b8a9a583efe7d0c175b89bc19fa094a" compoundref="kondakov__lr5__family__room_8cpp" startline="145" endline="159">FamilyRoom::operator[]</referencedby>
         <referencedby refid="class_child_care_1a377685049ef6ffb9b33f94eea5d86256" compoundref="kondakov__lr5__child__care_8hpp" startline="35" endline="37">set_child_care_price</referencedby>
-        <referencedby refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" compoundref="kondakov__lr5__family__room_8cpp" startline="90" endline="101">FamilyRoom::to_json</referencedby>
+        <referencedby refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" compoundref="kondakov__lr5__family__room_8cpp" startline="111" endline="122">FamilyRoom::to_json</referencedby>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -493,13 +511,15 @@
         <referencedby refid="class_child_care_1a2cda946ceb332e12fb4247df6e6b6271" compoundref="kondakov__lr5__child__care_8cpp" startline="34" endline="37">ChildCare</referencedby>
         <referencedby refid="class_family_room_1a25b1fbf3a3f6dd3bfa4e87e5ef329038" compoundref="kondakov__lr5__family__room_8cpp" startline="46" endline="51">FamilyRoom::FamilyRoom</referencedby>
         <referencedby refid="class_family_room_1a4c50eeb6aae51a41faff6a4d2f5754ef" compoundref="kondakov__lr5__family__room_8cpp" startline="64" endline="73">FamilyRoom::FamilyRoom</referencedby>
-        <referencedby refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" compoundref="kondakov__lr5__family__room_8cpp" startline="107" endline="116">FamilyRoom::from_json</referencedby>
+        <referencedby refid="class_family_room_1a5e408472e6172011ff7d8eb3f0c180eb" compoundref="kondakov__lr5__family__room_8cpp" startline="86" endline="94">FamilyRoom::FamilyRoom</referencedby>
+        <referencedby refid="class_family_room_1a365aeff13e2accb19d1c55513f94010c" compoundref="kondakov__lr5__family__room_8cpp" startline="128" endline="137">FamilyRoom::from_json</referencedby>
         <referencedby refid="class_child_care_1ad6ec7a48b59727eaadbc0ea34d9957b2" compoundref="kondakov__lr5__child__care_8hpp" startline="27" endline="29">get_has_child_care</referencedby>
         <referencedby refid="class_child_care_1ae92c24af5b5bdaa4f192702a56f38c59" compoundref="kondakov__lr5__child__care_8hpp" startline="64" endline="69">input_has_child_care</referencedby>
         <referencedby refid="class_child_care_1a779d4fd7448a353a992f5910d4e5704d" compoundref="kondakov__lr5__child__care_8cpp" startline="51" endline="56">operator string</referencedby>
-        <referencedby refid="class_family_room_1a6b8a9a583efe7d0c175b89bc19fa094a" compoundref="kondakov__lr5__family__room_8cpp" startline="124" endline="138">FamilyRoom::operator[]</referencedby>
+        <referencedby refid="class_family_room_1a6b8a9a583efe7d0c175b89bc19fa094a" compoundref="kondakov__lr5__family__room_8cpp" startline="145" endline="159">FamilyRoom::operator[]</referencedby>
         <referencedby refid="class_child_care_1ab184b2aa9a83fd4f64e7379d72cc7824" compoundref="kondakov__lr5__child__care_8hpp" startline="43" endline="45">set_has_child_care</referencedby>
-        <referencedby refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" compoundref="kondakov__lr5__family__room_8cpp" startline="90" endline="101">FamilyRoom::to_json</referencedby>
+        <referencedby refid="class_family_room_1a10602a13e2dc66bac603fd645c832bac" compoundref="kondakov__lr5__family__room_8cpp" startline="111" endline="122">FamilyRoom::to_json</referencedby>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-attrib">
@@ -518,7 +538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="40" column="25" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" bodystart="40" bodyend="-1"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="41" column="25" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" bodystart="41" bodyend="-1"/>
         <referencedby refid="class_child_care_1a1571c2d8aab1536723b87e76a1c13bf7" compoundref="kondakov__lr5__child__care_8hpp" startline="51" endline="58">input_child_care_price</referencedby>
         <referencedby refid="class_child_care_1a779d4fd7448a353a992f5910d4e5704d" compoundref="kondakov__lr5__child__care_8cpp" startline="51" endline="56">operator string</referencedby>
       </memberdef>
@@ -556,10 +576,35 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="35" column="10" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" bodystart="35" bodyend="37"/>
-        <referencedby refid="class_family_room_1ae03def3879b27ffca22b392ca54283c4" compoundref="kondakov__lr5__family__room_8cpp" startline="222" endline="232">FamilyRoom::input</referencedby>
+        <referencedby refid="class_family_room_1ae03def3879b27ffca22b392ca54283c4" compoundref="kondakov__lr5__family__room_8cpp" startline="243" endline="253">FamilyRoom::input</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_child_care_1a194abbe995da7c1edc6cabb891631b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ChildCare::~ChildCare</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ChildCare</name>
+        <qualifiedname>ChildCare::~ChildCare</qualifiedname>
+        <briefdescription>
+<para>Деструктор </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="78" column="5"/>
+        <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">child_care_price</references>
+        <references refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" compoundref="kondakov__lr5__child__care_8cpp" startline="17" endline="19">ChildCare</references>
+        <references refid="class_child_care_1a3b70d8d9825589f117fc101b5a561eb3" compoundref="kondakov__lr5__child__care_8hpp" startline="19" endline="21">get_child_care_price</references>
+        <references refid="class_child_care_1ad6ec7a48b59727eaadbc0ea34d9957b2" compoundref="kondakov__lr5__child__care_8hpp" startline="27" endline="29">get_has_child_care</references>
+        <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">has_child_care</references>
+        <references refid="class_child_care_1a1571c2d8aab1536723b87e76a1c13bf7" compoundref="kondakov__lr5__child__care_8hpp" startline="51" endline="58">input_child_care_price</references>
+        <references refid="class_child_care_1ae92c24af5b5bdaa4f192702a56f38c59" compoundref="kondakov__lr5__child__care_8hpp" startline="64" endline="69">input_has_child_care</references>
+        <references refid="class_child_care_1a377685049ef6ffb9b33f94eea5d86256" compoundref="kondakov__lr5__child__care_8hpp" startline="35" endline="37">set_child_care_price</references>
+        <references refid="class_child_care_1ab184b2aa9a83fd4f64e7379d72cc7824" compoundref="kondakov__lr5__child__care_8hpp" startline="43" endline="45">set_has_child_care</references>
+        <references refid="class_child_care_1a5996576d0d4943533c78b3edb5290d14" compoundref="kondakov__lr5__child__care_8cpp" startline="85" endline="89">to_string</references>
+      </memberdef>
       <memberdef kind="function" id="class_child_care_1a779d4fd7448a353a992f5910d4e5704d" prot="public" static="no" const="yes" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
         <definition>ChildCare::operator string</definition>
@@ -576,9 +621,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="76" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="51" bodyend="56"/>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="102" column="14" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="51" bodyend="56"/>
         <references refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" compoundref="kondakov__lr5__child__care_8h" startline="21">child_care_price</references>
-        <references refid="class_child_care_1ae7600dd47859718da86c03d7f41be31b" compoundref="kondakov__lr5__child__care_8h" startline="40">CURRENCY</references>
+        <references refid="class_child_care_1ae7600dd47859718da86c03d7f41be31b" compoundref="kondakov__lr5__child__care_8h" startline="41">CURRENCY</references>
         <references refid="class_child_care_1a63ad246d44244be9449c8a632ab9dbf0" compoundref="kondakov__lr5__child__care_8h" startline="22">has_child_care</references>
       </memberdef>
       <memberdef kind="function" id="class_child_care_1a5996576d0d4943533c78b3edb5290d14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
@@ -598,8 +643,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="88" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="85" bodyend="89"/>
-        <referencedby refid="class_family_room_1a271f00565274998fdabcf7caf292fff5" compoundref="kondakov__lr5__family__room_8cpp" startline="238" endline="245">FamilyRoom::to_string</referencedby>
+        <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="114" column="20" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.cpp" bodystart="85" bodyend="89"/>
+        <referencedby refid="class_family_room_1a271f00565274998fdabcf7caf292fff5" compoundref="kondakov__lr5__family__room_8cpp" startline="259" endline="266">FamilyRoom::to_string</referencedby>
+        <referencedby refid="class_child_care_1a194abbe995da7c1edc6cabb891631b63">~ChildCare</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -619,7 +665,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="19" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" bodystart="19" bodyend="89"/>
+    <location file="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" line="19" column="1" bodyfile="Kondakov_LR5_Hotel/kondakov_lr5_child_care.h" bodystart="19" bodyend="115"/>
     <listofallmembers>
       <member refid="class_child_care_1ac6d91a49ca831fc132f7846a9c54f351" prot="protected" virt="non-virtual"><scope>ChildCare</scope><name>child_care_price</name></member>
       <member refid="class_child_care_1a31cf181fba995fad6f95605d67f98171" prot="public" virt="non-virtual"><scope>ChildCare</scope><name>ChildCare</name></member>

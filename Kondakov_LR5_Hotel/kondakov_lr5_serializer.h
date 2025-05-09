@@ -10,6 +10,12 @@
 #ifndef KONDAKOV_LR5_SERIALIZER_H
 #define KONDAKOV_LR5_SERIALIZER_H
 
+/**
+ * @defgroup serialization Сериализация
+ * @brief Группа для операций сериализации, сохранения и загрузки
+ * @{
+ */
+
 #include "kondakov_lr5_standard_room.h"
 #include "kondakov_lr5_suite.h"
 #include "kondakov_lr5_family_room.h"
@@ -82,5 +88,7 @@ namespace Serializer {
 }
 
 #include "kondakov_lr5_serializer.hpp"
+
+/** @} */ // Конец группы serialization
 
 #endif // KONDAKOV_LR5_SERIALIZER_H

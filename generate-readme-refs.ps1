@@ -21,6 +21,13 @@ if (-not (Test-Path $previewPath)) {
     exit 1
 }
 
+# Путь к информации об авторах и лицензии
+$authorsPath = "authors.md"
+if (-not (Test-Path $authorsPath)) {
+    Write-Host "Файл $authorsPath не найден." -ForegroundColor Red
+    exit 1
+}
+
 # Создание заголовка
 Write-Host "Сборка $readme..."
 Set-Content -Path $readme -Value ('# Документация лабораторной работы №5: "Система управления гостиничными номерами и бронированием"' + "`n`n") -Encoding UTF8
@@ -64,3 +71,8 @@ foreach ($folder in $subFolders) {
         }
     }
 }
+
+# Вставка содержимого authors.md
+$authorsContent = Get-Content -Path $authorsPath -Raw -Encoding UTF8
+Add-Content -Path $readme -Value "`n$authorsContent`n" -Encoding UTF8
+Write-Host "Добавлена информация об авторах и лицензии $authorsPath" -ForegroundColor Green

@@ -10,6 +10,12 @@
 #ifndef KONDAKOV_LR5_ROOM_H
 #define KONDAKOV_LR5_ROOM_H
 
+/**
+ * @defgroup room_hierarchy Иерархия комнат
+ * @brief Группа классов, описывающих систему гостиничных номеров
+ * @{
+ */
+
 #include "kondakov_lr5_input_control.h"
 
 /**
@@ -41,14 +47,28 @@ public:
     /// Валюта для отображения цен
     static const string CURRENCY;
 
-    /// Конструктор по умолчанию
+    /// @name Конструкторы
+    /// @{
+    /**
+     * @brief Конструктор по умолчанию
+     * @details Создает комнату с параметрами:
+     * - Номер комнаты: 0
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     */
     Room();
 
-    /// Конструктор преобразования (по номеру комнаты)
+    /**
+     * @brief Конструктор преобразования
+     * @param room_number Номер комнаты
+     * @details Создает комнату с указанным номером и значениями по умолчанию:
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     */
     Room(int room_number);
 
     /**
-     * @brief Конструктор с параметрами
+     * @brief Основной конструктор с параметрами
      * @param room_number Номер комнаты
      * @param price_per_night Цена за ночь
      * @param is_booked Статус бронирования
@@ -62,6 +82,7 @@ public:
     /// Конструктор перемещения
     Room(Room&& other) noexcept;
     Room& operator=(Room&&) noexcept = default;
+    /// @}
 
     /// Виртуальный деструктор
     virtual ~Room() = default;
@@ -146,5 +167,7 @@ public:
 };
 
 #include "kondakov_lr5_room.hpp"
+
+/** @} */ // Конец группы room_hierarchy
 
 #endif // KONDAKOV_LR5_ROOM_H

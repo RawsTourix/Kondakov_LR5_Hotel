@@ -130,6 +130,16 @@
 
 - [group__core__definitions](docs/markdown/Modules/group__core__definitions.md)
 
+- [group__input__control](docs/markdown/Modules/group__input__control.md)
+
+- [group__menu__system](docs/markdown/Modules/group__menu__system.md)
+
+- [group__room__hierarchy](docs/markdown/Modules/group__room__hierarchy.md)
+
+- [group__room__operations](docs/markdown/Modules/group__room__operations.md)
+
+- [group__serialization](docs/markdown/Modules/group__serialization.md)
+
 
 ## Namespaces
 
@@ -140,4 +150,11 @@
 - [namespace_methods](docs/markdown/Namespaces/namespace_methods.md)
 
 - [namespace_serializer](docs/markdown/Namespaces/namespace_serializer.md)
+
+
+## Авторские права и лицензия
+
+**Автор:** Fedor Kondakov
+**Год:** 2025
+**Лицензия:** MIT License
 

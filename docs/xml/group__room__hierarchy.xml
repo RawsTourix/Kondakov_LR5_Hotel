@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="group__room__hierarchy" kind="group">
+    <compoundname>room_hierarchy</compoundname>
+    <title>Иерархия комнат</title>
+    <innerfile refid="kondakov__lr5__child__care_8cpp">kondakov_lr5_child_care.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__child__care_8h">kondakov_lr5_child_care.h</innerfile>
+    <innerfile refid="kondakov__lr5__child__care_8hpp">kondakov_lr5_child_care.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__family__room_8cpp">kondakov_lr5_family_room.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__family__room_8h">kondakov_lr5_family_room.h</innerfile>
+    <innerfile refid="kondakov__lr5__family__room_8hpp">kondakov_lr5_family_room.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__room_8cpp">kondakov_lr5_room.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__room_8h">kondakov_lr5_room.h</innerfile>
+    <innerfile refid="kondakov__lr5__room_8hpp">kondakov_lr5_room.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__standard__room_8cpp">kondakov_lr5_standard_room.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__standard__room_8h">kondakov_lr5_standard_room.h</innerfile>
+    <innerfile refid="kondakov__lr5__standard__room_8hpp">kondakov_lr5_standard_room.hpp</innerfile>
+    <innerfile refid="kondakov__lr5__suite_8cpp">kondakov_lr5_suite.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__suite_8h">kondakov_lr5_suite.h</innerfile>
+    <innerfile refid="kondakov__lr5__suite_8hpp">kondakov_lr5_suite.hpp</innerfile>
+    <innerclass refid="class_room" prot="public">Room</innerclass>
+    <briefdescription>
+<para>Группа классов, описывающих систему гостиничных номеров </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

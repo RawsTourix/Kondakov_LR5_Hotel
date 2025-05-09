@@ -10,6 +10,12 @@
 #ifndef KONDAKOV_LR5_INPUT_CONTROL_H
 #define KONDAKOV_LR5_INPUT_CONTROL_H
 
+/**
+ * @defgroup input_control Контроль ввода
+ * @brief Управление вводом данных и другие вспомогательные функции
+ * @{
+ */
+
 #include "kondakov_lr5_def.h"
 
 /**
@@ -126,5 +132,7 @@ namespace InputControl {
 
 #include "kondakov_lr5_input_control.hpp"
 #include "kondakov_lr5_container_operations.hpp"  ///< Дополнение для работы с контейнерами
+
+/** @} */ // Конец группы input_control
 
 #endif // KONDAKOV_LR5_INPUT_CONTROL_H

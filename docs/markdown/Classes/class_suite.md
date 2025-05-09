@@ -24,11 +24,10 @@ Inherits from [Room](Classes/class_room.md)
 | | **[Suite](Classes/class_suite.md#function-suite)**(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi)<br>Конструктор с удобствами по умолчанию  |
 | | **[Suite](Classes/class_suite.md#function-suite)**(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi, string amenities)<br>Конструктор с параметрами (удобства строка)  |
 | | **[Suite](Classes/class_suite.md#function-suite)**(int room_number, float price_per_night, bool is_booked, bool room_service, bool jacuzzi, vector< string > amenities)<br>Конструктор с параметрами (удобства вектор)  |
-| | **[Suite](Classes/class_suite.md#function-suite)**(const [Suite](Classes/class_suite.md) & ) =default |
+| | **[Suite](Classes/class_suite.md#function-suite)**(const [Suite](Classes/class_suite.md) & ) =default<br>Конструктор копирования  |
 | [Suite](Classes/class_suite.md) & | **[operator=](Classes/class_suite.md#function-operator=)**(const [Suite](Classes/class_suite.md) & ) =default |
 | | **[Suite](Classes/class_suite.md#function-suite)**([Suite](Classes/class_suite.md) && other)<br>Конструктор перемещения  |
 | [Suite](Classes/class_suite.md) & | **[operator=](Classes/class_suite.md#function-operator=)**([Suite](Classes/class_suite.md) && ) =default |
-| virtual | **[~Suite](Classes/class_suite.md#function-~suite)**() =default |
 | bool | **[get_room_service](Classes/class_suite.md#function-get-room-service)**() const<br>Получить наличие обслуживания  |
 | bool | **[get_jacuzzi](Classes/class_suite.md#function-get-jacuzzi)**() const<br>Получить наличие джакузи  |
 | virtual const vector< string > & | **[get_amenities](Classes/class_suite.md#function-get-amenities)**() const override<br>Получить список удобств  |
@@ -48,6 +47,7 @@ Inherits from [Room](Classes/class_room.md)
 | virtual void | **[print](Classes/class_suite.md#function-print)**() const override<br>Вывод информации о номере  |
 | virtual bool | **[input](Classes/class_suite.md#function-input)**() override<br>Ввод информации о номере  |
 | virtual string | **[to_string](Classes/class_suite.md#function-to-string)**() const override<br>Преобразование в строку  |
+| virtual | **[~Suite](Classes/class_suite.md#function-~suite)**() =default<br>Деструктор  |
 | void | **[order_champagne](Classes/class_suite.md#function-order-champagne)**(string amenity)<br>Заказать шампанское (добавляет услугу)  |
 | | **[operator string](Classes/class_suite.md#function-operator-string)**() const<br>Преобразование в строку  |
 
@@ -70,6 +70,11 @@ Inherits from [Room](Classes/class_room.md)
 
 |                | Name           |
 | -------------- | -------------- |
+| | **[Room](Classes/class_room.md#function-room)**()<br>Конструктор по умолчанию  |
+| | **[Room](Classes/class_room.md#function-room)**(int room_number)<br>Конструктор преобразования  |
+| | **[Room](Classes/class_room.md#function-room)**(int room_number, float price_per_night, bool is_booked)<br>Основной конструктор с параметрами  |
+| | **[Room](Classes/class_room.md#function-room)**(const [Room](Classes/class_room.md) & ) =default<br>Конструктор копирования  |
+| | **[Room](Classes/class_room.md#function-room)**([Room](Classes/class_room.md) && other)<br>Конструктор перемещения  |
 | int | **[get_room_number](Classes/class_room.md#function-get-room-number)**() const<br>Получить номер комнаты  |
 | float | **[get_price_per_night](Classes/class_room.md#function-get-price-per-night)**() const<br>Получить цену за ночь  |
 | bool | **[get_is_booked](Classes/class_room.md#function-get-is-booked)**() const<br>Получить статус бронирования  |
@@ -80,11 +85,6 @@ Inherits from [Room](Classes/class_room.md)
 | template <typename Container \> <br>enable_if_t< is_same_v< typename Container::value_type, int >, bool > | **[input_room_number](Classes/class_room.md#function-input-room-number)**(const Container & room_numbers)<br>Ввод номера комнаты с проверкой уникальности  |
 | bool | **[input_price_per_night](Classes/class_room.md#function-input-price-per-night)**()<br>Ввод цены за ночь  |
 | bool | **[input_is_booked](Classes/class_room.md#function-input-is-booked)**()<br>Ввод статуса бронирования  |
-| | **[Room](Classes/class_room.md#function-room)**()<br>Конструктор по умолчанию  |
-| | **[Room](Classes/class_room.md#function-room)**(int room_number)<br>Конструктор преобразования (по номеру комнаты)  |
-| | **[Room](Classes/class_room.md#function-room)**(int room_number, float price_per_night, bool is_booked)<br>Конструктор с параметрами  |
-| | **[Room](Classes/class_room.md#function-room)**(const [Room](Classes/class_room.md) & ) =default<br>Конструктор копирования  |
-| | **[Room](Classes/class_room.md#function-room)**([Room](Classes/class_room.md) && other)<br>Конструктор перемещения  |
 | virtual | **[~Room](Classes/class_room.md#function-~room)**() =default<br>Виртуальный деструктор  |
 
 **Public Attributes inherited from [Room](Classes/class_room.md)**
@@ -145,6 +145,16 @@ Suite()
 
 Конструктор по умолчанию 
 
+Создает номер люкс с параметрами:
+
+* Номер комнаты: 0
+* Цена за ночь: 0.0
+* Статус бронирования: нет
+* Обслуживание в номере: нет
+* Наличие джакузи: нет
+* Список удобств: "Lux", "Room service" 
+
+
 ### function Suite
 
 ```cpp
@@ -159,7 +169,18 @@ Suite(
 **Parameters**: 
 
   * **room_number** Номер комнаты 
+  * **room_service** Обслуживание в номере
+  * **room_number** Номер комнаты 
   * **room_service** Наличие обслуживания 
+
+
+
+Создает номер люкс с указанными параметрами и значениями по умолчанию:
+
+* Цена за ночь: 0.0
+* Статус бронирования: нет
+* Наличие джакузи: нет
+* Список удобств: "Lux", "Room service"
 
 
 ### function Suite
@@ -181,8 +202,17 @@ Suite(
   * **room_number** Номер комнаты 
   * **price_per_night** Цена за ночь 
   * **is_booked** Статус бронирования 
+  * **room_service** Обслуживание в номере 
+  * **jacuzzi** Наличие джакузи
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
   * **room_service** Наличие обслуживания 
   * **jacuzzi** Наличие джакузи 
+
+
+
+Создает номер люкс с указанными параметрами и удобствами по умолчанию: "Lux", "Room service"
 
 
 ### function Suite
@@ -202,6 +232,12 @@ Suite(
 
 **Parameters**: 
 
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
+  * **room_service** Обслуживание в номере 
+  * **jacuzzi** Наличие джакузи 
+  * **amenities** Удобства (строка, разделитель - запятая)
   * **room_number** Номер комнаты 
   * **price_per_night** Цена за ночь 
   * **is_booked** Статус бронирования 
@@ -230,6 +266,12 @@ Suite(
   * **room_number** Номер комнаты 
   * **price_per_night** Цена за ночь 
   * **is_booked** Статус бронирования 
+  * **room_service** Обслуживание в номере 
+  * **jacuzzi** Наличие джакузи 
+  * **amenities** Удобства (вектор строк)
+  * **room_number** Номер комнаты 
+  * **price_per_night** Цена за ночь 
+  * **is_booked** Статус бронирования 
   * **room_service** Наличие обслуживания 
   * **jacuzzi** Наличие джакузи 
   * **amenities** Удобства (вектор строк) 
@@ -243,6 +285,7 @@ Suite(
 ) =default
 ```
 
+Конструктор копирования 
 
 ### function operator=
 
@@ -274,13 +317,6 @@ Suite(
 Suite & operator=(
     Suite && 
 ) =default
-```
-
-
-### function ~Suite
-
-```cpp
-virtual ~Suite() =default
 ```
 
 
@@ -538,6 +574,14 @@ virtual string to_string() const override
 **Reimplements**: [Room::to_string](Classes/class_room.md#function-to-string)
 
 
+### function ~Suite
+
+```cpp
+virtual ~Suite() =default
+```
+
+Деструктор 
+
 ### function order_champagne
 
 ```cpp
@@ -553,7 +597,7 @@ inline void order_champagne(
   * **amenity** Название услуги
 
 
-Заказать шампанское (добавить услугу)
+Добавить услугу
 
 
 Увеличивает цену на 2000 руб. и добавляет услугу в список 
@@ -677,4 +721,4 @@ friend istream & operator>>(
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

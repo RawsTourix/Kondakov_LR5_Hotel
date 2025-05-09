@@ -14,7 +14,7 @@
  */
 Suite::Suite()
     : Room(),
-    room_service(true),
+    room_service(false),
     jacuzzi(false),
     amenities({ "Lux", "Room service" }) {
 }

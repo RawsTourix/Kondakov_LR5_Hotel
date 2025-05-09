@@ -6,6 +6,8 @@ summary: Класс для представления пункта меню
 
 # MenuObject
 
+**Module:** **[Система меню](Modules/group__menu__system.md)**
+
 
 
 Класс для представления пункта меню  [More...](#detailed-description)
@@ -24,11 +26,10 @@ summary: Класс для представления пункта меню
 | | **[MenuObject](Classes/class_menu_object.md#function-menuobject)**(int number, string label, function< void()> action, vector< [MenuObject](Classes/class_menu_object.md) > submenu)<br>Конструктор с действием и подменю  |
 | | **[MenuObject](Classes/class_menu_object.md#function-menuobject)**(int number, string label, function< void()> action, vector< [MenuObject](Classes/class_menu_object.md) > submenu, bool one_off_menu_inclusion)<br>Полный конструктор  |
 | template <typename RoomPtr ,typename Action ,typename  =enable_if_t<is_base_of_v<Room, typename RoomPtr::element_type> &&                               is_same_v<bool, decltype(declval<Action>()())>\> <br>| **[MenuObject](Classes/class_menu_object.md#function-menuobject)**(int number, string label, RoomPtr room, Action action, string main_message, string success_message)<br>Конструктор для комнаты с подтверждением  |
-| | **[MenuObject](Classes/class_menu_object.md#function-menuobject)**(const [MenuObject](Classes/class_menu_object.md) & ) =default |
+| | **[MenuObject](Classes/class_menu_object.md#function-menuobject)**(const [MenuObject](Classes/class_menu_object.md) & ) =default<br>Конструктор копирования  |
 | [MenuObject](Classes/class_menu_object.md) & | **[operator=](Classes/class_menu_object.md#function-operator=)**(const [MenuObject](Classes/class_menu_object.md) & ) =default |
 | | **[MenuObject](Classes/class_menu_object.md#function-menuobject)**([MenuObject](Classes/class_menu_object.md) && other)<br>Конструктор перемещения  |
 | [MenuObject](Classes/class_menu_object.md) & | **[operator=](Classes/class_menu_object.md#function-operator=)**([MenuObject](Classes/class_menu_object.md) && ) =default |
-| | **[~MenuObject](Classes/class_menu_object.md#function-~menuobject)**() =default |
 | void | **[show](Classes/class_menu_object.md#function-show)**(const string & indentation ="") const<br>Вывод пункта меню  |
 | void | **[act](Classes/class_menu_object.md#function-act)**() const<br>Выполнение действия пункта меню  |
 | string | **[get_label](Classes/class_menu_object.md#function-get-label)**() const<br>Получение названия пункта  |
@@ -39,6 +40,7 @@ summary: Класс для представления пункта меню
 | template <typename Container \> <br>enable_if_t< is_same_v< typename Container::value_type, [MenuObject](Classes/class_menu_object.md) >, void > | **[show_menu](Classes/class_menu_object.md#function-show-menu)**(const Container & menu, int indent)<br>Вывод меню  |
 | template <typename Container \> <br>enable_if_t< is_same_v< typename Container::value_type, [MenuObject](Classes/class_menu_object.md) >, void > | **[process](Classes/class_menu_object.md#function-process)**(const Container & menu, const string main_label ="", const string exit_label ="", int indent =0, bool one_off =false)<br>Обработка взаимодействия с меню  |
 | | **[MenuObject](Classes/class_menu_object.md#function-menuobject)**() =delete<br>Удаленный конструктор по умолчанию  |
+| | **[~MenuObject](Classes/class_menu_object.md#function-~menuobject)**() =default<br>Деструктор  |
 
 ## Detailed Description
 
@@ -226,6 +228,7 @@ MenuObject(
 ) =default
 ```
 
+Конструктор копирования 
 
 ### function operator=
 
@@ -255,13 +258,6 @@ MenuObject(
 MenuObject & operator=(
     MenuObject && 
 ) =default
-```
-
-
-### function ~MenuObject
-
-```cpp
-~MenuObject() =default
 ```
 
 
@@ -398,6 +394,14 @@ MenuObject() =delete
 
 Удаленный конструктор по умолчанию 
 
+### function ~MenuObject
+
+```cpp
+~MenuObject() =default
+```
+
+Деструктор 
+
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:46 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

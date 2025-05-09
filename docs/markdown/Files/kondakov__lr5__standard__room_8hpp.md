@@ -72,7 +72,7 @@ inline bool StandardRoom::input_has_tv() {
 
 template <char Delim>
 inline bool StandardRoom::input_amenities() {
-    cout << "Ввод удобств осуществляется в одну строку через разделитель '" << Delim << "'." << endl << endl;
+    cout << "Ввод удобств осуществляется в одну строку через разделитель '" << Delim << "'." << endl;
     cout << "Удобства: ";
     InputControl::DelimitedContainer<Delim, vector<string>&> dc(amenities);
     if (cin >> dc) { return false; }
@@ -106,4 +106,4 @@ inline void StandardRoom::exstra_bed() {
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="group__serialization" kind="group">
+    <compoundname>serialization</compoundname>
+    <title>Сериализация</title>
+    <innerfile refid="kondakov__lr5__serializer_8cpp">kondakov_lr5_serializer.cpp</innerfile>
+    <innerfile refid="kondakov__lr5__serializer_8h">kondakov_lr5_serializer.h</innerfile>
+    <innerfile refid="kondakov__lr5__serializer_8hpp">kondakov_lr5_serializer.hpp</innerfile>
+    <innernamespace refid="namespace_serializer">Serializer</innernamespace>
+    <briefdescription>
+<para>Группа для операций сериализации, сохранения и загрузки </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

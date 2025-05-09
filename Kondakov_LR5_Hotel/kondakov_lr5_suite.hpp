@@ -95,7 +95,7 @@ inline bool Suite::input_jacuzzi() {
  */
 template <char Delim>
 inline bool Suite::input_amenities() {
-    cout << "Ввод удобств осуществляется в одну строку через разделитель '" << Delim << "'." << endl << endl;
+    cout << "Ввод удобств осуществляется в одну строку через разделитель '" << Delim << "'." << endl;
     cout << "Удобства: ";
     InputControl::DelimitedContainer<Delim, vector<string>&> dc(amenities);
     if (cin >> dc) { return false; }
@@ -136,7 +136,7 @@ inline bool Suite::validate() const {
 }
 
 /**
- * @brief Заказать шампанское (добавить услугу)
+ * @brief Добавить услугу
  * @param amenity Название услуги
  * @details Увеличивает цену на 2000 руб. и добавляет услугу в список
  */

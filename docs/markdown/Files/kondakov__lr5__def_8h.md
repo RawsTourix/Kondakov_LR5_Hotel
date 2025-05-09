@@ -14,33 +14,19 @@ summary: Основной заголовочный файл проекта, со
 | -------------- |
 | **[std](Namespaces/namespacestd.md)** <br>< JSON-библиотека (nlohmann::json).  |
 
-## Defines
-
-|                | Name           |
-| -------------- | -------------- |
-|  | **[KONDAKOV_LR5_DEF_H](Files/kondakov__lr5__def_8h.md#define-kondakov-lr5-def-h)** <br>Макрос защиты от повторного включения заголовочного файла  |
-
 ## Detailed Description
 
 Основной заголовочный файл проекта, содержащий подключения библиотек, объявления типов и вспомогательные макросы. 
 
 **Author**: Kondakov Fedor 
 
-**Version**: 1.0 
+**Version**: 1.0
 
 **Date**: 2025 
 
+**Copyright**: Copyright (c) 2025 Fedor Kondakov @license MIT 
 
 
-## Macros Documentation
-
-### define KONDAKOV_LR5_DEF_H
-
-```cpp
-#define KONDAKOV_LR5_DEF_H 
-```
-
-Макрос защиты от повторного включения заголовочного файла 
 
 ## Source code
 
@@ -66,8 +52,9 @@ summary: Основной заголовочный файл проекта, со
 #include <nlohmann/json.hpp> 
 
 using namespace std;
+
 using json = nlohmann::json;
- // end of core_definitions
+ // Конец группы core_definitionsы
 
 #endif // KONDAKOV_LR5_DEF_H
 ```
@@ -75,4 +62,4 @@ using json = nlohmann::json;
 
 -------------------------------
 
-Updated on 2025-05-06 at 23:16:47 +0300
+Updated on 2025-05-09 at 18:16:45 +0300

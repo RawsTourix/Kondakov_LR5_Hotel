@@ -22,17 +22,33 @@ private:
     bool            has_tv;     ///< Наличие телевизора
     vector<string>  amenities;  ///< Удобства
 
-    const string ROOM_TYPE = "Стандартная комната";  ///< Тип комнаты
-    const string JSON_TYPE = "Standard";             ///< Тип для JSON
+    const string ROOM_TYPE = "Стандартная комната";  ///< Тип комнаты для отображения
+    const string JSON_TYPE = "Standard";             ///< Тип для сериализации в JSON
 
 public:
-    /// Конструктор по умолчанию
+    /// @name Конструкторы
+    /// @{
+    /**
+     * @brief Конструктор по умолчанию
+     * @details Создает стандартный номер с параметрами:
+     * - Номер комнаты: 0
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     * - Количество кроватей: 1
+     * - Наличие телевизора: нет
+     * - Список удобств: "Wi-Fi", "Air condition"
+     */
     StandardRoom();
 
     /**
      * @brief Конструктор преобразования
      * @param room_number Номер комнаты
      * @param bed_count Количество кроватей
+     * @details Создает стандартный номер с указанными параметрами и значениями по умолчанию:
+     * - Цена за ночь: 0.0
+     * - Статус бронирования: нет
+     * - Наличие телевизора: нет
+     * - Список удобств: "Wi-Fi", "Air condition"
      */
     StandardRoom(int room_number, int bed_count);
 
@@ -43,6 +59,7 @@ public:
      * @param is_booked Статус бронирования
      * @param bed_count Количество кроватей
      * @param has_tv Наличие телевизора
+     * @details Создает стандартный номер с указанными параметрами и удобствами по умолчанию: "Wi-Fi", "Air condition"
      */
     StandardRoom(int room_number, float price_per_night, bool is_booked, int bed_count, bool has_tv);
 
@@ -53,7 +70,7 @@ public:
      * @param is_booked Статус бронирования
      * @param bed_count Количество кроватей
      * @param has_tv Наличие телевизора
-     * @param amenities Удобства (строка с разделителями)
+     * @param amenities Удобства (строка, разделитель - запятая)
      */
     StandardRoom(int room_number, float price_per_night, bool is_booked, int bed_count, bool has_tv, string amenities);
 
@@ -75,7 +92,8 @@ public:
     /// Конструктор перемещения
     StandardRoom(StandardRoom&& other) noexcept;
     StandardRoom& operator=(StandardRoom&&) noexcept = default;
-
+    /// @}
+    
     /// Деструктор
     virtual ~StandardRoom() = default;
 
