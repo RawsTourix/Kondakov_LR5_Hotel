@@ -1,0 +1,5 @@
+<map id="FamilyRoom::remove_play_area" name="FamilyRoom::remove_play_area">
+<area shape="rect" id="Node000001" title="Деактивировать игровую зону" alt="" coords="239,5,385,48"/>
+<area shape="rect" id="Node000002" href="$class_family_room.html#a21a282df8f7b25ede341c5b3ff75f3ac" title="Деструктор" alt="" coords="5,13,191,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,29,191,29,191,24,223,24"/>
+</map>

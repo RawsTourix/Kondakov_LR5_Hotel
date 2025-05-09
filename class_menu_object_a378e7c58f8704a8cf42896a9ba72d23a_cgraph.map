@@ -1,35 +1,5 @@
 <map id="MenuObject::MenuObject" name="MenuObject::MenuObject">
-<area shape="rect" id="Node000001" title="Конструктор с подменю и флагом" alt="" coords="5,245,175,272"/>
-<area shape="rect" id="Node000002" href="$class_menu_object.html#a964f07536c901358392d30188a5fb322" title="Удаленный конструктор по умолчанию" alt="" coords="223,245,392,272"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,256,207,256,207,261,175,261"/>
-<area shape="poly" id="edge8_Node000002_Node000002" title=" " alt="" coords="271,246,264,237,269,227,283,221,307,219,333,221,347,228,345,232,332,226,307,224,285,226,272,231,269,236,275,243"/>
-<area shape="rect" id="Node000003" href="$class_menu_object.html#a946403b51b6cdca6436a52e370def59f" title="Выполнение действия пункта меню" alt="" coords="472,5,589,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="310,244,326,205,352,150,389,92,412,65,438,42,455,32,458,36,442,46,416,69,393,95,356,152,330,207,315,246"/>
-<area shape="rect" id="Node000004" href="$class_menu_object.html#a2a117f60378680504a1c89e823140553" title="Получение полного названия" alt="" coords="440,56,620,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="313,243,332,212,359,171,395,129,438,92,447,87,450,92,442,97,399,133,364,175,336,215,318,246"/>
-<area shape="rect" id="Node000005" href="$class_menu_object.html#a0debe328757d5357858d882b400c0c36" title="Получение названия пункта" alt="" coords="454,107,606,133"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="319,243,368,194,402,167,439,143,451,137,454,142,441,148,405,171,371,198,323,247"/>
-<area shape="rect" id="Node000006" href="$class_menu_object.html#aaa57ab0f94af99662e2fe85119c9a7ea" title="Получение номера пункта" alt="" coords="446,157,614,184"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="333,242,382,218,439,194,459,187,461,192,441,198,384,223,335,247"/>
-<area shape="rect" id="Node000007" href="$class_menu_object.html#afcff500d4d66f422bde91e86b49d26ce" title="Проверка флага одноразового меню" alt="" coords="458,208,603,251"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="392,245,442,238,443,244,393,250"/>
-<area shape="rect" id="Node000008" href="$class_menu_object.html#a02b93b7881760dfd7de04a5bf783c7f2" title="Получение подменю" alt="" coords="442,275,619,301"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="393,267,426,272,426,277,392,272"/>
-<area shape="rect" id="Node000009" href="$class_menu_object.html#a73408405a4bd7e569997cd5dfd49d08e" title="Обработка взаимодействия с меню" alt="" coords="458,349,603,376"/>
-<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="328,270,394,305,471,341,469,345,391,309,326,275"/>
-<area shape="rect" id="Node000013" href="$class_menu_object.html#aca1cbebf08e1fb5c3f063e94d0e8f95b" title="Вывод меню" alt="" coords="668,400,838,427"/>
-<area shape="poly" id="edge19_Node000002_Node000013" title=" " alt="" coords="320,271,366,329,401,361,441,386,493,404,548,414,602,419,652,420,652,425,602,424,547,420,492,409,439,390,398,365,362,333,315,274"/>
-<area shape="rect" id="Node000014" href="$class_menu_object.html#a24f8afbc68fb4cf9c07c096d610ff9ea" title="Вывод пункта меню" alt="" coords="465,451,595,477"/>
-<area shape="poly" id="edge18_Node000002_Node000014" title=" " alt="" coords="318,271,363,346,399,391,442,430,462,442,459,446,438,434,395,394,359,349,313,274"/>
-<area shape="poly" id="edge14_Node000009_Node000002" title=" " alt="" coords="509,351,444,317,366,281,368,276,446,312,512,346"/>
-<area shape="poly" id="edge15_Node000009_Node000009" title=" " alt="" coords="493,350,486,341,490,331,506,325,530,323,557,325,571,332,568,336,555,330,530,328,507,330,494,335,491,340,497,347"/>
-<area shape="rect" id="Node000010" href="$namespace_input_control.html#a3c4c474950e493e6530183f688733929" title="Функция ввода для строк" alt="" coords="689,325,817,352"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="603,352,673,345,674,350,603,358"/>
-<area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="593,374,677,393,676,399,592,379"/>
-<area shape="rect" id="Node000011" href="$namespace_input_control.html#a65e26d060b726037262418808215e1b5" title="Проверяет, является ли ввод пустым (для отмены операции)" alt="" coords="886,317,1031,360"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="817,344,870,345,870,350,817,350"/>
-<area shape="rect" id="Node000012" href="$namespace_input_control.html#a58f52a08f73fe9b352d19e80d84c64ea" title="Удаляет пробелы в начале и конце строки" alt="" coords="897,384,1020,411"/>
-<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="803,350,895,377,894,382,802,355"/>
-<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="885,333,832,333,832,327,885,327"/>
-<area shape="poly" id="edge17_Node000013_Node000013" title=" " alt="" coords="718,401,712,391,716,382,730,375,753,373,777,376,790,382,788,387,776,381,753,379,732,381,720,385,717,391,723,398"/>
+<area shape="rect" id="Node000001" title="Конструктор с подменю и флагом" alt="" coords="5,5,175,32"/>
+<area shape="rect" id="Node000002" href="$class_menu_object.html#a964f07536c901358392d30188a5fb322" title="Удаленный конструктор по умолчанию" alt="" coords="223,5,392,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,16,207,16,207,21,175,21"/>
 </map>

@@ -49,8 +49,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Typedefs", "globals_type.html", null ]
       ] ]
     ] ]
   ] ]
@@ -59,7 +58,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"kondakov__lr5__suite_8hpp_source.html"
+"namespace_serializer.html#a4703ee1c8aebc4ee00f07f6ece701e3c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

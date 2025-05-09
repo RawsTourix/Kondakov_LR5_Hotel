@@ -1,5 +1,7 @@
 <map id="Suite::input_room_service" name="Suite::input_room_service">
-<area shape="rect" id="Node000001" title="Ввод наличия обслуживания" alt="" coords="176,5,348,32"/>
+<area shape="rect" id="Node000001" title="Ввод наличия обслуживания" alt="" coords="176,31,348,57"/>
 <area shape="rect" id="Node000002" href="$class_suite.html#aaf656a5dd660cdeaf6bcd773955fd249" title="Оператор ввода" alt="" coords="5,5,128,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,21,128,21,128,16,160,16"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,33,128,29,129,24,161,28"/>
+<area shape="rect" id="Node000003" href="$class_suite.html#ad768458b39f93edf4554a8fb45c960d6" title="Деструктор" alt="" coords="18,56,115,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,60,116,66,115,60,160,55"/>
 </map>
